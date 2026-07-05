@@ -1,0 +1,21 @@
+services:
+  # Dashboard + control API on http://localhost:8080/dashboard.html
+  dashboard:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      # Bind-mount the project so crawled CSVs persist on the host and are
+      # shared between the dashboard and the watcher.
+      - ./:/app
+    command: python serve.py
+
+  # Crawl-and-alert loop. Opt in with:  docker compose --profile watch up
+  watch:
+    build: .
+    profiles: ["watch"]
+    volumes:
+      - ./:/app
+    environment:
+      - DISCORD_WEBHOOK=${DISCORD_WEBHOOK:-}
+    command: python monitor.py watch

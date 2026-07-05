@@ -1,0 +1,26 @@
+# Mirror of the allowlist .gitignore: the build context admits ONLY the public
+# project files, so an image built from a private working tree can never bake
+# in secrets, session state, or the private extension.
+*
+!requirements.txt
+!config.example.json
+!monitor.py
+!fb_marketplace.py
+!vinted.py
+!vendora_crawler.py
+!applog.py
+!ai_verify.py
+!gpu_perf.py
+!laptop_perf.py
+!serve.py
+!reports.py
+!archive_store.py
+!dashboard.html
+!verify_dashboard.py
+!verify_new_dashboard.py
+!tests
+!tests/*.py
+!sample_data
+!sample_data/*.csv
+!README.md
+!LICENSE

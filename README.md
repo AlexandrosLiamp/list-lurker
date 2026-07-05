@@ -1,5 +1,7 @@
 # List Lurker
 
+[![CI](https://github.com/AlexandrosLiamp/list-lurker/actions/workflows/ci.yml/badge.svg)](https://github.com/AlexandrosLiamp/list-lurker/actions/workflows/ci.yml)
+
 **Deal-hunting telemetry for the Greek second-hand PC-parts market.**
 Crawls five marketplaces, normalizes messy mixed Greek/English listings into one schema,
 scores every GPU against its live market median, has an LLM double-check each candidate
@@ -102,6 +104,13 @@ python monitor.py <command> [source] [part]
   commands : crawl | crawl full | watch | crawl skroutz | verify | aiverify | dedup
   source   : skoop | insomnia | vendora | facebook | vinted
   part     : ram | gpu | cpu | mobo | laptop | all
+```
+
+Or run it containerized (the image bases on the pinned Playwright build):
+
+```bash
+docker compose up                      # dashboard on :8080
+docker compose --profile watch up      # + the crawl-and-alert loop
 ```
 
 **Discord alerts**: set the `DISCORD_WEBHOOK` environment variable, or

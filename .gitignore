@@ -86,7 +86,9 @@ msg_*.txt
 job_scout_*.html
 retail_debug.html
 
-# 4) Single deliberate exception to the `*.csv` deny above (last match wins):
-#    sanitized sample data so a fresh clone has something to show.
+# 4) Deliberate exceptions to the `*.csv` deny above (last match wins):
+#    sanitized sample data so a fresh clone has something to show, and the same
+#    snapshot again under docs/ for the static GitHub Pages demo.
 !sample_data/
 !sample_data/*.csv
+!docs/*.csv
