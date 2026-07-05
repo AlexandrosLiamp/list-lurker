@@ -1,0 +1,92 @@
+# ══════════════════════════════════════════════════════════════════════════════
+# ALLOWLIST .gitignore — deny everything, re-allow ONLY the public files,
+# then hard-deny the private set LAST (in gitignore, the last matching rule
+# wins, so these final denies beat any accidental overlapping allow).
+#
+# This working tree contains a private subsystem (the negotiator), logged-in
+# session state, personal data, and the dev wiki. Publishing works by explicit
+# allowlist so nothing new can ever reach the public repo by accident:
+# a file that is not re-allowed below with a `!` rule CANNOT be committed.
+# To publish a new file: add a `!` rule for it in section 2, deliberately.
+# ══════════════════════════════════════════════════════════════════════════════
+
+# 1) Deny every file, everywhere…
+*
+# …but let git descend into directories (files inside stay denied until allowed).
+!*/
+
+# 2) Re-allow the public project, file by file.
+!.gitignore
+!README.md
+!LICENSE
+!requirements.txt
+!config.example.json
+!monitor.py
+!fb_marketplace.py
+!vinted.py
+!vendora_crawler.py
+!applog.py
+!ai_verify.py
+!gpu_perf.py
+!laptop_perf.py
+!serve.py
+!reports.py
+!archive_store.py
+!dashboard.html
+!verify_dashboard.py
+!verify_new_dashboard.py
+!Dockerfile
+!docker-compose.yml
+!.dockerignore
+!tests/**
+!.github/**
+!docs/**
+
+# 3) Hard-deny the private set — LAST, so these always win.
+LIST LURKER/
+Standalone/
+recon_output/
+negotiator_out/
+logs/
+job_data/
+scratch/
+backup_csv_*/
+.claude/
+.agents/
+__pycache__/
+.venv/
+venv/
+env/
+negotiator*.py
+ledger.py
+pricing.py
+gate_ai.py
+targeting.py
+poll_response.py
+skoop_email.py
+corrections.py
+recon_*.py
+Negotiation_strategy.md
+negotiator_config.json
+config.json
+fb_state.json
+skroutz_state.json
+email_config.json
+negotiations.json
+pending_offers.json
+message_corrections.json
+data_reports.json
+*.zip
+*.docx
+*.bak
+*.bak_*
+*.log
+*.csv
+msg_*.txt
+job_scout_*.html
+retail_debug.html
+
+# 4) Single deliberate exception to the `*.csv` deny above (last match wins):
+#    sanitized sample data so a fresh clone has something to show.
+!sample_data/
+!sample_data/*.csv

@@ -1,0 +1,882 @@
+timestamp,name,price,url
+2026-07-05 02:38:07,Asus Prime Z890-P WIFI rev. 1.0,242.46,https://www.skroutz.gr/s/57229442/Asus-Prime-Z890-P-WIFI-rev-1-0-Motherboard-ATX-me-Intel-1851-Socket-PLYASU1850010.html
+2026-07-05 02:38:07,Asus TUF GAMING B850-PLUS WIFI,186.0,https://www.skroutz.gr/s/58241013/Asus-TUF-GAMING-B850-PLUS-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-90MB1J30-M0EAY0.html
+2026-07-05 02:38:07,MSI MAG Z890 Carbon WiFi,490.63,https://www.skroutz.gr/s/57235188/MSI-MAG-Z890-Carbon-WiFi-Motherboard-ATX-me-Intel-1851-Socket-7E17-001R.html
+2026-07-05 02:38:07,Asus TUF Gaming B650-PLUS WIFI,172.9,https://www.skroutz.gr/s/38677845/Asus-TUF-Gaming-B650-PLUS-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-90MB1BZ0-M0EAY0.html
+2026-07-05 02:38:07,MSI MAG B760 TOMAHAWK WIFI,163.28,https://www.skroutz.gr/s/40288995/MSI-MAG-B760-TOMAHAWK-WIFI-Motherboard-ATX-me-Intel-1700-Socket-7D96-003R.html
+2026-07-05 02:38:07,MSI B850 GAMING PLUS WIFI,174.9,https://www.skroutz.gr/s/58252782/MSI-B850-GAMING-PLUS-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-7E56-001R.html
+2026-07-05 02:38:07,Asus TUF GAMING B850M-PLUS WIFI,220.41,https://www.skroutz.gr/s/58240931/Asus-TUF-GAMING-B850M-PLUS-WIFI-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90MB1IY0-M0EAY0.html
+2026-07-05 02:38:07,MSI MAG X870E Tomahawk WIFI,285.85,https://www.skroutz.gr/s/58316842/MSI-MAG-X870E-Tomahawk-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-7E59-004R.html
+2026-07-05 02:38:07,Asus Rog Strix B650-A Gaming WIFI,211.0,https://www.skroutz.gr/s/38676939/Asus-Rog-Strix-B650-A-Gaming-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-90MB1BP0-M0EAY0.html
+2026-07-05 02:38:07,MSI MPG X870E CARBON WIFI,480.9,https://www.skroutz.gr/s/56609009/MSI-MPG-X870E-CARBON-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-7E49-001R.html
+2026-07-05 02:38:07,MSI MAG Z790 Tomahawk WIFI,213.58,https://www.skroutz.gr/s/39908377/MSI-MAG-Z790-Tomahawk-WIFI-Motherboard-ATX-me-Intel-1700-Socket-7D91-009R.html
+2026-07-05 02:38:07,MSI MPG X870E Gaming Plus WIFI,229.28,https://www.skroutz.gr/s/60713894/msi-mpg-x870e-gaming-plus-wifi-motherboard-atx-me-amd-am5-socket-7e70-001r.html
+2026-07-05 02:38:07,Asus TUF Gaming B450-PLUS II,108.7,https://www.skroutz.gr/s/25585595/Asus-TUF-Gaming-B450-PLUS-II-Motherboard-ATX-me-AMD-AM4-Socket-90MB1650-M0EAY0.html
+2026-07-05 02:38:07,Gigabyte Aorus Elite Wifi 7 Z890,254.83,https://www.skroutz.gr/s/57225956/Gigabyte-Aorus-Elite-Wifi-7-Z890-Motherboard-ATX-me-Intel-1851-Socket.html
+2026-07-05 02:38:07,Gigabyte B850M Aorus Elite WIFI6E,215.38,https://www.skroutz.gr/s/60813434/gigabyte-b850m-aorus-elite-wifi6e-motherboard-micro-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,Asus TUF Gaming B450-PLUS II,112.66,https://www.skroutz.gr/s/25585595/Asus-TUF-Gaming-B450-PLUS-II-Motherboard-ATX-me-AMD-AM4-Socket-90MB1650-M0EAY0.html
+2026-07-05 02:38:07,Gigabyte B550 Eagle,97.96,https://www.skroutz.gr/s/59317870/Gigabyte-B550-Eagle-Motherboard-ATX-me-AMD-AM4-Socket.html
+2026-07-05 02:38:07,Asus TUF Gaming B550-Plus,116.48,https://www.skroutz.gr/s/23773257/Asus-TUF-Gaming-B550-Plus-Motherboard-ATX-me-AMD-AM4-Socket-90MB14G0-M0EAY0.html
+2026-07-05 02:38:07,MSI MAG B760 TOMAHAWK WIFI,163.2,https://www.skroutz.gr/s/40288995/MSI-MAG-B760-TOMAHAWK-WIFI-Motherboard-ATX-me-Intel-1700-Socket-7D96-003R.html
+2026-07-05 02:38:07,MSI B840 GAMING PLUS WIFI,128.65,https://www.skroutz.gr/s/58252213/MSI-B840-GAMING-PLUS-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-7E57-002R.html
+2026-07-05 02:38:07,Asus PRIME X870-P WIFI,258.47,https://www.skroutz.gr/s/56611447/Asus-PRIME-X870-P-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-90MB1IS0-M0EAY0.html
+2026-07-05 02:38:07,Asus TUF GAMING B850M-PLUS WIFI,215.17,https://www.skroutz.gr/s/58240931/Asus-TUF-GAMING-B850M-PLUS-WIFI-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90MB1IY0-M0EAY0.html
+2026-07-05 02:38:07,MSI MAG Z890 Tomahawk WiFi,285.9,https://www.skroutz.gr/s/57233104/MSI-MAG-Z890-Tomahawk-WiFi-Motherboard-ATX-me-Intel-1851-Socket-7E32-001R.html
+2026-07-05 02:38:07,Asus TUF Gaming B760-Plus WIFI,144.86,https://www.skroutz.gr/s/40876283/Asus-TUF-Gaming-B760-Plus-WIFI-Motherboard-ATX-me-Intel-1700-Socket-90MB1ER0-M0EAY0.html
+2026-07-05 02:38:07,Asus PRIME X870-P,227.64,https://www.skroutz.gr/s/56611897/Asus-PRIME-X870-P-Motherboard-ATX-me-AMD-AM5-Socket-90MB1IT0-M0EAY0.html
+2026-07-05 02:38:07,Asus Prime B650M-A WIFI II,156.95,https://www.skroutz.gr/s/40420616/Asus-Prime-B650M-A-WIFI-II-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90MB1EG0-M0EAY0.html
+2026-07-05 02:38:07,Asus ROG Strix Z890-E Gaming WIFI,438.09,https://www.skroutz.gr/s/57240920/Asus-ROG-Strix-Z890-E-Gaming-WIFI-Motherboard-ATX-me-Intel-1851-Socket-90MB1IM0-M0EAY0.html
+2026-07-05 02:38:07,MSI X870 GAMING PLUS WIFI,341.45,https://www.skroutz.gr/s/57777336/MSI-X870-GAMING-PLUS-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-7E47-004R.html
+2026-07-05 02:38:07,Gigabyte B850M Aorus Elite WIFI6E,215.38,https://www.skroutz.gr/s/60813434/gigabyte-b850m-aorus-elite-wifi6e-motherboard-micro-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,ASRock B850 PRO RS WiFi,166.43,https://www.skroutz.gr/s/58388472/ASRock-B850-PRO-RS-WiFi-Motherboard-ATX-me-AMD-AM5-Socket-90-MXBQL-A0UAYZ.html
+2026-07-05 02:38:07,Gigabyte B850M D3HP,120.54,https://www.skroutz.gr/s/58239768/Gigabyte-B850M-D3HP-Motherboard-Micro-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,ASRock Z790 Steel Legend Wifi,275.7,https://www.skroutz.gr/s/39049891/ASRock-Z790-Steel-Legend-Wifi-Motherboard-ATX-me-Intel-1700-Socket-90-MXBKD0-A0UAYZ.html
+2026-07-05 02:38:07,Gigabyte B550 Gaming X V2 rev. 1.3,130.0,https://www.skroutz.gr/s/57420301/Gigabyte-B550-Gaming-X-V2-rev-1-3-Motherboard-ATX-me-AMD-AM4-Socket.html
+2026-07-05 02:38:07,Asus ROG Strix Z890-A Gaming WIFI,356.63,https://www.skroutz.gr/s/57244831/Asus-ROG-Strix-Z890-A-Gaming-WIFI-Motherboard-ATX-me-Intel-1851-Socket-90MB1I90-M0EAY0.html
+2026-07-05 02:38:07,Gigabyte X870 Eagle WIFI7,218.96,https://www.skroutz.gr/s/56827904/Gigabyte-X870-Eagle-WIFI7-Motherboard-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,Gigabyte B850 Eagle WIFI6E ICE,177.05,https://www.skroutz.gr/s/62044601/gigabyte-b850-eagle-wifi6e-ice-motherboard-micro-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,Gigabyte B650E Aorus Stealth Ice Wi-Fi,283.74,https://www.skroutz.gr/s/55366349/Gigabyte-B650E-Aorus-Stealth-Ice-Wi-Fi-Motherboard-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,MSI Pro B650-A WIFI,265.98,https://www.skroutz.gr/s/60468614/msi-pro-b650-a-wifi-motherboard-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,Asus ROG Maximus Z890 Hero Wi-Fi,539.18,https://www.skroutz.gr/s/57242154/Asus-ROG-Maximus-Z890-Hero-Wi-Fi-Motherboard-ATX-me-Intel-1851-Socket-90MB1ID0-M0EAY0.html
+2026-07-05 02:38:07,ASRock X870 Pro-A WIFI,214.76,https://www.skroutz.gr/s/61681748/asrock-x870-pro-a-wifi-motherboard-atx-me-amd-am5-socket-90-mxbt6-a0uayz.html
+2026-07-05 02:38:07,Gigabyte Z890 Eagle WIFI7,246.42,https://www.skroutz.gr/s/57189806/Gigabyte-Z890-Eagle-WIFI7-Motherboard-ATX-me-Intel-1851-Socket.html
+2026-07-05 02:38:07,Asus Rog Strix B650-A Gaming WIFI,219.11,https://www.skroutz.gr/s/38676939/Asus-Rog-Strix-B650-A-Gaming-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-90MB1BP0-M0EAY0.html
+2026-07-05 02:38:07,Asus Prime Z890-P WIFI rev. 1.0,235.0,https://www.skroutz.gr/s/57229442/Asus-Prime-Z890-P-WIFI-rev-1-0-Motherboard-ATX-me-Intel-1851-Socket-PLYASU1850010.html
+2026-07-05 02:38:07,Gigabyte Z890 Aorus Pro Ice Wi-Fi,341.51,https://www.skroutz.gr/s/57227581/Gigabyte-Z890-Aorus-Pro-Ice-Wi-Fi-Motherboard-ATX-me-Intel-1851-Socket.html
+2026-07-05 02:38:07,Asus PRIME B850-E,143.38,https://www.skroutz.gr/s/60123559/asus-prime-b850-e-motherboard-micro-atx-me-amd-am5-socket-90mb1lv0-m0eay0.html
+2026-07-05 02:38:07,Gigabyte MZ33-AR0 SoC,1059.93,https://www.skroutz.gr/s/58328735/Gigabyte-MZ33-AR0-SoC-Motherboard-Extended-ATX-me-AMD-SP5-Socket.html
+2026-07-05 02:38:07,MSI Pro B860M-A WIFI,172.17,https://www.skroutz.gr/s/58301130/MSI-Pro-B860M-A-WIFI-Motherboard-Micro-ATX-me-Intel-1851-Socket.html
+2026-07-05 02:38:07,MSI MAG Z890 Carbon WiFi,490.56,https://www.skroutz.gr/s/57235188/MSI-MAG-Z890-Carbon-WiFi-Motherboard-ATX-me-Intel-1851-Socket-7E17-001R.html
+2026-07-05 02:38:07,Asus TUF Gaming B760M-PLUS II,161.3,https://www.skroutz.gr/s/50392026/Asus-TUF-Gaming-B760M-PLUS-II-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB1HD0-M0EAY0.html
+2026-07-05 02:38:07,Asus TUF Gaming B760-Plus WIFI,143.79,https://www.skroutz.gr/s/40876283/Asus-TUF-Gaming-B760-Plus-WIFI-Motherboard-ATX-me-Intel-1700-Socket-90MB1ER0-M0EAY0.html
+2026-07-05 02:38:07,MSI B850 Gaming Pro WIFI6E,173.86,https://www.skroutz.gr/s/68220266/msi-b850-gaming-pro-wifi6e-motherboard-atx-me-amd-am5-socket-7e89-001r.html
+2026-07-05 02:38:07,Asus H110I-Plus,109.66,https://www.skroutz.gr/s/8050608/Asus-H110I-Plus-Motherboard-Mini-ITX-me-Intel-1151-Socket-90MB0PX0-M0EAY0.html
+2026-07-05 02:38:07,Asus Prime B450M-A II,110.85,https://www.skroutz.gr/s/25272107/Asus-Prime-B450M-A-II-Motherboard-Micro-ATX-me-AMD-AM4-Socket-90MB15Z0-M0EAY0.html
+2026-07-05 02:38:07,Asus Rog Crosshair 2006 X870E Wi-Fi,875.4,https://www.skroutz.gr/s/68220132/asus-rog-crosshair-2006-x870e-wi-fi-motherboard-atx-me-amd-am5-socket-90mb1pp0-m0eay0.html
+2026-07-05 02:38:07,ASRock B850M Pro-A WiFi,119.99,https://www.skroutz.gr/s/58460176/ASRock-B850M-Pro-A-WiFi-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90-MXBR90-A0UAYZ.html
+2026-07-05 02:38:07,Gigabyte B650 Eagle AX Wi-Fi,134.87,https://www.skroutz.gr/s/50381574/Gigabyte-B650-Eagle-AX-Wi-Fi-Motherboard-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,Asus ROG Strix Z890-E Gaming WIFI,438.09,https://www.skroutz.gr/s/57240920/Asus-ROG-Strix-Z890-E-Gaming-WIFI-Motherboard-ATX-me-Intel-1851-Socket-90MB1IM0-M0EAY0.html
+2026-07-05 02:38:07,MSI B550M Pro-VDH WIFI,102.77,https://www.skroutz.gr/s/24122164/MSI-B550M-Pro-VDH-WIFI-Motherboard-Micro-ATX-me-AMD-AM4-Socket-7C95-001R.html
+2026-07-05 02:38:07,Gigabyte B850M D3HP,120.54,https://www.skroutz.gr/s/58239768/Gigabyte-B850M-D3HP-Motherboard-Micro-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,Gigabyte B850 AORUS ELITE WIFI7,222.4,https://www.skroutz.gr/s/58239538/Gigabyte-B850-AORUS-ELITE-WIFI7-Motherboard-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,ASRock Z790 Steel Legend Wifi,275.7,https://www.skroutz.gr/s/39049891/ASRock-Z790-Steel-Legend-Wifi-Motherboard-ATX-me-Intel-1700-Socket-90-MXBKD0-A0UAYZ.html
+2026-07-05 02:38:07,MSI Mag B650 Tomahawk WIFI,223.07,https://www.skroutz.gr/s/38675869/MSI-Mag-B650-Tomahawk-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-7D75-001R.html
+2026-07-05 02:38:07,Gigabyte B850 Eagle WIFI6E ICE,177.05,https://www.skroutz.gr/s/62044601/gigabyte-b850-eagle-wifi6e-ice-motherboard-micro-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,Gigabyte B850 GAMING WIFI6,170.9,https://www.skroutz.gr/s/58239640/Gigabyte-B850-GAMING-WIFI6-Motherboard-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,Gigabyte B850 AORUS ELITE WIFI7 ICE,226.8,https://www.skroutz.gr/s/58239504/Gigabyte-B850-AORUS-ELITE-WIFI7-ICE-Motherboard-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,Gigabyte B650 GAMING X AX V2 rev. 1.x,152.25,https://www.skroutz.gr/s/50383777/Gigabyte-B650-GAMING-X-AX-V2-rev-1-x-Motherboard-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,Gigabyte A520M K V2 rev. 1.0,52.86,https://www.skroutz.gr/s/40937876/Gigabyte-A520M-K-V2-rev-1-0-Motherboard-Micro-ATX-me-AMD-AM4-Socket.html
+2026-07-05 02:38:07,MSI MAG X870 TOMAHAWK WIFI,286.69,https://www.skroutz.gr/s/56610778/MSI-MAG-X870-TOMAHAWK-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-7E51-001R.html
+2026-07-05 02:38:07,Gigabyte X870 Gaming WIFI6,210.47,https://www.skroutz.gr/s/57190167/Gigabyte-X870-Gaming-WIFI6-Motherboard-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,Asus Rog Strix B550-F Gaming WIFI II,155.12,https://www.skroutz.gr/s/32823297/Asus-Rog-Strix-B550-F-Gaming-WIFI-II-Motherboard-ATX-me-AMD-AM4-Socket-90MB19V0-M0EAY0.html
+2026-07-05 02:38:07,Gigabyte X870E AORUS ELITE WIFI7,303.0,https://www.skroutz.gr/s/56608769/Gigabyte-X870E-AORUS-ELITE-WIFI7-Motherboard-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,Gigabyte B550M Aorus Elite,105.2,https://www.skroutz.gr/s/24222314/Gigabyte-B550M-Aorus-Elite-Motherboard-Micro-ATX-me-AMD-AM4-Socket.html
+2026-07-05 02:38:07,MSI MPG B550 Gaming Plus,160.99,https://www.skroutz.gr/s/24215370/MSI-MPG-B550-Gaming-Plus-Motherboard-ATX-me-AMD-AM4-Socket-7C56-003R.html
+2026-07-05 02:38:07,MSI B850 Gaming Plus Wifi6E,145.45,https://www.skroutz.gr/s/61630832/msi-b850-gaming-plus-wifi6e-motherboard-atx-me-amd-am5-socket-7e80-001r.html
+2026-07-05 02:38:07,Asus ROG STRIX B850-F GAMING WIFI,265.9,https://www.skroutz.gr/s/58240219/Asus-ROG-STRIX-B850-F-GAMING-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-90MB1J70-M0EAY0.html
+2026-07-05 02:38:07,Asus ROG STRIX B850-A GAMING WIFI,256.0,https://www.skroutz.gr/s/58240291/Asus-ROG-STRIX-B850-A-GAMING-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-90MB1J50-M0EAY0.html
+2026-07-05 02:38:07,Gigabyte B650E Aorus Stealth Ice Wi-Fi,283.05,https://www.skroutz.gr/s/55366349/Gigabyte-B650E-Aorus-Stealth-Ice-Wi-Fi-Motherboard-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,ASRock B650 Steel Legend WiFi,169.83,https://www.skroutz.gr/s/51613785/ASRock-B650-Steel-Legend-WiFi-Motherboard-ATX-me-AMD-AM5-Socket-90-MXBN90-A0UAYZ.html
+2026-07-05 02:38:07,MSI MAG B850 Tomahawk Max WIFI,251.88,https://www.skroutz.gr/s/58316812/MSI-MAG-B850-Tomahawk-Max-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-7E62-002R.html
+2026-07-05 02:38:07,ASRock B650M Pro RS,124.23,https://www.skroutz.gr/s/42754977/ASRock-B650M-Pro-RS-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90-MXBLP0-A0UAYZ.html
+2026-07-05 02:38:07,MSI B650M Gaming Plus WIFI,179.66,https://www.skroutz.gr/s/50783229/MSI-B650M-Gaming-Plus-WIFI-Motherboard-Micro-ATX-me-AMD-AM5-Socket-7E24-001R.html
+2026-07-05 02:38:07,MSI Pro B650M-P,120.18,https://www.skroutz.gr/s/45368108/MSI-Pro-B650M-P-Motherboard-Micro-ATX-me-AMD-AM5-Socket-7E27-001R.html
+2026-07-05 02:38:07,Gigabyte B650 Aorus Elite AX ICE Wi-Fi,186.95,https://www.skroutz.gr/s/48100426/Gigabyte-B650-Aorus-Elite-AX-ICE-Wi-Fi-Motherboard-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,Asus ROG CROSSHAIR X870E HERO Wi-Fi,659.0,https://www.skroutz.gr/s/56609799/Asus-ROG-CROSSHAIR-X870E-HERO-Wi-Fi-Motherboard-ATX-me-AMD-AM5-Socket-90MB1IE0-M0EAY0.html
+2026-07-05 02:38:07,Gigabyte B550 Eagle,104.87,https://www.skroutz.gr/s/59317870/Gigabyte-B550-Eagle-Motherboard-ATX-me-AMD-AM4-Socket.html
+2026-07-05 02:38:07,Gigabyte B850M Aorus Elite WIFI6E Ice,193.88,https://www.skroutz.gr/s/58253633/Gigabyte-B850M-Aorus-Elite-WIFI6E-Ice-Motherboard-Micro-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,Asus ROG Strix B550-A Gaming,128.2,https://www.skroutz.gr/s/25774610/Asus-ROG-Strix-B550-A-Gaming-Motherboard-ATX-me-AMD-AM4-Socket-90MB15J0-M0EAY0.html
+2026-07-05 02:38:07,ASRock B650M-HDV/M.2,97.9,https://www.skroutz.gr/s/41010142/ASRock-B650M-HDV-M-2-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90-MXBLA0-A0UAYZ.html
+2026-07-05 02:38:07,ASRock A520M-HVS,45.96,https://www.skroutz.gr/s/24638270/ASRock-A520M-HVS-Motherboard-Micro-ATX-me-AMD-AM4-Socket-90-MXBE60-A0UAYZ.html
+2026-07-05 02:38:07,Asus ROG Strix B650E-F Gaming Wi-Fi,244.51,https://www.skroutz.gr/s/39030342/Asus-ROG-Strix-B650E-F-Gaming-Wi-Fi-Motherboard-ATX-me-AMD-AM5-Socket-90MB1BQ0-M0EAY0.html
+2026-07-05 02:38:07,Gigabyte X870 Aorus Elite WIFI7 ICE,271.8,https://www.skroutz.gr/s/56204499/Gigabyte-X870-Aorus-Elite-WIFI7-ICE-Motherboard-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,Asus TUF Gaming B550-PLUS WIFI II,128.95,https://www.skroutz.gr/s/33245950/Asus-TUF-Gaming-B550-PLUS-WIFI-II-Motherboard-ATX-me-AMD-AM4-Socket-90MB19U0-M0EAY0.html
+2026-07-05 02:38:07,MSI B850M Gaming Plus WIFI6E,136.0,https://www.skroutz.gr/s/61630821/msi-b850m-gaming-plus-wifi6e-motherboard-micro-atx-me-amd-am5-socket-7e81-001r.html
+2026-07-05 02:38:07,MSI B760 Gaming Plus WiFi,132.6,https://www.skroutz.gr/s/58078390/MSI-B760-Gaming-Plus-WiFi-Motherboard-ATX-me-Intel-1700-Socket-911-7D98-042.html
+2026-07-05 02:38:07,MSI B550M Pro-VDH,92.28,https://www.skroutz.gr/s/26231445/MSI-B550M-Pro-VDH-Motherboard-Micro-ATX-me-AMD-AM4-Socket-7C95-017R.html
+2026-07-05 02:38:07,Gigabyte X870 Gaming X WIFI7,254.25,https://www.skroutz.gr/s/56902507/Gigabyte-X870-Gaming-X-WIFI7-Motherboard-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,ASRock X870 Pro-A WIFI,209.92,https://www.skroutz.gr/s/61681748/asrock-x870-pro-a-wifi-motherboard-atx-me-amd-am5-socket-90-mxbt6-a0uayz.html
+2026-07-05 02:38:07,Asus TUF GAMING B650-E WIFI,163.8,https://www.skroutz.gr/s/50386633/Asus-TUF-GAMING-B650-E-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-90MB1GT0-M0EAY0.html
+2026-07-05 02:38:07,Gigabyte B850 EAGLE WIFI6E,181.67,https://www.skroutz.gr/s/58239062/Gigabyte-B850-EAGLE-WIFI6E-Motherboard-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,ASRock B850 Steel Legend WiFi,193.5,https://www.skroutz.gr/s/58241453/ASRock-B850-Steel-Legend-WiFi-Motherboard-ATX-me-AMD-AM5-Socket-90-MXBQS0-A0UAYZ.html
+2026-07-05 02:38:07,Asus ROG STRIX X870E-E GAMING WIFI,519.9,https://www.skroutz.gr/s/56606996/Asus-ROG-STRIX-X870E-E-GAMING-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-90MB1IB0-M0EAY0.html
+2026-07-05 02:38:07,ASRock B550M-HDV,67.6,https://www.skroutz.gr/s/23977100/ASRock-B550M-HDV-Motherboard-Micro-ATX-me-AMD-AM4-Socket-90-MXBDJ0-A0UAYZ.html
+2026-07-05 02:38:07,Asus TUF Gaming B550M-PLUS WIFI II,152.68,https://www.skroutz.gr/s/33233059/Asus-TUF-Gaming-B550M-PLUS-WIFI-II-Motherboard-Micro-ATX-me-AMD-AM4-Socket-90MB19Y0-M0EAY0.html
+2026-07-05 02:38:07,Asus ROG STRIX X870-A GAMING WIFI,368.83,https://www.skroutz.gr/s/56611243/Asus-ROG-STRIX-X870-A-GAMING-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-90MB1IF0-M0EAY0.html
+2026-07-05 02:38:07,Gigabyte Z890 Eagle WIFI7,252.18,https://www.skroutz.gr/s/57189806/Gigabyte-Z890-Eagle-WIFI7-Motherboard-ATX-me-Intel-1851-Socket.html
+2026-07-05 02:38:07,Gigabyte B850 GAMING X WIFI6E,198.8,https://www.skroutz.gr/s/58239302/Gigabyte-B850-GAMING-X-WIFI6E-Motherboard-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,Asus Prime B650M-K,105.73,https://www.skroutz.gr/s/43135480/Asus-Prime-B650M-K-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90MB1F60-M0EAY0.html
+2026-07-05 02:38:07,Asus TUF GAMING X870-PLUS WIFI,274.07,https://www.skroutz.gr/s/56611536/Asus-TUF-GAMING-X870-PLUS-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-90MB1IU0-M0EAY0.html
+2026-07-05 02:38:07,Gigabyte H610M H V3 DDR4 rev. 1.0,64.23,https://www.skroutz.gr/s/50383455/Gigabyte-H610M-H-V3-DDR4-rev-1-0-Motherboard-Micro-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,ASRock B650I Lightning WiFi,176.0,https://www.skroutz.gr/s/46774997/ASRock-B650I-Lightning-WiFi-Motherboard-Mini-ITX-me-AMD-AM5-Socket-90-MXBMP0-A0UAYZ.html
+2026-07-05 02:38:07,ASRock X870 Pro RS WiFi,206.0,https://www.skroutz.gr/s/56827345/ASRock-X870-Pro-RS-WiFi-Motherboard-ATX-me-AMD-AM5-Socket-90-MXBQ00-A0UAYZ.html
+2026-07-05 02:38:07,Asus TUF Gaming B650M-Plus WiFi,166.4,https://www.skroutz.gr/s/38852530/Asus-TUF-Gaming-B650M-Plus-WiFi-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90MB1BF0-M0EAY0.html
+2026-07-05 02:38:07,ASRock B850 PRO RS WiFi,177.85,https://www.skroutz.gr/s/58388472/ASRock-B850-PRO-RS-WiFi-Motherboard-ATX-me-AMD-AM5-Socket-90-MXBQL-A0UAYZ.html
+2026-07-05 02:38:07,Gigabyte B850M GAMING X WIFI6E,176.84,https://www.skroutz.gr/s/58253281/Gigabyte-B850M-GAMING-X-WIFI6E-Motherboard-Micro-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,Asus PRIME B850-E,157.03,https://www.skroutz.gr/s/60123559/asus-prime-b850-e-motherboard-micro-atx-me-amd-am5-socket-90mb1lv0-m0eay0.html
+2026-07-05 02:38:07,ASRock B650M-H/M.2+,83.84,https://www.skroutz.gr/s/46474857/ASRock-B650M-H-M-2-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90-MXBMS0-A0UAYZ.html
+2026-07-05 02:38:07,MSI B850 Gaming Pro WIFI6E,173.86,https://www.skroutz.gr/s/68220266/msi-b850-gaming-pro-wifi6e-motherboard-atx-me-amd-am5-socket-7e89-001r.html
+2026-07-05 02:38:07,Gigabyte B550M DS3H AC R2 Wi-Fi,100.8,https://www.skroutz.gr/s/62540038/gigabyte-b550m-ds3h-ac-r2-wi-fi-motherboard-micro-atx-me-amd-am4-socket.html
+2026-07-05 02:38:07,MSI MAG X870 TOMAHAWK WIFI,286.69,https://www.skroutz.gr/s/56610778/MSI-MAG-X870-TOMAHAWK-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-7E51-001R.html
+2026-07-05 02:38:07,ASRock B850 PRO RS,171.23,https://www.skroutz.gr/s/58352123/ASRock-B850-PRO-RS-Motherboard-ATX-me-AMD-AM5-Socket-90-MXBQK0-A0UAYZ.html
+2026-07-05 02:38:07,MSI Z790 Gaming Plus Wi-Fi,186.71,https://www.skroutz.gr/s/46408986/MSI-Z790-Gaming-Plus-Wi-Fi-Motherboard-ATX-me-Intel-1700-Socket-7E06-026R-801-7E06-023.html
+2026-07-05 02:38:07,Gigabyte A620M DS3H rev. 1.0,87.84,https://www.skroutz.gr/s/44730781/Gigabyte-A620M-DS3H-rev-1-0-Motherboard-Micro-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,ASRock B850 Pro-A WiFi,158.13,https://www.skroutz.gr/s/58417673/ASRock-B850-Pro-A-WiFi-Motherboard-ATX-me-AMD-AM5-Socket-90-MXBQN-A0UAYZ.html
+2026-07-05 02:38:07,Gigabyte B550 Eagle WIFI6,120.74,https://www.skroutz.gr/s/58483343/Gigabyte-B550-Eagle-WIFI6-Motherboard-ATX-me-AMD-AM4-Socket.html
+2026-07-05 02:38:07,MSI MPG B850 EDGE TI WIFI,231.97,https://www.skroutz.gr/s/58435165/MSI-MPG-B850-EDGE-TI-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-7E62-001R.html
+2026-07-05 02:38:07,MSI Pro B760-P WIFI DDR4,133.38,https://www.skroutz.gr/s/40238441/MSI-Pro-B760-P-WIFI-DDR4-Motherboard-ATX-me-Intel-1700-Socket-7D98-001R.html
+2026-07-05 02:38:07,MSI Pro B760M-P DDR4,92.89,https://www.skroutz.gr/s/40238383/MSI-Pro-B760M-P-DDR4-Motherboard-Micro-ATX-me-Intel-1700-Socket-7E02-001R.html
+2026-07-05 02:38:07,ASRock H610M-HVS/M.2 R2.0,56.95,https://www.skroutz.gr/s/37788061/ASRock-H610M-HVS-M-2-R2-0-Motherboard-Micro-ATX-me-Intel-1700-Socket-90-MXBJJ0-A0UAYZ.html
+2026-07-05 02:38:07,Asus ROG STRIX B850-E GAMING WIFI,357.7,https://www.skroutz.gr/s/58240007/Asus-ROG-STRIX-B850-E-GAMING-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-90MB1J60-M0EAY0.html
+2026-07-05 02:38:07,Gigabyte B550 Gaming X V2 rev. 1.0,109.68,https://www.skroutz.gr/s/25850914/Gigabyte-B550-Gaming-X-V2-rev-1-0-Motherboard-ATX-me-AMD-AM4-Socket.html
+2026-07-05 02:38:07,Asus ROG STRIX B850-A GAMING WIFI,243.41,https://www.skroutz.gr/s/58240291/Asus-ROG-STRIX-B850-A-GAMING-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-90MB1J50-M0EAY0.html
+2026-07-05 02:38:07,MSI MPG X870E Edge TI WIFI,317.34,https://www.skroutz.gr/s/58251474/MSI-MPG-X870E-Edge-TI-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-7E59-002R.html
+2026-07-05 02:38:07,Gigabyte Gaming X WIFI6 B550,109.23,https://www.skroutz.gr/s/59895036/gigabyte-gaming-x-wifi6-b550-motherboard-micro-atx-me-amd-am4-socket.html
+2026-07-05 02:38:07,Gigabyte X870E Aorus Elite X3D Wi-Fi,375.85,https://www.skroutz.gr/s/63453642/gigabyte-x870e-aorus-elite-x3d-wi-fi-motherboard-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,Gigabyte X870E AORUS PRO X3D ICE,409.13,https://www.skroutz.gr/s/63775013/gigabyte-x870e-aorus-pro-x3d-ice-motherboard-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,Gigabyte A520M DS3H AC rev. 1.x Wi-Fi,80.15,https://www.skroutz.gr/s/59084222/Gigabyte-A520M-DS3H-AC-rev-1-x-Wi-Fi-Motherboard-Micro-ATX-me-AMD-AM4-Socket.html
+2026-07-05 02:38:07,Asus ProArt X870E-CREATOR WIFI,516.9,https://www.skroutz.gr/s/56609704/Asus-ProArt-X870E-CREATOR-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-90MB1IG0-M0EAY0.html
+2026-07-05 02:38:07,Gigabyte B860 Aorus Elite WIFI7 Ice,245.02,https://www.skroutz.gr/s/58300523/Gigabyte-B860-Aorus-Elite-WIFI7-Ice-Motherboard-ATX-me-Intel-1851-Socket.html
+2026-07-05 02:38:07,MSI MAG B850 Tomahawk Max WIFI,251.88,https://www.skroutz.gr/s/58316812/MSI-MAG-B850-Tomahawk-Max-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-7E62-002R.html
+2026-07-05 02:38:07,Gigabyte X870 AORUS STEALTH ICE Wi-Fi,346.49,https://www.skroutz.gr/s/62044651/gigabyte-x870-aorus-stealth-ice-wi-fi-motherboard-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,Gigabyte X870E Aorus PRO Wi-Fi,339.9,https://www.skroutz.gr/s/56902821/Gigabyte-X870E-Aorus-PRO-Wi-Fi-Motherboard-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,ASRock B850M-X WiFi rev. 2.0,115.38,https://www.skroutz.gr/s/60254939/asrock-b850m-x-wifi-rev-2-0-motherboard-micro-atx-me-amd-am5-socket-90-mxbsh0-a0uayz.html
+2026-07-05 02:38:07,Asus ROG STRIX B760-I GAMING WIFI,202.9,https://www.skroutz.gr/s/40251910/Asus-ROG-STRIX-B760-I-GAMING-WIFI-Motherboard-Mini-ITX-me-Intel-1700-Socket-90MB1D90-M0EAY0.html
+2026-07-05 02:38:07,Asus Rog Strix B760-F Gaming WIFI,230.9,https://www.skroutz.gr/s/40232413/Asus-Rog-Strix-B760-F-Gaming-WIFI-Motherboard-ATX-me-Intel-1700-Socket-90MB1CT0-M0EAY0.html
+2026-07-05 02:38:07,ASRock A620AM Pro RS WiFi,98.93,https://www.skroutz.gr/s/61815784/asrock-a620am-pro-rs-wifi-motherboard-micro-atx-me-amd-am5-socket-90-mxbsw0-a0uayz.html
+2026-07-05 02:38:07,Gigabyte X870E Aorus PRO ICE Wi-Fi,319.9,https://www.skroutz.gr/s/56932350/Gigabyte-X870E-Aorus-PRO-ICE-Wi-Fi-Motherboard-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,Gigabyte Z890 Gaming X WIFI 7,249.0,https://www.skroutz.gr/s/57226868/Gigabyte-Z890-Gaming-X-WIFI-7-Motherboard-ATX-me-Intel-1851-Socket.html
+2026-07-05 02:38:07,ASRock B850M-X rev. 2.0,107.54,https://www.skroutz.gr/s/60254956/asrock-b850m-x-rev-2-0-motherboard-micro-atx-me-amd-am5-socket-90-mxbsg0-a0uayz.html
+2026-07-05 02:38:07,Gigabyte B550M Aorus Elite AX Wi-Fi,124.87,https://www.skroutz.gr/s/57050357/Gigabyte-B550M-Aorus-Elite-AX-Wi-Fi-Motherboard-Micro-ATX-me-AMD-AM4-Socket.html
+2026-07-05 02:38:07,MSI B550-A Pro,114.1,https://www.skroutz.gr/s/24068592/MSI-B550-A-Pro-Motherboard-ATX-me-AMD-AM4-Socket-7C56-002R.html
+2026-07-05 02:38:07,MSI MAG B850M Mortar Wifi,211.56,https://www.skroutz.gr/s/60367609/msi-mag-b850m-mortar-wifi-motherboard-micro-atx-me-amd-am5-socket-7e61-001r.html
+2026-07-05 02:38:07,MSI B760 Gaming Plus Wifi DDR4,140.33,https://www.skroutz.gr/s/55629220/MSI-B760-Gaming-Plus-Wifi-DDR4-Motherboard-ATX-me-Intel-1700-Socket-7D98-043R.html
+2026-07-05 02:38:07,Gigabyte B850M Aorus Elite WIFI6E Ice,210.77,https://www.skroutz.gr/s/58253633/Gigabyte-B850M-Aorus-Elite-WIFI6E-Ice-Motherboard-Micro-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,Gigabyte B760M DS3H DDR4 rev. 1.0,102.93,https://www.skroutz.gr/s/40237515/Gigabyte-B760M-DS3H-DDR4-rev-1-0-Motherboard-Micro-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,Asus TUF GAMING Z790-PLUS WIFI,244.57,https://www.skroutz.gr/s/40123298/Asus-TUF-GAMING-Z790-PLUS-WIFI-Motherboard-ATX-me-Intel-1700-Socket-90MB1D80-M0EAY0.html
+2026-07-05 02:38:07,Asus ROG Strix B650E-I Gaming Wi-Fi,279.48,https://www.skroutz.gr/s/39949962/Asus-ROG-Strix-B650E-I-Gaming-Wi-Fi-Motherboard-Mini-ITX-me-AMD-AM5-Socket-90MB1BI0-M0EAY0.html
+2026-07-05 02:38:07,ASRock B650 Pro RS,143.7,https://www.skroutz.gr/s/38971814/ASRock-B650-Pro-RS-Motherboard-ATX-me-AMD-AM5-Socket-90-MXBL10-A0UAYZ.html
+2026-07-05 02:38:07,Gigabyte A520M DS3H V2,69.94,https://www.skroutz.gr/s/46624237/Gigabyte-A520M-DS3H-V2-Motherboard-Micro-ATX-me-AMD-AM4-Socket.html
+2026-07-05 02:38:07,Gigabyte B650 GAMING X AX V2 rev. 1.x,158.81,https://www.skroutz.gr/s/50383777/Gigabyte-B650-GAMING-X-AX-V2-rev-1-x-Motherboard-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,ASRock B450 Pro4 R2.0,86.98,https://www.skroutz.gr/s/27976522/ASRock-B450-Pro4-R2-0-Motherboard-ATX-me-AMD-AM4-Socket-90-MXBEE0-A0UAYZ.html
+2026-07-05 02:38:07,Asus ROG Crosshair X870E Extreme Wi-Fi,1128.14,https://www.skroutz.gr/s/61320522/asus-rog-crosshair-x870e-extreme-wi-fi-motherboard-extended-atx-me-amd-am5-socket-90mb1lb0-m0eay0.html
+2026-07-05 02:38:07,Gigabyte Z890 UD WIFI 6E,216.9,https://www.skroutz.gr/s/57227253/Gigabyte-Z890-UD-WIFI-6E-Motherboard-ATX-me-Intel-1851-Socket.html
+2026-07-05 02:38:07,Asus Rog Strix B850-G Gaming WIFI,262.18,https://www.skroutz.gr/s/60583447/asus-rog-strix-b850-g-gaming-wifi-motherboard-micro-atx-me-amd-am5-socket-90mb1m30-m0eay0.html
+2026-07-05 02:38:07,Asus Prime B550M-A,88.03,https://www.skroutz.gr/s/23779808/Asus-Prime-B550M-A-Motherboard-Micro-ATX-me-AMD-AM4-Socket-90MB14I0-M0EAY0.html
+2026-07-05 02:38:07,MSI Pro B760M-P,86.03,https://www.skroutz.gr/s/42873441/MSI-Pro-B760M-P-Motherboard-Micro-ATX-me-Intel-1700-Socket-7E02-009R.html
+2026-07-05 02:38:07,Gigabyte B650 Eagle,115.31,https://www.skroutz.gr/s/54339724/Gigabyte-B650-Eagle-Motherboard-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,Asus Rog Strix Z890-I Gaming Wifi,430.0,https://www.skroutz.gr/s/58078341/Asus-Rog-Strix-Z890-I-Gaming-Wifi-Motherboard-Mini-ITX-me-Intel-1851-Socket-90MB1IC0-M0EAY1.html
+2026-07-05 02:38:07,Gigabyte X870 Aorus Elite WIFI7,283.76,https://www.skroutz.gr/s/56204275/Gigabyte-X870-Aorus-Elite-WIFI7-Motherboard-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,MSI Pro B760M-P DDR4,94.02,https://www.skroutz.gr/s/40238383/MSI-Pro-B760M-P-DDR4-Motherboard-Micro-ATX-me-Intel-1700-Socket-7E02-001R.html
+2026-07-05 02:38:07,Gigabyte Z790 Aorus Elite AX rev. 1.0 Wi-Fi,227.21,https://www.skroutz.gr/s/38676534/Gigabyte-Z790-Aorus-Elite-AX-rev-1-0-Wi-Fi-Motherboard-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,Gigabyte X870 Gaming WIFI6,210.47,https://www.skroutz.gr/s/57190167/Gigabyte-X870-Gaming-WIFI6-Motherboard-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,ASRock B650M PG Riptide,157.46,https://www.skroutz.gr/s/39697301/ASRock-B650M-PG-Riptide-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90-MXBJ90-A0UAYZ.html
+2026-07-05 02:38:07,MSI B550-A Pro,118.28,https://www.skroutz.gr/s/24068592/MSI-B550-A-Pro-Motherboard-ATX-me-AMD-AM4-Socket-7C56-002R.html
+2026-07-05 02:38:07,Asus Prime B660-Plus D4,120.9,https://www.skroutz.gr/s/33571892/Asus-Prime-B660-Plus-D4-Motherboard-ATX-me-Intel-1700-Socket-90MB18X0-M0EAY0.html
+2026-07-05 02:38:07,ASRock B650 Pro RS,157.49,https://www.skroutz.gr/s/38971814/ASRock-B650-Pro-RS-Motherboard-ATX-me-AMD-AM5-Socket-90-MXBL10-A0UAYZ.html
+2026-07-05 02:38:07,ASRock B550 Pro4,92.88,https://www.skroutz.gr/s/23786652/ASRock-B550-Pro4-Motherboard-ATX-me-AMD-AM4-Socket-90-MXBCZ0-A0UAYZ.html
+2026-07-05 02:38:07,ASRock PHANTOM GAMING X870E Nova WiFi,326.9,https://www.skroutz.gr/s/56610314/ASRock-PHANTOM-GAMING-X870E-Nova-WiFi-Motherboard-ATX-me-AMD-AM5-Socket-90-MXBPX0-A0UAYZ.html
+2026-07-05 02:38:07,Asus ROG Strix B550-F Gaming,170.53,https://www.skroutz.gr/s/23726715/Asus-ROG-Strix-B550-F-Gaming-Motherboard-ATX-me-AMD-AM4-Socket-90MB14S0-M0EAY0.html
+2026-07-05 02:38:07,Gigabyte B760M Gaming Plus WIFI DDR4 rev. 1.0,122.99,https://www.skroutz.gr/s/57755861/Gigabyte-B760M-Gaming-Plus-WIFI-DDR4-rev-1-0-Motherboard-Micro-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,MSI MPG X670E Carbon WIFI,583.18,https://www.skroutz.gr/s/38418254/MSI-MPG-X670E-Carbon-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-7D70-001R.html
+2026-07-05 02:38:07,Gigabyte B650M Aorus Elite AX Ice Wi-Fi,189.75,https://www.skroutz.gr/s/48576917/Gigabyte-B650M-Aorus-Elite-AX-Ice-Wi-Fi-Motherboard-Micro-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,ASRock Z790 Pro RS,168.08,https://www.skroutz.gr/s/39049285/ASRock-Z790-Pro-RS-Motherboard-ATX-me-Intel-1700-Socket-90-MXBK40-A0UAYZ.html
+2026-07-05 02:38:07,Gigabyte B760 Gaming X DDR4 GEN5,152.34,https://www.skroutz.gr/s/64714971/gigabyte-b760-gaming-x-ddr4-gen5-motherboard-atx-me-intel-1700-socket.html
+2026-07-05 02:38:07,ASRock B550 Phantom Gaming 4,88.64,https://www.skroutz.gr/s/23762401/ASRock-B550-Phantom-Gaming-4-Motherboard-ATX-me-AMD-AM4-Socket-90-MXBCY0-A0UAYZ.html
+2026-07-05 02:38:07,ASRock B760M PG Sonic Wi-Fi,298.03,https://www.skroutz.gr/s/40261133/ASRock-B760M-PG-Sonic-Wi-Fi-Motherboard-Micro-ATX-me-Intel-1700-Socket-90-MXBKM0-A0UAYZ.html
+2026-07-05 02:38:07,Gigabyte B550M Aorus Elite,112.45,https://www.skroutz.gr/s/24222314/Gigabyte-B550M-Aorus-Elite-Motherboard-Micro-ATX-me-AMD-AM4-Socket.html
+2026-07-05 02:38:07,ASRock B850M Riptide WiFi,161.1,https://www.skroutz.gr/s/59086589/ASRock-B850M-Riptide-WiFi-Motherboard-Micro-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,ASRock B850 LiveMixer WiFi,198.06,https://www.skroutz.gr/s/58417525/ASRock-B850-LiveMixer-WiFi-Motherboard-ATX-me-AMD-AM5-Socket-90-MXBQU0-A0UAYZ.html
+2026-07-05 02:38:07,Asus Prime B760M-A WIFI D4,137.7,https://www.skroutz.gr/s/40232065/Asus-Prime-B760M-A-WIFI-D4-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB1CX0-M0EAY0.html
+2026-07-05 02:38:07,ASRock B850 Pro-A,147.07,https://www.skroutz.gr/s/58417626/ASRock-B850-Pro-A-Motherboard-ATX-me-AMD-AM5-Socket-90-MXBQM-A0UAYZ.html
+2026-07-05 02:38:07,Gigabyte B760M H DDR4 rev. 1.0,84.25,https://www.skroutz.gr/s/42463215/Gigabyte-B760M-H-DDR4-rev-1-0-Motherboard-Micro-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,MSI A520M-A PRO,53.77,https://www.skroutz.gr/s/25101116/MSI-A520M-A-PRO-Motherboard-Micro-ATX-me-AMD-AM4-Socket-7C96-001R.html
+2026-07-05 02:38:07,Gigabyte A520M S2H,60.39,https://www.skroutz.gr/s/24611354/Gigabyte-A520M-S2H-Motherboard-Micro-ATX-me-AMD-AM4-Socket-GA-A520M-S2H.html
+2026-07-05 02:38:07,Asus TUF Gaming B550M-Plus,116.48,https://www.skroutz.gr/s/23726809/Asus-TUF-Gaming-B550M-Plus-Motherboard-Micro-ATX-me-AMD-AM4-Socket-90MB14A0-M0EAY0.html
+2026-07-05 02:38:07,MSI B840M Gaming Plus WIFI6E,108.67,https://www.skroutz.gr/s/61320743/msi-b840m-gaming-plus-wifi6e-motherboard-micro-atx-me-amd-am5-socket-7e77-003r.html
+2026-07-05 02:38:07,Asus Prime B760-Plus D4,123.12,https://www.skroutz.gr/s/40232187/Asus-Prime-B760-Plus-D4-Motherboard-ATX-me-Intel-1700-Socket-90MB1CW0-M0EAY0.html
+2026-07-05 02:38:07,Gigabyte Z790 Aorus Elite DDR4 rev. 1.0,745.0,https://www.skroutz.gr/s/40690631/Gigabyte-Z790-Aorus-Elite-DDR4-rev-1-0-Motherboard-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,MSI Pro H610M-G DDR4,77.75,https://www.skroutz.gr/s/33880755/MSI-Pro-H610M-G-DDR4-Motherboard-Micro-ATX-me-Intel-1700-Socket-7D46-009R.html
+2026-07-05 02:38:07,MSI PRO H610M-E DDR4,59.07,https://www.skroutz.gr/s/40859206/MSI-PRO-H610M-E-DDR4-Motherboard-Micro-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,Asus ROG STRIX B850-F GAMING WIFI,281.5,https://www.skroutz.gr/s/58240219/Asus-ROG-STRIX-B850-F-GAMING-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-90MB1J70-M0EAY0.html
+2026-07-05 02:38:07,ASRock B760 PRO RS,117.33,https://www.skroutz.gr/s/40255829/ASRock-B760-PRO-RS-Motherboard-ATX-me-Intel-1700-Socket-90-MXBKS0-A0UAYZ.html
+2026-07-05 02:38:07,Gigabyte B650M Aorus Elite rev. 1.x,164.35,https://www.skroutz.gr/s/59936093/gigabyte-b650m-aorus-elite-rev-1-x-motherboard-micro-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,Asus Prime B550-Plus,101.61,https://www.skroutz.gr/s/23776996/Asus-Prime-B550-Plus-Motherboard-ATX-me-AMD-AM4-Socket-90MB14U0-M0EAY0.html
+2026-07-05 02:38:07,ASRock X870E Taichi Lite Wi-Fi,438.49,https://www.skroutz.gr/s/56610430/ASRock-X870E-Taichi-Lite-Wi-Fi-Motherboard-Extended-ATX-me-AMD-AM5-Socket-90-MXBPA0-A0UAYZ.html
+2026-07-05 02:38:07,Asus Prime B760-Plus,95.2,https://www.skroutz.gr/s/40951226/Asus-Prime-B760-Plus-Motherboard-ATX-me-Intel-1700-Socket-90MB1EF0-M0EAY0.html
+2026-07-05 02:38:07,ASRock B550M-ITX/ac Wi-Fi,121.36,https://www.skroutz.gr/s/24026063/ASRock-B550M-ITX-ac-Wi-Fi-Motherboard-Mini-ITX-me-AMD-AM4-Socket-90-MXBDH0-A0UAYZ.html
+2026-07-05 02:38:07,Asus Prime H610M-R D4,63.39,https://www.skroutz.gr/s/36304207/Asus-Prime-H610M-R-D4-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB1B40-M0ECY0.html
+2026-07-05 02:38:07,MSI Pro B650M-A WiFi,322.0,https://www.skroutz.gr/s/38675092/MSI-Pro-B650M-A-WiFi-Motherboard-Micro-ATX-me-AMD-AM5-Socket-7D77-001R.html
+2026-07-05 02:38:07,ASRock B860I WiFi,147.19,https://www.skroutz.gr/s/58626360/ASRock-B860I-WiFi-Motherboard-Mini-ITX-me-Intel-1851-Socket-90-MXBQQ0-A0UAYZ.html
+2026-07-05 02:38:07,Asus TUF Gaming A520M-Plus WiFi,95.73,https://www.skroutz.gr/s/29016663/Asus-TUF-Gaming-A520M-Plus-WiFi-Motherboard-Micro-ATX-me-AMD-AM4-Socket-90MB17F0-M0EAY0.html
+2026-07-05 02:38:07,MSI Pro B650M-P,124.31,https://www.skroutz.gr/s/45368108/MSI-Pro-B650M-P-Motherboard-Micro-ATX-me-AMD-AM5-Socket-7E27-001R.html
+2026-07-05 02:38:07,Asus ROG STRIX B760-A Gaming WIFI,258.58,https://www.skroutz.gr/s/41171479/Asus-ROG-STRIX-B760-A-Gaming-WIFI-Motherboard-ATX-me-Intel-1700-Socket-90MB1EP0-M0EAY0.html
+2026-07-05 02:38:07,ASRock B760M Steel Legend WiFi,144.67,https://www.skroutz.gr/s/40256681/ASRock-B760M-Steel-Legend-WiFi-Motherboard-Micro-ATX-me-Intel-1700-Socket-90-MXBL70-A0UAYZ.html
+2026-07-05 02:38:07,MSI PRO Z790-P WIFI,181.27,https://www.skroutz.gr/s/39147016/MSI-PRO-Z790-P-WIFI-Motherboard-ATX-me-Intel-1700-Socket-7E06-001R.html
+2026-07-05 02:38:07,MSI Pro B850M-P Wifi,130.2,https://www.skroutz.gr/s/61630811/msi-pro-b850m-p-wifi-motherboard-micro-atx-me-amd-am5-socket-7e71-001r.html
+2026-07-05 02:38:07,MSI MEG X870E GODLIKE Wi-Fi,1149.9,https://www.skroutz.gr/s/57587822/MSI-MEG-X870E-GODLIKE-Wi-Fi-Motherboard-Extended-ATX-me-AMD-AM5-Socket-7E48-001R.html
+2026-07-05 02:38:07,Gigabyte B650 Aorus Elite AX ICE Wi-Fi,190.35,https://www.skroutz.gr/s/48100426/Gigabyte-B650-Aorus-Elite-AX-ICE-Wi-Fi-Motherboard-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,Asus ROG Strix B650E-E Gaming WIFI,286.27,https://www.skroutz.gr/s/38713086/Asus-ROG-Strix-B650E-E-Gaming-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-90MB1BB0-M0EAY0.html
+2026-07-05 02:38:07,Asus TUF Gaming A620M Plus,123.12,https://www.skroutz.gr/s/41642460/Asus-TUF-Gaming-A620M-Plus-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90MB1EZ0-M0EAY0.html
+2026-07-05 02:38:07,Gigabyte H610M H V2 DDR5 rev. 1.0,65.36,https://www.skroutz.gr/s/51749812/Gigabyte-H610M-H-V2-DDR5-rev-1-0-Motherboard-Micro-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,ASRock B550M Pro4,91.02,https://www.skroutz.gr/s/23777984/ASRock-B550M-Pro4-Motherboard-Micro-ATX-me-AMD-AM4-Socket-90-MXBDK0-A0UAYZ.html
+2026-07-05 02:38:07,Asus ROG Crosshair X870E Apex Wi-Fi,750.0,https://www.skroutz.gr/s/61371768/asus-rog-crosshair-x870e-apex-wi-fi-motherboard-atx-me-amd-am5-socket-90mb1kr0-m0eay0.html
+2026-07-05 02:38:07,Gigabyte H610M K DDR4 rev. 1.0,69.35,https://www.skroutz.gr/s/40914916/Gigabyte-H610M-K-DDR4-rev-1-0-Motherboard-Micro-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,MSI Pro A620M-E,93.12,https://www.skroutz.gr/s/43798556/MSI-Pro-A620M-E-Motherboard-Micro-ATX-me-AMD-AM5-Socket-7E28-001R.html
+2026-07-05 02:38:07,ASRock B650M Pro RS,127.89,https://www.skroutz.gr/s/42754977/ASRock-B650M-Pro-RS-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90-MXBLP0-A0UAYZ.html
+2026-07-05 02:38:07,ASRock B850M Pro RS,123.8,https://www.skroutz.gr/s/58388389/ASRock-B850M-Pro-RS-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90-MXBR6-A0UAYZ.html
+2026-07-05 02:38:07,MSI A520M-A PRO,55.99,https://www.skroutz.gr/s/25101116/MSI-A520M-A-PRO-Motherboard-Micro-ATX-me-AMD-AM4-Socket-7C96-001R.html
+2026-07-05 02:38:07,Gigabyte B760 Gaming X AX rev. 1.0 Wi-Fi,242.2,https://www.skroutz.gr/s/40572802/Gigabyte-B760-Gaming-X-AX-rev-1-0-Wi-Fi-Motherboard-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,ASRock B550 Phantom Gaming 4,97.05,https://www.skroutz.gr/s/23762401/ASRock-B550-Phantom-Gaming-4-Motherboard-ATX-me-AMD-AM4-Socket-90-MXBCY0-A0UAYZ.html
+2026-07-05 02:38:07,Gigabyte X870E AORUS ELITE WIFI7 ICE,310.09,https://www.skroutz.gr/s/59894189/gigabyte-x870e-aorus-elite-wifi7-ice-motherboard-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,ASRock B650M-HDV/M.2,106.74,https://www.skroutz.gr/s/41010142/ASRock-B650M-HDV-M-2-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90-MXBLA0-A0UAYZ.html
+2026-07-05 02:38:07,Gigabyte Z890 Aorus Xtreme AI Top Wi-Fi,1479.76,https://www.skroutz.gr/s/57637670/Gigabyte-Z890-Aorus-Xtreme-AI-Top-Wi-Fi-Motherboard-Extended-ATX-me-Intel-1851-Socket.html
+2026-07-05 02:38:07,Gigabyte B760M D3HP,104.79,https://www.skroutz.gr/s/57392118/Gigabyte-B760M-D3HP-Motherboard-Micro-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,Gigabyte B760 DS3H rev. 1.0,144.48,https://www.skroutz.gr/s/40967742/Gigabyte-B760-DS3H-rev-1-0-Motherboard-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,MSI PRO B850-P WIFI,165.24,https://www.skroutz.gr/s/58241473/MSI-PRO-B850-P-WIFI-Motherboard-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,Gigabyte X870E AORUS MASTER Wi-Fi,481.78,https://www.skroutz.gr/s/56609412/Gigabyte-X870E-AORUS-MASTER-Wi-Fi-Motherboard-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,ASRock B860 Pro-A,118.73,https://www.skroutz.gr/s/58417732/ASRock-B860-Pro-A-Motherboard-ATX-me-Intel-1851-Socket-90-MXBRN-A0UAYZ.html
+2026-07-05 02:38:07,MSI B550 GAMING WIFI,117.56,https://www.skroutz.gr/s/64954977/msi-b550-gaming-wifi-motherboard-atx-me-amd-am4-socket.html
+2026-07-05 02:38:07,Gigabyte H610M S2H V3 DDR4 rev. 1.0,68.87,https://www.skroutz.gr/s/50383287/Gigabyte-H610M-S2H-V3-DDR4-rev-1-0-Motherboard-Micro-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,Asus Prime B650-Plus,171.05,https://www.skroutz.gr/s/38890968/Asus-Prime-B650-Plus-Motherboard-ATX-me-AMD-AM5-Socket-90MB1BS0-M0EAY0.html
+2026-07-05 02:38:07,ASRock B850M Pro RS WiFi,144.77,https://www.skroutz.gr/s/58388530/ASRock-B850M-Pro-RS-WiFi-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90-MXBR7-A0UAYZ.html
+2026-07-05 02:38:07,MSI PRO Z790-P WIFI,181.3,https://www.skroutz.gr/s/39147016/MSI-PRO-Z790-P-WIFI-Motherboard-ATX-me-Intel-1700-Socket-7E06-001R.html
+2026-07-05 02:38:07,Gigabyte A520 Aorus Elite rev. 1.0,160.0,https://www.skroutz.gr/s/25741061/Gigabyte-A520-Aorus-Elite-rev-1-0-Motherboard-ATX-me-AMD-AM4-Socket-A520.html
+2026-07-05 02:38:07,Gigabyte B550M DS3H R2,89.61,https://www.skroutz.gr/s/60439375/gigabyte-b550m-ds3h-r2-motherboard-micro-atx-me-amd-am4-socket.html
+2026-07-05 02:38:07,ASRock B760M-HDV/M.2,77.86,https://www.skroutz.gr/s/46820748/ASRock-B760M-HDV-M-2-Motherboard-Micro-ATX-me-Intel-1700-Socket-90-MXBMJ0-A0UAYZ.html
+2026-07-05 02:38:07,Asus Prime B550M-A WIFI II,99.9,https://www.skroutz.gr/s/33474612/Asus-Prime-B550M-A-WIFI-II-Motherboard-Micro-ATX-me-AMD-AM4-Socket-90MB19X0-M0EAY0.html
+2026-07-05 02:38:07,Asus TUF GAMING H770-PRO WIFI,179.37,https://www.skroutz.gr/s/40252775/Asus-TUF-GAMING-H770-PRO-WIFI-Motherboard-ATX-me-Intel-1700-Socket-90MB1D50-M0EAY0-90MB1D50-M1EAY0.html
+2026-07-05 02:38:07,ASRock H610M-HDV/M.2+ D5,42.9,https://www.skroutz.gr/s/46474681/ASRock-H610M-HDV-M-2-D5-Motherboard-Micro-ATX-me-Intel-1700-Socket-90-MXBM50-A0UAYZ.html
+2026-07-05 02:38:07,Asus Rog Strix B860-A Gaming WIFI,280.48,https://www.skroutz.gr/s/58297350/Asus-Rog-Strix-B860-A-Gaming-WIFI-Motherboard-ATX-me-Intel-1851-Socket-90MB1JI0-M0EAY0.html
+2026-07-05 02:38:07,ASRock B650M PG Lightning,109.69,https://www.skroutz.gr/s/46474908/ASRock-B650M-PG-Lightning-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90-MXBMV0-A0UAYZ.html
+2026-07-05 02:38:07,Asus Prime B550-Plus,112.67,https://www.skroutz.gr/s/23776996/Asus-Prime-B550-Plus-Motherboard-ATX-me-AMD-AM4-Socket-90MB14U0-M0EAY0.html
+2026-07-05 02:38:07,ASRock B760M Pro RS,121.25,https://www.skroutz.gr/s/43798707/ASRock-B760M-Pro-RS-Motherboard-Micro-ATX-me-Intel-1700-Socket-90-MXBLH0-A0UAYZ.html
+2026-07-05 02:38:07,Asus Prime B650-Plus WIFI,150.29,https://www.skroutz.gr/s/57587767/Asus-Prime-B650-Plus-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-90MB1KP0-M0EAY0.html
+2026-07-05 02:38:07,Gigabyte B850I AORUS PRO Wi-Fi,261.9,https://www.skroutz.gr/s/58238221/Gigabyte-B850I-AORUS-PRO-Wi-Fi-Motherboard-Mini-ITX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,Gigabyte B550M K rev. 1.0,80.23,https://www.skroutz.gr/s/40850802/Gigabyte-B550M-K-rev-1-0-Motherboard-Micro-ATX-me-AMD-AM4-Socket.html
+2026-07-05 02:38:07,Gigabyte Z790 Eagle AX rev. 1.0 Wi-Fi,181.71,https://www.skroutz.gr/s/51036157/Gigabyte-Z790-Eagle-AX-rev-1-0-Wi-Fi-Motherboard-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,ASRock A520M-HDV,50.89,https://www.skroutz.gr/s/24637931/ASRock-A520M-HDV-Motherboard-Micro-ATX-me-AMD-AM4-Socket-90-MXBE50-A0UAYZ.html
+2026-07-05 02:38:07,Gigabyte H810M K,86.34,https://www.skroutz.gr/s/61754865/gigabyte-h810m-k-motherboard-micro-atx-me-intel-1851-socket.html
+2026-07-05 02:38:07,Gigabyte Z890I Aorus Ultra Wi-Fi,311.69,https://www.skroutz.gr/s/57228807/Gigabyte-Z890I-Aorus-Ultra-Wi-Fi-Motherboard-Mini-ITX-me-Intel-1851-Socket.html
+2026-07-05 02:38:07,Gigabyte H810M Gaming WIFI6,108.07,https://www.skroutz.gr/s/59277454/Gigabyte-H810M-Gaming-WIFI6-Motherboard-Micro-ATX-me-Intel-1851-Socket.html
+2026-07-05 02:38:07,Asus Prime H610M-R D4,70.37,https://www.skroutz.gr/s/36304207/Asus-Prime-H610M-R-D4-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB1B40-M0ECY0.html
+2026-07-05 02:38:07,MSI PRO B840M-B,95.19,https://www.skroutz.gr/s/61029548/msi-pro-b840m-b-motherboard-micro-atx-me-amd-am5-socket-7e76-002r.html
+2026-07-05 02:38:07,Asus Prime B660M-A WiFi D4,142.21,https://www.skroutz.gr/s/33442028/Asus-Prime-B660M-A-WiFi-D4-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB1AE0-M0EAY0.html
+2026-07-05 02:38:07,ASRock B850M Pro-A,114.34,https://www.skroutz.gr/s/58459932/ASRock-B850M-Pro-A-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90-MXBR80-A0UAYZ.html
+2026-07-05 02:38:07,Gigabyte B760M Gaming X DDR4 GEN5 rev. 1.0,138.53,https://www.skroutz.gr/s/65223126/gigabyte-b760m-gaming-x-ddr4-gen5-rev-1-0-motherboard-micro-atx-me-intel-1700-socket.html
+2026-07-05 02:38:07,Gigabyte Z790 D AX rev. 1.0 Wi-Fi,168.14,https://www.skroutz.gr/s/51227010/Gigabyte-Z790-D-AX-rev-1-0-Wi-Fi-Motherboard-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,MSI PRO X870-P WIFI,242.7,https://www.skroutz.gr/s/56610637/MSI-PRO-X870-P-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-7E47-001R.html
+2026-07-05 02:38:07,Biostar A520MT Ver. 6.0,48.4,https://www.skroutz.gr/s/45237494/Biostar-A520MT-Ver-6-0-Motherboard-Micro-ATX-me-AMD-AM4-Socket.html
+2026-07-05 02:38:07,Asus TUF Gaming Z890-Plus WiFi rev. 1.0,285.01,https://www.skroutz.gr/s/57241819/Asus-TUF-Gaming-Z890-Plus-WiFi-rev-1-0-Motherboard-ATX-me-Intel-1851-Socket-90MB1IQ0-M0EAY0.html
+2026-07-05 02:38:07,Gigabyte B760 DS3H AX DDR4 rev. 1.0 Wi-Fi,128.77,https://www.skroutz.gr/s/40579956/Gigabyte-B760-DS3H-AX-DDR4-rev-1-0-Wi-Fi-Motherboard-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,Sapphire Nitro+ B850A WiFi 7,201.22,https://www.skroutz.gr/s/64047354/sapphire-nitro-b850a-wifi-7-motherboard-atx-me-amd-am5-socket-52123-03-40g.html
+2026-07-05 02:38:07,Asus ROG STRIX B760-G Gaming WIFI,240.03,https://www.skroutz.gr/s/41051513/Asus-ROG-STRIX-B760-G-Gaming-WIFI-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB1EQ0-M0EAY0.html
+2026-07-05 02:38:07,ASRock B850M-X,129.15,https://www.skroutz.gr/s/58269117/ASRock-B850M-X-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90-MXBR10-A0UAYZ.html
+2026-07-05 02:38:07,MSI PRO B650M-B,127.26,https://www.skroutz.gr/s/50384825/MSI-PRO-B650M-B-Motherboard-Micro-ATX-me-AMD-AM5-Socket-7E28-005R.html
+2026-07-05 02:38:07,Gigabyte X870 Gaming X WIFI7,247.25,https://www.skroutz.gr/s/56902507/Gigabyte-X870-Gaming-X-WIFI7-Motherboard-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,MSI MAG B850 TOMAHAWK MAX WIFI II,301.91,https://www.skroutz.gr/s/66124803/msi-mag-b850-tomahawk-max-wifi-ii-motherboard-atx-me-amd-am5-socket-7e62-015r.html
+2026-07-05 02:38:07,ASRock B760M-H2/M.2,86.84,https://www.skroutz.gr/s/49463286/ASRock-B760M-H2-M-2-Motherboard-Micro-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,Asus TUF Gaming Z890-Pro WIFI rev. 1.0,288.2,https://www.skroutz.gr/s/57245628/Asus-TUF-Gaming-Z890-Pro-WIFI-rev-1-0-Motherboard-ATX-me-Intel-1851-Socket-90MB1IR0-M0EAY0.html
+2026-07-05 02:38:07,Asus Prime A620M-K,91.21,https://www.skroutz.gr/s/43540266/Asus-Prime-A620M-K-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90MB1F40-M0EAY0.html
+2026-07-05 02:38:07,Asus Prime B550M-K ARGB,92.86,https://www.skroutz.gr/s/45773902/Asus-Prime-B550M-K-ARGB-Motherboard-Micro-ATX-me-AMD-AM4-Socket-90MB1GC0-M0EAY0.html
+2026-07-05 02:38:07,MSI B760 Gaming Plus WiFi,149.38,https://www.skroutz.gr/s/58078390/MSI-B760-Gaming-Plus-WiFi-Motherboard-ATX-me-Intel-1700-Socket-911-7D98-042.html
+2026-07-05 02:38:07,Gigabyte A520I AC rev. 1.0 Wi-Fi,111.21,https://www.skroutz.gr/s/25768675/Gigabyte-A520I-AC-rev-1-0-Wi-Fi-Motherboard-Mini-ITX-me-AMD-AM4-Socket.html
+2026-07-05 02:38:07,MSI B550M Pro-VDH,92.76,https://www.skroutz.gr/s/26231445/MSI-B550M-Pro-VDH-Motherboard-Micro-ATX-me-AMD-AM4-Socket-7C95-017R.html
+2026-07-05 02:38:07,Gigabyte B650M D3HP,116.89,https://www.skroutz.gr/s/45773378/Gigabyte-B650M-D3HP-Motherboard-Micro-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,ASRock B850 Steel Legend WiFi,198.14,https://www.skroutz.gr/s/58241453/ASRock-B850-Steel-Legend-WiFi-Motherboard-ATX-me-AMD-AM5-Socket-90-MXBQS0-A0UAYZ.html
+2026-07-05 02:38:07,Gigabyte B650M S2H rev. 1.0,95.23,https://www.skroutz.gr/s/45465255/Gigabyte-B650M-S2H-rev-1-0-Motherboard-Micro-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,Asus ROG STRIX X870-A GAMING WIFI,379.84,https://www.skroutz.gr/s/56611243/Asus-ROG-STRIX-X870-A-GAMING-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-90MB1IF0-M0EAY0.html
+2026-07-05 02:38:07,Asus TUF GAMING B850M-PLUS II,206.8,https://www.skroutz.gr/s/62569722/asus-tuf-gaming-b850m-plus-ii-motherboard-micro-atx-me-amd-am5-socket-90mb1mt0-m0eay0.html
+2026-07-05 02:38:07,Asus TUF GAMING B850M-PLUS WIFI7,279.86,https://www.skroutz.gr/s/62570063/asus-tuf-gaming-b850m-plus-wifi7-motherboard-micro-atx-me-amd-am5-socket-90mb1mu0-m0eay0.html
+2026-07-05 02:38:07,ASRock A620M-HDV/M.2+,100.19,https://www.skroutz.gr/s/41678715/ASRock-A620M-HDV-M-2-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90-MXBLK0-A0UAYZ.html
+2026-07-05 02:38:07,ASRock B850I Lightning WiFi,199.32,https://www.skroutz.gr/s/58502851/ASRock-B850I-Lightning-WiFi-Motherboard-Mini-ITX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,Asus Prime Z790-P,199.46,https://www.skroutz.gr/s/38442357/Asus-Prime-Z790-P-Motherboard-ATX-me-Intel-1700-Socket-90MB1CK0-M0EAY0.html
+2026-07-05 02:38:07,Sapphire Pure B850M WIFI,161.94,https://www.skroutz.gr/s/64560881/sapphire-pure-b850m-wifi-motherboard-micro-atx-me-amd-am5-socket-52123-02-40g.html
+2026-07-05 02:38:07,Sapphire Pulse A620AM,86.8,https://www.skroutz.gr/s/62907895/sapphire-pulse-a620am-motherboard-micro-atx-me-amd-am5-socket-52118-03-40g.html
+2026-07-05 02:38:07,Gigabyte B760 DS3H WIFI6E GEN5,124.77,https://www.skroutz.gr/s/63310537/gigabyte-b760-ds3h-wifi6e-gen5-motherboard-atx-me-intel-1700-socket.html
+2026-07-05 02:38:07,ASRock B850M Steel Legend WiFi,159.82,https://www.skroutz.gr/s/58522339/ASRock-B850M-Steel-Legend-WiFi-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90-MXBS20-A0UAYZ.html
+2026-07-05 02:38:07,Asus Prime B760M-A-CSM,107.68,https://www.skroutz.gr/s/42742229/Asus-Prime-B760M-A-CSM-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB1EK0-M0EAYC.html
+2026-07-05 02:38:07,Asus TUF GAMING B760M-BTF WiFi,135.2,https://www.skroutz.gr/s/46747301/Asus-TUF-GAMING-B760M-BTF-WiFi-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB1G50-M0EAY0.html
+2026-07-05 02:38:07,Asus X870 MAX GAMING WIFI7 W,264.43,https://www.skroutz.gr/s/59818333/asus-x870-max-gaming-wifi7-w-motherboard-atx-me-amd-am5-socket-90mb1lz0-m0eay0.html
+2026-07-05 02:38:07,ASRock B860 Pro-A WiFi,138.24,https://www.skroutz.gr/s/58417762/ASRock-B860-Pro-A-WiFi-Motherboard-ATX-me-Intel-1851-Socket-90-MXBRL-A0UAYZ.html
+2026-07-05 02:38:07,Asus Prime B650M-K,105.73,https://www.skroutz.gr/s/43135480/Asus-Prime-B650M-K-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90MB1F60-M0EAY0.html
+2026-07-05 02:38:07,Gigabyte A620M Gaming X rev. 1.0,106.97,https://www.skroutz.gr/s/42381720/Gigabyte-A620M-Gaming-X-rev-1-0-Motherboard-Micro-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,Gigabyte B860 DS3H WIFI6E,161.7,https://www.skroutz.gr/s/58301048/Gigabyte-B860-DS3H-WIFI6E-Motherboard-ATX-me-Intel-1851-Socket.html
+2026-07-05 02:38:07,Gigabyte Z890 Aorus Elite X Ice Wi-Fi,297.67,https://www.skroutz.gr/s/57227437/Gigabyte-Z890-Aorus-Elite-X-Ice-Wi-Fi-Motherboard-ATX-me-Intel-1851-Socket.html
+2026-07-05 02:38:07,Gigabyte B840 GAMING X WIFI6E,142.1,https://www.skroutz.gr/s/63413313/gigabyte-b840-gaming-x-wifi6e-motherboard-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,Asus Prime B760M-A WIFI,134.42,https://www.skroutz.gr/s/41171801/Asus-Prime-B760M-A-WIFI-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB1EL0-M0EAY0.html
+2026-07-05 02:38:07,Gigabyte B760 DS3H DDR4 rev. 1.0,120.83,https://www.skroutz.gr/s/40393237/Gigabyte-B760-DS3H-DDR4-rev-1-0-Motherboard-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,Asus ROG STRIX B850-I GAMING WIFI,328.8,https://www.skroutz.gr/s/58241072/Asus-ROG-STRIX-B850-I-GAMING-WIFI-Motherboard-Mini-ITX-me-AMD-AM5-Socket-90MB1K30-M0EAY0.html
+2026-07-05 02:38:07,Asus ROG STRIX X870-F GAMING WIFI,399.81,https://www.skroutz.gr/s/56612326/Asus-ROG-STRIX-X870-F-GAMING-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-90MB1IV0-M0EAY0.html
+2026-07-05 02:38:07,ASRock A620M-HDV/M.2,119.0,https://www.skroutz.gr/s/42146194/ASRock-A620M-HDV-M-2-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90-MXBLL0-A0UAYZ.html
+2026-07-05 02:38:07,ASRock B650I Lightning WiFi,179.97,https://www.skroutz.gr/s/46774997/ASRock-B650I-Lightning-WiFi-Motherboard-Mini-ITX-me-AMD-AM5-Socket-90-MXBMP0-A0UAYZ.html
+2026-07-05 02:38:07,Gigabyte A620M H rev. 1.0,81.34,https://www.skroutz.gr/s/44707158/Gigabyte-A620M-H-rev-1-0-Motherboard-Micro-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,Gigabyte B760 Gaming X GEN5,115.1,https://www.skroutz.gr/s/62514835/gigabyte-b760-gaming-x-gen5-motherboard-atx-me-intel-1700-socket.html
+2026-07-05 02:38:07,Gigabyte B650I AX rev. 1.0 Wi-Fi,161.2,https://www.skroutz.gr/s/51227506/Gigabyte-B650I-AX-rev-1-0-Wi-Fi-Motherboard-Mini-ITX-me-AMD-AM5-Socket-B650I.html
+2026-07-05 02:38:07,MSI MPG B760I EDGE WIFI,216.97,https://www.skroutz.gr/s/44422453/MSI-MPG-B760I-EDGE-WIFI-Motherboard-Mini-ITX-me-Intel-1700-Socket-7D40-005R.html
+2026-07-05 02:38:07,Asus Rog Strix B860-I Gaming WIFI,270.12,https://www.skroutz.gr/s/58296962/Asus-Rog-Strix-B860-I-Gaming-WIFI-Motherboard-Mini-ITX-me-Intel-1851-Socket-90MB1JB0-M0EAY0.html
+2026-07-05 02:38:07,ASRock B860I Lightning WiFi,205.15,https://www.skroutz.gr/s/58484412/ASRock-B860I-Lightning-WiFi-Motherboard-Mini-ITX-me-Intel-1851-Socket-90-MXBRZ0-A0UAYZ.html
+2026-07-05 02:38:07,ASRock B760M Pro RS,129.09,https://www.skroutz.gr/s/43798707/ASRock-B760M-Pro-RS-Motherboard-Micro-ATX-me-Intel-1700-Socket-90-MXBLH0-A0UAYZ.html
+2026-07-05 02:38:07,ASRock B550M Phantom Gaming 4,78.0,https://www.skroutz.gr/s/25740619/ASRock-B550M-Phantom-Gaming-4-Motherboard-Micro-ATX-me-AMD-AM4-Socket-90-MXBE90-A0UAYZ.html
+2026-07-05 02:38:07,Asus Prime H610M-A D4,119.99,https://www.skroutz.gr/s/33402384/Asus-Prime-H610M-A-D4-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB19P0-M0EAY0.html
+2026-07-05 02:38:07,Asus Prime B550M-K,87.39,https://www.skroutz.gr/s/23785785/Asus-Prime-B550M-K-Motherboard-Micro-ATX-me-AMD-AM4-Socket-90MB14V0-M0EAY0.html
+2026-07-05 02:38:07,Gigabyte Aorus Elite Wifi 7 ICE Z890,252.15,https://www.skroutz.gr/s/57226446/Gigabyte-Aorus-Elite-Wifi-7-ICE-Z890-Motherboard-ATX-me-Intel-1851-Socket.html
+2026-07-05 02:38:07,Gigabyte B760M Aorus Elite WIFI6E GEN5 rev. 1.0,166.25,https://www.skroutz.gr/s/63021681/gigabyte-b760m-aorus-elite-wifi6e-gen5-rev-1-0-motherboard-micro-atx-me-intel-1700-socket.html
+2026-07-05 02:38:07,Asus TUF GAMING B850M-PLUS,213.22,https://www.skroutz.gr/s/58240865/Asus-TUF-GAMING-B850M-PLUS-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90MB1IX0-M0EAY0.html
+2026-07-05 02:38:07,MSI PRO X870E-P WIFI,218.84,https://www.skroutz.gr/s/61029237/msi-pro-x870e-p-wifi-motherboard-atx-me-amd-am5-socket-7e70-003r.html
+2026-07-05 02:38:07,Asus TUF Gaming A520M-Plus II,85.73,https://www.skroutz.gr/s/28918590/Asus-TUF-Gaming-A520M-Plus-II-Motherboard-Micro-ATX-me-AMD-AM4-Socket-90MB17G0-M0EAY0.html
+2026-07-05 02:38:07,Asus Pro B650M-CT-CSM,182.63,https://www.skroutz.gr/s/42555938/Asus-Pro-B650M-CT-CSM-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90MB1EC0-M0EAYC.html
+2026-07-05 02:38:07,Gigabyte B550M DS3H AC R2 Wi-Fi,104.54,https://www.skroutz.gr/s/62540038/gigabyte-b550m-ds3h-ac-r2-wi-fi-motherboard-micro-atx-me-amd-am4-socket.html
+2026-07-05 02:38:07,Gigabyte B650M D3HP AX rev. 1.0 Wi-Fi,129.5,https://www.skroutz.gr/s/48894636/Gigabyte-B650M-D3HP-AX-rev-1-0-Wi-Fi-Motherboard-Micro-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,Gigabyte B840 EAGLE WIFI6,150.32,https://www.skroutz.gr/s/63310768/gigabyte-b840-eagle-wifi6-motherboard-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,Gigabyte B550 Aorus Elite AX V2 rev. 1.0 Wi-Fi,155.56,https://www.skroutz.gr/s/25855015/Gigabyte-B550-Aorus-Elite-AX-V2-rev-1-0-Wi-Fi-Motherboard-ATX-me-AMD-AM4-Socket.html
+2026-07-05 02:38:07,Gigabyte B850 Aorus Stealth Ice Wi-Fi,303.63,https://www.skroutz.gr/s/61681733/gigabyte-b850-aorus-stealth-ice-wi-fi-motherboard-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,Asus Prime B860M-A WIFI,193.5,https://www.skroutz.gr/s/58296432/Asus-Prime-B860M-A-WIFI-Motherboard-Micro-ATX-me-Intel-1851-Socket-90MB1JY0-M0EAY0.html
+2026-07-05 02:38:07,Asus TUF GAMING X870E-PLUS WIFI7,320.49,https://www.skroutz.gr/s/60764801/asus-tuf-gaming-x870e-plus-wifi7-motherboard-atx-me-amd-am5-socket-90mb1m70-m0eay0.html
+2026-07-05 02:38:07,ASRock Phantom Gaming Z890I Nova WiFi,282.83,https://www.skroutz.gr/s/57420224/ASRock-Phantom-Gaming-Z890I-Nova-WiFi-Motherboard-Mini-ITX-me-Intel-1851-Socket-90-MXBPN0-A0UAYZ.html
+2026-07-05 02:38:07,Asus Prime X670-P WiFi,332.18,https://www.skroutz.gr/s/38853273/Asus-Prime-X670-P-WiFi-Motherboard-ATX-me-AMD-AM5-Socket-90MB1BV0-M0EAY0.html
+2026-07-05 02:38:07,Gigabyte B840M D2H,98.23,https://www.skroutz.gr/s/59317933/Gigabyte-B840M-D2H-Motherboard-Micro-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,ASRock B860 Pro RS WiFi,148.86,https://www.skroutz.gr/s/58424536/ASRock-B860-Pro-RS-WiFi-Motherboard-ATX-me-Intel-1851-Socket-90-MXBRK-A0UAYZ.html
+2026-07-05 02:38:07,Asus Rog Strix Z890-F Gaming Wifi,425.38,https://www.skroutz.gr/s/57233268/Asus-Rog-Strix-Z890-F-Gaming-Wifi-Motherboard-ATX-me-Intel-1851-Socket-90MB1I40-M0EAY0.html
+2026-07-05 02:38:07,Biostar TZ590-BTC DUO,113.28,https://www.skroutz.gr/s/32850496/Biostar-TZ590-BTC-DUO-Motherboard-ATX-me-Intel-1200-Socket.html
+2026-07-05 02:38:07,Gigabyte B850 EAGLE,183.9,https://www.skroutz.gr/s/59894168/gigabyte-b850-eagle-motherboard-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,MSI Pro Z890-A WIFI,278.06,https://www.skroutz.gr/s/57657987/MSI-Pro-Z890-A-WIFI-Motherboard-ATX-me-Intel-1851-Socket.html
+2026-07-05 02:38:07,ASRock B860M-H2,90.9,https://www.skroutz.gr/s/59317977/ASRock-B860M-H2-Motherboard-Micro-ATX-me-Intel-1851-Socket-90-MXBS0-A0UAYZ.html
+2026-07-05 02:38:07,Asus Prime Z690-A,322.2,https://www.skroutz.gr/s/32260372/Asus-Prime-Z690-A-Motherboard-ATX-me-Intel-1700-Socket-90MB18L0-M0EAY0.html
+2026-07-05 02:38:07,Gigabyte B760M D3HP WIFI6,111.64,https://www.skroutz.gr/s/59755062/gigabyte-b760m-d3hp-wifi6-motherboard-micro-atx-me-intel-1700-socket.html
+2026-07-05 02:38:07,Gigabyte Z890M Aorus Elite Wifi 7 Ice,240.79,https://www.skroutz.gr/s/57226989/Gigabyte-Z890M-Aorus-Elite-Wifi-7-Ice-Motherboard-Micro-ATX-me-Intel-1851-Socket.html
+2026-07-05 02:38:07,ASRock Z790 PG Sonic,224.01,https://www.skroutz.gr/s/39217830/ASRock-Z790-PG-Sonic-Motherboard-ATX-me-Intel-1700-Socket-90-MXBKF0-A0UAYZ.html
+2026-07-05 02:38:07,Asus Rog Strix B860-F Gaming WIFI,291.38,https://www.skroutz.gr/s/58296685/Asus-Rog-Strix-B860-F-Gaming-WIFI-Motherboard-ATX-me-Intel-1851-Socket-90MB1JG0-M0EAY0.html
+2026-07-05 02:38:07,Gigabyte B860M Aorus Elite WIFI6E Ice,199.21,https://www.skroutz.gr/s/58299702/Gigabyte-B860M-Aorus-Elite-WIFI6E-Ice-Motherboard-Micro-ATX-me-Intel-1851-Socket.html
+2026-07-05 02:38:07,Gigabyte B760M Gaming X WIFI6E GEN5,175.75,https://www.skroutz.gr/s/62540112/gigabyte-b760m-gaming-x-wifi6e-gen5-motherboard-micro-atx-me-intel-1700-socket.html
+2026-07-05 02:38:07,MSI MPG B650 Edge WIFI,268.24,https://www.skroutz.gr/s/38993738/MSI-MPG-B650-Edge-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-7E10-001R.html
+2026-07-05 02:38:07,MSI PRO B840-P WIFI,135.16,https://www.skroutz.gr/s/58241520/MSI-PRO-B840-P-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-7E57-001R.html
+2026-07-05 02:38:07,MSI Pro Z690-A WiFi,381.53,https://www.skroutz.gr/s/32225439/MSI-Pro-Z690-A-WiFi-Motherboard-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,ASRock X870 Pro RS,188.83,https://www.skroutz.gr/s/56902256/ASRock-X870-Pro-RS-Motherboard-ATX-me-AMD-AM5-Socket-90-MXBPZ0-A0UAYZ.html
+2026-07-05 02:38:07,Gigabyte B860M DS3H WIFI6E,169.8,https://www.skroutz.gr/s/58300307/Gigabyte-B860M-DS3H-WIFI6E-Motherboard-Micro-ATX-me-Intel-1851-Socket.html
+2026-07-05 02:38:07,Asus TUF Gaming B660M-PLUS WIFI,186.16,https://www.skroutz.gr/s/33381584/Asus-TUF-Gaming-B660M-PLUS-WIFI-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB1AZ0-M0EAY0.html
+2026-07-05 02:38:07,Gigabyte AORUS MASTER AI TOP Z890 Wi-Fi,872.97,https://www.skroutz.gr/s/57588163/Gigabyte-AORUS-MASTER-AI-TOP-Z890-Wi-Fi-Motherboard-Extended-ATX-me-Intel-1851-Socket.html
+2026-07-05 02:38:07,ASRock B450M HDV rev. 4.0,89.89,https://www.skroutz.gr/s/18161198/ASRock-B450M-HDV-rev-4-0-Motherboard-Micro-ATX-me-AMD-AM4-Socket-90-MXB9N0-A0UAYZ.html
+2026-07-05 02:38:07,Gigabyte B760M D3HP DDR4,93.79,https://www.skroutz.gr/s/54342206/Gigabyte-B760M-D3HP-DDR4-Motherboard-Micro-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,ASRock X870E Taichi Wi-Fi,424.9,https://www.skroutz.gr/s/56610150/ASRock-X870E-Taichi-Wi-Fi-Motherboard-Extended-ATX-me-AMD-AM5-Socket-90-MXBP90-A0UAYZ.html
+2026-07-05 02:38:07,Asus TUF B760M-PLUS GAMING WIFI II,185.06,https://www.skroutz.gr/s/50390001/Asus-TUF-B760M-PLUS-GAMING-WIFI-II-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB1HE0-M0EAY0.html
+2026-07-05 02:38:07,Gigabyte B760M DS3H GEN5,107.61,https://www.skroutz.gr/s/62522676/gigabyte-b760m-ds3h-gen5-motherboard-micro-atx-me-intel-1700-socket.html
+2026-07-05 02:38:07,Asus Pro H610M-C D4-CSM,114.86,https://www.skroutz.gr/s/35279243/Asus-Pro-H610M-C-D4-CSM-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB1A30-M0EAYC.html
+2026-07-05 02:38:07,MSI MPG Z890 Edge Ti WIFI,420.23,https://www.skroutz.gr/s/57245858/MSI-MPG-Z890-Edge-Ti-WIFI-Motherboard-ATX-me-Intel-1851-Socket-7E19-001R.html
+2026-07-05 02:38:07,Asus TUF Gaming A620M Plus Wifi,134.42,https://www.skroutz.gr/s/41642054/Asus-TUF-Gaming-A620M-Plus-Wifi-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90MB1F00-M0EAY0.html
+2026-07-05 02:38:07,Biostar B650MT,84.95,https://www.skroutz.gr/s/50509088/Biostar-B650MT-Motherboard-Micro-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,Gigabyte Z790 D rev. 1.0,156.39,https://www.skroutz.gr/s/51968711/Gigabyte-Z790-D-rev-1-0-Motherboard-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,Asus Prime H610M-K D4,69.75,https://www.skroutz.gr/s/33401721/Asus-Prime-H610M-K-D4-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB1A10-M0EAY0.html
+2026-07-05 02:38:07,MSI B760M Gaming Plus WIFI,127.58,https://www.skroutz.gr/s/49462839/MSI-B760M-Gaming-Plus-WIFI-Motherboard-Micro-ATX-me-Intel-1700-Socket-911-7D99-017-7D99-017R.html
+2026-07-05 02:38:07,Asus PRIME B760M-PLUS,99.88,https://www.skroutz.gr/s/50389587/Asus-PRIME-B760M-PLUS-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB1GY0-M0EAY0.html
+2026-07-05 02:38:07,ASRock H310CM-DVS,230.0,https://www.skroutz.gr/s/15806740/ASRock-H310CM-DVS-Motherboard-Micro-ATX-me-Intel-1151-Socket-90-MXB8K0-A0UAYZ.html
+2026-07-05 02:38:07,Gigabyte H610I,121.17,https://www.skroutz.gr/s/51990029/Gigabyte-H610I-Motherboard-Mini-ITX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,Gigabyte Z890 AERO D Wi-Fi,767.68,https://www.skroutz.gr/s/57588209/Gigabyte-Z890-AERO-D-Wi-Fi-Motherboard-Extended-ATX-me-Intel-1851-Socket.html
+2026-07-05 02:38:07,Asus Prime B450-Plus,112.02,https://www.skroutz.gr/s/15498117/Asus-Prime-B450-Plus-Motherboard-ATX-me-AMD-AM4-Socket-90MB0YN0-M0EAY0.html
+2026-07-05 02:38:07,MSI A520M Pro,74.28,https://www.skroutz.gr/s/24918564/MSI-A520M-Pro-Motherboard-Micro-ATX-me-AMD-AM4-Socket-7D14-005R.html
+2026-07-05 02:38:07,Gigabyte H610M H V2 DDR4 rev. 1.0,102.0,https://www.skroutz.gr/s/42269389/Gigabyte-H610M-H-V2-DDR4-rev-1-0-Motherboard-Micro-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,ASRock Z790 PG Riptide,456.52,https://www.skroutz.gr/s/39054499/ASRock-Z790-PG-Riptide-Motherboard-ATX-me-Intel-1700-Socket-90-MXBJX0-A0UAYZ.html
+2026-07-05 02:38:07,ASRock B550 Phantom Gaming Riptide,119.44,https://www.skroutz.gr/s/30491402/ASRock-B550-Phantom-Gaming-Riptide-Motherboard-ATX-me-AMD-AM4-Socket-90-MXBGH0-A0UAYZ.html
+2026-07-05 02:38:07,ASRock Steel Legend WiFi X870,243.74,https://www.skroutz.gr/s/56902271/ASRock-Steel-Legend-WiFi-X870-Motherboard-ATX-me-AMD-AM5-Socket-90-MXBPJ0-A0UAYZ.html
+2026-07-05 02:38:07,Asus PRIME B760M-K D4,84.85,https://www.skroutz.gr/s/40253345/Asus-PRIME-B760M-K-D4-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB1DS0-M0EAY0.html
+2026-07-05 02:38:07,ASRock Z790 PG Lightning,148.73,https://www.skroutz.gr/s/39147464/ASRock-Z790-PG-Lightning-Motherboard-ATX-me-Intel-1700-Socket-90-MXBKA0-A0UAYZ.html
+2026-07-05 02:38:07,ASRock B660M-HDV,124.07,https://www.skroutz.gr/s/33446381/ASRock-B660M-HDV-Motherboard-Micro-ATX-me-Intel-1700-Socket-90-MXBH40-A0UAYZ.html
+2026-07-05 02:38:07,Gigabyte B550I Aorus Pro AX Wi-Fi,171.97,https://www.skroutz.gr/s/24222938/Gigabyte-B550I-Aorus-Pro-AX-Wi-Fi-Motherboard-Mini-ITX-me-AMD-AM4-Socket.html
+2026-07-05 02:38:07,ASRock Challenger B850 Wi-Fi,143.3,https://www.skroutz.gr/s/66518602/asrock-challenger-b850-wi-fi-motherboard-micro-atx-me-amd-am5-socket-90-mxbu50-a0uayz.html
+2026-07-05 02:38:07,ASRock B860 Rock Wi-Fi,148.52,https://www.skroutz.gr/s/65944137/asrock-b860-rock-wi-fi-motherboard-atx-me-intel-1851-socket-90-mxbua0-a0uayz.html
+2026-07-05 02:38:07,Asus Prime B760M-A-D4-CSM,108.14,https://www.skroutz.gr/s/42380774/Asus-Prime-B760M-A-D4-CSM-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB1D00-M0EAYC.html
+2026-07-05 02:38:07,Gigabyte B650 Aero G rev. 1.0 Wi-Fi,206.21,https://www.skroutz.gr/s/48099949/Gigabyte-B650-Aero-G-rev-1-0-Wi-Fi-Motherboard-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,Asus PRIME H610M-A,139.26,https://www.skroutz.gr/s/65669573/asus-prime-h610m-a-motherboard-atx-me-amd-am5-socket-90mb1mj0-m0eay0.html
+2026-07-05 02:38:07,MSI PRO A620M-B,77.38,https://www.skroutz.gr/s/64559742/msi-pro-a620m-b-motherboard-micro-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,Asus PRIME H610M-A WIFI,79.41,https://www.skroutz.gr/s/45223601/Asus-PRIME-H610M-A-WIFI-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB1G00-M0EAY0.html
+2026-07-05 02:38:07,ASRock A520M Pro4,73.77,https://www.skroutz.gr/s/25212394/ASRock-A520M-Pro4-Motherboard-Micro-ATX-me-AMD-AM4-Socket-90-MXBDU0-A0UAYZ.html
+2026-07-05 02:38:07,ASRock PHANTOM GAMING B850 Riptide WiFi,193.9,https://www.skroutz.gr/s/58241438/ASRock-PHANTOM-GAMING-B850-Riptide-WiFi-Motherboard-ATX-me-AMD-AM5-Socket-90-MXBQT0-A0UAYZ.html
+2026-07-05 02:38:07,Gigabyte A620M S2H rev. 1.0,97.45,https://www.skroutz.gr/s/42994465/Gigabyte-A620M-S2H-rev-1-0-Motherboard-Micro-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,Gigabyte X870E EAGLE WIFI7,292.67,https://www.skroutz.gr/s/66530724/gigabyte-x870e-eagle-wifi7-motherboard-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,Biostar A68N-2100K SoC,46.5,https://www.skroutz.gr/s/26773875/Biostar-A68N-2100K-SoC-Motherboard-ATX-me-AMD-Socket-A68N-2100K.html
+2026-07-05 02:38:07,ASRock A620AM-HVS,72.18,https://www.skroutz.gr/s/63163208/asrock-a620am-hvs-motherboard-micro-atx-me-amd-am5-socket-90-mxbsr0-a0uayz.html
+2026-07-05 02:38:07,Asus ProArt B760-CREATOR WIFI,233.15,https://www.skroutz.gr/s/44941097/Asus-ProArt-B760-CREATOR-WIFI-Motherboard-ATX-me-Intel-1700-Socket-90MB1FY0-M0EAY0.html
+2026-07-05 02:38:07,Biostar H610MHC 2.0,55.9,https://www.skroutz.gr/s/60688601/biostar-h610mhc-2-0-motherboard-atx-me-intel-1700-socket.html
+2026-07-05 02:38:07,Gigabyte B550M DS3H AC rev. 1.0 Wi-Fi,119.87,https://www.skroutz.gr/s/24418762/Gigabyte-B550M-DS3H-AC-rev-1-0-Wi-Fi-Motherboard-Micro-ATX-me-AMD-AM4-Socket.html
+2026-07-05 02:38:07,MSI PRO B850-S WIFI6E,128.59,https://www.skroutz.gr/s/61815739/msi-pro-b850-s-wifi6e-motherboard-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,Asus TUF Gaming B850M-E Wifi,162.0,https://www.skroutz.gr/s/60658416/asus-tuf-gaming-b850m-e-wifi-motherboard-micro-atx-me-amd-am5-socket-90mb1ls0-m0eay0.html
+2026-07-05 02:38:07,Gigabyte B650M Gaming Plus WiFi rev. 1.x,142.13,https://www.skroutz.gr/s/58435228/Gigabyte-B650M-Gaming-Plus-WiFi-rev-1-x-Motherboard-Micro-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,Asus TUF GAMING B650M-PLUS,194.21,https://www.skroutz.gr/s/38855169/Asus-TUF-GAMING-B650M-PLUS-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90MB1BG0-M0EAY0.html
+2026-07-05 02:38:07,ASRock A620AI WiFi,135.26,https://www.skroutz.gr/s/62987471/asrock-a620ai-wifi-motherboard-mini-itx-me-amd-am5-socket-90-mxbt50-a0uayz.html
+2026-07-05 02:38:07,Asus TUF Gaming B760M-PLUS,183.68,https://www.skroutz.gr/s/41171689/Asus-TUF-Gaming-B760M-PLUS-Motherboard-ATX-me-Intel-1700-Socket-90MB1ES0-M0EAY0.html
+2026-07-05 02:38:07,Gigabyte X870E EAGLE X3D WIFI7,285.25,https://www.skroutz.gr/s/65223508/gigabyte-x870e-eagle-x3d-wifi7-motherboard-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,Gigabyte B760M Gaming DDR4 rev. 1.0,99.79,https://www.skroutz.gr/s/40525512/Gigabyte-B760M-Gaming-DDR4-rev-1-0-Motherboard-Micro-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,Asus Pro A520M-C II/CSM,88.76,https://www.skroutz.gr/s/40966118/Asus-Pro-A520M-C-II-CSM-Motherboard-Micro-ATX-me-AMD-AM4-Socket-90MB18F0-M0EAYC.html
+2026-07-05 02:38:07,Asus Prime H610I-PLUS D4,147.0,https://www.skroutz.gr/s/35938575/Asus-Prime-H610I-PLUS-D4-Motherboard-Mini-ITX-me-Intel-1700-Socket-90MB1B20-M0EAYC.html
+2026-07-05 02:38:07,MSI Mag B650M Mortar WiFi,370.0,https://www.skroutz.gr/s/38748958/MSI-Mag-B650M-Mortar-WiFi-Motherboard-Micro-ATX-me-AMD-AM5-Socket-7D76-001R.html
+2026-07-05 02:38:07,Gigabyte X870 Aorus Elite X3D Ice,295.2,https://www.skroutz.gr/s/63773509/gigabyte-x870-aorus-elite-x3d-ice-motherboard-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,ASRock B860M Pro RS,124.65,https://www.skroutz.gr/s/59212455/ASRock-B860M-Pro-RS-Motherboard-Micro-ATX-me-Intel-1851-Socket-90-MXBRP-A0UAYZ.html
+2026-07-05 02:38:07,Asus Prime A520M-K,63.9,https://www.skroutz.gr/s/24502582/Asus-Prime-A520M-K-Motherboard-Micro-ATX-me-AMD-AM4-Socket-90MB1500-M0EAY0.html
+2026-07-05 02:38:07,Gigabyte H610M S2H V2 DDR4 rev. 1.0,86.8,https://www.skroutz.gr/s/42467043/Gigabyte-H610M-S2H-V2-DDR4-rev-1-0-Motherboard-Micro-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,Gigabyte B650M Gaming WIFI6E,117.75,https://www.skroutz.gr/s/59818111/gigabyte-b650m-gaming-wifi6e-motherboard-micro-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,MSI MAG X870E GAMING PLUS MAX WIFI,302.87,https://www.skroutz.gr/s/66918435/msi-mag-x870e-gaming-plus-max-wifi-motherboard-atx-me-amd-am5-socket-7e70-016r.html
+2026-07-05 02:38:07,Asus Prime N100I-D D4 (integrated CPU),203.39,https://www.skroutz.gr/s/45236963/Asus-Prime-N100I-D-D4-integrated-CPU-Motherboard-Mini-ITX-me-Intel-Socket-90MB1F70-M0EAYC.html
+2026-07-05 02:38:07,Gigabyte B650E EAGLE WIFI6E,193.36,https://www.skroutz.gr/s/64241516/gigabyte-b650e-eagle-wifi6e-motherboard-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,Asus TUF GAMING B850-PLUS WIFI7 W,267.99,https://www.skroutz.gr/s/62555770/asus-tuf-gaming-b850-plus-wifi7-w-motherboard-atx-me-amd-am5-socket-90mb1md0-m0eay0.html
+2026-07-05 02:38:07,Asus B850 Wi-Fi,182.92,https://www.skroutz.gr/s/66125941/asus-b850-wi-fi-motherboard-atx-me-amd-am5-socket-90mb1pr0-m0eay0.html
+2026-07-05 02:38:07,ASRock B650 PG Lightning,129.11,https://www.skroutz.gr/s/38833098/ASRock-B650-PG-Lightning-Motherboard-ATX-me-AMD-AM5-Socket-90-MXBK20-A0UAYZ.html
+2026-07-05 02:38:07,Gigabyte B840M Aorus Elite WIFI6E,138.9,https://www.skroutz.gr/s/60468542/gigabyte-b840m-aorus-elite-wifi6e-motherboard-micro-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,Gigabyte A520M DS3H WIFI6E,79.24,https://www.skroutz.gr/s/67668522/gigabyte-a520m-ds3h-wifi6e-motherboard-micro-atx-me-amd-am4-socket.html
+2026-07-05 02:38:07,Asus ROG Crosshair X870E Dark Hero Wi-Fi,785.8,https://www.skroutz.gr/s/65922695/asus-rog-crosshair-x870e-dark-hero-wi-fi-motherboard-atx-me-amd-am5-socket-90mb1nt0-m0eay0.html
+2026-07-05 02:38:07,MSI B850 Gaming Plus Wifi PZ,200.82,https://www.skroutz.gr/s/61630664/msi-b850-gaming-plus-wifi-pz-motherboard-atx-me-amd-am5-socket-7e75-001r.html
+2026-07-05 02:38:07,Asus PRO WS W890E-SAGE SE,1131.79,https://www.skroutz.gr/s/67419642/asus-pro-ws-w890e-sage-se-motherboard-ssi-eeb-me-intel-socket-90mb1mw0-m0eay0.html
+2026-07-05 02:38:07,Gigabyte B850M FORCE,145.52,https://www.skroutz.gr/s/63210920/gigabyte-b850m-force-motherboard-micro-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,Asus TUF Gaming B550M-Plus (WI-FI),183.99,https://www.skroutz.gr/s/23726623/Asus-TUF-Gaming-B550M-Plus-WI-FI-Motherboard-Micro-ATX-me-AMD-AM4-Socket-90MB1490-M0EAY0.html
+2026-07-05 02:38:07,Asus ROG STRIX B850-A NEO Wi-Fi,313.55,https://www.skroutz.gr/s/65945853/asus-rog-strix-b850-a-neo-wi-fi-motherboard-atx-me-amd-am5-socket-90mb1p10-m0eay0.html
+2026-07-05 02:38:07,Sapphire PURE B850A WIFI7,195.07,https://www.skroutz.gr/s/64561512/sapphire-pure-b850a-wifi7-motherboard-atx-me-amd-am5-socket-52123-11-40g.html
+2026-07-05 02:38:07,Asus Prime H610M-A D4-CSM,100.29,https://www.skroutz.gr/s/33474219/Asus-Prime-H610M-A-D4-CSM-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB19P0-M0EAYC.html
+2026-07-05 02:38:07,MSI MAG X870E TOMAHAWK MAX WIFI,338.81,https://www.skroutz.gr/s/66124855/msi-mag-x870e-tomahawk-max-wifi-motherboard-atx-me-amd-am5-socket-7e59-018r.html
+2026-07-05 02:38:07,Asus ROG STRIX X870E-E GAMING WIFI7 NEO,599.29,https://www.skroutz.gr/s/66917252/asus-rog-strix-x870e-e-gaming-wifi7-neo-motherboard-atx-me-amd-am5-socket-90mb1p20-m0eay0.html
+2026-07-05 02:38:07,Gigabyte X870E AORUS PRO X3D,429.24,https://www.skroutz.gr/s/65074663/gigabyte-x870e-aorus-pro-x3d-motherboard-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,Asus TUF GAMING B760M-E D4,192.15,https://www.skroutz.gr/s/40967458/Asus-TUF-GAMING-B760M-E-D4-Motherboard-ATX-me-Intel-1700-Socket-90MB1E90-M0EAY0.html
+2026-07-05 02:38:07,Asus ROG Strix B850-F Gaming Neo Wi-Fi,328.3,https://www.skroutz.gr/s/66064424/asus-rog-strix-b850-f-gaming-neo-wi-fi-motherboard-atx-me-amd-am5-socket-90mb1nx0-m0eay0.html
+2026-07-05 02:38:07,Asus Pro WS TRX50-SAGE WIFI,851.68,https://www.skroutz.gr/s/49461000/Asus-Pro-WS-TRX50-SAGE-WIFI-Motherboard-SSI-CEB-me-AMD-sTR5-Socket-90MB1FZ0-M0EAY0.html
+2026-07-05 02:38:07,Biostar B760MXC PRO V6.0 Wi-Fi,88.7,https://www.skroutz.gr/s/67016125/biostar-b760mxc-pro-v6-0-wi-fi-motherboard-micro-atx-me-intel-1700-socket.html
+2026-07-05 02:38:07,ASRock Z790 Livemixer,273.84,https://www.skroutz.gr/s/39051262/ASRock-Z790-Livemixer-Motherboard-ATX-me-Intel-1700-Socket-90-MXBK10-A0UAYZ.html
+2026-07-05 02:38:07,Gigabyte B550M K WIFI6E,99.57,https://www.skroutz.gr/s/67833312/gigabyte-b550m-k-wifi6e-motherboard-micro-atx-me-amd-am4-socket.html
+2026-07-05 02:38:07,MSI MAG B850 TOMAHAWK WIFI,231.25,https://www.skroutz.gr/s/64241753/msi-mag-b850-tomahawk-wifi-motherboard-atx-me-amd-am5-socket-7e53-001r.html
+2026-07-05 02:38:07,ASRock X870 Taichi Creator,333.17,https://www.skroutz.gr/s/63774427/asrock-x870-taichi-creator-motherboard-atx-me-amd-am5-socket-90-mxbte0-a0uayz.html
+2026-07-05 02:38:07,Gigabyte X870M AORUS ELITE WIFI7,263.46,https://www.skroutz.gr/s/63015822/gigabyte-x870m-aorus-elite-wifi7-motherboard-micro-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,Asus TUF Gaming B860-Plus WIFI,183.56,https://www.skroutz.gr/s/58296104/Asus-TUF-Gaming-B860-Plus-WIFI-Motherboard-ATX-me-Intel-1851-Socket-90MB1JL0-M0EAY0.html
+2026-07-05 02:38:07,MSI B650M PROJECT ZERO Wi-Fi,179.03,https://www.skroutz.gr/s/50385209/MSI-B650M-PROJECT-ZERO-Wi-Fi-Motherboard-Micro-ATX-me-AMD-AM5-Socket-7E09-003R.html
+2026-07-05 02:38:07,Asus ROG Strix X870E-A,545.46,https://www.skroutz.gr/s/66125952/asus-rog-strix-x870e-a-motherboard-atx-me-amd-am5-socket-90mb1p30-m0eay0.html
+2026-07-05 02:38:07,Biostar Z790A-SILVER,268.22,https://www.skroutz.gr/s/39614410/Biostar-Z790A-SILVER-Motherboard-ATX-me-Intel-1700-Socket-Z790A-SILVER.html
+2026-07-05 02:38:07,Asus TUF Gaming B850-BTF WIFI W,269.12,https://www.skroutz.gr/s/60688418/asus-tuf-gaming-b850-btf-wifi-w-motherboard-atx-me-amd-am5-socket-90mb1kw0-m0eay0.html
+2026-07-05 02:38:07,MSI MPG B850I Edge TI WIFI,261.24,https://www.skroutz.gr/s/61320779/msi-mpg-b850i-edge-ti-wifi-motherboard-mini-itx-me-amd-am5-socket-7e79-001r.html
+2026-07-05 02:38:07,Gigabyte B550M DS3H rev. 1.x,135.93,https://www.skroutz.gr/s/30969010/Gigabyte-B550M-DS3H-rev-1-x-Motherboard-Micro-ATX-me-AMD-AM4-Socket-GAB55MDSH-00-G11.html
+2026-07-05 02:38:07,Sapphire Pulse B850M Wifi,127.42,https://www.skroutz.gr/s/62908934/sapphire-pulse-b850m-wifi-motherboard-micro-atx-me-amd-am5-socket-52123-04-40g.html
+2026-07-05 02:38:07,Asus ROG Crosshair X870E Hero BTF Wi-Fi,733.5,https://www.skroutz.gr/s/63310331/asus-rog-crosshair-x870e-hero-btf-wi-fi-motherboard-atx-me-amd-am5-socket-90mb1mx0-m0eay0.html
+2026-07-05 02:38:07,MSI PRO B550M-B,81.89,https://www.skroutz.gr/s/67668611/msi-pro-b550m-b-motherboard-micro-atx-me-amd-am4-socket-7d14-023r.html
+2026-07-05 02:38:07,Gigabyte X870E AORUS MASTER X3D ICE,555.54,https://www.skroutz.gr/s/63775230/gigabyte-x870e-aorus-master-x3d-ice-motherboard-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,Asus ProArt B850-CREATOR WIFI NEO,306.2,https://www.skroutz.gr/s/66264660/asus-proart-b850-creator-wifi-neo-motherboard-atx-me-amd-am5-socket-90mb1p60-m0eay0.html
+2026-07-05 02:38:07,Gigabyte B860M DS3H,147.18,https://www.skroutz.gr/s/58301318/Gigabyte-B860M-DS3H-Motherboard-Micro-ATX-me-Intel-1851-Socket.html
+2026-07-05 02:38:07,Asus X870 MAX GAMING WIFI7,270.06,https://www.skroutz.gr/s/59818315/asus-x870-max-gaming-wifi7-motherboard-atx-me-amd-am5-socket-90mb1ly0-m0eay0.html
+2026-07-05 02:38:07,Gigabyte B860 Eagle WIFI6E,178.32,https://www.skroutz.gr/s/58299862/Gigabyte-B860-Eagle-WIFI6E-Motherboard-ATX-me-Intel-1851-Socket.html
+2026-07-05 02:38:07,ASRock Z890 Taichi Aqua Wi-Fi,837.4,https://www.skroutz.gr/s/57240847/ASRock-Z890-Taichi-Aqua-Wi-Fi-Motherboard-Extended-ATX-me-Intel-1851-Socket-90-MXBPL0-A0UAYZ.html
+2026-07-05 02:38:07,Sapphire B650M-E,94.6,https://www.skroutz.gr/s/62908751/sapphire-b650m-e-motherboard-micro-atx-me-amd-am5-socket-52112-04-40g.html
+2026-07-05 02:38:07,Asus Prime Z890-P rev. 1.0,239.85,https://www.skroutz.gr/s/57229131/Asus-Prime-Z890-P-rev-1-0-Motherboard-ATX-me-Intel-1851-Socket-PLYASU1850011.html
+2026-07-05 02:38:07,MSI PRO X870E-S EVO WIFI,231.77,https://www.skroutz.gr/s/65944684/msi-pro-x870e-s-evo-wifi-motherboard-atx-me-amd-am5-socket-7e86-003r.html
+2026-07-05 02:38:07,MSI B860 Gaming Plus WIFI,168.16,https://www.skroutz.gr/s/58299455/MSI-B860-Gaming-Plus-WIFI-Motherboard-ATX-me-Intel-1851-Socket-911-7E41-003.html
+2026-07-05 02:38:07,MSI Pro Z890-P WIFI,250.28,https://www.skroutz.gr/s/57190062/MSI-Pro-Z890-P-WIFI-Motherboard-ATX-me-Intel-1851-Socket-7E34-001R.html
+2026-07-05 02:38:07,Gigabyte B760 DS3H GEN5,109.9,https://www.skroutz.gr/s/62514753/gigabyte-b760-ds3h-gen5-motherboard-atx-me-intel-1700-socket.html
+2026-07-05 02:38:07,ASRock SoC,1666.27,https://www.skroutz.gr/s/59894983/asrock-soc-motherboard-ssi-eeb-me-amd-sp5-socket-turin2d16-2t.html
+2026-07-05 02:38:07,Asus B860M Max Gaming AX Wi-Fi,148.0,https://www.skroutz.gr/s/64647779/asus-b860m-max-gaming-ax-wi-fi-motherboard-micro-atx-me-intel-1851-socket.html
+2026-07-05 02:38:07,ASRock A620AM Pro RS,108.49,https://www.skroutz.gr/s/63152351/asrock-a620am-pro-rs-motherboard-micro-atx-me-amd-am5-socket-90-mxbsv0-a0uayz.html
+2026-07-05 02:38:07,ASRock Z890 Taichi Wi-Fi,434.69,https://www.skroutz.gr/s/57391968/ASRock-Z890-Taichi-Wi-Fi-Motherboard-ATX-me-Intel-1851-Socket-90-MXBPR0-A0UAYZ.html
+2026-07-05 02:38:07,Asus Rog Strix X870E-H Gaming Wifi7,417.11,https://www.skroutz.gr/s/62360605/asus-rog-strix-x870e-h-gaming-wifi7-motherboard-atx-me-amd-am5-socket-90mb1m90-m0eay0.html
+2026-07-05 02:38:07,Sapphire NITRO+ B850M WIFI,151.09,https://www.skroutz.gr/s/62909180/sapphire-nitro-b850m-wifi-motherboard-micro-atx-me-amd-am5-socket-52123-01-40g.html
+2026-07-05 02:38:07,Asus Pro H810M-C-CSM,127.89,https://www.skroutz.gr/s/58352790/Asus-Pro-H810M-C-CSM-Motherboard-Micro-ATX-me-Intel-1851-Socket-90MB1KHP-M0EAYC.html
+2026-07-05 02:38:07,ASRock H810M-X,75.72,https://www.skroutz.gr/s/59446682/ASRock-H810M-X-Motherboard-Micro-ATX-me-Intel-1851-Socket-90-MXBS4-A0UAYZ.html
+2026-07-05 02:38:07,Gigabyte X870E Aorus Master X3D Wi-Fi,545.71,https://www.skroutz.gr/s/65225525/gigabyte-x870e-aorus-master-x3d-wi-fi-motherboard-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,Asus PRIME B850-PLUS WIFI,157.92,https://www.skroutz.gr/s/59082519/Asus-PRIME-B850-PLUS-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-90MB1L80-M0EAY0.html
+2026-07-05 02:38:07,ASR H610M-HDV/M.2 D5 rev. 5.0,66.69,https://www.skroutz.gr/s/65670068/asr-h610m-hdv-m-2-d5-rev-5-0-motherboard-micro-atx-me-intel-1700-socket.html
+2026-07-05 02:38:07,ASRock B760M-H/M.2,100.13,https://www.skroutz.gr/s/44753626/ASRock-B760M-H-M-2-Motherboard-Micro-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,Asus PRIME B840M-K,140.55,https://www.skroutz.gr/s/65919405/asus-prime-b840m-k-motherboard-micro-atx-me-amd-am5-socket-90mb1pk0-m0eay0.html
+2026-07-05 02:38:07,Asus Rog Crosshair X870E Wi-Fi,1464.5,https://www.skroutz.gr/s/65669984/asus-rog-crosshair-x870e-wi-fi-motherboard-extended-atx-me-amd-am5-socket-90mb1nq0-m0eay0.html
+2026-07-05 02:38:07,Asus Prime B850M-F Wi-Fi,169.42,https://www.skroutz.gr/s/66526629/asus-prime-b850m-f-wi-fi-motherboard-micro-atx-me-amd-am5-socket-90mb1n80-m0eay0.html
+2026-07-05 02:38:07,Asus TUF Gaming B650-PLUS,160.69,https://www.skroutz.gr/s/38753418/Asus-TUF-Gaming-B650-PLUS-Motherboard-ATX-me-AMD-AM5-Socket-90MB1BY0-M0EAY0.html
+2026-07-05 02:38:07,ASRock X870 LiveMixer WiFi,244.83,https://www.skroutz.gr/s/64559665/asrock-x870-livemixer-wifi-motherboard-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,MSI B850,160.69,https://www.skroutz.gr/s/61755305/msi-b850-motherboard-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,Asus TUF Gaming B860M-PLUS WIFI,209.54,https://www.skroutz.gr/s/58283237/Asus-TUF-Gaming-B860M-PLUS-WIFI-Motherboard-Micro-ATX-me-Intel-1851-Socket-90MB1JV0-M0EAY0.html
+2026-07-05 02:38:07,Asus Prime B860-Plus,181.48,https://www.skroutz.gr/s/58282230/Asus-Prime-B860-Plus-Motherboard-ATX-me-Intel-1851-Socket-90MB1K50-M0EAY0.html
+2026-07-05 02:38:07,MSI MEG Z890 Ace Wi-Fi,681.29,https://www.skroutz.gr/s/57246280/MSI-MEG-Z890-Ace-Wi-Fi-Motherboard-ATX-me-Intel-1851-Socket-7E22-001R.html
+2026-07-05 02:38:07,Gigabyte B650 UD AX Wi-Fi,126.46,https://www.skroutz.gr/s/56334754/Gigabyte-B650-UD-AX-Wi-Fi-Motherboard-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,ASRock B850M Challenger,135.33,https://www.skroutz.gr/s/66126014/asrock-b850m-challenger-motherboard-micro-atx-me-amd-am5-socket-90-mxbu30-a0uayz.html
+2026-07-05 02:38:07,MSI MAG X870E TOMAHAWK MAX WIFI PZ,366.51,https://www.skroutz.gr/s/64241595/msi-mag-x870e-tomahawk-max-wifi-pz-motherboard-atx-me-amd-am5-socket-7e84-002r.html
+2026-07-05 02:38:07,MSI PRO B760-P II,106.52,https://www.skroutz.gr/s/52897172/MSI-PRO-B760-P-II-Motherboard-ATX-me-Intel-1700-Socket-7E29-002R.html
+2026-07-05 02:38:07,ASRock H610M-HDV/M.2,71.1,https://www.skroutz.gr/s/33492863/ASRock-H610M-HDV-M-2-Motherboard-Micro-ATX-me-Intel-1700-Socket-90-MXBH60-A0UAYZ.html
+2026-07-05 02:38:07,MSI PRO B850M-A WIFI PZ,224.46,https://www.skroutz.gr/s/64241403/msi-pro-b850m-a-wifi-pz-motherboard-micro-atx-me-amd-am5-socket-911-7e78-001.html
+2026-07-05 02:38:07,ASRock B860M Pro RS Wi-Fi,140.27,https://www.skroutz.gr/s/59212461/ASRock-B860M-Pro-RS-Wi-Fi-Motherboard-Micro-ATX-me-Intel-1851-Socket-90-MXBRQ-A0UAYZ.html
+2026-07-05 02:38:07,MSI Z890 Gaming WIFI,246.38,https://www.skroutz.gr/s/63210450/msi-z890-gaming-wifi-motherboard-atx-me-intel-1851-socket.html
+2026-07-05 02:38:07,Gigabyte Z790 Eagle,141.79,https://www.skroutz.gr/s/63219175/gigabyte-z790-eagle-motherboard-atx-me-intel-1700-socket.html
+2026-07-05 02:38:07,Gigabyte A520M H ARGB,70.0,https://www.skroutz.gr/s/66615257/gigabyte-a520m-h-argb-motherboard-micro-atx-me-amd-am4-socket.html
+2026-07-05 02:38:07,Gigabyte AORUS PRO ICE X870 Wi-Fi,306.04,https://www.skroutz.gr/s/57588020/Gigabyte-AORUS-PRO-ICE-X870-Wi-Fi-Motherboard-Mini-ITX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,Gigabyte B840M DS3H,108.24,https://www.skroutz.gr/s/59083120/Gigabyte-B840M-DS3H-Motherboard-Micro-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,MSI Motherboard ATX με Intel 1851 Socket H810M-B Pro,87.06,https://www.skroutz.gr/s/61754814/msi-motherboard-atx-me-intel-1851-socket-h810m-b-pro.html
+2026-07-05 02:38:07,ASRock B860M Pro-A,115.38,https://www.skroutz.gr/s/59446751/ASRock-B860M-Pro-A-Motherboard-Micro-ATX-me-Intel-1851-Socket-90-MXBRR0-A0UAYZ.html
+2026-07-05 02:38:07,Asus B650E Max Gaming WIFI W,211.05,https://www.skroutz.gr/s/59936359/asus-b650e-max-gaming-wifi-w-motherboard-atx-me-amd-am5-socket-90mb1m00-m0eay0.html
+2026-07-05 02:38:07,Gigabyte X870 AORUS STEALTH Wi-Fi,372.07,https://www.skroutz.gr/s/65670079/gigabyte-x870-aorus-stealth-wi-fi-motherboard-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,MSI Pro B840M-P WIFI6E,113.9,https://www.skroutz.gr/s/61320862/msi-pro-b840m-p-wifi6e-motherboard-micro-atx-me-amd-am5-socket-7e77-001r.html
+2026-07-05 02:38:07,ASRock B850 Rock WiFi7,170.38,https://www.skroutz.gr/s/66126037/asrock-b850-rock-wifi7-motherboard-atx-me-amd-am5-socket-90-mxbu20-a0uayz.html
+2026-07-05 02:38:07,ASRock B860M-X GEN5,115.62,https://www.skroutz.gr/s/65359699/asrock-b860m-x-gen5-motherboard-micro-atx-me-intel-1851-socket.html
+2026-07-05 02:38:07,Asus Prime B860M-A-CSM,147.0,https://www.skroutz.gr/s/58295334/Asus-Prime-B860M-A-CSM-Motherboard-Micro-ATX-me-Intel-1851-Socket-90MB1K00-M0EAYC.html
+2026-07-05 02:38:07,Biostar B850 Wi-Fi,91.4,https://www.skroutz.gr/s/60367486/biostar-b850-wi-fi-motherboard-micro-atx-me-amd-am5-socket-b850mt2-e-dj.html
+2026-07-05 02:38:07,Gigabyte B840M DS3H WiFi6,141.0,https://www.skroutz.gr/s/63015799/gigabyte-b840m-ds3h-wifi6-motherboard-micro-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,Asus TUF Gaming A620AM-PLUS WIFI,163.65,https://www.skroutz.gr/s/63276803/asus-tuf-gaming-a620am-plus-wifi-motherboard-micro-atx-me-amd-am5-socket-90mb1mz0-m0eay0.html
+2026-07-05 02:38:07,MSI PRO Z890-S WIFI6E,215.38,https://www.skroutz.gr/s/66918353/msi-pro-z890-s-wifi6e-motherboard-atx-me-intel-1851-socket-7e54-010r.html
+2026-07-05 02:38:07,Asus Pro WS TRX50-SAGE WIFI A,904.02,https://www.skroutz.gr/s/61933801/asus-pro-ws-trx50-sage-wifi-a-motherboard-ssi-ceb-me-amd-tr5-socket-90mb1le0-m0eay0.html
+2026-07-05 02:38:07,Asus Pro Ws B850M-Ace Se,404.94,https://www.skroutz.gr/s/63775204/asus-pro-ws-b850m-ace-se-motherboard-atx-me-amd-am5-socket-90mb1mn0-m0eay0.html
+2026-07-05 02:38:07,Gigabyte B840M Gaming Plus WIFI6E,144.55,https://www.skroutz.gr/s/66124679/gigabyte-b840m-gaming-plus-wifi6e-motherboard-micro-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,Asus ROG Maximus Z890 Apex Wi-Fi,492.0,https://www.skroutz.gr/s/57248206/Asus-ROG-Maximus-Z890-Apex-Wi-Fi-Motherboard-ATX-me-Intel-1851-Socket-90MB1IP0-M0EAY0.html
+2026-07-05 02:38:07,Asus PRIME B840M-R,124.47,https://www.skroutz.gr/s/67419352/asus-prime-b840m-r-motherboard-micro-atx-me-amd-am5-socket-90mb1pt0-m0eay0.html
+2026-07-05 02:38:07,Asus TUF GAMING B650E-E WIFI,218.25,https://www.skroutz.gr/s/59936444/asus-tuf-gaming-b650e-e-wifi-motherboard-atx-me-amd-am5-socket-90mb1lt0-m0eay0.html
+2026-07-05 02:38:07,Gigabyte MS03-CE0 C741,1871.84,https://www.skroutz.gr/s/67048647/gigabyte-ms03-ce0-c741-motherboard-me-intel-lga4677-socket.html
+2026-07-05 02:38:07,Gigabyte B850M FORCE WIFI6E,150.82,https://www.skroutz.gr/s/63163266/gigabyte-b850m-force-wifi6e-motherboard-micro-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,Gigabyte B850 Eagle ICE,178.18,https://www.skroutz.gr/s/60468689/gigabyte-b850-eagle-ice-motherboard-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,ASRock B850M Challenger WiFi,146.73,https://www.skroutz.gr/s/66126022/asrock-b850m-challenger-wifi-motherboard-micro-atx-me-amd-am5-socket-90-mxbu40-a0uayz.html
+2026-07-05 02:38:07,Asus Pro Q570M-C/CSM,170.38,https://www.skroutz.gr/s/29350214/Asus-Pro-Q570M-C-CSM-Motherboard-Micro-ATX-me-Intel-1200-Socket-90MB1700-M0EAYC.html
+2026-07-05 02:38:07,Biostar B550MHP,123.63,https://www.skroutz.gr/s/58129510/Biostar-B550MHP-Motherboard-Micro-ATX-me-AMD-AM4-Socket.html
+2026-07-05 02:38:07,Gigabyte Z890 D PLUS,212.67,https://www.skroutz.gr/s/67419315/gigabyte-z890-d-plus-motherboard-me-intel-1851-socket.html
+2026-07-05 02:38:07,Gigabyte MA34-CP0,1560.3,https://www.skroutz.gr/s/66917011/gigabyte-ma34-cp0-motherboard-extended-atx-me-intel-lga4677-socket.html
+2026-07-05 02:38:07,ASRock B860M Challenger WiFi,185.49,https://www.skroutz.gr/s/67419608/asrock-b860m-challenger-wifi-motherboard-micro-atx-me-intel-1851-socket-90-mxbup0-a0uayz.html
+2026-07-05 02:38:07,MSI PRO B850-S EVO WIFI,178.16,https://www.skroutz.gr/s/66264892/msi-pro-b850-s-evo-wifi-motherboard-atx-me-amd-am5-socket-7e97-001r.html
+2026-07-05 02:38:07,Asus P13R-E/10G-2T,585.4,https://www.skroutz.gr/s/66526763/asus-p13r-e-10g-2t-motherboard-atx-me-intel-1700-socket-90sb0cy0-m0uay1.html
+2026-07-05 02:38:07,Gigabyte B760M GAMING X AX DDR4 rev. 1.2 Wi-Fi,166.08,https://www.skroutz.gr/s/67791498/gigabyte-b760m-gaming-x-ax-ddr4-rev-1-2-wi-fi-motherboard-micro-atx-me-intel-1700-socket.html
+2026-07-05 02:38:07,Asus TUF GAMING B850-PRO W NEO Wi-Fi,276.86,https://www.skroutz.gr/s/66064570/asus-tuf-gaming-b850-pro-w-neo-wi-fi-motherboard-atx-me-amd-am5-socket-90mb1nw0-m0eay0.html
+2026-07-05 02:38:07,MSI MAG B850 GAMING PLUS MAX Wi-Fi,231.36,https://www.skroutz.gr/s/66517774/msi-mag-b850-gaming-plus-max-wi-fi-motherboard-atx-me-amd-am5-socket-7e56-030r.html
+2026-07-05 02:38:07,Gigabyte B760 Gaming X WIFI6E GEN5,137.9,https://www.skroutz.gr/s/62493349/gigabyte-b760-gaming-x-wifi6e-gen5-motherboard-atx-me-intel-1700-socket.html
+2026-07-05 02:38:07,Asus TUF Gaming X870-PRO WIFI7 W NEO,387.6,https://www.skroutz.gr/s/65922777/asus-tuf-gaming-x870-pro-wifi7-w-neo-motherboard-atx-me-amd-am5-socket-90mb1ny0-m0eay0.html
+2026-07-05 02:38:07,Asus Prime A620AM-K,105.27,https://www.skroutz.gr/s/63276719/asus-prime-a620am-k-motherboard-micro-atx-me-amd-am5-socket-90mb1gx0-m0eay0.html
+2026-07-05 02:38:07,Mis Medical MAG X870E,262.46,https://www.skroutz.gr/s/65669612/mis-medical-mag-x870e-motherboard-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,Gigabyte B760M DS3H WIFI6E GEN5 rev. 1.x,123.5,https://www.skroutz.gr/s/62811009/gigabyte-b760m-ds3h-wifi6e-gen5-rev-1-x-motherboard-micro-atx-me-intel-1700-socket.html
+2026-07-05 02:38:07,Sapphire NITRO+ X870EA PhantomLink Edition Wi-Fi,392.49,https://www.skroutz.gr/s/67791524/sapphire-nitro-x870ea-phantomlink-edition-wi-fi-motherboard-atx-me-amd-am5-socket-52122-01-40g.html
+2026-07-05 02:38:07,ASR H610M-HVS/M.2 D5 rev. 5.0,60.3,https://www.skroutz.gr/s/65669598/asr-h610m-hvs-m-2-d5-rev-5-0-motherboard-micro-atx-me-intel-1700-socket.html
+2026-07-05 02:38:07,ASRock A620AM Pro-A WiFi,93.0,https://www.skroutz.gr/s/62362692/asrock-a620am-pro-a-wifi-motherboard-micro-atx-me-amd-am5-socket-90-mxbsy-a0uayz.html
+2026-07-05 02:38:07,Gigabyte B860M D3HP,127.8,https://www.skroutz.gr/s/58353045/Gigabyte-B860M-D3HP-Motherboard-Micro-ATX-me-Intel-1851-Socket.html
+2026-07-05 02:38:07,ASRock H810M-H,72.05,https://www.skroutz.gr/s/60658867/asrock-h810m-h-motherboard-micro-atx-me-intel-1851-socket-90-mxbsz0-a0uayz.html
+2026-07-05 02:38:07,Asus ROG MAXIMUS Z890 HERO BTF Wi-Fi,728.91,https://www.skroutz.gr/s/59082897/Asus-ROG-MAXIMUS-Z890-HERO-BTF-Wi-Fi-Motherboard-ATX-me-Intel-1851-Socket-90MB1KG0-M0EAY0.html
+2026-07-05 02:38:07,MSI MPG B650I EDGE WIFI,251.24,https://www.skroutz.gr/s/39499179/MSI-MPG-B650I-EDGE-WIFI-Motherboard-Mini-ITX-me-AMD-AM5-Socket-7D73-001R.html
+2026-07-05 02:38:07,ASRock Z890 Taichi Lite Wi-Fi,288.76,https://www.skroutz.gr/s/57233568/ASRock-Z890-Taichi-Lite-Wi-Fi-Motherboard-ATX-me-Intel-1851-Socket-90-MXBPQ0-A0UAYZ.html
+2026-07-05 02:38:07,Asus TUF Gaming A620AM-PLUS,140.21,https://www.skroutz.gr/s/63276841/asus-tuf-gaming-a620am-plus-motherboard-micro-atx-me-amd-am5-socket-90mb1n30-m0eay0.html
+2026-07-05 02:38:07,Gigabyte AERO X3D WOOD,459.95,https://www.skroutz.gr/s/65098144/gigabyte-aero-x3d-wood-motherboard-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,ASRock X870E Taichi OCF Wi-Fi,492.13,https://www.skroutz.gr/s/64930354/asrock-x870e-taichi-ocf-wi-fi-motherboard-atx-me-amd-am5-socket-90-mxbtg0-a0uayz.html
+2026-07-05 02:38:07,Asus PRIME A520M-R,53.63,https://www.skroutz.gr/s/50395447/Asus-PRIME-A520M-R-Motherboard-Micro-ATX-me-AMD-AM4-Socket-90MB1H60-M0EAY0.html
+2026-07-05 02:38:07,MSI PRO Z890-P WIFI6E,260.07,https://www.skroutz.gr/s/67064063/msi-pro-z890-p-wifi6e-motherboard-atx-me-intel-1851-socket-7e34-019r.html
+2026-07-05 02:38:07,MSI PRO Z890-S WIFI PZ,297.92,https://www.skroutz.gr/s/59277694/MSI-PRO-Z890-S-WIFI-PZ-Motherboard-ATX-me-Intel-1851-Socket-7E58-001R.html
+2026-07-05 02:38:07,Asus PRIME A520M-A II/CSM,82.47,https://www.skroutz.gr/s/45223482/Asus-PRIME-A520M-A-II-CSM-Motherboard-Micro-ATX-me-AMD-AM4-Socket-90MB17H0-M0EAYC.html
+2026-07-05 02:38:07,ASRock B860 Pro RS,140.08,https://www.skroutz.gr/s/58424533/ASRock-B860-Pro-RS-Motherboard-ATX-me-Intel-1851-Socket-90-MXBRM-A0UAYZ.html
+2026-07-05 02:38:07,ASRock B860M Rock WiFi,177.89,https://www.skroutz.gr/s/67419635/asrock-b860m-rock-wifi-motherboard-micro-atx-me-intel-socket-90-mxbu60-a0uayz.html
+2026-07-05 02:38:07,MSI Z890 Gaming Plus WIFI6E,278.57,https://www.skroutz.gr/s/67672084/msi-z890-gaming-plus-wifi6e-motherboard-atx-me-intel-1851-socket-7e34-020r.html
+2026-07-05 02:38:07,Gigabyte B860M Aorus Elite WIFI6E,215.07,https://www.skroutz.gr/s/58301424/Gigabyte-B860M-Aorus-Elite-WIFI6E-Motherboard-Micro-ATX-me-Intel-1851-Socket.html
+2026-07-05 02:38:07,MSI MPG X870I EDGE TI EVO WIFI,464.43,https://www.skroutz.gr/s/64563474/msi-mpg-x870i-edge-ti-evo-wifi-motherboard-mini-itx-me-amd-am5-socket-7e50-001r.html
+2026-07-05 02:38:07,ASRock A620AM-X WiFi,92.2,https://www.skroutz.gr/s/62362424/asrock-a620am-x-wifi-motherboard-micro-atx-me-amd-am5-socket-90-mxbsu-a0uayz.html
+2026-07-05 02:38:07,Asus Prime Z790-P WIFI,169.9,https://www.skroutz.gr/s/38683268/Asus-Prime-Z790-P-WIFI-Motherboard-ATX-me-Intel-1700-Socket-90MB1CJ0-M0EAY0-90MB1CJ0-M1EAY0.html
+2026-07-05 02:38:07,ASRock A620AM-X,81.4,https://www.skroutz.gr/s/62361254/asrock-a620am-x-motherboard-micro-atx-me-amd-am5-socket-90-mxbsv-a0uayz.html
+2026-07-05 02:38:07,Sapphire A520M-E,57.3,https://www.skroutz.gr/s/62908501/sapphire-a520m-e-motherboard-micro-atx-me-amd-am4-socket-52119-04-40g.html
+2026-07-05 02:38:07,Asus ROG Maximus Z890 Extreme Wi-Fi,1369.39,https://www.skroutz.gr/s/57246005/Asus-ROG-Maximus-Z890-Extreme-Wi-Fi-Motherboard-Extended-ATX-me-Intel-1851-Socket-90MB1IA0-M0EAY0.html
+2026-07-05 02:38:07,ASRock B860M-X GEN5 WIFI,128.45,https://www.skroutz.gr/s/65359553/asrock-b860m-x-gen5-wifi-motherboard-micro-atx-me-intel-1851-socket.html
+2026-07-05 02:38:07,ASRock B860 Challenger WiFi White,169.44,https://www.skroutz.gr/s/65922954/asrock-b860-challenger-wifi-white-motherboard-atx-me-intel-1851-socket-90-mxbub0-a0uayz.html
+2026-07-05 02:38:07,ASRock H610M-HDV/M.2 R2.0,69.35,https://www.skroutz.gr/s/46329438/ASRock-H610M-HDV-M-2-R2-0-Motherboard-Micro-ATX-me-Intel-1700-Socket-90-MXBJH0-A0UAYZ.html
+2026-07-05 02:38:07,Gigabyte Z890 Eagle,211.82,https://www.skroutz.gr/s/57392617/Gigabyte-Z890-Eagle-Motherboard-ATX-me-Intel-1851-Socket.html
+2026-07-05 02:38:07,ASRock B760M-X Gen5,91.22,https://www.skroutz.gr/s/65223187/asrock-b760m-x-gen5-motherboard-micro-atx-me-intel-1700-socket-90-mxbtr0-a0uayz.html
+2026-07-05 02:38:07,Gigabyte B850M EAGLE WF7 Wi-Fi,200.98,https://www.skroutz.gr/s/66124752/gigabyte-b850m-eagle-wf7-wi-fi-motherboard-micro-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,Asus Prime B860M-K,139.88,https://www.skroutz.gr/s/58280921/Asus-Prime-B860M-K-Motherboard-Micro-ATX-me-Intel-1851-Socket-90MB1JT0-M0EAY0.html
+2026-07-05 02:38:07,Gigabyte B850 Aorus Stealth Wi-Fi,297.0,https://www.skroutz.gr/s/64618884/gigabyte-b850-aorus-stealth-wi-fi-motherboard-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,Gigabyte B860,138.53,https://www.skroutz.gr/s/67419612/gigabyte-b860-motherboard-micro-atx-me-intel-1851-socket.html
+2026-07-05 02:38:07,Biostar A620MT-E 2.0,69.77,https://www.skroutz.gr/s/65359123/biostar-a620mt-e-2-0-motherboard-micro-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,Gigabyte Z890 Aorus Elite WIFI7 PLUS,307.49,https://www.skroutz.gr/s/67832598/gigabyte-z890-aorus-elite-wifi7-plus-motherboard-atx-me-intel-1851-socket.html
+2026-07-05 02:38:07,Asus Prime B760M-A WIFI II,172.84,https://www.skroutz.gr/s/65223365/asus-prime-b760m-a-wifi-ii-motherboard-micro-atx-me-intel-1700-socket-90mb1nf0-m0eay0.html
+2026-07-05 02:38:07,ASRock H810M-P Gen5,86.54,https://www.skroutz.gr/s/66918147/asrock-h810m-p-gen5-motherboard-micro-atx-me-intel-1851-socket-90-mxbue0-a0uayz.html
+2026-07-05 02:38:07,Gigabyte H610M D3W DDR4 rev. 1.0,80.72,https://www.skroutz.gr/s/62810690/gigabyte-h610m-d3w-ddr4-rev-1-0-motherboard-micro-atx-me-intel-1700-socket.html
+2026-07-05 02:38:07,Asus Prime B760M-F WIFI,128.55,https://www.skroutz.gr/s/64559325/asus-prime-b760m-f-wifi-motherboard-micro-atx-me-intel-1700-socket-90mb1n00-m0eay0.html
+2026-07-05 02:38:07,Gigabyte B840M EAGLE WIFI6,141.97,https://www.skroutz.gr/s/63002122/gigabyte-b840m-eagle-wifi6-motherboard-micro-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,ASRock X870E Challenger WiFi,339.76,https://www.skroutz.gr/s/67419343/asrock-x870e-challenger-wifi-motherboard-atx-me-amd-am5-socket-90-mxbuh0-a0uayz.html
+2026-07-05 02:38:07,Asus Prime H810M-A WIFI,136.15,https://www.skroutz.gr/s/58297946/Asus-Prime-H810M-A-WIFI-Motherboard-Micro-ATX-me-Intel-1851-Socket-90MB1KJ0-M0EAY0.html
+2026-07-05 02:38:07,Gigabyte MC13-LE2,376.6,https://www.skroutz.gr/s/66916959/gigabyte-mc13-le2-motherboard-micro-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,Gigabyte B840M H,91.43,https://www.skroutz.gr/s/65223245/gigabyte-b840m-h-motherboard-micro-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,ASRock A620am Proa,91.34,https://www.skroutz.gr/s/61755479/asrock-a620am-proa-motherboard-micro-atx-me-amd-am5-socket-90-mxbsx0-a0uayz.html
+2026-07-05 02:38:07,Asus Pro B550M-C/CSM,145.0,https://www.skroutz.gr/s/27325459/Asus-Pro-B550M-C-CSM-Motherboard-Micro-ATX-me-AMD-AM4-Socket-90MB15Q0-M0EAYC.html
+2026-07-05 02:38:07,Gigabyte B840M Gaming X WIFI6E,169.63,https://www.skroutz.gr/s/66528496/gigabyte-b840m-gaming-x-wifi6e-motherboard-micro-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,Biostar Z690MX2-E D4,82.45,https://www.skroutz.gr/s/58226752/Biostar-Z690MX2-E-D4-Motherboard-Micro-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,Gigabyte B840M D3HP,125.82,https://www.skroutz.gr/s/66126074/gigabyte-b840m-d3hp-motherboard-micro-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,Gigabyte B860M E,114.82,https://www.skroutz.gr/s/64930259/gigabyte-b860m-e-motherboard-micro-atx-me-intel-1851-socket.html
+2026-07-05 02:38:07,Asus ProArt Z890-Creator WiFi,558.99,https://www.skroutz.gr/s/57607965/Asus-ProArt-Z890-Creator-WiFi-Motherboard-ATX-me-Intel-1851-Socket-90MB1JD0-M0EAY0.html
+2026-07-05 02:38:07,ASRock B860 Challenger WiFi,156.03,https://www.skroutz.gr/s/65922963/asrock-b860-challenger-wifi-motherboard-atx-me-intel-1851-socket-90-mxbuc0-a0uayz.html
+2026-07-05 02:38:07,Gigabyte X870M AORUS ELITE ICE Wi-Fi,286.3,https://www.skroutz.gr/s/65670393/gigabyte-x870m-aorus-elite-ice-wi-fi-motherboard-micro-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,Asus P13R-E/10G-2T,623.14,https://www.skroutz.gr/s/58131383/Asus-P13R-E-10G-2T-Motherboard-ATX-me-Intel-1700-Socket-90SB0CY0-M0UAY0.html
+2026-07-05 02:38:07,MSI MEG X870E ACE MAX Wi-Fi,774.03,https://www.skroutz.gr/s/65359224/msi-meg-x870e-ace-max-wi-fi-motherboard-atx-me-amd-am5-socket-7e85-001r.html
+2026-07-05 02:38:07,Asus ROG Strix B860-G GAMING WIFI,291.24,https://www.skroutz.gr/s/58283992/Asus-ROG-Strix-B860-G-GAMING-WIFI-Motherboard-Micro-ATX-me-Intel-Socket-90MB1JF0-M0EAY0.html
+2026-07-05 02:38:07,Gigabyte H810M Gaming WIFI6 GEN5,132.18,https://www.skroutz.gr/s/67833458/gigabyte-h810m-gaming-wifi6-gen5-motherboard-micro-atx-me-intel-1851-socket.html
+2026-07-05 02:38:07,Gigabyte Z890 Eagle Plus,250.32,https://www.skroutz.gr/s/67832723/gigabyte-z890-eagle-plus-motherboard-atx-me-intel-1851-socket.html
+2026-07-05 02:38:07,ASR EC266D2I,381.2,https://www.skroutz.gr/s/67757654/asr-ec266d2i-motherboard-mini-itx-me-intel-1700-socket.html
+2026-07-05 02:38:07,Asus P13R-I C262,422.81,https://www.skroutz.gr/s/66918512/asus-p13r-i-c262-motherboard-mini-itx-me-intel-1700-socket-90sb0cr0-m0uay1.html
+2026-07-05 02:38:07,Gigabyte X870 Aorus Tachyon ICE Wi-Fi,550.95,https://www.skroutz.gr/s/62514824/gigabyte-x870-aorus-tachyon-ice-wi-fi-motherboard-extended-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,ASRock PG X870 Nova WiFi,293.23,https://www.skroutz.gr/s/62363057/asrock-pg-x870-nova-wifi-motherboard-atx-me-amd-am5-socket-90-mxbt20-a0uayz.html
+2026-07-05 02:38:07,Gigabyte B760M H DDR4 rev. 2.0,92.25,https://www.skroutz.gr/s/64393140/gigabyte-b760m-h-ddr4-rev-2-0-motherboard-micro-atx-me-intel-1700-socket.html
+2026-07-05 02:38:07,Asus PRIME B850M-A WIFI,159.36,https://www.skroutz.gr/s/60583324/asus-prime-b850m-a-wifi-motherboard-micro-atx-me-amd-am5-socket-90mb1ln0-m0eay0.html
+2026-07-05 02:38:07,Asus PRO H810T-CSM,155.45,https://www.skroutz.gr/s/63775105/asus-pro-h810t-csm-motherboard-mini-itx-me-intel-1851-socket-90mb1lgm-m0eayc.html
+2026-07-05 02:38:07,ASRock TURIND8-2L2T SoC,1124.4,https://www.skroutz.gr/s/66265340/asrock-turind8-2l2t-soc-motherboard-ssi-ceb-me-amd-sp5-socket-turind8-2l2t.html
+2026-07-05 02:38:07,Gigabyte H610M D3W rev. 1.0,72.89,https://www.skroutz.gr/s/64241654/gigabyte-h610m-d3w-rev-1-0-motherboard-micro-atx-me-intel-1700-socket.html
+2026-07-05 02:38:07,Gigabyte B850M EAGLE WF6E Wi-Fi,175.96,https://www.skroutz.gr/s/64559078/gigabyte-b850m-eagle-wf6e-wi-fi-motherboard-micro-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,MSI PRO A620AM-G EVO WIFI,150.57,https://www.skroutz.gr/s/66918208/msi-pro-a620am-g-evo-wifi-motherboard-micro-atx-me-amd-am5-socket-7e96-001r.html
+2026-07-05 02:38:07,Asus B850 MAX GAMING WIFI W,241.29,https://www.skroutz.gr/s/60123650/asus-b850-max-gaming-wifi-w-motherboard-atx-me-amd-am5-socket-90mb1m10-m0eay0.html
+2026-07-05 02:38:07,Biostar B650MS2-E,82.63,https://www.skroutz.gr/s/67612047/biostar-b650ms2-e-motherboard-micro-atx-me-amd-am5-socket-b650ms2-e.html
+2026-07-05 02:38:07,Asus Prime H810M-E,126.3,https://www.skroutz.gr/s/64559420/asus-prime-h810m-e-motherboard-micro-atx-me-intel-1851-socket.html
+2026-07-05 02:38:07,Gigabyte H610M D3W WIFI6 rev. 1.0,94.81,https://www.skroutz.gr/s/64559203/gigabyte-h610m-d3w-wifi6-rev-1-0-motherboard-micro-atx-me-intel-1700-socket.html
+2026-07-05 02:38:07,Asus Prime A620AM-A-CSM,133.93,https://www.skroutz.gr/s/63276584/asus-prime-a620am-a-csm-motherboard-micro-atx-me-amd-am5-socket-90mb1my0-m0eayc.html
+2026-07-05 02:38:07,Asus PRIME B760M-A II-CSM,207.9,https://www.skroutz.gr/s/66615073/asus-prime-b760m-a-ii-csm-motherboard-micro-atx-me-intel-1700-socket-90mb1ng0-m0eayc.html
+2026-07-05 02:38:07,Asus Prime Z890M-PLUS Wifi rev. 1.0,188.64,https://www.skroutz.gr/s/57235794/Asus-Prime-Z890M-PLUS-Wifi-rev-1-0-Motherboard-Micro-ATX-me-Intel-1851-Socket-90MB1J80-M0EAY0.html
+2026-07-05 02:38:07,Gigabyte B840M D3HP WF6E Wi-Fi,141.49,https://www.skroutz.gr/s/66124290/gigabyte-b840m-d3hp-wf6e-wi-fi-motherboard-micro-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,MSI PRO B840-S EVO WIFI6E,152.18,https://www.skroutz.gr/s/64563264/msi-pro-b840-s-evo-wifi6e-motherboard-atx-me-amd-am5-socket-7e93-001r.html
+2026-07-05 02:38:07,Gigabyte B860M GAMING WIFI6,173.88,https://www.skroutz.gr/s/64562033/gigabyte-b860m-gaming-wifi6-motherboard-micro-atx-me-intel-1851-socket.html
+2026-07-05 02:38:07,Gigabyte H810M S2H GEN5,112.28,https://www.skroutz.gr/s/67833443/gigabyte-h810m-s2h-gen5-motherboard-micro-atx-me-intel-1851-socket.html
+2026-07-05 02:38:07,Gigabyte H610M D3H DDR4 rev. 1.0 Wi-Fi,92.37,https://www.skroutz.gr/s/63402108/gigabyte-h610m-d3h-ddr4-rev-1-0-wi-fi-motherboard-micro-atx-me-intel-1700-socket.html
+2026-07-05 02:38:07,Asus TUF GAMING B650E-PLUS WIFI,235.57,https://www.skroutz.gr/s/60123661/asus-tuf-gaming-b650e-plus-wifi-motherboard-atx-me-amd-am5-socket-90mb1m20-m0eay0.html
+2026-07-05 02:38:07,Asus Prime H810M-A-CSM,128.62,https://www.skroutz.gr/s/58301350/Asus-Prime-H810M-A-CSM-Motherboard-Micro-ATX-me-Intel-1851-Socket-90MB1KK0-M0EAYC.html
+2026-07-05 02:38:07,ASRock Phantom Gaming Z890 Nova WiFi,357.55,https://www.skroutz.gr/s/57392204/ASRock-Phantom-Gaming-Z890-Nova-WiFi-Motherboard-ATX-me-Intel-1851-Socket-90-MXBPS0-A0UAYZ.html
+2026-07-05 02:38:07,Asus TUF GAMING B850-E WIFI,191.15,https://www.skroutz.gr/s/60123471/asus-tuf-gaming-b850-e-wifi-motherboard-atx-me-amd-am5-socket-90mb1l20-m0eay0.html
+2026-07-05 02:38:07,Asus PRIME B840-PLUS WIFI,153.77,https://www.skroutz.gr/s/58241302/Asus-PRIME-B840-PLUS-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-90MB1IZ0-M0EAY0.html
+2026-07-05 02:38:07,Asus Prime B850M-F,150.3,https://www.skroutz.gr/s/66526586/asus-prime-b850m-f-motherboard-micro-atx-me-amd-am5-socket-90mb1n90-m0eay0.html
+2026-07-05 02:38:07,Asus PRIME B840M-A WIFI,143.91,https://www.skroutz.gr/s/58241422/Asus-PRIME-B840M-A-WIFI-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90MB1J20-M0EAY0.html
+2026-07-05 02:38:07,Sapphire PURE X870A Wi-Fi,259.6,https://www.skroutz.gr/s/65672563/sapphire-pure-x870a-wi-fi-motherboard-atx-me-amd-am5-socket-52122-02-40g.html
+2026-07-05 02:38:07,Gigabyte B760M E rev. 1.0,93.37,https://www.skroutz.gr/s/59755164/gigabyte-b760m-e-rev-1-0-motherboard-micro-atx-me-intel-1700-socket.html
+2026-07-05 02:38:07,Gigabyte B860 Gaming X WIFI6E,180.05,https://www.skroutz.gr/s/58299198/Gigabyte-B860-Gaming-X-WIFI6E-Motherboard-ATX-me-Intel-1851-Socket.html
+2026-07-05 02:38:07,Asus PRO WS W880-ACE SE,686.23,https://www.skroutz.gr/s/61239017/asus-pro-ws-w880-ace-se-motherboard-atx-me-intel-1851-socket-90mb1kv0-m0eay0.html
+2026-07-05 02:38:07,Asus Motherboard Mini ITX με AMD AM5 Socket 90MB1L5M-M0EAYC,127.23,https://www.skroutz.gr/s/61755068/asus-motherboard-mini-itx-me-amd-am5-socket-90mb1l5m-m0eayc.html
+2026-07-05 02:38:07,Asus PRIME B840M-A-CSM,140.51,https://www.skroutz.gr/s/58241205/Asus-PRIME-B840M-A-CSM-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90MB1J10-M0EAYC.html
+2026-07-05 02:38:07,Asus Prime H810M-K,130.14,https://www.skroutz.gr/s/66917158/asus-prime-h810m-k-motherboard-micro-atx-me-intel-1851-socket-90mb1n10-m0eay0.html
+2026-07-05 02:38:07,ASRock B860M Steel Legend WiFi,170.89,https://www.skroutz.gr/s/58503014/ASRock-B860M-Steel-Legend-WiFi-Motherboard-Micro-ATX-me-Intel-1851-Socket-90-MXBQF0-A0UAYZ.html
+2026-07-05 02:38:07,ASRock B850M Rock WiFi,140.05,https://www.skroutz.gr/s/66126002/asrock-b850m-rock-wifi-motherboard-micro-atx-me-amd-am5-socket-90-mxbu70-a0uayz.html
+2026-07-05 02:38:07,Gigabyte MS74-HB0 SoC,1416.45,https://www.skroutz.gr/s/67048648/gigabyte-ms74-hb0-soc-motherboard-me-intel-lga4710-socket.html
+2026-07-05 02:38:07,Asus PRIME B650M-R,118.21,https://www.skroutz.gr/s/50391491/Asus-PRIME-B650M-R-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90MB1H30-M0EAY0.html
+2026-07-05 02:38:07,Asus ROG STRIX Z890 H GAMING WIFI,419.71,https://www.skroutz.gr/s/59083835/Asus-ROG-STRIX-Z890-H-GAMING-WIFI-Motherboard-ATX-me-Intel-1851-Socket-90MB1K20-M0EAY0.html
+2026-07-05 02:38:07,Asus Prime B860-Plus-CSM,179.4,https://www.skroutz.gr/s/58294274/Asus-Prime-B860-Plus-CSM-Motherboard-ATX-me-Intel-1851-Socket-90MB1KA0-M0EAYC.html
+2026-07-05 02:38:07,Gigabyte Q870M D3H,201.42,https://www.skroutz.gr/s/63774324/gigabyte-q870m-d3h-motherboard-micro-atx-me-intel-1851-socket.html
+2026-07-05 02:38:07,ASRock B860 Lightning WiFi,181.83,https://www.skroutz.gr/s/58502964/ASRock-B860-Lightning-WiFi-Motherboard-Micro-ATX-me-Intel-1851-Socket-90-MXBQG0-A0UAYZ.html
+2026-07-05 02:38:07,ASRock H810M-X WiFi,88.6,https://www.skroutz.gr/s/60254192/asrock-h810m-x-wifi-motherboard-micro-atx-me-intel-1851-socket-90-mxbs6-a0uayz.html
+2026-07-05 02:38:07,Asus PRIME B850-PLUS-CSM,214.54,https://www.skroutz.gr/s/60123272/asus-prime-b850-plus-csm-motherboard-atx-me-amd-am5-socket-90mb1lc0-m0eayc.html
+2026-07-05 02:38:07,Asus PRO B860M-C-CSM,180.42,https://www.skroutz.gr/s/61815787/asus-pro-b860m-c-csm-motherboard-micro-atx-me-intel-1851-socket-90mb1mcp-m0eayc.html
+2026-07-05 02:38:07,Asus PRO Q870I-C-CSM,242.54,https://www.skroutz.gr/s/64978863/asus-pro-q870i-c-csm-motherboard-mini-itx-me-intel-1851-socket-90mb1mpp-m0eayc.html
+2026-07-05 02:38:07,ASRock Z890 Pro RS,211.19,https://www.skroutz.gr/s/56933101/ASRock-Z890-Pro-RS-Motherboard-ATX-me-Intel-1851-Socket-90-MXBP10-A0UAYZ.html
+2026-07-05 02:38:07,ASRock B860 Steel Legend WIFI,189.11,https://www.skroutz.gr/s/58310559/ASRock-B860-Steel-Legend-WIFI-Motherboard-ATX-me-Intel-1851-Socket.html
+2026-07-05 02:38:07,Gigabyte H810M S2H,94.03,https://www.skroutz.gr/s/59083529/Gigabyte-H810M-S2H-Motherboard-Micro-ATX-me-Intel-1851-Socket.html
+2026-07-05 02:38:07,Asus B850M MAX Gaming WIFI,199.13,https://www.skroutz.gr/s/60567733/asus-b850m-max-gaming-wifi-motherboard-micro-atx-me-amd-am5-socket-90mb1ll0-m0eay0.html
+2026-07-05 02:38:07,MSI MAG B860 Tomahawk WiFi,218.98,https://www.skroutz.gr/s/58300903/MSI-MAG-B860-Tomahawk-WiFi-Motherboard-ATX-me-Intel-1851-Socket-7E39-001R.html
+2026-07-05 02:38:07,MSI MPG B860I EDGE TI WIFI,210.04,https://www.skroutz.gr/s/61837201/msi-mpg-b860i-edge-ti-wifi-motherboard-mini-itx-me-intel-1851-socket-7e43-001r.html
+2026-07-05 02:38:07,MSI Pro B860-P,154.84,https://www.skroutz.gr/s/58310577/MSI-Pro-B860-P-Motherboard-ATX-me-Intel-1851-Socket-PRO-B860-P-7E41-002R.html
+2026-07-05 02:38:07,ASRock Z890D4U rev. 1.0,557.11,https://www.skroutz.gr/s/66265646/asrock-z890d4u-rev-1-0-motherboard-micro-atx-me-intel-1851-socket.html
+2026-07-05 02:38:07,Asus Prime A520M-K ARGB,82.77,https://www.skroutz.gr/s/67618592/asus-prime-a520m-k-argb-motherboard-micro-atx-me-amd-am4-socket-90mb1r00-m0eay0.html
+2026-07-05 02:38:07,ASRock X870 Phantom Gaming Riptide WiFi,249.9,https://www.skroutz.gr/s/56902703/ASRock-X870-Phantom-Gaming-Riptide-WiFi-Motherboard-ATX-me-AMD-AM5-Socket-90-MXBPP0-A0UAYZ.html
+2026-07-05 02:38:07,Gigabyte B860M Gaming X WIFI6E,157.5,https://www.skroutz.gr/s/58301258/Gigabyte-B860M-Gaming-X-WIFI6E-Motherboard-Micro-ATX-me-Intel-1851-Socket.html
+2026-07-05 02:38:07,MSI MEG Z890 Wi-Fi,773.39,https://www.skroutz.gr/s/57908226/MSI-MEG-Z890-Wi-Fi-Motherboard-ATX-me-Intel-1851-Socket-7E20-001R.html
+2026-07-05 02:38:07,ASRock B860 LiveMixer WIFI,156.78,https://www.skroutz.gr/s/58301203/ASRock-B860-LiveMixer-WIFI-Motherboard-ATX-me-Intel-1851-Socket-90-MXBQV0-A0UAYZ.html
+2026-07-05 02:38:07,Asus PRIME B850M-A-CSM,185.8,https://www.skroutz.gr/s/60764960/asus-prime-b850m-a-csm-motherboard-micro-atx-me-amd-am5-socket-90mb1lq0-m0eayc.html
+2026-07-05 02:38:07,Asus PRO WS WRX90E-SAGE,1421.33,https://www.skroutz.gr/s/50390952/Asus-PRO-WS-WRX90E-SAGE-Motherboard-Micro-ATX-me-AMD-TR5-Socket-90MB1FW0-M0EAY0.html
+2026-07-05 02:38:07,NZXT N9 Z890 Wi-Fi,465.6,https://www.skroutz.gr/s/60765069/nzxt-n9-z890-wi-fi-motherboard-atx-me-intel-1851-socket-n9-z89xt-b1.html
+2026-07-05 02:38:07,Asus B650E Max Gaming WIFI,161.74,https://www.skroutz.gr/s/59317685/Asus-B650E-Max-Gaming-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-90MB1LD0-M0EAY0.html
+2026-07-05 02:38:07,ASRock SoC,2548.25,https://www.skroutz.gr/s/65669764/asrock-soc-motherboard-me-amd-sp5-socket-turin2d24g-2l-500w.html
+2026-07-05 02:38:07,ASRock EC262D4U2-2L2Q/E810,717.24,https://www.skroutz.gr/s/66265602/asrock-ec262d4u2-2l2q-e810-motherboard-micro-atx-me-intel-1700-socket.html
+2026-07-05 02:38:07,ASRock SIENAD8UD3 SoC,790.04,https://www.skroutz.gr/s/66265645/asrock-sienad8ud3-soc-motherboard-micro-atx-me-amd-sp6-socket.html
+2026-07-05 02:38:07,ASRock SIENAD8UD-2L2Q SoC,958.98,https://www.skroutz.gr/s/66265641/asrock-sienad8ud-2l2q-soc-motherboard-micro-atx-me-amd-sp6-socket.html
+2026-07-05 02:38:07,ASRock B860M-X,124.79,https://www.skroutz.gr/s/58459584/ASRock-B860M-X-Motherboard-Micro-ATX-me-Intel-1851-Socket-90-MXBRX0-A0UAYZ.html
+2026-07-05 02:38:07,ASRock H810M-X GEN5 Wi-Fi,114.91,https://www.skroutz.gr/s/66518603/asrock-h810m-x-gen5-wi-fi-motherboard-micro-atx-me-intel-1851-socket-90-mxbu80-a0uayz.html
+2026-07-05 02:38:07,Gigabyte Z890 AORUS TACHYON ICE,616.33,https://www.skroutz.gr/s/62493350/gigabyte-z890-aorus-tachyon-ice-motherboard-atx-me-intel-1851-socket.html
+2026-07-05 02:38:07,ASRock H610M-H2/M.2,57.91,https://www.skroutz.gr/s/57420286/ASRock-H610M-H2-M-2-Motherboard-Micro-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,Gigabyte B860I Aorus Pro ICE Wi-Fi,263.0,https://www.skroutz.gr/s/58387905/Gigabyte-B860I-Aorus-Pro-ICE-Wi-Fi-Motherboard-Mini-ITX-me-Intel-1851-Socket.html
+2026-07-05 02:38:07,Gigabyte H810M H,92.26,https://www.skroutz.gr/s/59277292/Gigabyte-H810M-H-Motherboard-Micro-ATX-me-Intel-1851-Socket.html
+2026-07-05 02:38:07,Gigabyte Z890 Aorus Master Wi-Fi,461.39,https://www.skroutz.gr/s/57226299/Gigabyte-Z890-Aorus-Master-Wi-Fi-Motherboard-ATX-me-Intel-1851-Socket.html
+2026-07-05 02:38:07,MSI Pro B860-P WIFI,197.5,https://www.skroutz.gr/s/58284241/MSI-Pro-B860-P-WIFI-Motherboard-ATX-me-Intel-1851-Socket-911-7E41-001.html
+2026-07-05 02:38:07,Gigabyte Z890 Aero G Wi-Fi,314.08,https://www.skroutz.gr/s/57227834/Gigabyte-Z890-Aero-G-Wi-Fi-Motherboard-ATX-me-Intel-1851-Socket.html
+2026-07-05 02:38:07,ASRock Phantom Gaming Z890M Riptide WiFi,242.13,https://www.skroutz.gr/s/57245287/ASRock-Phantom-Gaming-Z890M-Riptide-WiFi-Motherboard-Micro-ATX-me-Intel-1851-Socket-90-MXBPK0-A0UAYZ.html
+2026-07-05 02:38:07,ASRock H610M-H2/M.2 D5,37.7,https://www.skroutz.gr/s/45773549/ASRock-H610M-H2-M-2-D5-Motherboard-Micro-ATX-me-Intel-1700-Socket-90-MXBML0-A0UAYZ.html
+2026-07-05 02:38:07,Asus TUF GAMING B860M-PLUS,243.94,https://www.skroutz.gr/s/58297682/Asus-TUF-GAMING-B860M-PLUS-Motherboard-Micro-ATX-me-Intel-1851-Socket-90MB1JW0-M0EAY0.html
+2026-07-05 02:38:07,ASRock Custom,1533.0,https://www.skroutz.gr/s/60367535/asrock-custom-motherboard-custom-me-amd-sp5-socket-genoa2d24g-2l.html
+2026-07-05 02:38:07,ASRock TRX50 WS,630.33,https://www.skroutz.gr/s/48920173/ASRock-TRX50-WS-Motherboard-Extended-ATX-me-AMD-sTR5-Socket-90-MXBN40-A0UAYZ.html
+2026-07-05 02:38:07,Gigabyte B860M EAGLE V2,125.83,https://www.skroutz.gr/s/59755234/gigabyte-b860m-eagle-v2-motherboard-micro-atx-me-intel-1851-socket.html
+2026-07-05 02:38:07,ASRock Z890 Pro-A WIFI,200.84,https://www.skroutz.gr/s/57392349/ASRock-Z890-Pro-A-WIFI-Motherboard-ATX-me-Intel-1851-Socket-90-MXBP60-A0UAYZ.html
+2026-07-05 02:38:07,Gigabyte H610M S2H V2 rev. 1.0,61.95,https://www.skroutz.gr/s/50786561/Gigabyte-H610M-S2H-V2-rev-1-0-Motherboard-Micro-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,Asus S14NA-U12 SoC,884.65,https://www.skroutz.gr/s/54979601/Asus-S14NA-U12-SoC-Motherboard-SSI-CEB-me-AMD-SP6-Socket-90SB0CG0-M0UAY0.html
+2026-07-05 02:38:07,Gigabyte MC13-LE1 rev. 1.0,531.53,https://www.skroutz.gr/s/59754894/gigabyte-mc13-le1-rev-1-0-motherboard-micro-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,ASRock Z890 Steel Legend WiFi,245.66,https://www.skroutz.gr/s/56933234/ASRock-Z890-Steel-Legend-WiFi-Motherboard-ATX-me-Intel-1851-Socket-90-MXBPF0-A0UAYZ.html
+2026-07-05 02:38:07,Asus P13R-E C266,515.02,https://www.skroutz.gr/s/63773459/asus-p13r-e-c266-motherboard-atx-me-intel-1700-socket-90sb0cs0-m0uay1.html
+2026-07-05 02:38:07,NZXT N7 Z890 Wi-Fi,346.5,https://www.skroutz.gr/s/66530889/nzxt-n7-z890-wi-fi-motherboard-atx-me-intel-1851-socket-n7-z89xt-b1.html
+2026-07-05 02:38:07,Gigabyte B850 AI TOP Wi-Fi,427.31,https://www.skroutz.gr/s/58252046/Gigabyte-B850-AI-TOP-Wi-Fi-Motherboard-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,Gigabyte B850M DS3H,127.31,https://www.skroutz.gr/s/58239893/Gigabyte-B850M-DS3H-Motherboard-Micro-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,ASRock X870 Challenger WiFi,249.67,https://www.skroutz.gr/s/67420442/asrock-x870-challenger-wifi-motherboard-atx-me-amd-am5-socket-90-mxbul0-a0uayz.html
+2026-07-05 02:38:07,ASRock B860M LiveMixer WiFi,172.83,https://www.skroutz.gr/s/58417843/ASRock-B860M-LiveMixer-WiFi-Motherboard-Micro-ATX-me-Intel-1851-Socket-90-MXBRT-A0UAYZ.html
+2026-07-05 02:38:07,ASRock B860 Lightning WiFi,229.33,https://www.skroutz.gr/s/58460128/ASRock-B860-Lightning-WiFi-Motherboard-ATX-me-Intel-1851-Socket-90-MXBR20-A0UAYZ.html
+2026-07-05 02:38:07,Asus Pro Q870M-C-CSM,231.54,https://www.skroutz.gr/s/60813867/asus-pro-q870m-c-csm-motherboard-micro-atx-me-intel-1851-socket-90mb1kep-m0eayc.html
+2026-07-05 02:38:07,MSI B860M Gaming Plus WIFI,173.03,https://www.skroutz.gr/s/58300736/MSI-B860M-Gaming-Plus-WIFI-Motherboard-Micro-ATX-me-Intel-1851-Socket.html
+2026-07-05 02:38:07,ASRock B550M-P,90.8,https://www.skroutz.gr/s/67618730/asrock-b550m-p-motherboard-micro-atx-me-amd-am4-socket-90-mxbv10-a0uayz.html
+2026-07-05 02:38:07,Gigabyte Z890M Gaming X,187.07,https://www.skroutz.gr/s/57189879/Gigabyte-Z890M-Gaming-X-Motherboard-Micro-ATX-me-Intel-1851-Socket.html
+2026-07-05 02:38:07,ASRock Motherboard ATX με AMD AM5 Socket 90-MXBUG0-A0UAYZ,317.71,https://www.skroutz.gr/s/67419336/asrock-motherboard-atx-me-amd-am5-socket-90-mxbug0-a0uayz.html
+2026-07-05 02:38:07,NZXT N7 B850 Wi-Fi,387.13,https://www.skroutz.gr/s/65209693/nzxt-n7-b850-wi-fi-motherboard-atx-me-amd-am5-socket-n7-b85xt-b1.html
+2026-07-05 02:38:07,Asus ROG STRIX X870-I Gaming WIFI,462.09,https://www.skroutz.gr/s/56828260/Asus-ROG-STRIX-X870-I-Gaming-WIFI-Motherboard-Mini-ITX-me-AMD-AM5-Socket-90MB1IW0-M0EAY0.html
+2026-07-05 02:38:07,ASRock B860M Pro-A WiFi,126.98,https://www.skroutz.gr/s/59317625/ASRock-B860M-Pro-A-WiFi-Motherboard-Micro-ATX-me-Intel-1851-Socket-90-MXBRS-A0UAYZ.html
+2026-07-05 02:38:07,ASRock B650D4U,456.83,https://www.skroutz.gr/s/55049905/ASRock-B650D4U-Motherboard-Micro-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,ASRock B860M Challenger WiFi,160.78,https://www.skroutz.gr/s/67419606/asrock-b860m-challenger-wifi-motherboard-micro-atx-me-intel-1851-socket-90-mxbuq0-a0uayz.html
+2026-07-05 02:38:07,MSI MPG Z890I EDGE TI WIFI,433.32,https://www.skroutz.gr/s/57676408/MSI-MPG-Z890I-EDGE-TI-WIFI-Motherboard-Mini-ITX-me-Intel-1851-Socket-7E33-001R.html
+2026-07-05 02:38:07,ASRock Z890 Riptide WiFi,275.72,https://www.skroutz.gr/s/56933184/ASRock-Z890-Riptide-WiFi-Motherboard-ATX-me-Intel-1851-Socket-90-MXBPB0-A0UAYZ.html
+2026-07-05 02:38:07,Asus Pro WS W890E-SAGE SE,1529.27,https://www.skroutz.gr/s/66125961/asus-pro-ws-w890e-sage-se-motherboard-ssi-eeb-me-intel-lga4710-socket-90mb1lh0-m0eay0.html
+2026-07-05 02:38:07,ASRock Z890 Pro-A,171.12,https://www.skroutz.gr/s/56933132/ASRock-Z890-Pro-A-Motherboard-ATX-me-Intel-1851-Socket-90-MXBP50-A0UAYZ.html
+2026-07-05 02:38:07,Gigabyte B860 DS3H,164.44,https://www.skroutz.gr/s/59196012/Gigabyte-B860-DS3H-Motherboard-ATX-me-Intel-1851-Socket.html
+2026-07-05 02:38:07,ASRock B760M-HDV/M.2 D4,77.31,https://www.skroutz.gr/s/40258893/ASRock-B760M-HDV-M-2-D4-Motherboard-Micro-ATX-me-Intel-1700-Socket-90-MXBL40-A0UAYZ.html
+2026-07-05 02:38:07,Biostar H610MHP 2.0,78.42,https://www.skroutz.gr/s/56334874/Biostar-H610MHP-2-0-Motherboard-Micro-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,NZXT N7 Z890 Wi-Fi,346.5,https://www.skroutz.gr/s/66530833/nzxt-n7-z890-wi-fi-motherboard-atx-me-intel-1851-socket-n7-z89xt-w1.html
+2026-07-05 02:38:07,Asus Pro WS Z890-ACE SE,609.58,https://www.skroutz.gr/s/58353012/Asus-Pro-WS-Z890-ACE-SE-Motherboard-ATX-me-Intel-1851-Socket-90MB1JC0-M0EAY0.html
+2026-07-05 02:38:07,MSI PRO H610M-E,50.11,https://www.skroutz.gr/s/48576186/MSI-PRO-H610M-E-Motherboard-Micro-ATX-me-Intel-1700-Socket-7D48-019R.html
+2026-07-05 02:38:07,Biostar H610Mhd D5,76.25,https://www.skroutz.gr/s/64930295/biostar-h610mhd-d5-motherboard-micro-atx-me-intel-1700-socket.html
+2026-07-05 02:38:07,ASRock Z890 LiveMixer WiFi,235.99,https://www.skroutz.gr/s/56933300/ASRock-Z890-LiveMixer-WiFi-Motherboard-ATX-me-Intel-1851-Socket-90-MXBPE0-A0UAYZ.html
+2026-07-05 02:38:07,ASRock Motherboard Micro ATX με Intel 1700 Socket EC266D4U,370.23,https://www.skroutz.gr/s/59894484/asrock-motherboard-micro-atx-me-intel-1700-socket-ec266d4u.html
+2026-07-05 02:38:07,ASRock B650 Rock WiFi 7,163.53,https://www.skroutz.gr/s/67419632/asrock-b650-rock-wifi-7-motherboard-atx-me-amd-am5-socket-90-mxbuy0-a0uayz.html
+2026-07-05 02:38:07,ASRock X870 Challenger WiFi,239.64,https://www.skroutz.gr/s/67419603/asrock-x870-challenger-wifi-motherboard-atx-me-amd-am5-socket-90-mxbuk0-a0uayz.html
+2026-07-05 02:38:07,Asus PRIME B760M-K,96.81,https://www.skroutz.gr/s/42554011/Asus-PRIME-B760M-K-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB1FI0-M0EAY0.html
+2026-07-05 02:38:07,ASRock C262,385.63,https://www.skroutz.gr/s/59894453/asrock-c262-motherboard-micro-atx-me-intel-1700-socket-ec262d4u.html
+2026-07-05 02:38:07,Asus TUF Gaming A620-PRO WiFi,133.3,https://www.skroutz.gr/s/42742805/Asus-TUF-Gaming-A620-PRO-WiFi-Motherboard-ATX-me-AMD-AM5-Socket-90MB1FR0-M0EAY0.html
+2026-07-05 02:38:07,Sum MBD-X14SAZ-TLN4F-O SUM W880,821.1,https://www.skroutz.gr/s/64618752/sum-mbd-x14saz-tln4f-o-sum-w880-motherboard-micro-atx-me-intel-socket.html
+2026-07-05 02:38:07,MSI Pro Z890-S WIFI,250.53,https://www.skroutz.gr/s/57235424/MSI-Pro-Z890-S-WIFI-Motherboard-ATX-me-Intel-1851-Socket-7E54-001R.html
+2026-07-05 02:38:07,ASRock Knoll3,937.72,https://www.skroutz.gr/s/59895027/asrock-knoll3-motherboard-mini-itx-me-amd-am5-socket-am5d4id-2t-bcm.html
+2026-07-05 02:38:07,Maxsun Terminator B550M,117.47,https://www.skroutz.gr/s/56335012/Maxsun-Terminator-B550M-Motherboard-Micro-ATX-me-AMD-AM4-Socket.html
+2026-07-05 02:38:07,Asus TUF Gaming B550-PRO,699.19,https://www.skroutz.gr/s/27165859/Asus-TUF-Gaming-B550-PRO-Motherboard-ATX-me-AMD-AM4-Socket-90MB17R0-M0EAY0.html
+2026-07-05 02:38:07,Sum MBD-X13DAI-T,1285.73,https://www.skroutz.gr/s/67419734/sum-mbd-x13dai-t-motherboard-extended-atx-me-intel-4677-socket.html
+2026-07-05 02:38:07,Asus Tuf Gaming B850i WIFI Neo,240.15,https://www.skroutz.gr/s/67920739/asus-tuf-gaming-b850i-wifi-neo-motherboard-mini-itx-me-amd-am5-socket-90mb1pi0-m0eay0.html
+2026-07-05 02:38:07,Asus TUF GAMING B760M-BTF WIFI D4,211.44,https://www.skroutz.gr/s/44753785/Asus-TUF-GAMING-B760M-BTF-WIFI-D4-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB1E50-M0EAY0.html
+2026-07-05 02:38:07,ASRock W790 Ws R2.0,572.84,https://www.skroutz.gr/s/57467119/ASRock-W790-Ws-R2-0-Motherboard-Extended-ATX-me-Intel-LGA4677-Socket.html
+2026-07-05 02:38:07,Supermicro H13SAE-MF-B/1xAM5 B650,945.8,https://www.skroutz.gr/s/58603998/Supermicro-H13SAE-MF-B-1xAM5-B650-Motherboard-Micro-ATX-me-AMD-AM5-Socket-MBD-H13SAE-MF-B.html
+2026-07-05 02:38:07,Asus C262,393.13,https://www.skroutz.gr/s/54979680/Asus-C262-Motherboard-Mini-ITX-me-Intel-1700-Socket-90SB0CR0-M0UAY0.html
+2026-07-05 02:38:07,Supermicro X13DEI-B,1259.56,https://www.skroutz.gr/s/66265142/supermicro-x13dei-b-motherboard-extended-atx-me-intel-4677-socket.html
+2026-07-05 02:38:07,ASRock Z890 Lightning WiFi,277.81,https://www.skroutz.gr/s/56933121/ASRock-Z890-Lightning-WiFi-Motherboard-ATX-me-Intel-1851-Socket-90-MXBPG0-A0UAYZ.html
+2026-07-05 02:38:07,ASR KNOLL3,420.0,https://www.skroutz.gr/s/64393288/asr-knoll3-motherboard-micro-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,Asus Z13PE-D16/ASMB11,1534.97,https://www.skroutz.gr/s/61029856/asus-z13pe-d16-asmb11-motherboard-extended-atx-me-intel-4677-socket-90sb0ca0-m0uay1.html
+2026-07-05 02:38:07,Maxsun Challenger B760M,131.3,https://www.skroutz.gr/s/56335117/Maxsun-Challenger-B760M-Motherboard-Micro-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,Biostar H610MH D5 Ver. 6.3,43.3,https://www.skroutz.gr/s/46780573/Biostar-H610MH-D5-Ver-6-3-Motherboard-Micro-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,Maxsun Challenger H610M-R rev. 2.0,94.33,https://www.skroutz.gr/s/56335106/Maxsun-Challenger-H610M-R-rev-2-0-Motherboard-Micro-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,Maxsun Challenger B760M-N D5,117.47,https://www.skroutz.gr/s/56335096/Maxsun-Challenger-B760M-N-D5-Motherboard-Micro-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,Gigabyte MZ73-LM2 SoC,2229.8,https://www.skroutz.gr/s/64619132/gigabyte-mz73-lm2-soc-motherboard-extended-atx-me-amd-sp5-socket.html
+2026-07-05 02:38:07,ASR EC266D4ID-2T/X550,997.16,https://www.skroutz.gr/s/64393465/asr-ec266d4id-2t-x550-motherboard-mini-itx-me-intel-1700-socket.html
+2026-07-05 02:38:07,Biostar A620MP-E PRO v6.0 Wi-Fi,76.2,https://www.skroutz.gr/s/46409120/Biostar-A620MP-E-PRO-v6-0-Wi-Fi-Motherboard-Micro-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,Gigabyte MH53-G40 rev. 1.0,2149.92,https://www.skroutz.gr/s/57954503/Gigabyte-MH53-G40-rev-1-0-Motherboard-Extended-ATX-me-AMD-sTR5-Socket.html
+2026-07-05 02:38:07,Supermicro X13DEI-T-B,1763.78,https://www.skroutz.gr/s/66918285/supermicro-x13dei-t-b-motherboard-extended-atx-me-intel-lga4677-socket-x13dei-t-b.html
+2026-07-05 02:38:07,Asus Prime H610M-A-CSM,99.89,https://www.skroutz.gr/s/46576036/Asus-Prime-H610M-A-CSM-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB1G20-M0EAYC.html
+2026-07-05 02:38:07,Biostar B450MHP Ver. 6.x,51.43,https://www.skroutz.gr/s/47278820/Biostar-B450MHP-Ver-6-x-Motherboard-Micro-ATX-me-AMD-AM4-Socket.html
+2026-07-05 02:38:07,NZXT N9 Z890 Wi-Fi,480.9,https://www.skroutz.gr/s/60765088/nzxt-n9-z890-wi-fi-motherboard-atx-me-intel-1851-socket-n9-z89xt-w1.html
+2026-07-05 02:38:07,MSI Z890 Gaming Plus Wifi,321.19,https://www.skroutz.gr/s/57235583/MSI-Z890-Gaming-Plus-Wifi-Motherboard-ATX-me-Intel-1851-Socket-7E34-002R.html
+2026-07-05 02:38:07,Supermicro H13SSL-N SoC,771.9,https://www.skroutz.gr/s/58316853/Supermicro-H13SSL-N-SoC-Motherboard-ATX-me-AMD-Socket-MBD-H13SSL-O.html
+2026-07-05 02:38:07,Gigabyte MX34-BS0 C252,368.91,https://www.skroutz.gr/s/57693164/Gigabyte-MX34-BS0-C252-Motherboard-Micro-ATX-me-Intel-1200-Socket.html
+2026-07-05 02:38:07,Biostar TB360 BTC Pro,69.38,https://www.skroutz.gr/s/29832139/Biostar-TB360-BTC-Pro-Motherboard-ATX-me-Intel-1151-Socket.html
+2026-07-05 02:38:07,ASRock B760I Lightning WiFi,177.42,https://www.skroutz.gr/s/54323821/ASRock-B760I-Lightning-WiFi-Motherboard-Micro-ATX-me-Intel-1700-Socket-90-MXBNN0-A0UAYZ.html
+2026-07-05 02:38:07,Supermicro X13SAE-B W680,737.68,https://www.skroutz.gr/s/64930367/supermicro-x13sae-b-w680-motherboard-atx-me-intel-1700-socket-mbd-x13sae-b.html
+2026-07-05 02:38:07,Supermicro W880,738.91,https://www.skroutz.gr/s/67048653/supermicro-w880-motherboard-atx-me-intel-1851-socket-mbd-x14sae-f-o.html
+2026-07-05 02:38:07,Gigabyte H610M K V2 rev. 1.0,65.26,https://www.skroutz.gr/s/59829968/gigabyte-h610m-k-v2-rev-1-0-motherboard-atx-me-intel-1700-socket.html
+2026-07-05 02:38:07,Asus P13R-E C622,563.82,https://www.skroutz.gr/s/57236317/Asus-P13R-E-C622-Motherboard-ATX-me-Intel-3647-Socket-90SB0CS0-M0UAY0.html
+2026-07-05 02:38:07,Gigabyte TRX50 AI TOP Wi-Fi,959.69,https://www.skroutz.gr/s/55392343/Gigabyte-TRX50-AI-TOP-Wi-Fi-Motherboard-Extended-ATX-me-AMD-TR5-Socket.html
+2026-07-05 02:38:07,Biostar A520MHP,48.0,https://www.skroutz.gr/s/57909026/Biostar-A520MHP-Motherboard-Micro-ATX-me-AMD-AM4-Socket.html
+2026-07-05 02:38:07,ASRock B860M-X WiFi,145.27,https://www.skroutz.gr/s/58626080/ASRock-B860M-X-WiFi-Motherboard-Micro-ATX-me-Intel-1851-Socket-90-MXBRY0-A0UAYZ.html
+2026-07-05 02:38:07,Kontron K3843-B B660,229.88,https://www.skroutz.gr/s/66528090/kontron-k3843-b-b660-motherboard-micro-atx-me-intel-1700-socket-f5110-v190.html
+2026-07-05 02:38:07,Biostar H61MHV3 Ver 7.0,56.59,https://www.skroutz.gr/s/37168110/Biostar-H61MHV3-Ver-7-0-Motherboard-Micro-ATX-me-Intel-1155-Socket-H61MHV3.html
+2026-07-05 02:38:07,NZXT N9 X870E Wi-Fi,637.62,https://www.skroutz.gr/s/61130427/nzxt-n9-x870e-wi-fi-motherboard-atx-me-amd-am5-socket-n9-x87xt-w1.html
+2026-07-05 02:38:07,Asus Prime H610M-K D4 ARGB,81.27,https://www.skroutz.gr/s/50785609/Asus-Prime-H610M-K-D4-ARGB-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB1HN0-M0EAY0.html
+2026-07-05 02:38:07,Asus Pro WS W790E-SAGE SE,838.0,https://www.skroutz.gr/s/41310728/Asus-Pro-WS-W790E-SAGE-SE-Motherboard-Extended-ATX-me-Intel-LGA4677-Socket-90MB1C20-M0EAY0.html
+2026-07-05 02:38:07,MSI PRO A620M-B,165.3,https://www.skroutz.gr/s/58351591/MSI-PRO-A620M-B-Motherboard-Micro-ATX-me-AMD-AM5-Socket-7E28-017R.html
+2026-07-05 02:38:07,Biostar B760MX2-E DDR5 rev. 1.0,65.9,https://www.skroutz.gr/s/48895471/Biostar-B760MX2-E-DDR5-rev-1-0-Motherboard-Micro-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,ASRock J3355M SoC,42.0,https://www.skroutz.gr/s/10352071/ASRock-J3355M-SoC-Motherboard-Micro-ATX-me-Intel-BGA1296-Socket-90-MXB460-A0UAYZ.html
+2026-07-05 02:38:07,Biostar B450NH rev. 6.0,119.0,https://www.skroutz.gr/s/54962715/Biostar-B450NH-rev-6-0-Motherboard-Mini-ITX-me-AMD-AM4-Socket-B450NH.html
+2026-07-05 02:38:07,Asus Prime H610M-A WIFI D4,84.85,https://www.skroutz.gr/s/36926237/Asus-Prime-H610M-A-WIFI-D4-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB1C80-M0EAY0.html
+2026-07-05 02:38:07,Asus Prime H610M-R,55.91,https://www.skroutz.gr/s/48100270/Asus-Prime-H610M-R-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB1GL0-M0ECY0.html
+2026-07-05 02:38:07,Asus Prime H610M-K,60.61,https://www.skroutz.gr/s/46373088/Asus-Prime-H610M-K-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB1GA0-M0EAY0.html
+2026-07-05 02:38:07,Asus P13R-M C262,470.47,https://www.skroutz.gr/s/52071773/Asus-P13R-M-C262-Motherboard-Micro-ATX-me-Intel-1700-Socket-90SB0C70-M0UAY0.html
+2026-07-05 02:38:07,Biostar TB360 BTC Pro 2.0,76.0,https://www.skroutz.gr/s/63100937/biostar-tb360-btc-pro-2-0-motherboard-atx-me-intel-1151-socket.html
+2026-07-05 02:38:07,Biostar A620MS,77.8,https://www.skroutz.gr/s/60688487/biostar-a620ms-motherboard-micro-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,MSI MAG B760M Mortar WIFI II,209.77,https://www.skroutz.gr/s/47276348/MSI-MAG-B760M-Mortar-WIFI-II-Motherboard-Micro-ATX-me-Intel-1700-Socket-7E13-001R.html
+2026-07-05 02:38:07,Gigabyte A620I AX rev. 1.0 Wi-Fi,151.0,https://www.skroutz.gr/s/45274109/Gigabyte-A620I-AX-rev-1-0-Wi-Fi-Motherboard-Mini-ITX-me-AMD-AM5-Socket-A620I.html
+2026-07-05 02:38:07,Gigabyte B850 Eagle WIFI6E,275.9,https://www.skroutz.gr/s/61028891/gigabyte-b850-eagle-wifi6e-motherboard-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,Asus Prime B760M-R D4,108.97,https://www.skroutz.gr/s/49055228/Asus-Prime-B760M-R-D4-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB1HA0-M0EAY0.html
+2026-07-05 02:38:07,Biostar B760MX2-E PRO D4 rev. 6.0 Wi-Fi,113.09,https://www.skroutz.gr/s/49067279/Biostar-B760MX2-E-PRO-D4-rev-6-0-Wi-Fi-Motherboard-Micro-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,ASRock B650D4U3-2L2Q/BCM B650E,953.77,https://www.skroutz.gr/s/64618775/asrock-b650d4u3-2l2q-bcm-b650e-motherboard-micro-atx-me-amd-am5-socket-b650d4u3-2l2q-bcm.html
+2026-07-05 02:38:07,ASRock SIENAD8-2L2T,1322.04,https://www.skroutz.gr/s/58851452/ASRock-SIENAD8-2L2T-Motherboard-ATX-me-AMD-SP6-Socket-SIENAD8-2L2T.html
+2026-07-05 02:38:07,MSI B760M Project Zero Wi-Fi,177.32,https://www.skroutz.gr/s/50405695/MSI-B760M-Project-Zero-Wi-Fi-Motherboard-Micro-ATX-me-Intel-1700-Socket-7E14-001R.html
+2026-07-05 02:38:07,Supermicro X13SCL-F-B C262,493.19,https://www.skroutz.gr/s/57771679/Supermicro-X13SCL-F-B-C262-Motherboard-Micro-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,Asus Prime H610I-PLUS-CSM,128.0,https://www.skroutz.gr/s/49055030/Asus-Prime-H610I-PLUS-CSM-Motherboard-Mini-ITX-me-Intel-1700-Socket-90MB1GB0-M0EAYC.html
+2026-07-05 02:38:07,Asus Prime Z790M-Plus,210.31,https://www.skroutz.gr/s/40695386/Asus-Prime-Z790M-Plus-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB1E70-M0EAY0.html
+2026-07-05 02:38:07,Asus Pro WS W790-Ace,918.39,https://www.skroutz.gr/s/41311256/Asus-Pro-WS-W790-Ace-Motherboard-SSI-CEB-me-Intel-LGA4677-Socket-90MB1C70-M0EAY0.html
+2026-07-05 02:38:07,Biostar B760MX-E D4 Ver. 6.0,108.51,https://www.skroutz.gr/s/40597879/Biostar-B760MX-E-D4-Ver-6-0-Motherboard-Micro-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,Gigabyte B860M Eagle,188.55,https://www.skroutz.gr/s/58300148/Gigabyte-B860M-Eagle-Motherboard-Micro-ATX-me-Intel-1851-Socket.html
+2026-07-05 02:38:07,Biostar H610MT-E Wi-Fi,52.61,https://www.skroutz.gr/s/51097728/Biostar-H610MT-E-Wi-Fi-Motherboard-Micro-ATX-me-Intel-1700-Socket-H610MTE.html
+2026-07-05 02:38:07,Asus K14PA-U12,747.93,https://www.skroutz.gr/s/52893920/Asus-K14PA-U12-Motherboard-SSI-CEB-me-AMD-SP5-Socket-90SB0CI0-M0UAY0.html
+2026-07-05 02:38:07,Asus Prime B850-Plus,330.81,https://www.skroutz.gr/s/61028453/asus-prime-b850-plus-motherboard-atx-me-amd-am5-socket.html
+2026-07-05 02:38:07,ASRock Z790I Lightning Wi-Fi,273.98,https://www.skroutz.gr/s/54325403/ASRock-Z790I-Lightning-Wi-Fi-Motherboard-Micro-ATX-me-Intel-1700-Socket-90-MXBNM0-A0UAYZ.html
+2026-07-05 02:38:07,Asus Prime H610M-E-CSM,114.19,https://www.skroutz.gr/s/45247257/Asus-Prime-H610M-E-CSM-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB1G10-M0EAYC.html
+2026-07-05 02:38:07,ASRock WRX90 WS Evo,950.38,https://www.skroutz.gr/s/52468145/ASRock-WRX90-WS-Evo-Motherboard-SSI-EEB-me-AMD-TR5-Socket-90-MXBMH0-A0UAYZ.html
+2026-07-05 02:38:07,ASRock X570D4U,489.11,https://www.skroutz.gr/s/47540751/ASRock-X570D4U-Motherboard-Micro-ATX-me-AMD-AM4-Socket.html
+2026-07-05 02:38:07,Gigabyte TRX50 Aero D Wi-Fi,733.13,https://www.skroutz.gr/s/48577160/Gigabyte-TRX50-Aero-D-Wi-Fi-Motherboard-Extended-ATX-me-AMD-sTR5-Socket.html
+2026-07-05 02:38:07,Asus Prime H610M-D,103.19,https://www.skroutz.gr/s/46503211/Asus-Prime-H610M-D-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB1G80-M0EAY0.html
+2026-07-05 02:38:07,Supermicro H13SSL-N SoC,1107.73,https://www.skroutz.gr/s/57238886/Supermicro-H13SSL-N-SoC-Motherboard-ATX-me-AMD-Socket-MBD-H13SSL-N.html
+2026-07-05 02:38:07,Asus Pro H610T-CSM,136.48,https://www.skroutz.gr/s/45246890/Asus-Pro-H610T-CSM-Motherboard-Mini-ITX-me-Intel-1700-Socket-90MB1G60-M0EAYC.html
+2026-07-05 02:38:07,Asus Prime H610M-K ARGB,83.14,https://www.skroutz.gr/s/46476602/Asus-Prime-H610M-K-ARGB-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB1G90-M0EAY0.html
+2026-07-05 02:38:07,Asus TUF Gaming B650M-E WiFi,195.79,https://www.skroutz.gr/s/42873862/Asus-TUF-Gaming-B650M-E-WiFi-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90MB1FV0-M0EAY0.html
+2026-07-05 02:38:07,Supermicro B650,635.35,https://www.skroutz.gr/s/57467056/Supermicro-B650-Motherboard-Micro-ATX-me-AMD-AM5-Socket-MBD-H13SAE-MF-O.html
+2026-07-05 02:38:07,Asus TUF Gaming B650M-E,116.57,https://www.skroutz.gr/s/43129581/Asus-TUF-Gaming-B650M-E-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90MB1FU0-M0EAY0.html
+2026-07-05 02:38:07,Supermicro X14SAE-O W880,776.5,https://www.skroutz.gr/s/61350127/supermicro-x14sae-o-w880-motherboard-micro-atx-me-intel-1851-socket-mbd-x14sae-o.html
+2026-07-05 02:38:07,ASRock X570D4I-2T,718.27,https://www.skroutz.gr/s/54328781/ASRock-X570D4I-2T-Motherboard-Mini-ITX-me-AMD-AM4-Socket-X570D4I-2T.html
+2026-07-05 02:38:07,Supermicro W680,613.1,https://www.skroutz.gr/s/54780220/Supermicro-W680-Motherboard-ATX-me-Intel-1700-Socket-MBD-X13SAE-F-O.html
+2026-07-05 02:38:07,Asus ProArt X670E-CREATOR WIFI,491.1,https://www.skroutz.gr/s/38577021/Asus-ProArt-X670E-CREATOR-WIFI-Motherboard-ATX-me-AMD-AM5-Socket-90MB1B90-M0EAY0.html
+2026-07-05 02:38:07,Asus Pro WS W680M-ACE SE,575.86,https://www.skroutz.gr/s/45235156/Asus-Pro-WS-W680M-ACE-SE-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB1FA0-M0EAY0.html
+2026-07-05 02:38:07,Asus Prime A620M-E-CSM,88.45,https://www.skroutz.gr/s/43539826/Asus-Prime-A620M-E-CSM-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90MB1F50-M0EAYC.html
+2026-07-05 02:38:07,Asus Prime B650-Plus-CSM,154.0,https://www.skroutz.gr/s/39687817/Asus-Prime-B650-Plus-CSM-Motherboard-ATX-me-AMD-AM5-Socket-90MB1BS0-M0EAYC.html
+2026-07-05 02:38:07,ASRock A520M-ITX/ac Wi-Fi,96.67,https://www.skroutz.gr/s/24586382/ASRock-A520M-ITX-ac-Wi-Fi-Motherboard-Mini-ITX-me-AMD-AM4-Socket-90-MXBDG0-A0UAYZ.html
+2026-07-05 02:38:07,Asus Prime B650M-A II-CSM,126.37,https://www.skroutz.gr/s/44422299/Asus-Prime-B650M-A-II-CSM-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90MB1EH0-M0EAYC.html
+2026-07-05 02:38:07,Supermicro X12SAE W480,789.58,https://www.skroutz.gr/s/60254410/supermicro-x12sae-w480-motherboard-atx-me-intel-1200-socket-mbd-x12sae-o.html
+2026-07-05 02:38:07,Supermicro H12SSL-i SoC,1054.28,https://www.skroutz.gr/s/57238427/Supermicro-H12SSL-i-SoC-Motherboard-ATX-me-AMD-Socket-MBD-H12SSL-I-B.html
+2026-07-05 02:38:07,Asus Pro B760M-CT-CSM,157.78,https://www.skroutz.gr/s/42714154/Asus-Pro-B760M-CT-CSM-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB1DY0-M0EAYC.html
+2026-07-05 02:38:07,Asus Pro A620M-C-CSM,121.8,https://www.skroutz.gr/s/42950565/Asus-Pro-A620M-C-CSM-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90MB1F80-M0EAYC.html
+2026-07-05 02:38:07,ASRock B550D4ID-2L2T,848.33,https://www.skroutz.gr/s/54328159/ASRock-B550D4ID-2L2T-Motherboard-Mini-ITX-me-AMD-AM4-Socket-B550D4ID2L2T.html
+2026-07-05 02:38:07,ASRock Rack Z690D4U2L2TG5,899.72,https://www.skroutz.gr/s/54329000/ASRock-Rack-Z690D4U2L2TG5-Motherboard-Micro-ATX-me-Intel-1700-Socket-Z690D4U-2L2T-G5.html
+2026-07-05 02:38:07,Asus Prime A620M-A-CSM,118.09,https://www.skroutz.gr/s/42346165/Asus-Prime-A620M-A-CSM-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90MB1F10-M0EAYC.html
+2026-07-05 02:38:07,ASRock H670M Pro RS,103.13,https://www.skroutz.gr/s/34426703/ASRock-H670M-Pro-RS-Motherboard-Micro-ATX-me-Intel-1700-Socket-90-MXBHK0-A0UAYZ.html
+2026-07-05 02:38:07,Asus Pro A620M-DASH-CSM,109.12,https://www.skroutz.gr/s/45247176/Asus-Pro-A620M-DASH-CSM-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90MB1GD0-M0EAYC.html
+2026-07-05 02:38:07,Supermicro X13SAE W680,554.58,https://www.skroutz.gr/s/57236922/Supermicro-X13SAE-W680-Motherboard-ATX-me-Intel-1700-Socket-MBD-X13SAE-O.html
+2026-07-05 02:38:07,Supermicro MBD-X12STL-F-B,586.73,https://www.skroutz.gr/s/54860690/Supermicro-MBD-X12STL-F-B-Motherboard-Micro-ATX-me-Intel-Socket.html
+2026-07-05 02:38:07,Asus Prime B660M-A D4-CSM,121.42,https://www.skroutz.gr/s/40876136/Asus-Prime-B660M-A-D4-CSM-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB19K0-M1EAYC.html
+2026-07-05 02:38:07,Asus Pro WS W680-ACE IPMI,622.88,https://www.skroutz.gr/s/40697311/Asus-Pro-WS-W680-ACE-IPMI-Motherboard-ATX-me-Intel-1700-Socket-90MB1DN0-M0EAY0.html
+2026-07-05 02:38:07,Biostar B760MX2-E D4 rev. 6.0,115.44,https://www.skroutz.gr/s/40598026/Biostar-B760MX2-E-D4-rev-6-0-Motherboard-Micro-ATX-me-Intel-1700-Socket-B760MX2-ED4.html
+2026-07-05 02:38:07,Asus Prime B550M-A/CSM,106.0,https://www.skroutz.gr/s/25271094/Asus-Prime-B550M-A-CSM-Motherboard-Micro-ATX-me-AMD-AM4-Socket-90MB14I0-M0EAYC.html
+2026-07-05 02:38:07,ASRock ROMED8-2T SoC,1031.04,https://www.skroutz.gr/s/48732092/ASRock-ROMED8-2T-SoC-Motherboard-ATX-me-AMD-SP3-Socket.html
+2026-07-05 02:38:07,Supermicro X13SAE-F W680,684.81,https://www.skroutz.gr/s/57238666/Supermicro-X13SAE-F-W680-Motherboard-ATX-me-Intel-1700-Socket-MBD-X13SAE-F-B.html
+2026-07-05 02:38:07,Biostar B760MXC PRO 2.0 v6.0 Wi-Fi,157.79,https://www.skroutz.gr/s/46409107/Biostar-B760MXC-PRO-2-0-v6-0-Wi-Fi-Motherboard-Micro-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,Asus Pro B760M-C-CSM,137.44,https://www.skroutz.gr/s/40420795/Asus-Pro-B760M-C-CSM-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB1DX0-M0EAYC.html
+2026-07-05 02:38:07,Asus Pro WS W680-ACE,511.93,https://www.skroutz.gr/s/40349842/Asus-Pro-WS-W680-ACE-Motherboard-ATX-me-Intel-1700-Socket-90MB1DZ0-M0EAY0.html
+2026-07-05 02:38:07,Biostar H610MHP Ver. 6.1,94.89,https://www.skroutz.gr/s/40586638/Biostar-H610MHP-Ver-6-1-Motherboard-Micro-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,MSI Pro H610M-G WIFI DDR4,99.01,https://www.skroutz.gr/s/45715338/MSI-Pro-H610M-G-WIFI-DDR4-Motherboard-Micro-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,ASRock B650D4U-2L2T/BCM B650E,588.22,https://www.skroutz.gr/s/45465213/ASRock-B650D4U-2L2T-BCM-B650E-Motherboard-Micro-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,Biostar B760NH-E Wi-Fi,157.06,https://www.skroutz.gr/s/50507652/Biostar-B760NH-E-Wi-Fi-Motherboard-Mini-ITX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,Supermicro MBD-X12SPL-F-B,839.13,https://www.skroutz.gr/s/51144816/Supermicro-MBD-X12SPL-F-B-Motherboard-ATX-me-Intel-3647-Socket-MBD-X12SPL-F-B.html
+2026-07-05 02:38:07,Asus Prime H770-Plus,176.28,https://www.skroutz.gr/s/44422343/Asus-Prime-H770-Plus-Motherboard-ATX-me-Intel-1700-Socket-90MB1EE0-M0EAY0.html
+2026-07-05 02:38:07,NZXT N7 Z790 Matte Black Wi-Fi,260.5,https://www.skroutz.gr/s/40757614/NZXT-N7-Z790-Matte-Black-Wi-Fi-Motherboard-ATX-me-Intel-1700-Socket-N7-Z79XT-B1.html
+2026-07-05 02:38:07,Asus Prime Z790M-PLUS D4,418.01,https://www.skroutz.gr/s/38680614/Asus-Prime-Z790M-PLUS-D4-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB1D20-M0EAY0.html
+2026-07-05 02:38:07,Supermicro MBD-A2SDI-4C-HLN4F-B,757.54,https://www.skroutz.gr/s/54317405/Supermicro-MBD-A2SDI-4C-HLN4F-B-Motherboard-ATX-me-Intel-Socket-MBD-A2SDI-4C-HLN4F-B.html
+2026-07-05 02:38:07,Asus Prime B650M-A,165.08,https://www.skroutz.gr/s/39867888/Asus-Prime-B650M-A-Motherboard-Micro-ATX-me-AMD-AM5-Socket-90MB1C10-M0EAY0.html
+2026-07-05 02:38:07,Gigabyte H610I DDR4 rev. 1.0,108.03,https://www.skroutz.gr/s/35333358/Gigabyte-H610I-DDR4-rev-1-0-Motherboard-Mini-ITX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,Asus Prime H610M-D D4,94.14,https://www.skroutz.gr/s/33402189/Asus-Prime-H610M-D-D4-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB1A00-M0EAY0.html
+2026-07-05 02:38:07,Asus Prime H610M-E D4-CSM,100.07,https://www.skroutz.gr/s/33474406/Asus-Prime-H610M-E-D4-CSM-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB19N0-M0EAYC.html
+2026-07-05 02:38:07,Gigabyte MC13-LE0 rev. 1.0,514.11,https://www.skroutz.gr/s/41703370/Gigabyte-MC13-LE0-rev-1-0-Motherboard-Micro-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,Biostar B760A rev. 6.0,173.98,https://www.skroutz.gr/s/40692689/Biostar-B760A-rev-6-0-Motherboard-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,Biostar B760M-Silver Ver. 6.0,192.65,https://www.skroutz.gr/s/40586417/Biostar-B760M-Silver-Ver-6-0-Motherboard-Micro-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,ASRock B650D4U B650E,609.41,https://www.skroutz.gr/s/45000468/ASRock-B650D4U-B650E-Motherboard-Micro-ATX-me-AMD-AM5-Socket.html
+2026-07-05 02:38:07,Asus P12R-I,319.93,https://www.skroutz.gr/s/36181862/Asus-P12R-I-Motherboard-Micro-ATX-me-Intel-1200-Socket-90SB0A70-M0UAY0.html
+2026-07-05 02:38:07,Asus Pro Q670M-C-CSM,207.86,https://www.skroutz.gr/s/35836825/Asus-Pro-Q670M-C-CSM-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB19E0-M0EAYC.html
+2026-07-05 02:38:07,ASRock H610M-HVS,94.44,https://www.skroutz.gr/s/34296520/ASRock-H610M-HVS-Motherboard-Micro-ATX-me-Intel-1700-Socket-90-MXBHT0-A0UAYZ.html
+2026-07-05 02:38:07,Asus Pro H610M-C-CSM,115.14,https://www.skroutz.gr/s/34757321/Asus-Pro-H610M-C-CSM-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB1AT0-M0EAYC.html
+2026-07-05 02:38:07,Biostar H610MX-E rev. 6.0 Wi-Fi,106.83,https://www.skroutz.gr/s/34163438/Biostar-H610MX-E-rev-6-0-Wi-Fi-Motherboard-Micro-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,Asus Pro H610t D4 Csm,138.83,https://www.skroutz.gr/s/34083131/Asus-Pro-H610t-D4-Csm-Motherboard-Mini-ITX-me-Intel-1700-Socket-90MB1AM0-M0EAYC.html
+2026-07-05 02:38:07,Biostar Z790 Valkyrie,496.82,https://www.skroutz.gr/s/39607981/Biostar-Z790-Valkyrie-Motherboard-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,Biostar B660MX-E PRO Ver. 6.0 Wi-Fi,127.54,https://www.skroutz.gr/s/36698501/Biostar-B660MX-E-PRO-Ver-6-0-Wi-Fi-Motherboard-Micro-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,Asus P12R-E C256,394.73,https://www.skroutz.gr/s/34039049/Asus-P12R-E-C256-Motherboard-ATX-me-Intel-1200-Socket-90SB0A90-M0UAY0.html
+2026-07-05 02:38:07,Biostar H81MHV3 Ver. 7.x,62.3,https://www.skroutz.gr/s/6620371/Biostar-H81MHV3-Ver-7-x-Motherboard-Micro-ATX-me-Intel-1150-Socket.html
+2026-07-05 02:38:07,Asus P12R-M,430.99,https://www.skroutz.gr/s/33572103/Asus-P12R-M-Motherboard-Micro-ATX-me-Intel-1200-Socket-90SB09X0-M1UAY0.html
+2026-07-05 02:38:07,Gigabyte H610M S2H DDR4,184.33,https://www.skroutz.gr/s/33735695/Gigabyte-H610M-S2H-DDR4-Motherboard-Micro-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,ASRock Z890 Pro RS WiFi White,240.26,https://www.skroutz.gr/s/56932605/ASRock-Z890-Pro-RS-WiFi-White-Motherboard-ATX-me-Intel-1851-Socket-90-MXBQC0-A0UAYZ.html
+2026-07-05 02:38:07,ASRock ASRock X299 Taichi CLX Wi-Fi,284.03,https://www.skroutz.gr/s/20913296/ASRock-ASRock-X299-Taichi-CLX-Wi-Fi-Motherboard-ATX-me-Intel-2066-Socket-90-MXBBH0-A0UAYZ.html
+2026-07-05 02:38:07,ASRock A520M Phantom Gaming 4,100.39,https://www.skroutz.gr/s/26546493/ASRock-A520M-Phantom-Gaming-4-Motherboard-Micro-ATX-me-AMD-AM4-Socket-90-MXBEK0-A0UAYZ.html
+2026-07-05 02:38:07,ASRock C621A WS,596.82,https://www.skroutz.gr/s/35628110/ASRock-C621A-WS-Motherboard-ATX-me-Intel-4189-Socket-90-MXBGU0-A0UAYZ.html
+2026-07-05 02:38:07,MSI B550M-A Pro,90.0,https://www.skroutz.gr/s/27126652/MSI-B550M-A-Pro-Motherboard-Micro-ATX-me-AMD-AM4-Socket-B550M-A-7C96-006R.html
+2026-07-05 02:38:07,MSI A520M Vector WIFI,118.09,https://www.skroutz.gr/s/25149065/MSI-A520M-Vector-WIFI-Motherboard-Micro-ATX-me-AMD-AM4-Socket-7D14-008R.html
+2026-07-05 02:38:07,Supermicro X11SPI-TF-B C622,1140.94,https://www.skroutz.gr/s/29428915/Supermicro-X11SPI-TF-B-C622-Motherboard-ATX-me-Intel-3647-Socket-MBD-X11SPI-TF-B.html
+2026-07-05 02:38:07,Asus ROG Crosshair VIII Impact X570 Wi-Fi,402.86,https://www.skroutz.gr/s/20436867/Asus-ROG-Crosshair-VIII-Impact-X570-Wi-Fi-Motherboard-Mini-DTX-me-AMD-AM4-Socket-90MB11Q0-M0EAY0.html
+2026-07-05 02:38:07,Asus Prime X299-A II,299.59,https://www.skroutz.gr/s/20969373/Asus-Prime-X299-A-II-Motherboard-ATX-me-Intel-2066-Socket-90MB11F0-M0EAY0.html
+2026-07-05 02:38:07,MSI Pro H610M-G,77.76,https://www.skroutz.gr/s/47274493/MSI-Pro-H610M-G-Motherboard-Micro-ATX-me-Intel-1700-Socket-7D46-075R.html
+2026-07-05 02:38:07,Asus ROG Strix Z790-I Gaming WiFi,474.99,https://www.skroutz.gr/s/38971311/Asus-ROG-Strix-Z790-I-Gaming-WiFi-Motherboard-Mini-ITX-me-Intel-1700-Socket-90MB1CM0-M0EAY0.html
+2026-07-05 02:38:07,Asus WS X299 Pro/SE,418.0,https://www.skroutz.gr/s/13672220/Asus-WS-X299-Pro-SE-Motherboard-ATX-me-Intel-2066-Socket-90SW00A0-M0EAY0.html
+2026-07-05 02:38:07,ASRock Motherboard Mini ITX με AMD AM4 Socket A520M-ITX/AC,101.0,https://www.skroutz.gr/s/67419787/asrock-motherboard-mini-itx-me-amd-am4-socket-a520m-itx-ac.html
+2026-07-05 02:38:07,Gigabyte Z890 Eagle WIFI7 PLUS,239.15,https://www.skroutz.gr/s/67832673/gigabyte-z890-eagle-wifi7-plus-motherboard-atx-me-intel-1851-socket.html
+2026-07-05 02:38:07,Asus P13R-M C266,485.97,https://www.skroutz.gr/s/62889839/asus-p13r-m-c266-motherboard-micro-atx-me-intel-1700-socket-90sb0c70-m0uay1.html
+2026-07-05 02:38:07,Biostar B760MX2-E D4 rev. 1.0,84.0,https://www.skroutz.gr/s/59081697/Biostar-B760MX2-E-D4-rev-1-0-Motherboard-Micro-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,Asus Prime X299-A,313.65,https://www.skroutz.gr/s/12303575/Asus-Prime-X299-A-Motherboard-ATX-me-Intel-2066-Socket-90MB0U40-M0EAY0.html
+2026-07-05 02:38:07,ASRock Z790M-ITX WiFi,233.61,https://www.skroutz.gr/s/39034331/ASRock-Z790M-ITX-WiFi-Motherboard-Mini-ITX-me-Intel-1700-Socket-90-MXBKE0-A0UAYZ.html
+2026-07-05 02:38:07,Asus TUF Gaming B660M-E D4,191.18,https://www.skroutz.gr/s/33440833/Asus-TUF-Gaming-B660M-E-D4-Motherboard-Micro-ATX-me-Intel-1700-Socket-90MB19J0-M0EAY0.html
+2026-07-05 02:38:07,Biostar H610MH Ver. 6.x,97.47,https://www.skroutz.gr/s/34164273/Biostar-H610MH-Ver-6-x-Motherboard-Micro-ATX-me-Intel-1700-Socket.html
+2026-07-05 02:38:07,Asus PRIME A320M-R mATX,89.28,https://www.skroutz.gr/s/17847166/Asus-PRIME-A320M-R-mATX-Motherboard-Micro-ATX-me-AMD-AM4-Socket-90MB0XD0-M0ECY0.html

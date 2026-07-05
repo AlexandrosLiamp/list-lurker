@@ -1,0 +1,429 @@
+timestamp,name,price,url
+2026-07-05 02:36:19,AMD Ryzen 5 7500F 3.7GHz Tray,141.35,https://www.skroutz.gr/s/45418318/AMD-Ryzen-5-7500F-3-7GHz-Epexergastis-6-Pyrinon-gia-Socket-AM5-Tray.html
+2026-07-05 02:36:19,AMD Ryzen 7 9800X3D 4.7GHz,390.0,https://www.skroutz.gr/s/58448602/AMD-Ryzen-7-9800X3D-4-7GHz-Epexergastis-8-Pyrinon-gia-Socket-AM5-Tray.html
+2026-07-05 02:36:19,Intel Ultra 7 265KF 3.9GHz,283.88,https://www.skroutz.gr/s/57653247/Intel-Ultra-7-265KF-3-9GHz-Epexergastis-20-Pyrinon-gia-Socket-1851-se-Kouti.html
+2026-07-05 02:36:19,AMD Ryzen 5 7600X 4.7GHz,154.9,https://www.skroutz.gr/s/37822607/AMD-Ryzen-5-7600X-4-7GHz-Epexergastis-6-Pyrinon-gia-Socket-AM5-se-Kouti.html
+2026-07-05 02:36:19,Intel Core i9-12900K 2.4GHz,408.76,https://www.skroutz.gr/s/32106248/Intel-Core-i9-12900K-2-4GHz-Epexergastis-16-Pyrinon-gia-Socket-1700-se-Kouti.html
+2026-07-05 02:36:19,AMD Ryzen 9 9900X 4.4GHz,322.9,https://www.skroutz.gr/s/55501115/AMD-Ryzen-9-9900X-4-4GHz-Epexergastis-12-Pyrinon-gia-Socket-AM5-se-Kouti.html
+2026-07-05 02:36:19,AMD Ryzen 7 8700G 4.2GHz,258.5,https://www.skroutz.gr/s/63777303/amd-ryzen-7-8700g-4-2ghz-epexergastis-8-pyrinon-gia-socket-am5-se-kouti-me-psyktra.html
+2026-07-05 02:36:19,AMD Ryzen 9 9950X 4.3GHz,446.79,https://www.skroutz.gr/s/55671806/AMD-Ryzen-9-9950X-4-3GHz-Epexergastis-16-Pyrinon-gia-Socket-AM5-Tray.html
+2026-07-05 02:36:19,AMD Ryzen 9 9950X3D 4.3GHz,596.9,https://www.skroutz.gr/s/59292439/AMD-Ryzen-9-9950X3D-4-3GHz-Epexergastis-16-Pyrinon-gia-Socket-AM5-se-Kouti.html
+2026-07-05 02:36:19,AMD Ryzen 5 7600 3.8GHz,167.61,https://www.skroutz.gr/s/40307498/AMD-Ryzen-5-7600-3-8GHz-Epexergastis-6-Pyrinon-gia-Socket-AM5-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,AMD Ryzen 9 7900X 4.7GHz,286.5,https://www.skroutz.gr/s/37822625/AMD-Ryzen-9-7900X-4-7GHz-Epexergastis-12-Pyrinon-gia-Socket-AM5-se-Kouti.html
+2026-07-05 02:36:19,AMD Ryzen 7 5700X 3.4GHz,149.2,https://www.skroutz.gr/s/40307319/AMD-Ryzen-7-5700X-3-4GHz-Epexergastis-8-Pyrinon-gia-Socket-AM4-Tray.html
+2026-07-05 02:36:19,AMD Ryzen 7 9700X 3.8GHz,250.09,https://www.skroutz.gr/s/57310081/AMD-Ryzen-7-9700X-3-8GHz-Epexergastis-8-Pyrinon-gia-Socket-AM5-Tray.html
+2026-07-05 02:36:19,AMD Ryzen 7 7700 3.8GHz,175.1,https://www.skroutz.gr/s/40933326/AMD-Ryzen-7-7700-3-8GHz-Epexergastis-8-Pyrinon-gia-Socket-AM5-Tray.html
+2026-07-05 02:36:19,AMD Ryzen 5 7500F 3.7GHz Tray,132.56,https://www.skroutz.gr/s/45418318/AMD-Ryzen-5-7500F-3-7GHz-Epexergastis-6-Pyrinon-gia-Socket-AM5-Tray.html
+2026-07-05 02:36:19,AMD Ryzen 7 8700G 4.2GHz,266.63,https://www.skroutz.gr/s/50866908/AMD-Ryzen-7-8700G-4-2GHz-Epexergastis-8-Pyrinon-gia-Socket-AM5-Tray.html
+2026-07-05 02:36:19,AMD Ryzen 9 7900 3.7GHz,286.36,https://www.skroutz.gr/s/40307262/AMD-Ryzen-9-7900-3-7GHz-Epexergastis-12-Pyrinon-gia-Socket-AM5-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,AMD Ryzen 5 9600 3.8GHz,197.0,https://www.skroutz.gr/s/61030962/amd-ryzen-5-9600-3-8ghz-epexergastis-6-pyrinon-gia-socket-am5-se-kouti.html
+2026-07-05 02:36:19,Intel Ultra 7 265KF 3.9GHz,283.88,https://www.skroutz.gr/s/57653247/Intel-Ultra-7-265KF-3-9GHz-Epexergastis-20-Pyrinon-gia-Socket-1851-se-Kouti.html
+2026-07-05 02:36:19,Intel Core i7-14700KF 2.5GHz,362.23,https://www.skroutz.gr/s/46852383/Intel-Core-i7-14700KF-2-5GHz-Epexergastis-20-Pyrinon-gia-Socket-1700-se-Kouti.html
+2026-07-05 02:36:19,AMD Ryzen 9 5900XT 3.3GHz,322.4,https://www.skroutz.gr/s/55363569/AMD-Ryzen-9-5900XT-3-3GHz-Epexergastis-16-Pyrinon-gia-Socket-AM4-se-Kouti.html
+2026-07-05 02:36:19,Intel Core i5-14600KF 2.6GHz,253.0,https://www.skroutz.gr/s/46852484/Intel-Core-i5-14600KF-2-6GHz-Epexergastis-14-Pyrinon-gia-Socket-1700-se-Kouti.html
+2026-07-05 02:36:19,Intel Ultra 7 265K 3.3GHz,299.0,https://www.skroutz.gr/s/57425013/Intel-Ultra-7-265K-3-3GHz-Epexergastis-20-Pyrinon-gia-Socket-1851-se-Kouti.html
+2026-07-05 02:36:19,AMD Ryzen 9 9900X3D 4.4GHz,488.36,https://www.skroutz.gr/s/59293653/AMD-Ryzen-9-9900X3D-4-4GHz-Epexergastis-12-Pyrinon-gia-Socket-AM5-se-Kouti.html
+2026-07-05 02:36:19,Intel Core i5-13600KF 2.6GHz,261.88,https://www.skroutz.gr/s/39603070/Intel-Core-i5-13600KF-2-6GHz-Epexergastis-14-Pyrinon-gia-Socket-1700-Tray.html
+2026-07-05 02:36:19,AMD Ryzen Threadripper Pro 7985WX 3.2GHz,9881.28,https://www.skroutz.gr/s/48143802/AMD-Ryzen-Threadripper-Pro-7985WX-3-2GHz-Epexergastis-64-Pyrinon-gia-Socket-sTR5-se-Kouti.html
+2026-07-05 02:36:19,Intel Core i7-13700K 2.5GHz,419.83,https://www.skroutz.gr/s/38411528/Intel-Core-i7-13700K-2-5GHz-Epexergastis-16-Pyrinon-gia-Socket-1700-se-Kouti.html
+2026-07-05 02:36:19,Intel Core i9-12900K 2.4GHz,420.28,https://www.skroutz.gr/s/32106248/Intel-Core-i9-12900K-2-4GHz-Epexergastis-16-Pyrinon-gia-Socket-1700-se-Kouti.html
+2026-07-05 02:36:19,Intel Ultra 9 285K 3.7GHz,543.22,https://www.skroutz.gr/s/57312697/Intel-Ultra-9-285K-3-7GHz-Epexergastis-24-Pyrinon-gia-Socket-1851-Tray.html
+2026-07-05 02:36:19,Intel Ultra 5 235 2.9GHz,285.75,https://www.skroutz.gr/s/58296696/Intel-Ultra-5-235-2-9GHz-Epexergastis-14-Pyrinon-gia-Socket-1851-se-Kouti.html
+2026-07-05 02:36:19,AMD Ryzen 5 9600 3.8GHz,182.7,https://www.skroutz.gr/s/59086232/AMD-Ryzen-5-9600-3-8GHz-Epexergastis-6-Pyrinon-gia-Socket-AM5-Tray.html
+2026-07-05 02:36:19,AMD Epyc 9754 2.25GHz Tray,2710.78,https://www.skroutz.gr/s/45463468/AMD-Epyc-9754-2-25GHz-Epexergastis-128-Pyrinon-gia-Socket-SP5-Tray.html
+2026-07-05 02:36:19,AMD Epyc 4364P 4.5GHz Tray,391.85,https://www.skroutz.gr/s/55413681/AMD-Epyc-4364P-4-5GHz-Epexergastis-8-Pyrinon-gia-Socket-AM5-Tray.html
+2026-07-05 02:36:19,AMD Ryzen Threadripper Pro 7995WX 2.5GHz,12858.7,https://www.skroutz.gr/s/48143546/AMD-Ryzen-Threadripper-Pro-7995WX-2-5GHz-Epexergastis-96-Pyrinon-gia-Socket-sTR5-se-Kouti.html
+2026-07-05 02:36:19,AMD Ryzen Threadripper Pro 7985WX 3.2GHz,8920.28,https://www.skroutz.gr/s/50300545/AMD-Ryzen-Threadripper-Pro-7985WX-3-2GHz-Epexergastis-64-Pyrinon-gia-Socket-sTR5-Tray.html
+2026-07-05 02:36:19,Intel Xeon W-2265 3.5GHz Tray,740.09,https://www.skroutz.gr/s/33980345/Intel-Xeon-W-2265-3-5GHz-Epexergastis-12-Pyrinon-gia-Socket-2066-Tray.html
+2026-07-05 02:36:19,Intel Xeon W-2225 4.1GHz Tray,223.01,https://www.skroutz.gr/s/33044628/Intel-Xeon-W-2225-4-1GHz-Epexergastis-4-Pyrinon-gia-Socket-2066-Tray.html
+2026-07-05 02:36:19,Intel Xeon W-2245 3.9GHz Tray,624.68,https://www.skroutz.gr/s/33980251/Intel-Xeon-W-2245-3-9GHz-Epexergastis-8-Pyrinon-gia-Socket-2066-Tray.html
+2026-07-05 02:36:19,Intel Xeon W-3245 3.2GHz Tray,1029.56,https://www.skroutz.gr/s/34033641/Intel-Xeon-W-3245-3-2GHz-Epexergastis-16-Pyrinon-gia-Socket-3647-Tray.html
+2026-07-05 02:36:19,Intel Xeon 4215R 3.2GHz Tray,1443.03,https://www.skroutz.gr/s/25034263/Intel-Xeon-4215R-3-2GHz-Epexergastis-8-Pyrinon-gia-Socket-3647-Tray.html
+2026-07-05 02:36:19,Intel Xeon W-2223 3.60GHz Tray,146.2,https://www.skroutz.gr/s/22224587/Intel-Xeon-W-2223-3-60GHz-Epexergastis-4-Pyrinon-gia-Socket-2066-Tray.html
+2026-07-05 02:36:19,AMD Epyc 7451 2.3GHz Tray,199.0,https://www.skroutz.gr/s/24570645/AMD-Epyc-7451-2-3GHz-Epexergastis-24-Pyrinon-gia-Socket-SP3-Tray.html
+2026-07-05 02:36:19,Intel Xeon 4215R 3.2GHz Tray,1443.03,https://www.skroutz.gr/s/25034263/Intel-Xeon-4215R-3-2GHz-Epexergastis-8-Pyrinon-gia-Socket-3647-Tray.html
+2026-07-05 02:36:19,Intel Xeon Gold 6252 2.1GHz Tray,5877.37,https://www.skroutz.gr/s/18977377/Intel-Xeon-Gold-6252-2-1GHz-Epexergastis-24-Pyrinon-gia-Socket-3647-Tray.html
+2026-07-05 02:36:19,Intel Xeon Silver 4309Y 2.8GHz Tray,951.49,https://www.skroutz.gr/s/35435987/Intel-Xeon-Silver-4309Y-2-8GHz-Epexergastis-8-Pyrinon-gia-Socket-4189-Tray.html
+2026-07-05 02:36:19,AMD Epyc 9175F 4.2GHz Tray,3986.55,https://www.skroutz.gr/s/61031024/amd-epyc-9175f-4-2ghz-epexergastis-16-pyrinon-gia-socket-sp5-tray.html
+2026-07-05 02:36:19,AMD Epyc 9115 2.6GHz Tray,1227.66,https://www.skroutz.gr/s/60200662/amd-epyc-9115-2-6ghz-epexergastis-16-pyrinon-gia-socket-sp5-tray.html
+2026-07-05 02:36:19,AMD Epyc 9575F 3.3GHz Tray,9478.83,https://www.skroutz.gr/s/60264785/amd-epyc-9575f-3-3ghz-epexergastis-64-pyrinon-gia-socket-sp5-tray.html
+2026-07-05 02:36:19,AMD Epyc 7713P 2GHz Tray,1596.96,https://www.skroutz.gr/s/55363879/AMD-Epyc-7713P-2GHz-Epexergastis-64-Pyrinon-gia-Socket-SP3-Tray.html
+2026-07-05 02:36:19,AMD Epyc 7543 2.8GHz Tray,2011.3,https://www.skroutz.gr/s/37595779/AMD-Epyc-7543-2-8GHz-Epexergastis-32-Pyrinon-gia-Socket-SP3-Tray.html
+2026-07-05 02:36:19,AMD Ryzen 5 Pro 8500GE 3.4GHz Tray,205.5,https://www.skroutz.gr/s/60264960/amd-ryzen-5-pro-8500ge-3-4ghz-epexergastis-6-pyrinon-gia-socket-am5-tray.html
+2026-07-05 02:36:19,AMD Epyc 7451 2.3GHz Tray,199.0,https://www.skroutz.gr/s/24570645/AMD-Epyc-7451-2-3GHz-Epexergastis-24-Pyrinon-gia-Socket-SP3-Tray.html
+2026-07-05 02:36:19,AMD Ryzen 7 5800X3D 10Years Anniversary Edition 3.4GHz,369.9,https://www.skroutz.gr/s/68225012/amd-ryzen-7-5800x3d-10years-anniversary-edition-3-4ghz-epexergastis-8-pyrinon-gia-socket-am4-se-kouti.html
+2026-07-05 02:36:19,AMD Epyc Epyc 8124P 2.45GHz Tray,954.29,https://www.skroutz.gr/s/53965422/AMD-Epyc-Epyc-8124P-2-45GHz-Epexergastis-16-Pyrinon-gia-Socket-SP6-Tray.html
+2026-07-05 02:36:19,Intel Xeon E-2324G 3.10GHz Tray,375.58,https://www.skroutz.gr/s/37460184/Intel-Xeon-E-2324G-3-10GHz-Epexergastis-4-Pyrinon-gia-Socket-1200-Tray.html
+2026-07-05 02:36:19,Intel Xeon Gold 6526Y 2.8GHz Tray,3855.65,https://www.skroutz.gr/s/50866179/Intel-Xeon-Gold-6526Y-2-8GHz-Epexergastis-16-Pyrinon-gia-Socket-4677-Tray.html
+2026-07-05 02:36:19,Intel Xeon W-2225 4.1GHz Tray,234.34,https://www.skroutz.gr/s/33044628/Intel-Xeon-W-2225-4-1GHz-Epexergastis-4-Pyrinon-gia-Socket-2066-Tray.html
+2026-07-05 02:36:19,Intel Core i5-9500 3GHz Tray,237.17,https://www.skroutz.gr/s/19802443/Intel-Core-i5-9500-3GHz-Epexergastis-6-Pyrinon-gia-Socket-1151-Tray.html
+2026-07-05 02:36:19,Intel Xeon W-2223 3.60GHz Tray,154.31,https://www.skroutz.gr/s/22224587/Intel-Xeon-W-2223-3-60GHz-Epexergastis-4-Pyrinon-gia-Socket-2066-Tray.html
+2026-07-05 02:36:19,Intel Xeon w5-2445 3.1GHz Tray,1223.9,https://www.skroutz.gr/s/43245316/Intel-Xeon-w5-2445-3-1GHz-Epexergastis-10-Pyrinon-gia-Socket-4677-Tray.html
+2026-07-05 02:36:19,Intel Xeon Silver 4309Y 2.8GHz Tray,951.49,https://www.skroutz.gr/s/35435987/Intel-Xeon-Silver-4309Y-2-8GHz-Epexergastis-8-Pyrinon-gia-Socket-4189-Tray.html
+2026-07-05 02:36:19,Intel Core i5-11400F 2.6GHz,165.55,https://www.skroutz.gr/s/30477232/Intel-Core-i5-11400F-2-6GHz-Epexergastis-6-Pyrinon-gia-Socket-1200-Tray.html
+2026-07-05 02:36:19,AMD Epyc 9115 2.6GHz Tray,1227.66,https://www.skroutz.gr/s/60200662/amd-epyc-9115-2-6ghz-epexergastis-16-pyrinon-gia-socket-sp5-tray.html
+2026-07-05 02:36:19,Intel Core i5-11400 2.6GHz Tray,210.36,https://www.skroutz.gr/s/31058675/Intel-Core-i5-11400-2-6GHz-Epexergastis-6-Pyrinon-gia-Socket-1200-Tray.html
+2026-07-05 02:36:19,Intel Xeon 6520P 2.4GHz Tray,2542.66,https://www.skroutz.gr/s/68224994/intel-xeon-6520p-2-4ghz-epexergastis-24-pyrinon-gia-socket-lga-4710-tray.html
+2026-07-05 02:36:19,Intel Xeon Gold 5418Y 2GHz Tray,2912.11,https://www.skroutz.gr/s/53937764/Intel-Xeon-Gold-5418Y-2GHz-Epexergastis-24-Pyrinon-gia-Socket-4677-Tray.html
+2026-07-05 02:36:19,Intel Xeon w9-3495X 1.9GHz Tray,9831.37,https://www.skroutz.gr/s/68225124/intel-xeon-w9-3495x-1-9ghz-epexergastis-56-pyrinon-gia-socket-4677-tray.html
+2026-07-05 02:36:19,AMD Ryzen 7 7800X3D 4.2GHz,275.53,https://www.skroutz.gr/s/41684337/AMD-Ryzen-7-7800X3D-4-2GHz-Epexergastis-8-Pyrinon-gia-Socket-AM5-Tray.html
+2026-07-05 02:36:19,AMD Ryzen 5 5500 3.6GHz,77.91,https://www.skroutz.gr/s/35208711/AMD-Ryzen-5-5500-3-6GHz-Epexergastis-6-Pyrinon-gia-Socket-AM4-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,AMD Ryzen 5 9600X 3.9GHz,175.9,https://www.skroutz.gr/s/55391239/AMD-Ryzen-5-9600X-3-9GHz-Epexergastis-6-Pyrinon-gia-Socket-AM5-se-Kouti.html
+2026-07-05 02:36:19,AMD Ryzen 7 7700X 4.5GHz,193.5,https://www.skroutz.gr/s/40247148/AMD-Ryzen-7-7700X-4-5GHz-Epexergastis-8-Pyrinon-gia-Socket-AM5-Tray.html
+2026-07-05 02:36:19,AMD Ryzen 9 5950X 3.4GHz,319.79,https://www.skroutz.gr/s/25578869/AMD-Ryzen-9-5950X-3-4GHz-Epexergastis-16-Pyrinon-gia-Socket-AM4-se-Kouti.html
+2026-07-05 02:36:19,Intel Core i5-13400 1.8GHz,207.43,https://www.skroutz.gr/s/59508563/Intel-Core-i5-13400-1-8GHz-Epexergastis-10-Pyrinon-gia-Socket-1700-Tray.html
+2026-07-05 02:36:19,AMD Ryzen 5 5600 3.5GHz,115.97,https://www.skroutz.gr/s/40307413/AMD-Ryzen-5-5600-3-5GHz-Epexergastis-6-Pyrinon-gia-Socket-AM4-Tray.html
+2026-07-05 02:36:19,Intel Core i5-9500 3GHz Tray,252.44,https://www.skroutz.gr/s/19802443/Intel-Core-i5-9500-3GHz-Epexergastis-6-Pyrinon-gia-Socket-1151-Tray.html
+2026-07-05 02:36:19,AMD Ryzen 5 5600X 3.7GHz,128.53,https://www.skroutz.gr/s/27205866/AMD-Ryzen-5-5600X-3-7GHz-Epexergastis-6-Pyrinon-gia-Socket-AM4-Tray.html
+2026-07-05 02:36:19,AMD Ryzen 5 5600G 3.9GHz,159.79,https://www.skroutz.gr/s/30374900/AMD-Ryzen-5-5600G-3-9GHz-Epexergastis-6-Pyrinon-gia-Socket-AM4-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,AMD Ryzen 7 5800X 3.8GHz,206.79,https://www.skroutz.gr/s/25578831/AMD-Ryzen-7-5800X-3-8GHz-Epexergastis-8-Pyrinon-gia-Socket-AM4-se-Kouti.html
+2026-07-05 02:36:19,AMD Ryzen 5 8500G 3.5GHz,136.18,https://www.skroutz.gr/s/50304868/AMD-Ryzen-5-8500G-3-5GHz-Epexergastis-6-Pyrinon-gia-Socket-AM5-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,AMD Ryzen 5 8600G 4.3GHz,147.02,https://www.skroutz.gr/s/50639538/AMD-Ryzen-5-8600G-4-3GHz-Epexergastis-6-Pyrinon-gia-Socket-AM5-Tray.html
+2026-07-05 02:36:19,AMD Ryzen 7 4.7GHz,415.0,https://www.skroutz.gr/s/65111569/amd-ryzen-7-4-7ghz-epexergastis-8-pyrinon-gia-socket-am5-se-kouti.html
+2026-07-05 02:36:19,AMD Ryzen 5 8400F 4.2GHz,90.8,https://www.skroutz.gr/s/54679790/AMD-Ryzen-5-8400F-4-2GHz-Epexergastis-6-Pyrinon-gia-Socket-AM5-Tray.html
+2026-07-05 02:36:19,AMD Ryzen 5 5600GT 3.6GHz,149.9,https://www.skroutz.gr/s/50308611/AMD-Ryzen-5-5600GT-3-6GHz-Epexergastis-6-Pyrinon-gia-Socket-AM4-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,AMD Ryzen 5 4500 3.6GHz,66.04,https://www.skroutz.gr/s/35729536/AMD-Ryzen-5-4500-3-6GHz-Epexergastis-6-Pyrinon-gia-Socket-AM4-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,Intel Core i5-12400F 2.5GHz,146.08,https://www.skroutz.gr/s/34275132/Intel-Core-i5-12400F-2-5GHz-Epexergastis-6-Pyrinon-gia-Socket-1700-Tray.html
+2026-07-05 02:36:19,AMD Ryzen 7 8700F 4.1GHz,166.09,https://www.skroutz.gr/s/53549457/AMD-Ryzen-7-8700F-4-1GHz-Epexergastis-8-Pyrinon-gia-Socket-AM5-Tray.html
+2026-07-05 02:36:19,Intel Core i3-12100F 3.3GHz,104.99,https://www.skroutz.gr/s/33403595/Intel-Core-i3-12100F-3-3GHz-Epexergastis-4-Pyrinon-gia-Socket-1700-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,AMD Ryzen 7 5700G 3.8GHz,189.1,https://www.skroutz.gr/s/33646240/AMD-Ryzen-7-5700G-3-8GHz-Epexergastis-8-Pyrinon-gia-Socket-AM4-Tray.html
+2026-07-05 02:36:19,Intel Core i5-11400F 2.6GHz Tray,165.55,https://www.skroutz.gr/s/30477232/Intel-Core-i5-11400F-2-6GHz-Epexergastis-6-Pyrinon-gia-Socket-1200-Tray.html
+2026-07-05 02:36:19,AMD Ryzen 5 5600XT 3.7GHz,174.35,https://www.skroutz.gr/s/57312570/AMD-Ryzen-5-5600XT-3-7GHz-Epexergastis-6-Pyrinon-gia-Socket-AM4-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,Intel Core i7-14700F 2.1GHz,308.9,https://www.skroutz.gr/s/49168447/Intel-Core-i7-14700F-2-1GHz-Epexergastis-20-Pyrinon-gia-Socket-1700-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,AMD Ryzen 5 5500 3.6GHz,83.89,https://www.skroutz.gr/s/35208711/AMD-Ryzen-5-5500-3-6GHz-Epexergastis-6-Pyrinon-gia-Socket-AM4-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,Intel Core i5-14600K 2.6GHz,282.47,https://www.skroutz.gr/s/46852089/Intel-Core-i5-14600K-2-6GHz-Epexergastis-14-Pyrinon-gia-Socket-1700-se-Kouti.html
+2026-07-05 02:36:19,Intel Core i5-14400F 1.8GHz,164.39,https://www.skroutz.gr/s/49167819/Intel-Core-i5-14400F-1-8GHz-Epexergastis-10-Pyrinon-gia-Socket-1700-Tray.html
+2026-07-05 02:36:19,Intel Core i7-12700K 2.7GHz,307.7,https://www.skroutz.gr/s/32106143/Intel-Core-i7-12700K-2-7GHz-Epexergastis-12-Pyrinon-gia-Socket-1700-se-Kouti.html
+2026-07-05 02:36:19,Intel Core i5-12600K 2.8GHz,217.9,https://www.skroutz.gr/s/32159735/Intel-Core-i5-12600K-2-8GHz-Epexergastis-10-Pyrinon-gia-Socket-1700-se-Kouti.html
+2026-07-05 02:36:19,Intel Core i5-12600KF 2.8GHz,173.8,https://www.skroutz.gr/s/32227989/Intel-Core-i5-12600KF-2-8GHz-Epexergastis-10-Pyrinon-gia-Socket-1700-se-Kouti.html
+2026-07-05 02:36:19,Intel Core i7-14700K 2.5GHz,399.0,https://www.skroutz.gr/s/46852315/Intel-Core-i7-14700K-2-5GHz-Epexergastis-20-Pyrinon-gia-Socket-1700-se-Kouti.html
+2026-07-05 02:36:19,AMD Ryzen 7 5800XT 3.8GHz,294.96,https://www.skroutz.gr/s/55363656/AMD-Ryzen-7-5800XT-3-8GHz-Epexergastis-8-Pyrinon-gia-Socket-AM4-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,Intel Core i5-14500 1.9GHz,279.74,https://www.skroutz.gr/s/49168207/Intel-Core-i5-14500-1-9GHz-Epexergastis-14-Pyrinon-gia-Socket-1700-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,Intel Core i5-12400 2.5GHz,177.12,https://www.skroutz.gr/s/33959277/Intel-Core-i5-12400-2-5GHz-Epexergastis-6-Pyrinon-gia-Socket-1700-Tray.html
+2026-07-05 02:36:19,Intel Core i5-14400 1.8GHz,176.6,https://www.skroutz.gr/s/50309291/Intel-Core-i5-14400-1-8GHz-Epexergastis-10-Pyrinon-gia-Socket-1700-Tray.html
+2026-07-05 02:36:19,Intel Core i3-12100 3.3GHz,150.52,https://www.skroutz.gr/s/33896554/Intel-Core-i3-12100-3-3GHz-Epexergastis-4-Pyrinon-gia-Socket-1700-Tray.html
+2026-07-05 02:36:19,AMD Ryzen 5 3600X 3.8GHz,328.49,https://www.skroutz.gr/s/19344888/AMD-Ryzen-5-3600X-3-8GHz-Epexergastis-6-Pyrinon-gia-Socket-AM4-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,AMD Ryzen 7 5700X 3.4GHz Tray,165.5,https://www.skroutz.gr/s/40307319/AMD-Ryzen-7-5700X-3-4GHz-Epexergastis-8-Pyrinon-gia-Socket-AM4-Tray.html
+2026-07-05 02:36:19,Intel Core i9-14900KF 2.4GHz,446.97,https://www.skroutz.gr/s/46852434/Intel-Core-i9-14900KF-2-4GHz-Epexergastis-24-Pyrinon-gia-Socket-1700-se-Kouti.html
+2026-07-05 02:36:19,Intel Core i7-13700KF 2.5GHz,319.9,https://www.skroutz.gr/s/38411806/Intel-Core-i7-13700KF-2-5GHz-Epexergastis-16-Pyrinon-gia-Socket-1700-se-Kouti.html
+2026-07-05 02:36:19,Intel Core i5-13400F 1.8GHz,207.7,https://www.skroutz.gr/s/40341168/Intel-Core-i5-13400F-1-8GHz-Epexergastis-10-Pyrinon-gia-Socket-1700-Tray.html
+2026-07-05 02:36:19,AMD Ryzen 5 3600 (Wraith Stealth Edition) 3.6GHz,182.0,https://www.skroutz.gr/s/19344850/AMD-Ryzen-5-3600-Wraith-Stealth-Edition-3-6GHz-Epexergastis-6-Pyrinon-gia-Socket-AM4-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,AMD Ryzen 3 4100 3.8GHz,52.9,https://www.skroutz.gr/s/35789872/AMD-Ryzen-3-4100-3-8GHz-Epexergastis-4-Pyrinon-gia-Socket-AM4-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,AMD Ryzen 9 5900X 3.7GHz,685.16,https://www.skroutz.gr/s/25636603/AMD-Ryzen-9-5900X-3-7GHz-Epexergastis-12-Pyrinon-gia-Socket-AM4-se-Kouti.html
+2026-07-05 02:36:19,Intel Core i9-14900K 2.4GHz,469.9,https://www.skroutz.gr/s/46852152/Intel-Core-i9-14900K-2-4GHz-Epexergastis-24-Pyrinon-gia-Socket-1700-se-Kouti.html
+2026-07-05 02:36:19,Intel Core i5-14600K 2.6GHz,277.99,https://www.skroutz.gr/s/46852089/Intel-Core-i5-14600K-2-6GHz-Epexergastis-14-Pyrinon-gia-Socket-1700-se-Kouti.html
+2026-07-05 02:36:19,AMD Ryzen 7 3800X 3.9GHz,354.45,https://www.skroutz.gr/s/19344973/AMD-Ryzen-7-3800X-3-9GHz-Epexergastis-8-Pyrinon-gia-Socket-AM4-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,AMD Ryzen 5 5600 3.5GHz,144.89,https://www.skroutz.gr/s/35208627/AMD-Ryzen-5-5600-3-5GHz-Epexergastis-6-Pyrinon-gia-Socket-AM4-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,Intel Core i7-14700 2.1GHz,369.43,https://www.skroutz.gr/s/49168405/Intel-Core-i7-14700-2-1GHz-Epexergastis-20-Pyrinon-gia-Socket-1700-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,Intel Core i5-14500 1.9GHz,279.74,https://www.skroutz.gr/s/49168207/Intel-Core-i5-14500-1-9GHz-Epexergastis-14-Pyrinon-gia-Socket-1700-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,Intel Core i7-12700F 2.1GHz,267.0,https://www.skroutz.gr/s/33548875/Intel-Core-i7-12700F-2-1GHz-Epexergastis-12-Pyrinon-gia-Socket-1700-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,AMD Ryzen 5 9600X 3.9GHz Tray,216.71,https://www.skroutz.gr/s/56282930/AMD-Ryzen-5-9600X-3-9GHz-Epexergastis-6-Pyrinon-gia-Socket-AM5-Tray.html
+2026-07-05 02:36:19,Intel Core i5-10400 2.9GHz,149.88,https://www.skroutz.gr/s/24185250/Intel-Core-i5-10400-2-9GHz-Epexergastis-6-Pyrinon-gia-Socket-1200-Tray.html
+2026-07-05 02:36:19,AMD Ryzen 9 7950X3D 4.2GHz,721.9,https://www.skroutz.gr/s/40421098/AMD-Ryzen-9-7950X3D-4-2GHz-Epexergastis-16-Pyrinon-gia-Socket-AM5-se-Kouti.html
+2026-07-05 02:36:19,Intel Ultra 7 270K Plus 3.2GHz,314.77,https://www.skroutz.gr/s/66750214/intel-ultra-7-270k-plus-3-2ghz-epexergastis-24-pyrinon-gia-socket-1851-se-kouti.html
+2026-07-05 02:36:19,Intel Ultra 5 225F 2.7GHz,137.07,https://www.skroutz.gr/s/58602178/Intel-Ultra-5-225F-2-7GHz-Epexergastis-10-Pyrinon-gia-Socket-1851-Tray.html
+2026-07-05 02:36:19,Intel Core i5-13500 1.8GHz,316.26,https://www.skroutz.gr/s/40221872/Intel-Core-i5-13500-1-8GHz-Epexergastis-14-Pyrinon-gia-Socket-1700-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,Intel Ultra 7 265 4.6GHz,407.32,https://www.skroutz.gr/s/58982693/Intel-Ultra-7-265-4-6GHz-Epexergastis-20-Pyrinon-gia-Socket-1851-se-Kouti.html
+2026-07-05 02:36:19,Intel Core i9-13900K 2.2GHz,390.0,https://www.skroutz.gr/s/38411251/Intel-Core-i9-13900K-2-2GHz-Epexergastis-24-Pyrinon-gia-Socket-1700-se-Kouti.html
+2026-07-05 02:36:19,Intel Ultra 5 245K 3.6GHz,194.99,https://www.skroutz.gr/s/57424923/Intel-Ultra-5-245K-3-6GHz-Epexergastis-14-Pyrinon-gia-Socket-1851-se-Kouti.html
+2026-07-05 02:36:19,Intel Ultra 5 245KF 3.60GHz,170.75,https://www.skroutz.gr/s/57654807/Intel-Ultra-5-245KF-3-60GHz-Epexergastis-14-Pyrinon-gia-Socket-1851-se-Kouti.html
+2026-07-05 02:36:19,Intel Core i9-13900KF 2.2GHz,445.72,https://www.skroutz.gr/s/39152719/Intel-Core-i9-13900KF-2-2GHz-Epexergastis-24-Pyrinon-gia-Socket-1700-Tray.html
+2026-07-05 02:36:19,Intel Core i5-12500 3GHz,234.87,https://www.skroutz.gr/s/33328276/Intel-Core-i5-12500-3GHz-Epexergastis-6-Pyrinon-gia-Socket-1700-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,Intel Core i5-12600 3.3GHz,271.97,https://www.skroutz.gr/s/33384183/Intel-Core-i5-12600-3-3GHz-Epexergastis-6-Pyrinon-gia-Socket-1700-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,Intel Core i5-13500 1.8GHz,316.26,https://www.skroutz.gr/s/40221872/Intel-Core-i5-13500-1-8GHz-Epexergastis-14-Pyrinon-gia-Socket-1700-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,Intel Ultra 5 225 3.3GHz,172.2,https://www.skroutz.gr/s/58302504/Intel-Ultra-5-225-3-3GHz-Epexergastis-10-Pyrinon-gia-Socket-1851-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,Intel Core i9-12900KF 2.4GHz,299.9,https://www.skroutz.gr/s/32159644/Intel-Core-i9-12900KF-2-4GHz-Epexergastis-16-Pyrinon-gia-Socket-1700-se-Kouti.html
+2026-07-05 02:36:19,AMD Ryzen 5 3400G 3.7GHz Tray,94.53,https://www.skroutz.gr/s/23137821/AMD-Ryzen-5-3400G-3-7GHz-Epexergastis-4-Pyrinon-gia-Socket-AM4-Tray.html
+2026-07-05 02:36:19,Intel Core i5-10400F 2.9GHz Tray,153.9,https://www.skroutz.gr/s/24185298/Intel-Core-i5-10400F-2-9GHz-Epexergastis-6-Pyrinon-gia-Socket-1200-Tray.html
+2026-07-05 02:36:19,Intel Core i3-13100 3.4GHz,162.23,https://www.skroutz.gr/s/40231607/Intel-Core-i3-13100-3-4GHz-Epexergastis-4-Pyrinon-gia-Socket-1700-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,Intel Core i7-12700 2.1GHz,312.44,https://www.skroutz.gr/s/33403536/Intel-Core-i7-12700-2-1GHz-Epexergastis-12-Pyrinon-gia-Socket-1700-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,Intel Core i3-10105 3.7GHz,116.09,https://www.skroutz.gr/s/27738114/Intel-Core-i3-10105-3-7GHz-Epexergastis-4-Pyrinon-gia-Socket-1200-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,Intel Core i7-12700KF 2.7GHz,263.17,https://www.skroutz.gr/s/32106396/Intel-Core-i7-12700KF-2-7GHz-Epexergastis-12-Pyrinon-gia-Socket-1700-se-Kouti.html
+2026-07-05 02:36:19,Intel Pentium Dual Core G4560 3.5GHz,66.53,https://www.skroutz.gr/s/10787786/Intel-Pentium-Dual-Core-G4560-3-5GHz-Epexergastis-2-Pyrinon-gia-Socket-1151-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,Intel Ultra 7 265K 3.9GHz Tray,303.14,https://www.skroutz.gr/s/57311071/Intel-Ultra-7-265K-3-9GHz-Epexergastis-20-Pyrinon-gia-Socket-1851-Tray.html
+2026-07-05 02:36:19,Intel Core i3-10100 3.6GHz,186.52,https://www.skroutz.gr/s/23292376/Intel-Core-i3-10100-3-6GHz-Epexergastis-4-Pyrinon-gia-Socket-1200-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,Intel Ultra 5 245KF 4.2GHz Tray,180.66,https://www.skroutz.gr/s/57311587/Intel-Ultra-5-245KF-4-2GHz-Epexergastis-14-Pyrinon-gia-Socket-1851-Tray.html
+2026-07-05 02:36:19,Intel Core i5-10400 2.9GHz,198.33,https://www.skroutz.gr/s/23292413/Intel-Core-i5-10400-2-9GHz-Epexergastis-6-Pyrinon-gia-Socket-1200-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,AMD Ryzen 5 5500GT 3.6GHz,139.4,https://www.skroutz.gr/s/51556420/AMD-Ryzen-5-5500GT-3-6GHz-Epexergastis-6-Pyrinon-gia-Socket-AM4-Tray.html
+2026-07-05 02:36:19,Intel Core i3-14100F 3.5GHz,101.74,https://www.skroutz.gr/s/49167921/Intel-Core-i3-14100F-3-5GHz-Epexergastis-4-Pyrinon-gia-Socket-1700-Tray.html
+2026-07-05 02:36:19,Intel Core i3-10100F 3.6GHz,76.87,https://www.skroutz.gr/s/27184053/Intel-Core-i3-10100F-3-6GHz-Epexergastis-4-Pyrinon-gia-Socket-1200-Tray.html
+2026-07-05 02:36:19,Intel Core i7-13700F 2.1GHz,296.9,https://www.skroutz.gr/s/40231594/Intel-Core-i7-13700F-2-1GHz-Epexergastis-16-Pyrinon-gia-Socket-1700-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,AMD Ryzen 3 4300G 3.8GHz,163.25,https://www.skroutz.gr/s/38856136/AMD-Ryzen-3-4300G-3-8GHz-Epexergastis-4-Pyrinon-gia-Socket-AM4-se-Kouti.html
+2026-07-05 02:36:19,Intel Core i7-13700KF 2.5GHz,319.9,https://www.skroutz.gr/s/38411806/Intel-Core-i7-13700KF-2-5GHz-Epexergastis-16-Pyrinon-gia-Socket-1700-se-Kouti.html
+2026-07-05 02:36:19,Intel Pentium Dual Core Gold G6400 4GHz,48.19,https://www.skroutz.gr/s/24571487/Intel-Pentium-Dual-Core-Gold-G6400-4GHz-Epexergastis-2-Pyrinon-gia-Socket-1200-Tray.html
+2026-07-05 02:36:19,AMD Ryzen 5 7500X3D 4GHz,206.9,https://www.skroutz.gr/s/64414231/amd-ryzen-5-7500x3d-4ghz-epexergastis-6-pyrinon-gia-socket-am5-tray.html
+2026-07-05 02:36:19,Intel Core i9-13900KS 2.4GHz,543.93,https://www.skroutz.gr/s/40490738/Intel-Core-i9-13900KS-2-4GHz-Epexergastis-24-Pyrinon-gia-Socket-1700-se-Kouti.html
+2026-07-05 02:36:19,AMD Ryzen 7 5700 3.7GHz,135.0,https://www.skroutz.gr/s/63878361/amd-ryzen-7-5700-3-7ghz-epexergastis-8-pyrinon-gia-socket-am4-tray.html
+2026-07-05 02:36:19,Intel Core i9-14900KS 3.2GHz,730.3,https://www.skroutz.gr/s/51850284/Intel-Core-i9-14900KS-3-2GHz-Epexergastis-24-Pyrinon-gia-Socket-1700-se-Kouti.html
+2026-07-05 02:36:19,Intel Pentium Dual Core G6405 4.1GHz,78.0,https://www.skroutz.gr/s/27758901/Intel-Pentium-Dual-Core-G6405-4-1GHz-Epexergastis-2-Pyrinon-gia-Socket-1200-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,Intel Core i3-13100F 3.4GHz,99.88,https://www.skroutz.gr/s/40231566/Intel-Core-i3-13100F-3-4GHz-Epexergastis-4-Pyrinon-gia-Socket-1700-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,AMD Ryzen 5 5600T 3.5GHz,185.3,https://www.skroutz.gr/s/57312127/AMD-Ryzen-5-5600T-3-5GHz-Epexergastis-6-Pyrinon-gia-Socket-AM4-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,Intel Core i5-14400F C0 Stepping 1.8GHz Tray,159.25,https://www.skroutz.gr/s/51996962/Intel-Core-i5-14400F-C0-Stepping-1-8GHz-Epexergastis-10-Pyrinon-gia-Socket-1700-Tray.html
+2026-07-05 02:36:19,AMD Ryzen 3 1200 AF 3.1GHz Tray,73.9,https://www.skroutz.gr/s/31602659/AMD-Ryzen-3-1200-AF-3-1GHz-Epexergastis-4-Pyrinon-gia-Socket-AM4-Tray.html
+2026-07-05 02:36:19,AMD Ryzen 3 3200G 3.6GHz,50.8,https://www.skroutz.gr/s/25034067/AMD-Ryzen-3-3200G-3-6GHz-Epexergastis-4-Pyrinon-gia-Socket-AM4-Tray.html
+2026-07-05 02:36:19,Intel Core i5-13400F 2.5GHz Tray,194.21,https://www.skroutz.gr/s/53943323/Intel-Core-i5-13400F-2-5GHz-Epexergastis-10-Pyrinon-gia-Socket-1700-Tray.html
+2026-07-05 02:36:19,Intel Core i5-12600 3.3GHz,288.02,https://www.skroutz.gr/s/33384183/Intel-Core-i5-12600-3-3GHz-Epexergastis-6-Pyrinon-gia-Socket-1700-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,AMD Ryzen 9 7900X3D 4.4GHz Tray,683.3,https://www.skroutz.gr/s/42117910/AMD-Ryzen-9-7900X3D-4-4GHz-Epexergastis-12-Pyrinon-gia-Socket-AM5-Tray.html
+2026-07-05 02:36:19,AMD Ryzen Threadripper Pro 9995WX 2.5GHz,13323.07,https://www.skroutz.gr/s/61986891/amd-ryzen-threadripper-pro-9995wx-2-5ghz-epexergastis-96-pyrinon-gia-socket-str5-se-kouti.html
+2026-07-05 02:36:19,Intel Core i5-13600K 2.6GHz Tray,267.03,https://www.skroutz.gr/s/38970009/Intel-Core-i5-13600K-2-6GHz-Epexergastis-14-Pyrinon-gia-Socket-1700-Tray.html
+2026-07-05 02:36:19,Intel Ultra 7 265F 2.4GHz,349.35,https://www.skroutz.gr/s/58902037/Intel-Ultra-7-265F-2-4GHz-Epexergastis-20-Pyrinon-gia-Socket-1851-se-Kouti.html
+2026-07-05 02:36:19,AMD Ryzen 7 8700F 4.1GHz Tray,166.09,https://www.skroutz.gr/s/53549457/AMD-Ryzen-7-8700F-4-1GHz-Epexergastis-8-Pyrinon-gia-Socket-AM5-Tray.html
+2026-07-05 02:36:19,Intel Core i3-14100 3.5GHz,160.9,https://www.skroutz.gr/s/49167958/Intel-Core-i3-14100-3-5GHz-Epexergastis-4-Pyrinon-gia-Socket-1700-Tray.html
+2026-07-05 02:36:19,Intel Core i5-13600KF 2.6GHz,279.0,https://www.skroutz.gr/s/38431897/Intel-Core-i5-13600KF-2-6GHz-Epexergastis-14-Pyrinon-gia-Socket-1700-se-Kouti.html
+2026-07-05 02:36:19,AMD Epyc 9965 2.25GHz Tray,11132.94,https://www.skroutz.gr/s/63878061/amd-epyc-9965-2-25ghz-epexergastis-pyrinon-gia-socket-sp5-tray.html
+2026-07-05 02:36:19,AMD Ryzen 9 9900X 4.4GHz Tray,388.17,https://www.skroutz.gr/s/58170455/AMD-Ryzen-9-9900X-4-4GHz-Epexergastis-12-Pyrinon-gia-Socket-AM5-Tray.html
+2026-07-05 02:36:19,AMD Ryzen Threadripper 9980X 3.2GHz,5791.23,https://www.skroutz.gr/s/61986940/amd-ryzen-threadripper-9980x-3-2ghz-epexergastis-64-pyrinon-gia-socket-str5-se-kouti.html
+2026-07-05 02:36:19,Intel Core i5-13400 1.8GHz Tray,207.43,https://www.skroutz.gr/s/59508563/Intel-Core-i5-13400-1-8GHz-Epexergastis-10-Pyrinon-gia-Socket-1700-Tray.html
+2026-07-05 02:36:19,AMD Epyc 9555P 3.2GHz Tray,7056.51,https://www.skroutz.gr/s/61857041/amd-epyc-9555p-3-2ghz-epexergastis-64-pyrinon-gia-socket-sp5-tray.html
+2026-07-05 02:36:19,Intel Core i5-14600 2GHz Tray,361.01,https://www.skroutz.gr/s/49168535/Intel-Core-i5-14600-2GHz-Epexergastis-14-Pyrinon-gia-Socket-1700-Tray.html
+2026-07-05 02:36:19,Intel Core i9-14900F 2GHz,496.99,https://www.skroutz.gr/s/49168727/Intel-Core-i9-14900F-2GHz-Epexergastis-24-Pyrinon-gia-Socket-1700-Tray.html
+2026-07-05 02:36:19,AMD Ryzen Threadripper Pro 3945WX 4GHz Tray,198.22,https://www.skroutz.gr/s/54359039/AMD-Ryzen-Threadripper-Pro-3945WX-4GHz-Epexergastis-12-Pyrinon-gia-Socket-sWRX8-Tray.html
+2026-07-05 02:36:19,AMD Epyc 9274F 4.05GHz Tray,2103.15,https://www.skroutz.gr/s/45246278/AMD-Epyc-9274F-4-05GHz-Epexergastis-24-Pyrinon-gia-Socket-SP5-Tray.html
+2026-07-05 02:36:19,AMD Ryzen 7 9850X3D 4.7GHz Tray,408.0,https://www.skroutz.gr/s/65111589/amd-ryzen-7-9850x3d-4-7ghz-epexergastis-8-pyrinon-gia-socket-am5-tray.html
+2026-07-05 02:36:19,AMD Ryzen 7 Pro 3700 3.6GHz Tray,371.83,https://www.skroutz.gr/s/27737872/AMD-Ryzen-7-Pro-3700-3-6GHz-Epexergastis-8-Pyrinon-gia-Socket-AM4-Tray.html
+2026-07-05 02:36:19,Intel Core i9-13900F 1.5GHz,643.81,https://www.skroutz.gr/s/40221820/Intel-Core-i9-13900F-1-5GHz-Epexergastis-24-Pyrinon-gia-Socket-1700-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,AMD Athlon 3000G 3.50GHz,49.69,https://www.skroutz.gr/s/21162628/AMD-Athlon-3000G-3-50GHz-Epexergastis-2-Pyrinon-gia-Socket-AM4-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,Intel Core i9-13900K 2.2GHz,390.0,https://www.skroutz.gr/s/38411251/Intel-Core-i9-13900K-2-2GHz-Epexergastis-24-Pyrinon-gia-Socket-1700-se-Kouti.html
+2026-07-05 02:36:19,Intel Core i9-13900 2GHz,499.14,https://www.skroutz.gr/s/40231701/Intel-Core-i9-13900-2GHz-Epexergastis-24-Pyrinon-gia-Socket-1700-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,AMD Ryzen Threadripper 9960X 4.2GHz,1730.15,https://www.skroutz.gr/s/61986842/amd-ryzen-threadripper-9960x-4-2ghz-epexergastis-24-pyrinon-gia-socket-str5-tray.html
+2026-07-05 02:36:19,AMD Ryzen 9 9950X3D2 Dual Edition 4.3GHz,914.9,https://www.skroutz.gr/s/66792473/amd-ryzen-9-9950x3d2-dual-edition-4-3ghz-epexergastis-16-pyrinon-gia-socket-am5-se-kouti.html
+2026-07-05 02:36:19,Intel Ultra 5 250K Plus 3.3GHz,223.46,https://www.skroutz.gr/s/66938833/intel-ultra-5-250k-plus-3-3ghz-epexergastis-18-pyrinon-gia-socket-1851-se-kouti.html
+2026-07-05 02:36:19,AMD Ryzen 5 Pro 8500G 3.5GHz Tray,116.63,https://www.skroutz.gr/s/60264976/amd-ryzen-5-pro-8500g-3-5ghz-epexergastis-6-pyrinon-gia-socket-am5-tray.html
+2026-07-05 02:36:19,Intel Core i7-12700T 1.4GHz Tray,467.78,https://www.skroutz.gr/s/35274149/Intel-Core-i7-12700T-1-4GHz-Epexergastis-12-Pyrinon-gia-Socket-1700-Tray.html
+2026-07-05 02:36:19,Intel Core i3-10105F 3.7GHz Tray,80.5,https://www.skroutz.gr/s/29591503/Intel-Core-i3-10105F-3-7GHz-Epexergastis-4-Pyrinon-gia-Socket-1200-Tray.html
+2026-07-05 02:36:19,AMD Ryzen 5 7600X3D 4.1GHz Tray,279.17,https://www.skroutz.gr/s/57653252/AMD-Ryzen-5-7600X3D-4-1GHz-Epexergastis-6-Pyrinon-gia-Socket-AM5-Tray.html
+2026-07-05 02:36:19,Intel Celeron Dual Core G5905 3.5GHz,23.17,https://www.skroutz.gr/s/25338197/Intel-Celeron-Dual-Core-G5905-3-5GHz-Epexergastis-2-Pyrinon-gia-Socket-1200-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,AMD Ryzen 5 3600 3.6GHz Tray,210.32,https://www.skroutz.gr/s/27737147/AMD-Ryzen-5-3600-3-6GHz-Epexergastis-6-Pyrinon-gia-Socket-AM4-se-Tray-me-PSyktra.html
+2026-07-05 02:36:19,AMD Ryzen 5 9500F 3.8GHz Tray,161.0,https://www.skroutz.gr/s/63801574/amd-ryzen-5-9500f-3-8ghz-epexergastis-6-pyrinon-gia-socket-am5-tray.html
+2026-07-05 02:36:19,Intel Core i9-10920X 3.50GHz,1274.55,https://www.skroutz.gr/s/22224118/Intel-Core-i9-10920X-3-50GHz-Epexergastis-12-Pyrinon-gia-Socket-2066-se-Kouti.html
+2026-07-05 02:36:19,Intel Core i9-12900KF 2.4GHz,299.9,https://www.skroutz.gr/s/32159644/Intel-Core-i9-12900KF-2-4GHz-Epexergastis-16-Pyrinon-gia-Socket-1700-se-Kouti.html
+2026-07-05 02:36:19,Intel Ultra 9 285 2.5GHz,635.18,https://www.skroutz.gr/s/58602135/Intel-Ultra-9-285-2-5GHz-Epexergastis-24-Pyrinon-gia-Socket-1851-Tray.html
+2026-07-05 02:36:19,AMD Athlon 3000G 3.50GHz Tray,21.7,https://www.skroutz.gr/s/27994080/AMD-Athlon-3000G-3-50GHz-Epexergastis-2-Pyrinon-gia-Socket-AM4-Tray.html
+2026-07-05 02:36:19,Intel Core i5-12400F 2.5GHz Tray,162.0,https://www.skroutz.gr/s/67330551/intel-core-i5-12400f-2-5ghz-epexergastis-pyrinon-gia-socket-1700-tray.html
+2026-07-05 02:36:19,Intel Core i5-14400 2.50GHz Tray,213.7,https://www.skroutz.gr/s/67048514/intel-core-i5-14400-2-50ghz-epexergastis-pyrinon-gia-socket-1700-tray.html
+2026-07-05 02:36:19,Intel Ultra 5 250KF Plus 4.2GHz,211.0,https://www.skroutz.gr/s/66244444/intel-ultra-5-250kf-plus-4-2ghz-epexergastis-18-pyrinon-gia-socket-1851-se-kouti.html
+2026-07-05 02:36:19,AMD Ryzen 5 7400 4.3GHz,165.0,https://www.skroutz.gr/s/64210926/amd-ryzen-5-7400-4-3ghz-epexergastis-6-pyrinon-gia-socket-am5-se-kouti-me-psyktra.html
+2026-07-05 02:36:19,Intel Core i3-13100 3.4GHz Tray,167.85,https://www.skroutz.gr/s/40341057/Intel-Core-i3-13100-3-4GHz-Epexergastis-4-Pyrinon-gia-Socket-1700-Tray.html
+2026-07-05 02:36:19,AMD Athlon 200GE 3.2GHz Tray,48.43,https://www.skroutz.gr/s/64210871/amd-athlon-200ge-3-2ghz-epexergastis-2-pyrinon-gia-socket-am4-se-tray-me-psyktra.html
+2026-07-05 02:36:19,AMD Ryzen Threadripper Pro 9975WX 4GHz,4691.92,https://www.skroutz.gr/s/61986854/amd-ryzen-threadripper-pro-9975wx-4ghz-epexergastis-32-pyrinon-gia-socket-str5-se-kouti.html
+2026-07-05 02:36:19,AMD Ryzen 7 7700 (SBX) 3.8GHz,316.61,https://www.skroutz.gr/s/65625761/amd-ryzen-7-7700-sbx-3-8ghz-epexergastis-8-pyrinon-gia-socket-am5-se-kouti-me-psyktra.html
+2026-07-05 02:36:19,AMD Ryzen 7 7700 SR1 3.8GHz Tray,237.71,https://www.skroutz.gr/s/65949440/amd-ryzen-7-7700-sr1-3-8ghz-epexergastis-8-pyrinon-gia-socket-am5-se-tray-me-psyktra.html
+2026-07-05 02:36:19,AMD Epyc 9015 3.6GHz Tray,658.4,https://www.skroutz.gr/s/61857182/amd-epyc-9015-3-6ghz-epexergastis-8-pyrinon-gia-socket-sp5-tray.html
+2026-07-05 02:36:19,Intel Core i5-9400 2.9GHz,199.0,https://www.skroutz.gr/s/17311441/Intel-Core-i5-9400-2-9GHz-Epexergastis-6-Pyrinon-gia-Socket-1151-rev-2-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,AMD Ryzen Threadripper Pro 9965Wx 4.2GHz,3225.6,https://www.skroutz.gr/s/61884907/amd-ryzen-threadripper-pro-9965wx-4-2ghz-epexergastis-24-pyrinon-gia-socket-str5-tray.html
+2026-07-05 02:36:19,AMD Ryzen Threadripper 9970X 4GHz,2728.7,https://www.skroutz.gr/s/61885239/amd-ryzen-threadripper-9970x-4ghz-epexergastis-32-pyrinon-gia-socket-str5-tray.html
+2026-07-05 02:36:19,AMD Epyc AMD 9124 3GHz Tray,812.96,https://www.skroutz.gr/s/53546809/AMD-Epyc-AMD-9124-3GHz-Epexergastis-16-Pyrinon-gia-Socket-SP5-Tray.html
+2026-07-05 02:36:19,AMD Epyc 9355P 3.55GHz Tray,4401.69,https://www.skroutz.gr/s/61884662/amd-epyc-9355p-3-55ghz-epexergastis-32-pyrinon-gia-socket-sp5-tray.html
+2026-07-05 02:36:19,AMD Epyc 9455 3.15GHz Tray,4655.53,https://www.skroutz.gr/s/63878250/amd-epyc-9455-3-15ghz-epexergastis-48-pyrinon-gia-socket-sp5-tray.html
+2026-07-05 02:36:19,Intel Ultra 5 245 3.5GHz Tray,295.99,https://www.skroutz.gr/s/59086558/Intel-Ultra-5-245-3-5GHz-Epexergastis-14-Pyrinon-gia-Socket-1851-Tray.html
+2026-07-05 02:36:19,Intel Core i3-10100F 3.6GHz Tray,76.87,https://www.skroutz.gr/s/27184053/Intel-Core-i3-10100F-3-6GHz-Epexergastis-4-Pyrinon-gia-Socket-1200-Tray.html
+2026-07-05 02:36:19,AMD Epyc EPYC 8024P 2.4GHz Tray,519.76,https://www.skroutz.gr/s/55630857/AMD-Epyc-EPYC-8024P-2-4GHz-Epexergastis-8-Pyrinon-gia-Socket-SP6-Tray.html
+2026-07-05 02:36:19,AMD Epyc 9755 2.7GHz Tray,4586.4,https://www.skroutz.gr/s/60367587/amd-epyc-9755-2-7ghz-epexergastis-128-pyrinon-gia-socket-sp5-tray.html
+2026-07-05 02:36:19,AMD Epyc 9654 2.4GHz Tray,2832.1,https://www.skroutz.gr/s/45054028/AMD-Epyc-9654-2-4GHz-Epexergastis-96-Pyrinon-gia-Socket-SP5-Tray.html
+2026-07-05 02:36:19,AMD Epyc 9224 2.5GHz Tray,1244.41,https://www.skroutz.gr/s/53546664/AMD-Epyc-9224-2-5GHz-Epexergastis-24-Pyrinon-gia-Socket-SP5-Tray.html
+2026-07-05 02:36:19,Intel Ultra 7 265 2.4GHz Tray,406.76,https://www.skroutz.gr/s/59086712/Intel-Ultra-7-265-2-4GHz-Epexergastis-20-Pyrinon-gia-Socket-1851-Tray.html
+2026-07-05 02:36:19,AMD Ryzen Threadripper Pro 9955WX 4.5GHz,1808.76,https://www.skroutz.gr/s/61986864/amd-ryzen-threadripper-pro-9955wx-4-5ghz-epexergastis-16-pyrinon-gia-socket-str5-se-kouti.html
+2026-07-05 02:36:19,Intel Core i5-14400F C0 Stepping 1.8GHz Tray,159.25,https://www.skroutz.gr/s/51996962/Intel-Core-i5-14400F-C0-Stepping-1-8GHz-Epexergastis-10-Pyrinon-gia-Socket-1700-Tray.html
+2026-07-05 02:36:19,AMD Epyc 9454P 2.75GHz Tray,2401.61,https://www.skroutz.gr/s/53949719/AMD-Epyc-9454P-2-75GHz-Epexergastis-48-Pyrinon-gia-Socket-SP5-Tray.html
+2026-07-05 02:36:19,Intel Core i5-13400F 2.5GHz Tray,191.31,https://www.skroutz.gr/s/53943323/Intel-Core-i5-13400F-2-5GHz-Epexergastis-10-Pyrinon-gia-Socket-1700-Tray.html
+2026-07-05 02:36:19,AMD Epyc 9365 3.4GHz Tray,4106.31,https://www.skroutz.gr/s/67602453/amd-epyc-9365-3-4ghz-epexergastis-36-pyrinon-gia-socket-sp5-tray.html
+2026-07-05 02:36:19,AMD Ryzen 3 3200G 3.6GHz Tray,60.62,https://www.skroutz.gr/s/25034067/AMD-Ryzen-3-3200G-3-6GHz-Epexergastis-4-Pyrinon-gia-Socket-AM4-Tray.html
+2026-07-05 02:36:19,Intel Ultra 5 245K 4.2GHz Tray,173.93,https://www.skroutz.gr/s/57311333/Intel-Ultra-5-245K-4-2GHz-Epexergastis-14-Pyrinon-gia-Socket-1851-Tray.html
+2026-07-05 02:36:19,Intel Core i5-13600K 2.6GHz Tray,267.04,https://www.skroutz.gr/s/38970009/Intel-Core-i5-13600K-2-6GHz-Epexergastis-14-Pyrinon-gia-Socket-1700-Tray.html
+2026-07-05 02:36:19,AMD Epyc 9334 3.7GHz Tray,1854.1,https://www.skroutz.gr/s/45463835/AMD-Epyc-9334-3-7GHz-Epexergastis-64-Pyrinon-gia-Socket-SP5-Tray.html
+2026-07-05 02:36:19,Intel Core i9-12900 2.4GHz,527.1,https://www.skroutz.gr/s/33403804/Intel-Core-i9-12900-2-4GHz-Epexergastis-16-Pyrinon-gia-Socket-1700-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,AMD Ryzen Threadripper Pro 9985WX 3.2GHz,9489.9,https://www.skroutz.gr/s/61986857/amd-ryzen-threadripper-pro-9985wx-3-2ghz-epexergastis-64-pyrinon-gia-socket-str5-se-kouti.html
+2026-07-05 02:36:19,AMD Ryzen Threadripper PRO 7955WX 2.5GHz,1760.97,https://www.skroutz.gr/s/64978090/amd-ryzen-threadripper-pro-7955wx-2-5ghz-epexergastis-16-pyrinon-gia-socket-str5-se-kouti.html
+2026-07-05 02:36:19,AMD Epyc 9745 2.4GHz Tray,9685.39,https://www.skroutz.gr/s/63878285/amd-epyc-9745-2-4ghz-epexergastis-128-pyrinon-gia-socket-sp5-tray.html
+2026-07-05 02:36:19,AMD Epyc 4464P 3.7GHz Tray,464.41,https://www.skroutz.gr/s/57309998/AMD-Epyc-4464P-3-7GHz-Epexergastis-12-Pyrinon-gia-Socket-AM5-Tray.html
+2026-07-05 02:36:19,AMD Epyc 4545P 3GHz Tray,643.65,https://www.skroutz.gr/s/67495950/amd-epyc-4545p-3ghz-epexergastis-pyrinon-gia-socket-am5-tray.html
+2026-07-05 02:36:19,AMD Epyc 4465P 3.4GHz Tray,497.68,https://www.skroutz.gr/s/63878327/amd-epyc-4465p-3-4ghz-epexergastis-12-pyrinon-gia-socket-am5-tray.html
+2026-07-05 02:36:19,Intel Core i9-14900 2GHz,586.95,https://www.skroutz.gr/s/49168645/Intel-Core-i9-14900-2GHz-Epexergastis-24-Pyrinon-gia-Socket-1700-Tray.html
+2026-07-05 02:36:19,AMD Ryzen 5 4500 2.3GHz Tray,149.25,https://www.skroutz.gr/s/35487319/AMD-Ryzen-5-4500-2-3GHz-Epexergastis-6-Pyrinon-gia-Socket-AM4-se-Tray-me-PSyktra.html
+2026-07-05 02:36:19,AMD Epyc 4484PX 4.4GHz Tray,956.39,https://www.skroutz.gr/s/55501804/AMD-Epyc-4484PX-4-4GHz-Epexergastis-12-Pyrinon-gia-Socket-AM5-Tray.html
+2026-07-05 02:36:19,Intel Ultra 5 245KF 3.60GHz,176.7,https://www.skroutz.gr/s/57654807/Intel-Ultra-5-245KF-3-60GHz-Epexergastis-14-Pyrinon-gia-Socket-1851-se-Kouti.html
+2026-07-05 02:36:19,AMD Epyc 9645 2.3GHz Tray,8327.68,https://www.skroutz.gr/s/64210690/amd-epyc-9645-2-3ghz-epexergastis-96-pyrinon-gia-socket-sp5-tray.html
+2026-07-05 02:36:19,AMD Athlon 3000G (revised packaging) 3.50GHz,39.16,https://www.skroutz.gr/s/59450456/AMD-Athlon-3000G-revised-packaging-3-50GHz-Epexergastis-2-Pyrinon-gia-Socket-AM4-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,AMD Epyc 9355 3.55GHz Tray,4116.95,https://www.skroutz.gr/s/59759380/amd-epyc-9355-3-55ghz-epexergastis-32-pyrinon-gia-socket-sp5-tray.html
+2026-07-05 02:36:19,AMD Epyc 4564P 4.5GHz,747.93,https://www.skroutz.gr/s/55413658/AMD-Epyc-4564P-4-5GHz-Epexergastis-16-Pyrinon-gia-Socket-AM5-Tray.html
+2026-07-05 02:36:19,AMD Epyc 4584PX 4.2GHz Tray,780.35,https://www.skroutz.gr/s/55501603/AMD-Epyc-4584PX-4-2GHz-Epexergastis-16-Pyrinon-gia-Socket-AM5-Tray.html
+2026-07-05 02:36:19,AMD Ryzen 5 Pro 8600G 4.3GHz Tray,181.94,https://www.skroutz.gr/s/60264815/amd-ryzen-5-pro-8600g-4-3ghz-epexergastis-6-pyrinon-gia-socket-am5-tray.html
+2026-07-05 02:36:19,AMD Epyc 7303 2.4GHz Tray,776.13,https://www.skroutz.gr/s/50866487/AMD-Epyc-7303-2-4GHz-Epexergastis-16-Pyrinon-gia-Socket-SP3-Tray.html
+2026-07-05 02:36:19,AMD Epyc Epyc 9654P 2.4GHz Tray,2777.6,https://www.skroutz.gr/s/53958822/AMD-Epyc-Epyc-9654P-2-4GHz-Epexergastis-96-Pyrinon-gia-Socket-SP5-Tray.html
+2026-07-05 02:36:19,AMD Epyc 9554 3.1GHz Tray,2700.6,https://www.skroutz.gr/s/41656225/AMD-Epyc-9554-3-1GHz-Epexergastis-64-Pyrinon-gia-Socket-SP5-Tray.html
+2026-07-05 02:36:19,AMD Ryzen Threadripper 7980X 3.2GHz,4978.59,https://www.skroutz.gr/s/48580815/AMD-Ryzen-Threadripper-7980X-3-2GHz-Epexergastis-64-Pyrinon-gia-Socket-sTR5-se-Kouti.html
+2026-07-05 02:36:19,AMD Ryzen Threadripper 7960X 4.2GHz,1348.2,https://www.skroutz.gr/s/48581166/AMD-Ryzen-Threadripper-7960X-4-2GHz-Epexergastis-24-Pyrinon-gia-Socket-sTR5-Tray.html
+2026-07-05 02:36:19,AMD Epyc 9474F 3.6GHz Tray,4542.23,https://www.skroutz.gr/s/42123231/AMD-Epyc-9474F-3-6GHz-Epexergastis-48-Pyrinon-gia-Socket-SP5-Tray.html
+2026-07-05 02:36:19,AMD Epyc 9825 2.2GHz Tray,9943.46,https://www.skroutz.gr/s/67602472/amd-epyc-9825-2-2ghz-epexergastis-144-pyrinon-gia-socket-sp5-tray.html
+2026-07-05 02:36:19,AMD Ryzen 5 3400G 3.7GHz Tray,94.53,https://www.skroutz.gr/s/23137821/AMD-Ryzen-5-3400G-3-7GHz-Epexergastis-4-Pyrinon-gia-Socket-AM4-Tray.html
+2026-07-05 02:36:19,AMD Epyc 9254 2.9GHz Tray,1582.07,https://www.skroutz.gr/s/53961037/AMD-Epyc-9254-2-9GHz-Epexergastis-24-Pyrinon-gia-Socket-SP5-Tray.html
+2026-07-05 02:36:19,AMD Epyc 9534 2.45GHz Tray,3059.18,https://www.skroutz.gr/s/45463476/AMD-Epyc-9534-2-45GHz-Epexergastis-64-Pyrinon-gia-Socket-SP5-Tray.html
+2026-07-05 02:36:19,AMD Ryzen 7 Pro 9745 3.8GHz Tray,414.72,https://www.skroutz.gr/s/64624706/amd-ryzen-7-pro-9745-3-8ghz-epexergastis-8-pyrinon-gia-socket-am5-tray.html
+2026-07-05 02:36:19,AMD Epyc 9475F 3.65GHz Tray,10606.24,https://www.skroutz.gr/s/59830604/amd-epyc-9475f-3-65ghz-epexergastis-48-pyrinon-gia-socket-sp5-tray.html
+2026-07-05 02:36:19,AMD Ryzen Threadripper 7970X 4GHz,2059.43,https://www.skroutz.gr/s/48581000/AMD-Ryzen-Threadripper-7970X-4GHz-Epexergastis-32-Pyrinon-gia-Socket-sTR5-Tray.html
+2026-07-05 02:36:19,Intel Pentium Dual Core G4560 3.5GHz,66.53,https://www.skroutz.gr/s/10787786/Intel-Pentium-Dual-Core-G4560-3-5GHz-Epexergastis-2-Pyrinon-gia-Socket-1151-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,AMD Epyc 9454 2.75GHz Tray,1760.5,https://www.skroutz.gr/s/42502245/AMD-Epyc-9454-2-75GHz-Epexergastis-48-Pyrinon-gia-Socket-SP5-Tray.html
+2026-07-05 02:36:19,AMD Epyc Epyc 8324PN 2.05GHz Tray,2731.28,https://www.skroutz.gr/s/53965369/AMD-Epyc-Epyc-8324PN-2-05GHz-Epexergastis-32-Pyrinon-gia-Socket-SP6-Tray.html
+2026-07-05 02:36:19,AMD Epyc 9655 2.6GHz Tray,8504.57,https://www.skroutz.gr/s/59339879/AMD-Epyc-9655-2-6GHz-Epexergastis-96-Pyrinon-gia-Socket-SP5-Tray.html
+2026-07-05 02:36:19,AMD Epyc 9455P 3.15GHz Tray,6258.04,https://www.skroutz.gr/s/63877866/amd-epyc-9455p-3-15ghz-epexergastis-48-pyrinon-gia-socket-sp5-tray.html
+2026-07-05 02:36:19,AMD Epyc 9174F 4.1GHz Tray,1936.33,https://www.skroutz.gr/s/45246297/AMD-Epyc-9174F-4-1GHz-Epexergastis-16-Pyrinon-gia-Socket-SP5-Tray.html
+2026-07-05 02:36:19,AMD Epyc 9554P 3.1GHz Tray,2682.82,https://www.skroutz.gr/s/41656107/AMD-Epyc-9554P-3-1GHz-Epexergastis-64-Pyrinon-gia-Socket-SP5-Tray.html
+2026-07-05 02:36:19,AMD Ryzen 5 Pro 9645 3.9GHz Tray,299.41,https://www.skroutz.gr/s/64624694/amd-ryzen-5-pro-9645-3-9ghz-epexergastis-6-pyrinon-gia-socket-am5-tray.html
+2026-07-05 02:36:19,AMD Ryzen 7 Pro 8700G 4.2GHz Tray,268.84,https://www.skroutz.gr/s/60264844/amd-ryzen-7-pro-8700g-4-2ghz-epexergastis-8-pyrinon-gia-socket-am5-tray.html
+2026-07-05 02:36:19,Intel Core i7-14700KF 2.5GHz Tray,389.39,https://www.skroutz.gr/s/46852575/Intel-Core-i7-14700KF-2-5GHz-Epexergastis-20-Pyrinon-gia-Socket-1700-Tray.html
+2026-07-05 02:36:19,Supermicro Xeon Silver 4214R 2.4GHz Tray,1320.41,https://www.skroutz.gr/s/65210233/supermicro-xeon-silver-4214r-2-4ghz-epexergastis-12-pyrinon-gia-socket-3647-tray.html
+2026-07-05 02:36:19,AMD Ryzen 7 Pro 7745 3.8GHz Tray,228.46,https://www.skroutz.gr/s/45056103/AMD-Ryzen-7-Pro-7745-3-8GHz-Epexergastis-8-Pyrinon-gia-Socket-AM5-se-Tray-me-PSyktra.html
+2026-07-05 02:36:19,AMD Epyc 7543P 2.8GHz,1818.11,https://www.skroutz.gr/s/41537358/AMD-Epyc-7543P-2-8GHz-Epexergastis-32-Pyrinon-gia-Socket-SP3-Tray.html
+2026-07-05 02:36:19,AMD Ryzen 5 Pro 4655G 3.7GHz Tray,242.0,https://www.skroutz.gr/s/59086192/AMD-Ryzen-5-Pro-4655G-3-7GHz-Epexergastis-6-Pyrinon-gia-Socket-AM4-Tray.html
+2026-07-05 02:36:19,AMD Epyc 9374F 3.85GHz Tray,2662.73,https://www.skroutz.gr/s/41656274/AMD-Epyc-9374F-3-85GHz-Epexergastis-32-Pyrinon-gia-Socket-SP5-Tray.html
+2026-07-05 02:36:19,Intel Xeon Platinum 8461V 2.2GHz Tray,1871.46,https://www.skroutz.gr/s/67613886/intel-xeon-platinum-8461v-2-2ghz-epexergastis-48-pyrinon-gia-socket-4677-tray.html
+2026-07-05 02:36:19,Intel Ultra 5 225F SRVF9 2.7GHz Tray,229.28,https://www.skroutz.gr/s/64871510/intel-ultra-5-225f-srvf9-2-7ghz-epexergastis-10-pyrinon-gia-socket-1851-tray.html
+2026-07-05 02:36:19,Intel Core i9-14900T 1.1GHz Tray,664.62,https://www.skroutz.gr/s/50640684/Intel-Core-i9-14900T-1-1GHz-Epexergastis-24-Pyrinon-gia-Socket-1700-Tray.html
+2026-07-05 02:36:19,Intel Core i5-12600KF 2.8GHz Tray,208.44,https://www.skroutz.gr/s/32659089/Intel-Core-i5-12600KF-2-8GHz-Epexergastis-10-Pyrinon-gia-Socket-1700-Tray.html
+2026-07-05 02:36:19,AMD Epyc 4344P 3.8GHz Tray,261.45,https://www.skroutz.gr/s/57309203/AMD-Epyc-4344P-3-8GHz-Epexergastis-8-Pyrinon-gia-Socket-AM5-Tray.html
+2026-07-05 02:36:19,AMD Ryzen 7 5700 3.7GHz,157.55,https://www.skroutz.gr/s/50307842/AMD-Ryzen-7-5700-3-7GHz-Epexergastis-8-Pyrinon-gia-Socket-AM4-se-Kouti.html
+2026-07-05 02:36:19,Intel Xeon W3-2525 3.5GHz Tray,1114.37,https://www.skroutz.gr/s/64722886/intel-xeon-w3-2525-3-5ghz-epexergastis-8-pyrinon-gia-socket-tray.html
+2026-07-05 02:36:19,AMD Ryzen 5 Pro 8500G 3.5GHz Tray,116.63,https://www.skroutz.gr/s/60264976/amd-ryzen-5-pro-8500g-3-5ghz-epexergastis-6-pyrinon-gia-socket-am5-tray.html
+2026-07-05 02:36:19,AMD Ryzen 5 Pro 8500G 3.5GHz Tray,160.15,https://www.skroutz.gr/s/64871428/amd-ryzen-5-pro-8500g-3-5ghz-epexergastis-6-pyrinon-gia-socket-am5-se-tray-me-psyktra.html
+2026-07-05 02:36:19,AMD Ryzen 5 7600X3D 4.1GHz Tray,279.17,https://www.skroutz.gr/s/57653252/AMD-Ryzen-5-7600X3D-4-1GHz-Epexergastis-6-Pyrinon-gia-Socket-AM5-Tray.html
+2026-07-05 02:36:19,AMD Epyc 4585PX 4.3GHz Tray,739.22,https://www.skroutz.gr/s/61856838/amd-epyc-4585px-4-3ghz-epexergastis-16-pyrinon-gia-socket-am5-tray.html
+2026-07-05 02:36:19,AMD Ryzen 9 Pro 9945 3.4GHz Tray,488.1,https://www.skroutz.gr/s/66792189/amd-ryzen-9-pro-9945-3-4ghz-epexergastis-12-pyrinon-gia-socket-am5-tray.html
+2026-07-05 02:36:19,AMD Epyc 8534P 2.3GHz Tray,4886.5,https://www.skroutz.gr/s/54355919/AMD-Epyc-8534P-2-3GHz-Epexergastis-64-Pyrinon-gia-Socket-SP6-Tray.html
+2026-07-05 02:36:19,Intel Xeon W-3335 3.4GHz Tray,2353.41,https://www.skroutz.gr/s/64210703/intel-xeon-w-3335-3-4ghz-epexergastis-16-pyrinon-gia-socket-4189-tray.html
+2026-07-05 02:36:19,Intel Core i9-12900F 1.80GHz,443.19,https://www.skroutz.gr/s/33403698/Intel-Core-i9-12900F-1-80GHz-Epexergastis-16-Pyrinon-gia-Socket-1700-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,AMD Epyc 4245P 3.9GHz Tray,288.02,https://www.skroutz.gr/s/61816995/amd-epyc-4245p-3-9ghz-epexergastis-6-pyrinon-gia-socket-am5-tray.html
+2026-07-05 02:36:19,AMD Epyc 4244P 3.8GHz Tray,258.97,https://www.skroutz.gr/s/55364085/AMD-Epyc-4244P-3-8GHz-Epexergastis-6-Pyrinon-gia-Socket-AM5-Tray.html
+2026-07-05 02:36:19,Intel Xeon 6511P 2.3GHz Tray,1049.86,https://www.skroutz.gr/s/64930061/intel-xeon-6511p-2-3ghz-epexergastis-16-pyrinon-gia-socket-lga-4710-tray.html
+2026-07-05 02:36:19,Intel Xeon 6515P 2.3GHz Tray,1151.46,https://www.skroutz.gr/s/64930068/intel-xeon-6515p-2-3ghz-epexergastis-16-pyrinon-gia-socket-lga-4710-tray.html
+2026-07-05 02:36:19,AMD Ryzen 9 7900X3D 4.4GHz Tray,687.18,https://www.skroutz.gr/s/42117910/AMD-Ryzen-9-7900X3D-4-4GHz-Epexergastis-12-Pyrinon-gia-Socket-AM5-Tray.html
+2026-07-05 02:36:19,Intel Xeon Xeon 6781P 2GHz Tray,15172.14,https://www.skroutz.gr/s/67551361/intel-xeon-xeon-6781p-2ghz-epexergastis-80-pyrinon-gia-socket-lga-4710-tray.html
+2026-07-05 02:36:19,Intel Xeon W-1250 3.3GHz,461.21,https://www.skroutz.gr/s/67551305/intel-xeon-w-1250-3-3ghz-epexergastis-6-pyrinon-gia-socket-1200-se-kouti.html
+2026-07-05 02:36:19,AMD Ryzen 5 Pro 7645 3.8GHz Tray,184.36,https://www.skroutz.gr/s/44421505/AMD-Ryzen-5-Pro-7645-3-8GHz-Epexergastis-6-Pyrinon-gia-Socket-AM5-se-Tray-me-PSyktra.html
+2026-07-05 02:36:19,Intel Xeon 6517P 3.2GHz Tray,1632.36,https://www.skroutz.gr/s/64210576/intel-xeon-6517p-3-2ghz-epexergastis-16-pyrinon-gia-socket-lga-4710-tray.html
+2026-07-05 02:36:19,AMD Ryzen Threadripper Pro 7975WX 4GHz,4340.7,https://www.skroutz.gr/s/50300363/AMD-Ryzen-Threadripper-PRO-7975WX-4GHz-Epexergastis-32-Pyrinon-gia-Socket-sTR5-Tray.html
+2026-07-05 02:36:19,Intel Ultra 5 245T 2.2GHz Tray,370.13,https://www.skroutz.gr/s/60466024/intel-ultra-5-245t-2-2ghz-epexergastis-14-pyrinon-gia-socket-1851-tray.html
+2026-07-05 02:36:19,AMD Epyc 8224P 2.55GHz Tray,1185.98,https://www.skroutz.gr/s/53966506/AMD-Epyc-8224P-2-55GHz-Epexergastis-24-Pyrinon-gia-Socket-SP6-Tray.html
+2026-07-05 02:36:19,AMD Ryzen 3 5300G 4.2GHz Tray,128.66,https://www.skroutz.gr/s/57310562/AMD-Ryzen-3-5300G-4-2GHz-Epexergastis-4-Pyrinon-gia-Socket-AM4-Tray.html
+2026-07-05 02:36:19,Intel Xeon E-2486 3.5GHz Tray,1087.15,https://www.skroutz.gr/s/51124323/Intel-Xeon-E-2486-3-5GHz-Epexergastis-6-Pyrinon-gia-Socket-1700-Tray.html
+2026-07-05 02:36:19,AMD Ryzen Threadripper Pro 7965WX 4.2GHz,2972.55,https://www.skroutz.gr/s/48758420/AMD-Ryzen-Threadripper-Pro-7965WX-4-2GHz-Epexergastis-24-Pyrinon-gia-Socket-sTR5-Tray.html
+2026-07-05 02:36:19,AMD Ryzen Threadripper 5955WX 4GHz,1097.85,https://www.skroutz.gr/s/38359989/AMD-Ryzen-Threadripper-5955WX-4GHz-Epexergastis-16-Pyrinon-gia-Socket-sWRX8-se-Kouti.html
+2026-07-05 02:36:19,AMD Ryzen Threadripper 5995WX 2.7GHz,6096.83,https://www.skroutz.gr/s/37511069/AMD-Ryzen-Threadripper-5995WX-2-7GHz-Epexergastis-64-Pyrinon-gia-Socket-sWRX8-se-Kouti.html
+2026-07-05 02:36:19,AMD Ryzen Threadripper 5965WX 3.8GHz,1839.03,https://www.skroutz.gr/s/37444629/AMD-Ryzen-Threadripper-5965WX-3-8GHz-Epexergastis-24-Pyrinon-gia-Socket-sWRX8-Tray.html
+2026-07-05 02:36:19,AMD Epyc 7443 2.85GHz Tray,878.33,https://www.skroutz.gr/s/50866877/AMD-Epyc-7443-2-85GHz-Epexergastis-24-Pyrinon-gia-Socket-SP3-Tray.html
+2026-07-05 02:36:19,Intel Core i5-14400 2.50GHz Tray,213.7,https://www.skroutz.gr/s/67048514/intel-core-i5-14400-2-50ghz-epexergastis-pyrinon-gia-socket-1700-tray.html
+2026-07-05 02:36:19,Intel Xeon 6357P 3GHz Tray,1165.58,https://www.skroutz.gr/s/63307292/intel-xeon-6357p-3ghz-epexergastis-8-pyrinon-gia-socket-1700-tray.html
+2026-07-05 02:36:19,AMD Ryzen Threadripper 5975WX 3.6GHz,2371.39,https://www.skroutz.gr/s/37381858/AMD-Ryzen-Threadripper-5975WX-3-6GHz-Epexergastis-32-Pyrinon-gia-Socket-sWRX8-se-Kouti.html
+2026-07-05 02:36:19,AMD Ryzen 9 7950X 4.5GHz Tray,672.5,https://www.skroutz.gr/s/40247242/AMD-Ryzen-9-7950X-4-5GHz-Epexergastis-16-Pyrinon-gia-Socket-AM5-Tray.html
+2026-07-05 02:36:19,Intel Ultra 9 285T 1.4GHz Tray,712.62,https://www.skroutz.gr/s/58526773/Intel-Ultra-9-285T-1-4GHz-Epexergastis-24-Pyrinon-gia-Socket-1851-Tray.html
+2026-07-05 02:36:19,Dell Xeon Silver 4410Y 2GHz Tray,846.81,https://www.skroutz.gr/s/54360995/Dell-Xeon-Silver-4410Y-2GHz-Epexergastis-12-Pyrinon-gia-Socket-4677-Tray.html
+2026-07-05 02:36:19,AMD Ryzen 7 7700 (SBX) 3.8GHz,328.35,https://www.skroutz.gr/s/65625761/amd-ryzen-7-7700-sbx-3-8ghz-epexergastis-8-pyrinon-gia-socket-am5-se-kouti-me-psyktra.html
+2026-07-05 02:36:19,AMD Epyc 4345P 3.8GHz Tray,463.85,https://www.skroutz.gr/s/61817586/amd-epyc-4345p-3-8ghz-epexergastis-8-pyrinon-gia-socket-am5-tray.html
+2026-07-05 02:36:19,Intel Core i5-13500 2.5GHz Tray,294.96,https://www.skroutz.gr/s/40864226/Intel-Core-i5-13500-2-5GHz-Epexergastis-14-Pyrinon-gia-Socket-1700-Tray.html
+2026-07-05 02:36:19,Intel Xeon E-2414 2.6GHz Tray,583.55,https://www.skroutz.gr/s/53545925/Intel-Xeon-E-2414-2-6GHz-Epexergastis-4-Pyrinon-gia-Socket-1700-Tray.html
+2026-07-05 02:36:19,Intel Xeon W7-2475X 2.6GHz Tray,3012.06,https://www.skroutz.gr/s/59087137/Intel-Xeon-W7-2475X-2-6GHz-Epexergastis-20-Pyrinon-gia-Socket-4677-Tray.html
+2026-07-05 02:36:19,AMD Ryzen 9 Pro 7945 3.7GHz Tray,513.9,https://www.skroutz.gr/s/53961014/AMD-Ryzen-9-Pro-7945-3-7GHz-Epexergastis-12-Pyrinon-gia-Socket-AM5-Tray.html
+2026-07-05 02:36:19,Intel Ultra 5 225T 1.9GHz Tray,295.59,https://www.skroutz.gr/s/59294601/Intel-Ultra-5-225T-1-9GHz-Epexergastis-10-Pyrinon-gia-Socket-1851-Tray.html
+2026-07-05 02:36:19,Intel Xeon Silver 4509Y 2.6GHz Tray,1447.61,https://www.skroutz.gr/s/51555401/Intel-Xeon-Silver-4509Y-2-6GHz-Epexergastis-8-Pyrinon-gia-Socket-4677-Tray.html
+2026-07-05 02:36:19,AMD A6-Series A6series 0.8GHz Tray,28.9,https://www.skroutz.gr/s/60484533/amd-a6-series-a6series-0-8ghz-epexergastis-2-pyrinon-gia-socket-am4-tray.html
+2026-07-05 02:36:19,AMD Epyc 8324P 2.65GHz Tray,2483.48,https://www.skroutz.gr/s/53965031/AMD-Epyc-8324P-2-65GHz-Epexergastis-32-Pyrinon-gia-Socket-SP6-Tray.html
+2026-07-05 02:36:19,AMD Ryzen 7 7700 SR1 3.8GHz Tray,237.71,https://www.skroutz.gr/s/65949440/amd-ryzen-7-7700-sr1-3-8ghz-epexergastis-8-pyrinon-gia-socket-am5-se-tray-me-psyktra.html
+2026-07-05 02:36:19,Intel Xeon E-2468 2.6GHz Tray,1203.83,https://www.skroutz.gr/s/51849932/Intel-Xeon-E-2468-2-6GHz-Epexergastis-8-Pyrinon-gia-Socket-1700-Tray.html
+2026-07-05 02:36:19,Intel Xeon Gold 6430 2.1GHz Tray,4168.51,https://www.skroutz.gr/s/53966389/Intel-Xeon-Gold-6430-2-1GHz-Epexergastis-32-Pyrinon-gia-Socket-4677-Tray.html
+2026-07-05 02:36:19,AMD Epyc Epyc 8434P 2.5GHz Tray,3469.43,https://www.skroutz.gr/s/53965160/AMD-Epyc-Epyc-8434P-2-5GHz-Epexergastis-48-Pyrinon-gia-Socket-SP6-Tray.html
+2026-07-05 02:36:19,Intel Xeon W5-2565X 3.2GHz Tray,2649.14,https://www.skroutz.gr/s/59759488/intel-xeon-w5-2565x-3-2ghz-epexergastis-18-pyrinon-gia-socket-4677-tray.html
+2026-07-05 02:36:19,Fujitsu Xeon Intel Silver 4314 2.4GHz,1855.76,https://www.skroutz.gr/s/50309718/Fujitsu-Xeon-Intel-Silver-4314-2-4GHz-Epexergastis-16-Pyrinon-gia-Socket-4189-se-Kouti.html
+2026-07-05 02:36:19,AMD Epyc 7203P 2.8GHz Tray,537.4,https://www.skroutz.gr/s/51124153/AMD-Epyc-7203P-2-8GHz-Epexergastis-8-Pyrinon-gia-Socket-SP3-Tray.html
+2026-07-05 02:36:19,Fujitsu Xeon Gold 5415+ 2.9GHz Tray,2252.94,https://www.skroutz.gr/s/45576775/Fujitsu-Xeon-Gold-5415-2-9GHz-Epexergastis-8-Pyrinon-gia-Socket-4677-Tray.html
+2026-07-05 02:36:19,Intel Xeon Gold 6530 2.1GHz Tray,3582.88,https://www.skroutz.gr/s/50866294/Intel-Xeon-Gold-6530-2-1GHz-Epexergastis-32-Pyrinon-gia-Socket-4677-Tray.html
+2026-07-05 02:36:19,AMD Epyc 9354P 3.25GHz Tray,1933.81,https://www.skroutz.gr/s/41656291/AMD-Epyc-9354P-3-25GHz-Epexergastis-32-Pyrinon-gia-Socket-SP5-Tray.html
+2026-07-05 02:36:19,AMD Epyc 9684X 2.55GHz Tray,10937.98,https://www.skroutz.gr/s/53966961/AMD-Epyc-9684X-2-55GHz-Epexergastis-96-Pyrinon-gia-Socket-SP5-Tray.html
+2026-07-05 02:36:19,Intel Xeon E-2436 2.9GHz Tray,676.89,https://www.skroutz.gr/s/53545732/Intel-Xeon-E-2436-2-9GHz-Epexergastis-6-Pyrinon-gia-Socket-1700-Tray.html
+2026-07-05 02:36:19,Intel Xeon W5-2455X 3.2GHz,1542.49,https://www.skroutz.gr/s/47404477/Intel-Xeon-W5-2455X-3-2GHz-Epexergastis-12-Pyrinon-gia-Socket-4677-Tray.html
+2026-07-05 02:36:19,AMD Ryzen Threadripper 5975WX 3.5GHz Tray,3757.74,https://www.skroutz.gr/s/37694375/AMD-Ryzen-Threadripper-5975WX-3-5GHz-Epexergastis-32-Pyrinon-gia-Socket-sWRX8-Tray.html
+2026-07-05 02:36:19,Intel Xeon Gold 6414U 2GHz Tray,1458.7,https://www.skroutz.gr/s/53962154/Intel-Xeon-Gold-6414U-2GHz-Epexergastis-32-Pyrinon-gia-Socket-4677-Tray.html
+2026-07-05 02:36:19,Lenovo Xeon Xeon® Silver 4309Y 2.8GHz,1459.39,https://www.skroutz.gr/s/53936155/Lenovo-Xeon-Xeon-Silver-4309Y-2-8GHz-Epexergastis-8-Pyrinon-gia-Socket-4189-se-Kouti.html
+2026-07-05 02:36:19,Lenovo Xeon Intel Silver 4314 2.4GHz Tray,2465.58,https://www.skroutz.gr/s/48922838/Lenovo-Xeon-Intel-Silver-4314-2-4GHz-Epexergastis-16-Pyrinon-gia-Socket-4189-Tray.html
+2026-07-05 02:36:19,Dell Xeon Silver 4314 2.4GHz Tray,1130.75,https://www.skroutz.gr/s/36911722/Dell-Xeon-Silver-4314-2-4GHz-Epexergastis-16-Pyrinon-gia-Socket-4189-Tray.html
+2026-07-05 02:36:19,Intel Xeon w5-2465X 3.1GHz Tray,1963.67,https://www.skroutz.gr/s/53966224/Intel-Xeon-w5-2465X-3-1GHz-Epexergastis-16-Pyrinon-gia-Socket-4677-Tray.html
+2026-07-05 02:36:19,Intel Xeon Xeon 6210U 2.5GHz Tray,2217.5,https://www.skroutz.gr/s/53935632/Intel-Xeon-Xeon-6210U-2-5GHz-Epexergastis-20-Pyrinon-gia-Socket-3647-Tray.html
+2026-07-05 02:36:19,AMD Epyc 9734 2.2GHz Tray,4501.74,https://www.skroutz.gr/s/48925077/AMD-Epyc-9734-2-2GHz-Epexergastis-112-Pyrinon-gia-Socket-SP5-Tray.html
+2026-07-05 02:36:19,Intel Xeon w3-2425 3GHz Tray,749.7,https://www.skroutz.gr/s/42537381/Intel-Xeon-w3-2425-3GHz-Epexergastis-6-Pyrinon-gia-Socket-4677-Tray.html
+2026-07-05 02:36:19,Intel Xeon E-2378G 2.8GHz Tray,1010.36,https://www.skroutz.gr/s/37991077/Intel-Xeon-E-2378G-2-8GHz-Epexergastis-8-Pyrinon-gia-Socket-1200-Tray.html
+2026-07-05 02:36:19,Intel Xeon W5-3425 3.2GHz Tray,2001.46,https://www.skroutz.gr/s/43883653/Intel-Xeon-W5-3425-3-2GHz-Epexergastis-12-Pyrinon-gia-Socket-4677-Tray.html
+2026-07-05 02:36:19,Intel Xeon w5-3435X 3.1GHz Tray,2517.96,https://www.skroutz.gr/s/43245580/Intel-Xeon-w5-3435X-3-1GHz-Epexergastis-16-Pyrinon-gia-Socket-4677-Tray.html
+2026-07-05 02:36:19,Intel Xeon w7-3445 2.6GHz Tray,2863.74,https://www.skroutz.gr/s/43245575/Intel-Xeon-w7-3445-2-6GHz-Epexergastis-20-Pyrinon-gia-Socket-4677-Tray.html
+2026-07-05 02:36:19,Fujitsu Xeon Xeon Silver 4210R 2.4GHz Tray,718.11,https://www.skroutz.gr/s/42669352/Fujitsu-Xeon-Xeon-Silver-4210R-2-4GHz-Epexergastis-10-Pyrinon-gia-Socket-3647-Tray.html
+2026-07-05 02:36:19,AMD Ryzen 3 3.5GHz Tray,73.5,https://www.skroutz.gr/s/29115231/AMD-Ryzen-3-3-5GHz-Epexergastis-4-Pyrinon-gia-Socket-AM4-Tray.html
+2026-07-05 02:36:19,Intel Xeon Silver 4310 2.1GHz Tray,849.19,https://www.skroutz.gr/s/32901291/Intel-Xeon-Silver-4310-2-1GHz-Epexergastis-12-Pyrinon-gia-Socket-4189-Tray.html
+2026-07-05 02:36:19,AMD Epyc 735P 2.4GHz Tray,958.09,https://www.skroutz.gr/s/53964663/AMD-Epyc-735P-2-4GHz-Epexergastis-16-Pyrinon-gia-Socket-SP3-Tray.html
+2026-07-05 02:36:19,Intel Xeon w3-2435 3.1GHz Tray,925.05,https://www.skroutz.gr/s/42537452/Intel-Xeon-w3-2435-3-1GHz-Epexergastis-8-Pyrinon-gia-Socket-4677-Tray.html
+2026-07-05 02:36:19,AMD 5995WX 2.7GHz Tray,7640.85,https://www.skroutz.gr/s/38511212/AMD-5995WX-2-7GHz-Epexergastis-64-Pyrinon-gia-Socket-sWRX8-Tray.html
+2026-07-05 02:36:19,AMD Epyc 7252 3.1GHz Tray,312.48,https://www.skroutz.gr/s/35387780/AMD-Epyc-7252-3-1GHz-Epexergastis-8-Pyrinon-gia-Socket-SP3-Tray.html
+2026-07-05 02:36:19,Intel Xeon w3-2423 2.1GHz Tray,531.26,https://www.skroutz.gr/s/42537003/Intel-Xeon-w3-2423-2-1GHz-Epexergastis-6-Pyrinon-gia-Socket-4677-Tray.html
+2026-07-05 02:36:19,Intel Xeon Gold 6346 3.1GHz Tray,3374.5,https://www.skroutz.gr/s/38005361/Intel-Xeon-Gold-6346-3-1GHz-Epexergastis-16-Pyrinon-gia-Socket-4189-Tray.html
+2026-07-05 02:36:19,Fujitsu Xeon Silver 4310 2.1GHz Tray,1301.93,https://www.skroutz.gr/s/38948839/Fujitsu-Xeon-Silver-4310-2-1GHz-Epexergastis-12-Pyrinon-gia-Socket-4189-Tray.html
+2026-07-05 02:36:19,AMD Epyc 7453 2.75GHz Tray,705.2,https://www.skroutz.gr/s/37595759/AMD-Epyc-7453-2-75GHz-Epexergastis-28-Pyrinon-gia-Socket-SP3-Tray.html
+2026-07-05 02:36:19,AMD Epyc 9634 2.25GHz Tray,4547.98,https://www.skroutz.gr/s/45463304/AMD-Epyc-9634-2-25GHz-Epexergastis-84-Pyrinon-gia-Socket-SP5-Tray.html
+2026-07-05 02:36:19,Intel Xeon Gold 6326 2.9GHz Tray,1762.51,https://www.skroutz.gr/s/34587678/Intel-Xeon-Gold-6326-2-9GHz-Epexergastis-16-Pyrinon-gia-Socket-4189-Tray.html
+2026-07-05 02:36:19,Intel Core i5-12400T 1.8GHz Tray,246.49,https://www.skroutz.gr/s/34396691/Intel-Core-i5-12400T-1-8GHz-Epexergastis-6-Pyrinon-gia-Socket-1700-Tray.html
+2026-07-05 02:36:19,Intel Celeron Dual Core G5925 3.6GHz,39.23,https://www.skroutz.gr/s/28207651/Intel-Celeron-Dual-Core-G5925-3-6GHz-Epexergastis-2-Pyrinon-gia-Socket-1200-se-Kouti.html
+2026-07-05 02:36:19,Intel Xeon Silver 4314 2.4GHz Tray,1180.83,https://www.skroutz.gr/s/33253343/Intel-Xeon-Silver-4314-2-4GHz-Epexergastis-16-Pyrinon-gia-Socket-4189-Tray.html
+2026-07-05 02:36:19,AMD Epyc 9384X 3.1GHz Tray,5630.3,https://www.skroutz.gr/s/45464414/AMD-Epyc-9384X-3-1GHz-Epexergastis-32-Pyrinon-gia-Socket-SP5-Tray.html
+2026-07-05 02:36:19,Intel Xeon Gold 6342 2.8GHz Tray,4014.53,https://www.skroutz.gr/s/37990999/Intel-Xeon-Gold-6342-2-8GHz-Epexergastis-24-Pyrinon-gia-Socket-4189-Tray.html
+2026-07-05 02:36:19,Intel Xeon Gold 6334 3.6GHz Tray,2236.37,https://www.skroutz.gr/s/38086583/Intel-Xeon-Gold-6334-3-6GHz-Epexergastis-8-Pyrinon-gia-Socket-4189-Tray.html
+2026-07-05 02:36:19,Dell Xeon Silver 4309Y 2.8GHz Tray,997.44,https://www.skroutz.gr/s/38948731/Dell-Xeon-Silver-4309Y-2-8GHz-Epexergastis-8-Pyrinon-gia-Socket-4189-Tray.html
+2026-07-05 02:36:19,AMD Epyc 7262 3.2GHz Tray,380.4,https://www.skroutz.gr/s/35437379/AMD-Epyc-7262-3-2GHz-Epexergastis-8-Pyrinon-gia-Socket-SP3-Tray.html
+2026-07-05 02:36:19,AMD Epyc 7413 2.65GHz Tray,626.9,https://www.skroutz.gr/s/37990319/AMD-Epyc-7413-2-65GHz-Epexergastis-24-Pyrinon-gia-Socket-SP3-Tray.html
+2026-07-05 02:36:19,AMD Epyc 7343 3.2GHz Tray,506.94,https://www.skroutz.gr/s/37595797/AMD-Epyc-7343-3-2GHz-Epexergastis-16-Pyrinon-gia-Socket-SP3-Tray.html
+2026-07-05 02:36:19,Intel Pentium Dual Core G6400T 3.40GHz Tray,101.73,https://www.skroutz.gr/s/25079109/Intel-Pentium-Dual-Core-G6400T-3-40GHz-Epexergastis-2-Pyrinon-gia-Socket-1200-Tray.html
+2026-07-05 02:36:19,Fujitsu Xeon Gold 5317 3GHz Tray,2877.05,https://www.skroutz.gr/s/35840355/Fujitsu-Xeon-Gold-5317-3GHz-Epexergastis-12-Pyrinon-gia-Socket-4189-Tray.html
+2026-07-05 02:36:19,Dell Xeon Silver 4310 2.1GHz Tray,822.1,https://www.skroutz.gr/s/33328754/Dell-Xeon-Silver-4310-2-1GHz-Epexergastis-12-Pyrinon-gia-Socket-4189-Tray.html
+2026-07-05 02:36:19,Intel Xeon E-2356G 3.2GHz Tray,756.97,https://www.skroutz.gr/s/35105419/Intel-Xeon-E-2356G-3-2GHz-Epexergastis-6-Pyrinon-gia-Socket-1200-Tray.html
+2026-07-05 02:36:19,Intel Celeron Dual Core G6600 4.20GHz,84.9,https://www.skroutz.gr/s/24034797/Intel-Celeron-Dual-Core-G6600-4-20GHz-Epexergastis-2-Pyrinon-gia-Socket-1200-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,Intel Xeon Silver 4214R 2.4GHz Tray,1040.83,https://www.skroutz.gr/s/24571766/Intel-Xeon-Silver-4214R-2-4GHz-Epexergastis-12-Pyrinon-gia-Socket-3647-Tray.html
+2026-07-05 02:36:19,Intel Xeon E7-4850 v4 2.1GHz Tray,1202.86,https://www.skroutz.gr/s/34275086/Intel-Xeon-E7-4850-v4-2-1GHz-Epexergastis-16-Pyrinon-gia-Socket-2011-3-Tray.html
+2026-07-05 02:36:19,HP Xeon Silver 4208 2.1GHz Tray,744.86,https://www.skroutz.gr/s/24571273/HP-Xeon-Silver-4208-2-1GHz-Epexergastis-8-Pyrinon-gia-Socket-3647-Tray.html
+2026-07-05 02:36:19,Intel Xeon Silver 4210R 2.4GHz Tray,1109.12,https://www.skroutz.gr/s/24571829/Intel-Xeon-Silver-4210R-2-4GHz-Epexergastis-10-Pyrinon-gia-Socket-3647-Tray.html
+2026-07-05 02:36:19,Fujitsu Xeon Gold 5217 3GHz Tray,3041.84,https://www.skroutz.gr/s/29701320/Fujitsu-Xeon-Gold-5217-3GHz-Epexergastis-8-Pyrinon-gia-Socket-3647-Tray.html
+2026-07-05 02:36:19,Intel Celeron Dual Core G3930 2.9GHz Tray,17.46,https://www.skroutz.gr/s/25546686/Intel-Celeron-Dual-Core-G3930-2-9GHz-Epexergastis-2-Pyrinon-gia-Socket-1151-se-Tray-me-PSyktra.html
+2026-07-05 02:36:19,Intel Xeon Gold 6234 3.3GHz,740.09,https://www.skroutz.gr/s/18924028/Intel-Xeon-Gold-6234-3-3GHz-Epexergastis-8-Pyrinon-gia-Socket-3647-Tray.html
+2026-07-05 02:36:19,Intel Xeon W-2235 3.80GHz Tray,428.74,https://www.skroutz.gr/s/22224790/Intel-Xeon-W-2235-3-80GHz-Epexergastis-6-Pyrinon-gia-Socket-2066-Tray.html
+2026-07-05 02:36:19,Intel Xeon Silver 4208 2.1GHz Tray,281.91,https://www.skroutz.gr/s/18977317/Intel-Xeon-Silver-4208-2-1GHz-Epexergastis-8-Pyrinon-gia-Socket-3647-Tray.html
+2026-07-05 02:36:19,HP Xeon Xeon Silver 4210 2.2GHz Tray,582.42,https://www.skroutz.gr/s/24571354/HP-Xeon-Xeon-Silver-4210-2-2GHz-Epexergastis-10-Pyrinon-gia-Socket-3647-Tray.html
+2026-07-05 02:36:19,Intel Xeon Silver 4210 2.2GHz Tray,971.07,https://www.skroutz.gr/s/18557983/Intel-Xeon-Silver-4210-2-2GHz-Epexergastis-10-Pyrinon-gia-Socket-3647-Tray.html
+2026-07-05 02:36:19,Intel Xeon E-2234 3.60GHz Tray,545.26,https://www.skroutz.gr/s/20789127/Intel-Xeon-E-2234-3-60GHz-Epexergastis-4-Pyrinon-gia-Socket-1151-Tray.html
+2026-07-05 02:36:19,Intel Xeon Gold 6244 3.6GHz Tray,2282.9,https://www.skroutz.gr/s/18977302/Intel-Xeon-Gold-6244-3-6GHz-Epexergastis-8-Pyrinon-gia-Socket-3647-Tray.html
+2026-07-05 02:36:19,Intel Xeon W-2123 3.60GHz Tray,301.73,https://www.skroutz.gr/s/20789166/Intel-Xeon-W-2123-3-60GHz-Epexergastis-4-Pyrinon-gia-Socket-2066-Tray.html
+2026-07-05 02:36:19,Intel Xeon Gold 6248 2.5GHz Tray,2571.83,https://www.skroutz.gr/s/18977393/Intel-Xeon-Gold-6248-2-5GHz-Epexergastis-20-Pyrinon-gia-Socket-3647-Tray.html
+2026-07-05 02:36:19,Intel Xeon E5-1620 v3 3.50GHz Tray,144.08,https://www.skroutz.gr/s/22224843/Intel-Xeon-E5-1620-v3-3-50GHz-Epexergastis-4-Pyrinon-gia-Socket-2011-3-Tray.html
+2026-07-05 02:36:19,Dell Xeon Silver 4208 2.1GHz Tray,199.0,https://www.skroutz.gr/s/20987601/Dell-Xeon-Silver-4208-2-1GHz-Epexergastis-8-Pyrinon-gia-Socket-3647-Tray.html
+2026-07-05 02:36:19,Dell Xeon Silver 4210 2.2GHz Tray,299.0,https://www.skroutz.gr/s/20503242/Dell-Xeon-Silver-4210-2-2GHz-Epexergastis-10-Pyrinon-gia-Socket-3647-Tray.html
+2026-07-05 02:36:19,Intel Xeon Gold 6230 2.1GHz Tray,2120.08,https://www.skroutz.gr/s/18977387/Intel-Xeon-Gold-6230-2-1GHz-Epexergastis-20-Pyrinon-gia-Socket-3647-Tray.html
+2026-07-05 02:36:19,Intel Core i7-6700 3.4GHz Tray,434.34,https://www.skroutz.gr/s/7546269/Intel-Core-i7-6700-3-4GHz-Epexergastis-4-Pyrinon-gia-Socket-1151-Tray.html
+2026-07-05 02:36:19,Intel Xeon E5-1650 v4 3.6GHz,49.99,https://www.skroutz.gr/s/9853642/Intel-Xeon-E5-1650-v4-3-6GHz-Epexergastis-6-Pyrinon-gia-Socket-2011-3-se-Kouti.html
+2026-07-05 02:36:19,Intel Xeon Gold 6538Y+ 2.2GHz Tray,4186.66,https://www.skroutz.gr/s/67613768/intel-xeon-gold-6538y-2-2ghz-epexergastis-32-pyrinon-gia-socket-4677-tray.html
+2026-07-05 02:36:19,Intel Xeon E5-2623 v4 2.6GHz Tray,163.32,https://www.skroutz.gr/s/9846116/Intel-Xeon-E5-2623-v4-2-6GHz-Epexergastis-4-Pyrinon-gia-Socket-2011-3-Tray.html
+2026-07-05 02:36:19,Intel Xeon Gold 6554S 2.2GHz Tray,4944.75,https://www.skroutz.gr/s/67757898/intel-xeon-gold-6554s-2-2ghz-epexergastis-36-pyrinon-gia-socket-4677-tray.html
+2026-07-05 02:36:19,Intel Xeon Silver 4516Y+ 2.2GHz Tray,6849.53,https://www.skroutz.gr/s/67613774/intel-xeon-silver-4516y-2-2ghz-epexergastis-24-pyrinon-gia-socket-4677-tray.html
+2026-07-05 02:36:19,Intel Core i7-9700E 3GHz Tray,484.51,https://www.skroutz.gr/s/67816740/intel-core-i7-9700e-3ghz-epexergastis-8-pyrinon-gia-socket-1151-rev-2-tray.html
+2026-07-05 02:36:19,Intel Core i9-10900E 2.80GHz Tray,708.4,https://www.skroutz.gr/s/67816732/intel-core-i9-10900e-2-80ghz-epexergastis-10-pyrinon-gia-socket-1200-tray.html
+2026-07-05 02:36:19,Intel Xeon E5-2620 v4 2.1GHz Tray,511.27,https://www.skroutz.gr/s/9399047/Intel-Xeon-E5-2620-v4-2-1GHz-Epexergastis-8-Pyrinon-gia-Socket-2011-3-Tray.html
+2026-07-05 02:36:19,Intel Xeon w9-3595X 2GHz Tray,9414.57,https://www.skroutz.gr/s/67613887/intel-xeon-w9-3595x-2ghz-epexergastis-60-pyrinon-gia-socket-4677-tray.html
+2026-07-05 02:36:19,Intel Xeon 2.3GHz Tray,6628.45,https://www.skroutz.gr/s/67613745/intel-xeon-2-3ghz-epexergastis-48-pyrinon-gia-socket-4677-tray.html
+2026-07-05 02:36:19,Intel Xeon W5-2545 3.5GHz Tray,1454.7,https://www.skroutz.gr/s/59759335/intel-xeon-w5-2545-3-5ghz-epexergastis-12-pyrinon-gia-socket-4677-tray.html
+2026-07-05 02:36:19,AMD Epyc 9255 3.25GHz,3527.53,https://www.skroutz.gr/s/64722901/amd-epyc-9255-3-25ghz-epexergastis-24-pyrinon-gia-socket-sp5-se-kouti.html
+2026-07-05 02:36:19,Intel Xeon E5-2603 V3 1.6GHz,271.4,https://www.skroutz.gr/s/5775702/Intel-Xeon-E5-2603-V3-1-6GHz-Epexergastis-6-Pyrinon-gia-Socket-2011-3-se-Kouti.html
+2026-07-05 02:36:19,Intel Xeon E5-2609 V3 1.9GHz,735.93,https://www.skroutz.gr/s/5775275/Intel-Xeon-E5-2609-V3-1-9GHz-Epexergastis-6-Pyrinon-gia-Socket-2011-3-se-Kouti-me-PSyktra.html
+2026-07-05 02:36:19,AMD Epyc 9565 3.15GHz Tray,8094.53,https://www.skroutz.gr/s/67600941/amd-epyc-9565-3-15ghz-epexergastis-72-pyrinon-gia-socket-sp5-tray.html
+2026-07-05 02:36:19,Intel Xeon E5-1620 V3 3.5GHz,381.01,https://www.skroutz.gr/s/5775322/Intel-Xeon-E5-1620-V3-3-5GHz-Epexergastis-4-Pyrinon-gia-Socket-2011-3-se-Kouti.html
+2026-07-05 02:36:19,Intel Core i5-4460 3.2GHz Tray,251.98,https://www.skroutz.gr/s/4861537/Intel-Core-i5-4460-3-2GHz-Epexergastis-4-Pyrinon-gia-Socket-1150-Tray.html
+2026-07-05 02:36:19,Dell Xeon E5-2407 2.2GHz Tray,99.0,https://www.skroutz.gr/s/4192081/Dell-Xeon-E5-2407-2-2GHz-Epexergastis-4-Pyrinon-gia-Socket-Tray.html
+2026-07-05 02:36:19,Dell Xeon E5-2620 2GHz Tray,119.0,https://www.skroutz.gr/s/4192083/Dell-Xeon-E5-2620-2GHz-Epexergastis-6-Pyrinon-gia-Socket-Tray.html
+2026-07-05 02:36:19,Dell Xeon E5-2420 1.9GHz Tray,129.0,https://www.skroutz.gr/s/4192078/Dell-Xeon-E5-2420-1-9GHz-Epexergastis-6-Pyrinon-gia-Socket-Tray.html
+2026-07-05 02:36:19,AMD Epyc 9354 3.25GHz Tray,3352.08,https://www.skroutz.gr/s/41656252/AMD-Epyc-9354-3-25GHz-Epexergastis-32-Pyrinon-gia-Socket-SP5-Tray.html
+2026-07-05 02:36:19,Intel Xeon E5-2650 v2 Box 2.6GHz,1253.17,https://www.skroutz.gr/s/4045442/Intel-Xeon-E5-2650-v2-Box-2-6GHz-Epexergastis-8-Pyrinon-gia-Socket-LGA-2011-se-Kouti.html
+2026-07-05 02:36:19,Intel Xeon Silver 4510 2.4GHz Tray,1310.09,https://www.skroutz.gr/s/50866258/Intel-Xeon-Silver-4510-2-4GHz-Epexergastis-12-Pyrinon-gia-Socket-4677-Tray.html
+2026-07-05 02:36:19,Intel Core i7-3970X 3.5GHz,1072.24,https://www.skroutz.gr/s/2626943/Intel-Core-i7-3970X-3-5GHz-Epexergastis-6-Pyrinon-gia-Socket-LGA-2011-se-Kouti.html
+2026-07-05 02:36:19,HP Xeon Silver 4214R 2.4GHz Tray,816.75,https://www.skroutz.gr/s/47577840/HP-Xeon-Silver-4214R-2-4GHz-Epexergastis-12-Pyrinon-gia-Socket-3647-Tray.html
+2026-07-05 02:36:19,Intel Xeon E-2378 2.6GHz Tray,1081.77,https://www.skroutz.gr/s/35461791/Intel-Xeon-E-2378-2-6GHz-Epexergastis-8-Pyrinon-gia-Socket-1200-Tray.html
+2026-07-05 02:36:19,Intel Ultra 5 235T 1.6GHz Tray,328.12,https://www.skroutz.gr/s/61030946/intel-ultra-5-235t-1-6ghz-epexergastis-14-pyrinon-gia-socket-1851-tray.html

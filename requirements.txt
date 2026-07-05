@@ -1,0 +1,16 @@
+# Python dependencies for scoop-scouter.
+# Install everything with:   pip install -r requirements.txt
+# Then once:                 playwright install chromium
+#
+# Versions are "pinned" (==) so everyone gets the SAME version we tested with —
+# that's what makes the project reproducible instead of "works on my machine".
+# To upgrade later, bump a version here deliberately and re-test.
+
+playwright==1.60.0
+playwright-stealth==2.0.3
+requests==2.33.1
+beautifulsoup4==4.14.3
+
+# Note: AI deal verification uses the `claude` CLI on your PATH, not a pip package,
+# so there's nothing to install here for it. If `claude` isn't found, AI verify
+# simply turns itself off.
