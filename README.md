@@ -139,6 +139,7 @@ of scraped content. Use it against your own accounts and at your own pace.
 | `vinted.py` / `vendora_crawler.py` | Vinted JSON-API and Vendora HTML crawlers |
 | `gpu_perf.py` | 91-model GPU performance database + matching |
 | `laptop_perf.py` | Laptop spec parsing + combined value scoring |
+| `ram_specs.py` + `ram_kits.json` | RAM title parsing (kit-aware) + spec sanity flags vs. real-kit ground truth |
 | `ai_verify.py` | LLM verification gate (Claude CLI / DeepSeek API) |
 | `serve.py` + `dashboard.html` | Local server + single-page analytics dashboard (Chart.js) |
 | `applog.py` / `reports.py` / `archive_store.py` | Logging, listing reports, archive-and-purge |
@@ -150,6 +151,12 @@ not part of this repo — it automates personal marketplace conversations, so it
 private. The public code is designed to degrade cleanly without it: negotiator-only API
 endpoints answer `501`, the dashboard hides its Negotiations tab, and everything
 described above runs self-contained.
+
+## Acknowledgements
+
+- RAM listings are sanity-checked against ground truth derived from
+  [pc-part-dataset](https://github.com/docyx/pc-part-dataset) (MIT) — 13.5k real
+  memory kits distilled into `ram_kits.json` (see `ram_specs.py`).
 
 ## License
 

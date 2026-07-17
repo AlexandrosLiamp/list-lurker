@@ -29,6 +29,8 @@
 !ai_verify.py
 !gpu_perf.py
 !laptop_perf.py
+!ram_specs.py
+!ram_kits.json
 !serve.py
 !reports.py
 !archive_store.py
@@ -44,6 +46,7 @@
 
 # 3) Hard-deny the private set — LAST, so these always win.
 LIST LURKER/
+repos/
 Standalone/
 recon_output/
 negotiator_out/

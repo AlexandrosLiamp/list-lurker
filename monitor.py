@@ -96,9 +96,11 @@ RAM_THRESHOLDS = [
     ("64gb", 220),
     ("128gb", 380),
 ]
-SODIMM_KW    = ["sodimm", "so-dimm", "laptop", "notebook"]
-OLD_GEN_KW   = ["ddr3", "ddr2", "ddr1", "sdram", "pc100", "pc133", "pc2-", "pc3-"]
-MIN_SPEED    = 3000   # MHz — listings with a stated speed below this are skipped
+# RAM parsing + sanity heuristics live in ram_specs.py (kit-aware capacities,
+# speeds validated against pc-part-dataset ground truth — one source of truth).
+import ram_specs
+from ram_specs import (SODIMM_KW, OLD_GEN_KW, MIN_SPEED,          # noqa: F401
+                       max_capacity_gb, parse_speed_mhz, is_desktop_ddr45)
 
 # ── GPU config ────────────────────────────────────────────────────────────────
 GPU_URL      = ("https://www.skroutz.gr/skoop/c/55/kartes-grafikwn.html"
@@ -301,37 +303,16 @@ def csv_price(raw) -> float | None:
         return parse_price(s)
 
 
-def max_capacity_gb(name: str) -> int | None:
-    nums = re.findall(r"(\d+)\s*gb", name, re.IGNORECASE)
-    return max((int(n) for n in nums), default=None) if nums else None
-
-
-def parse_speed_mhz(name: str) -> int | None:
-    m = re.search(r"(\d{3,5})\s*(?:mhz|mt/s)", name, re.IGNORECASE)
-    if m: return int(m.group(1))
-    m = re.search(r"ddr[45][-_\s](\d{3,5})", name, re.IGNORECASE)
-    if m: return int(m.group(1))
-    m = re.search(r"τα[χx]ύτητα\s+(\d{3,5})", name, re.IGNORECASE)
-    if m: return int(m.group(1))
-    candidates = [int(x) for x in re.findall(r"\b(\d{4})\b", name)
-                  if 2133 <= int(x) <= 9999]
-    return max(candidates) if candidates else None
-
-
-def is_desktop_ddr45(name: str) -> bool:
-    n = name.lower()
-    if any(kw in n for kw in SODIMM_KW):   return False
-    if any(kw in n for kw in OLD_GEN_KW):  return False
-    cap = max_capacity_gb(name)
-    if cap is not None and cap < 16:        return False
-    speed = parse_speed_mhz(name)
-    if speed is not None and speed < MIN_SPEED: return False
-    return True
+# max_capacity_gb / parse_speed_mhz / is_desktop_ddr45 are imported from ram_specs
+# (see the RAM config section) — kit notation like "2x8GB" now counts as 16 GB.
 
 
 def is_ram_deal(listing: dict) -> str | None:
     if listing["price"] is None or listing["price"] < 10 or not is_desktop_ddr45(listing["name"]):
         return None
+    if ram_specs.check_ram(listing["name"], listing["price"],
+                           ram_specs.median_eur_per_gb()):
+        return None   # implausible specs or per-stick-suspect price — bad data, not a deal
     n = listing["name"].lower()
     for kw, threshold in RAM_THRESHOLDS:
         if kw in n and listing["price"] <= threshold:
