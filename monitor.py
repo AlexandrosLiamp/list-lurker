@@ -2466,7 +2466,9 @@ def run_retail_crawl(bpage, parts):
         if log_file in [j[1] for j in jobs]:
             save_retail_snapshot(log_file)
 
-    gpu_drops, ram_drops = [], []
+    # None = category not scanned in this run; write_retail_deals preserves the
+    # previous value for that category (same sentinel contract as watch_loop).
+    gpu_drops, ram_drops = None, None
     for url, log_file, label, kind in jobs:
         items = crawl_retail(bpage, url, label, kind=kind)
         if items:
@@ -2479,7 +2481,7 @@ def run_retail_crawl(bpage, parts):
         elif kind == "ram":
             ram_drops = detect_retail_drops(RAM_RETAIL_LOG)
 
-    if gpu_drops or ram_drops:
+    if gpu_drops is not None or ram_drops is not None:
         write_retail_deals(gpu_drops, ram_drops)
         if gpu_drops:
             print(f"  [deals] {len(gpu_drops)} GPU price drops detected")
