@@ -253,7 +253,8 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                                "ai_engine": cfg.get("ai_engine", "claude_cli"),
                                "deepseek_api_key": cfg.get("deepseek_api_key", ""),
                                "deepseek_model": cfg.get("deepseek_model", "deepseek-chat"),
-                               "gate": cfg.get("gate", "auto")})
+                               "gate": cfg.get("gate", "auto"),
+                               "retail_deals": _read_json("retail_deals.json", {})})
         return super().do_GET()
 
     def do_POST(self):
