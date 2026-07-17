@@ -35,7 +35,6 @@
 !listing_common.py
 !dashboard.html
 !verify_dashboard.py
-!verify_new_dashboard.py
 !Dockerfile
 !docker-compose.yml
 !.dockerignore
