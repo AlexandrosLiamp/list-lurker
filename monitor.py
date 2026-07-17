@@ -11,13 +11,16 @@ GPU deals  : recognised model matched from GPU_MODELS, PPR ≥ GPU_PPR_THRESHOLD
 """
 
 import csv
+import json
 import os
 import re
+import shutil
 import sys
 import threading
 import time
-import unicodedata
 from datetime import datetime
+
+from listing_common import _norm, WANTED_KW, TRADE_KW  # shared with fb_marketplace
 
 import ctypes
 import requests as http_requests
@@ -132,13 +135,8 @@ GPU_MIDTIER_PPR = round(62 / 220, 3)  # 0.282
 # ── Data cleaning ─────────────────────────────────────────────────────────────
 # Classifieds (esp. insomnia.gr) are dirty: wanted ads, trades, multi-item
 # bundles, "browse my stock" placeholders at €1, broken cards. These skew every
-# statistic, so we drop them at scrape time. _norm() strips Greek accents so that
-# e.g. "Ζητείται" matches regardless of its tonos (the old uppercase check missed it).
-
-def _norm(s: str) -> str:
-    s = str(s or "").lower()
-    return "".join(c for c in unicodedata.normalize("NFD", s)
-                   if unicodedata.category(c) != "Mn")
+# statistic, so we drop them at scrape time. _norm/WANTED_KW/TRADE_KW live in
+# listing_common (shared with fb_marketplace) — imported at top of this file.
 
 # Broken / parts-only — cheap for a reason.
 BROKEN_KW = [
@@ -147,9 +145,7 @@ BROKEN_KW = [
     "χαλασμ", "για επισκευη", "ανταλακτ", "ανταλλακτ", "μη λειτουργ",
     "δεν λειτουργ", "δε λειτουργ", "κατεστραμ", "καμεν", "προβλημα", "βλαβη", "ελαττωματ",
 ]
-# Wanted ("ζητείται"), trade/swap ("ανταλλαγή"), sold/ended, and reserved markers.
-WANTED_KW = ["ζητειται", "ζητηση", "ζητουνται", "ζητω ", "wanted", "αγοραζω", "psaxno"]
-TRADE_KW  = ["ανταλλαγ", "ανταλαγ", "ανταλλασσ", "swap", "trade", "exchange"]
+# Sold/ended and reserved markers (skoop/insomnia-specific — FB doesn't need these).
 SOLD_KW   = ["πωληθηκε", "δοθηκε", "sold", "τελος -", "- τελος", "[τελος]", "(τελος)",
              "κρατημ", "κρατηθ", "δεσμευ", "reserved", "rezerv"]   # reserved = effectively gone
 
@@ -201,13 +197,15 @@ def clean_listings(items: list[dict], kind: str) -> list[dict]:
     return [it for it in items if is_clean(it.get("name", ""), it.get("price"), kind)]
 
 # GPU performance scores live in gpu_perf.py (shared with negotiator.py — one source of truth).
-from gpu_perf import GPU_MODELS, _GPU_RAW  # noqa: E402,F401  (_GPU_RAW kept for back-compat)
+from gpu_perf import GPU_MODELS, match_gpu, _GPU_RAW  # noqa: E402,F401  (_GPU_RAW kept for back-compat)
 
 # ── GPU Retail config ─────────────────────────────────────────────────────────
 GPU_RETAIL_URL = ("https://www.skroutz.gr/c/55/kartes-grafikwn/f/"
                   "694691_845785_845786_1216762/8GB-12GB-toulachiston-16gb-10GB.html")
 GPU_RETAIL_LOG = "gpu_retail.csv"
 RETAIL_SCAN_INTERVAL = 300  # rescan retail every 5 minutes
+RETAIL_DROP_THRESHOLD = 0.10  # flag price drops >= 10%
+RETAIL_DROP_MIN_EUR = 5.0     # minimum absolute drop to flag (exclude tiny drops)
 FB_SCAN_INTERVAL = 600       # rescan Facebook every 10 min (heavier: 15 scrolled queries)
 FB_BLOCK_COOLDOWN = 2700     # after an anti-bot block, wait 45 min before retrying FB
 
@@ -341,13 +339,7 @@ def is_ram_deal(listing: dict) -> str | None:
     return None
 
 
-def match_gpu(name: str) -> tuple[str, int] | None:
-    """Return (display_name, score) for the first matching GPU model, or None."""
-    n = name.lower()
-    for key, (display, score) in GPU_MODELS.items():
-        if key in n:
-            return display, score
-    return None
+# match_gpu is imported from gpu_perf (single source of truth for GPU scores).
 
 
 # ── Layer 1: reject non-standalone-GPU listings ───────────────────────────────
@@ -1595,15 +1587,18 @@ def extract_retail_listings(page) -> list[dict]:
 
     for card in cards:
         try:
-            name_el = card.query_selector("h2 a.js-sku-link")
+            name_el = card.query_selector('a[data-testid="sku-title-link"]')
+            if not name_el:
+                name_el = card.query_selector("h2 a.js-sku-link")
             name = name_el.inner_text().strip() if name_el else ""
             if not name:
                 continue
             if is_broken(name):
                 continue
 
-            # Price is the first a.js-sku-link inside .price
-            price_el = card.query_selector(".price a.js-sku-link")
+            price_el = card.query_selector('div[data-testid="normal-price-container"] a.js-sku-link')
+            if not price_el:
+                price_el = card.query_selector(".price a.js-sku-link")
             price_raw = price_el.inner_text().strip() if price_el else ""
             price = parse_price(price_raw)
 
@@ -1684,6 +1679,87 @@ def log_retail(listings: list[dict], timestamp: str, log_file: str = GPU_RETAIL_
         for item in listings:
             writer.writerow({"timestamp": timestamp, "name": item["name"],
                              "price": item["price"], "url": item["url"]})
+
+
+def save_retail_snapshot(log_file: str) -> bool:
+    """Copy current retail CSV to {name}_prev.csv before overwriting.
+    Returns True if a snapshot was created."""
+    if not os.path.exists(log_file):
+        return False
+    prev_file = log_file.replace(".csv", "_prev.csv")
+    shutil.copy2(log_file, prev_file)
+    return True
+
+
+def detect_retail_drops(log_file: str) -> list[dict]:
+    """Compare current retail CSV against its _prev.csv snapshot and return
+    items whose price dropped >= RETAIL_DROP_THRESHOLD. Matches by URL."""
+    prev_file = log_file.replace(".csv", "_prev.csv")
+    if not os.path.exists(prev_file):
+        return []
+
+    prev_prices: dict[str, float] = {}
+    with open(prev_file, "r", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            url = (row.get("url") or "").strip()
+            try:
+                price = float(row.get("price", 0))
+            except (ValueError, TypeError):
+                continue
+            if url and price > 0:
+                prev_prices[url] = price
+
+    curr_data: dict[str, dict] = {}
+    with open(log_file, "r", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            url = (row.get("url") or "").strip()
+            name = (row.get("name") or "").strip()
+            try:
+                price = float(row.get("price", 0))
+            except (ValueError, TypeError):
+                continue
+            if url and price > 0:
+                curr_data[url] = {"name": name, "price": price}
+
+    drops = []
+    for url, curr in curr_data.items():
+        old_price = prev_prices.get(url)
+        if old_price is None:
+            continue
+        drop_eur = old_price - curr["price"]
+        drop_pct = drop_eur / old_price
+        if drop_pct >= RETAIL_DROP_THRESHOLD and drop_eur >= RETAIL_DROP_MIN_EUR:
+            drops.append({
+                "name": curr["name"],
+                "url": url,
+                "old_price": round(old_price, 2),
+                "new_price": round(curr["price"], 2),
+                "drop_pct": round(drop_pct * 100, 1),
+                "drop_eur": round(drop_eur, 2),
+            })
+
+    drops.sort(key=lambda d: d["drop_pct"], reverse=True)
+    return drops
+
+
+def write_retail_deals(gpu_drops=None, ram_drops=None) -> None:
+    """Write detected retail price drops to retail_deals.json for the dashboard.
+    A category passed as None keeps the value already in the file, so a partial
+    update (e.g. RAM scan succeeded, GPU failed) doesn't wipe the other side."""
+    try:
+        with open("retail_deals.json", encoding="utf-8") as f:
+            existing = json.load(f)
+    except (OSError, ValueError):
+        existing = {}
+    deals = {
+        "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "gpu": gpu_drops if gpu_drops is not None else existing.get("gpu", []),
+        "ram": ram_drops if ram_drops is not None else existing.get("ram", []),
+    }
+    with open("retail_deals.json", "w", encoding="utf-8") as f:
+        json.dump(deals, f, ensure_ascii=False, indent=2)
 
 
 def log_retail_laptops(listings: list[dict], timestamp: str, log_file: str = "laptop_retail.csv") -> None:
@@ -2174,6 +2250,15 @@ def watch_loop(bpage, ctx, ram_known: set[str], gpu_known: set[str],
 
         # Retail rescan (all active catalogs)
         if retail_jobs and time.time() - last_retail_scan >= RETAIL_SCAN_INTERVAL:
+            retail_log_files = {j[1] for j in retail_jobs}
+            if GPU_RETAIL_LOG in retail_log_files:
+                save_retail_snapshot(GPU_RETAIL_LOG)
+            if RAM_RETAIL_LOG in retail_log_files:
+                save_retail_snapshot(RAM_RETAIL_LOG)
+            # None = category wasn't successfully re-scanned; write_retail_deals
+            # will keep whatever's already in retail_deals.json for it, so a failed
+            # scan can't wipe drops the other category legitimately surfaced.
+            w_gpu_drops, w_ram_drops = None, None
             for url, log_file, label, kind in retail_jobs:
                 _heartbeat()   # retail crawls are multi-page; keep the watchdog from false-firing
                 try:
@@ -2183,10 +2268,24 @@ def watch_loop(bpage, ctx, ram_known: set[str], gpu_known: set[str],
                             log_retail_laptops(items, ts, log_file)
                         else:
                             log_retail(items, ts, log_file)
+                        # Only diff against the snapshot when the crawl actually
+                        # produced data — an empty result (blocked page, no cards)
+                        # means CSV is unchanged, so detect_retail_drops would
+                        # return [] and wipe the file's other side.
+                        if kind == "gpu":
+                            w_gpu_drops = detect_retail_drops(GPU_RETAIL_LOG)
+                        elif kind == "ram":
+                            w_ram_drops = detect_retail_drops(RAM_RETAIL_LOG)
                 except Exception as e:
                     print(f"  [retail {label}] Scan error: {e}", flush=True)
                     log.exception("retail scan failed for %s", label)
             last_retail_scan = time.time()
+            if w_gpu_drops is not None or w_ram_drops is not None:
+                write_retail_deals(w_gpu_drops, w_ram_drops)
+                if w_gpu_drops:
+                    print(f"  [deals] {len(w_gpu_drops)} GPU price drops detected")
+                if w_ram_drops:
+                    print(f"  [deals] {len(w_ram_drops)} RAM price drops detected")
 
         # (Facebook is handled by its own background thread — see above.)
 
@@ -2366,6 +2465,14 @@ def run_retail_crawl(bpage, parts):
     if "cpu"  in parts: jobs.append((CPU_RETAIL_URL,  CPU_RETAIL_LOG,  "CPU",         "cpu"))
     if "mobo" in parts: jobs.append((MOBO_RETAIL_URL, MOBO_RETAIL_LOG, "Motherboard", "mobo"))
     if "laptop" in parts: jobs.append((LAPTOP_RETAIL_URL, LAPTOP_RETAIL_LOG, "Laptop", "laptop"))
+
+    for log_file in (GPU_RETAIL_LOG, RAM_RETAIL_LOG):
+        if log_file in [j[1] for j in jobs]:
+            save_retail_snapshot(log_file)
+
+    # None = category not scanned in this run; write_retail_deals preserves the
+    # previous value for that category (same sentinel contract as watch_loop).
+    gpu_drops, ram_drops = None, None
     for url, log_file, label, kind in jobs:
         items = crawl_retail(bpage, url, label, kind=kind)
         if items:
@@ -2373,6 +2480,18 @@ def run_retail_crawl(bpage, parts):
                 log_retail_laptops(items, datetime.now().strftime("%Y-%m-%d %H:%M:%S"), log_file)
             else:
                 log_retail(items, datetime.now().strftime("%Y-%m-%d %H:%M:%S"), log_file)
+            # Diff only when the crawl actually produced data (same reason as watch_loop).
+            if kind == "gpu":
+                gpu_drops = detect_retail_drops(GPU_RETAIL_LOG)
+            elif kind == "ram":
+                ram_drops = detect_retail_drops(RAM_RETAIL_LOG)
+
+    if gpu_drops is not None or ram_drops is not None:
+        write_retail_deals(gpu_drops, ram_drops)
+        if gpu_drops:
+            print(f"  [deals] {len(gpu_drops)} GPU price drops detected")
+        if ram_drops:
+            print(f"  [deals] {len(ram_drops)} RAM price drops detected")
 
 
 def print_usage():

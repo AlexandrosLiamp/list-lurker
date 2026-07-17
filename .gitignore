@@ -32,6 +32,7 @@
 !serve.py
 !reports.py
 !archive_store.py
+!listing_common.py
 !dashboard.html
 !verify_dashboard.py
 !verify_new_dashboard.py
