@@ -143,6 +143,14 @@ of scraped content. Use it against your own accounts and at your own pace.
 | `serve.py` + `dashboard.html` | Local server + single-page analytics dashboard (Chart.js) |
 | `applog.py` / `reports.py` / `archive_store.py` | Logging, listing reports, archive-and-purge |
 
+## Open core
+
+`serve.py` and `monitor.py` reference an optional offer-negotiation subsystem that is
+not part of this repo — it automates personal marketplace conversations, so it stays
+private. The public code is designed to degrade cleanly without it: negotiator-only API
+endpoints answer `501`, the dashboard hides its Negotiations tab, and everything
+described above runs self-contained.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
