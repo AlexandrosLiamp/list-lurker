@@ -37,9 +37,10 @@ import random
 import re
 import sys
 import time
-import unicodedata
 from datetime import datetime
-from pathlib import Path
+
+from gpu_perf import match_gpu
+from listing_common import _norm, WANTED_KW, TRADE_KW, is_wanted_or_trade  # noqa: F401 (re-exported)
 
 sys.stdout.reconfigure(encoding="utf-8")
 
@@ -85,56 +86,7 @@ LOG_FILE = "fb_gpu.csv"
 MAX_GPU_ITEMS = 500
 NAV_TIMEOUT = 60000
 
-# ── GPU model database ─────────────────────────────────────────────────────────
-_GPU_RAW: dict[str, tuple[str, int]] = {
-    "rtx 5090": ("GeForce RTX 5090", 199), "rtx 4090": ("GeForce RTX 4090", 152),
-    "rtx 5080": ("GeForce RTX 5080", 131), "rtx 4080 super": ("GeForce RTX 4080 SUPER", 117),
-    "rtx 4080": ("GeForce RTX 4080", 116), "rx 7900 xtx": ("Radeon RX 7900 XTX", 116),
-    "rtx 5070 ti": ("GeForce RTX 5070 Ti", 114), "rx 9070 xt": ("Radeon RX 9070 XT", 109),
-    "rx 7900 xt": ("Radeon RX 7900 XT", 100), "rtx 3090 ti": ("GeForce RTX 3090 Ti", 98),
-    "rtx 4070 ti super": ("GeForce RTX 4070 Ti SUPER", 98), "rx 9070": ("Radeon RX 9070", 98),
-    "rtx 4070 ti": ("GeForce RTX 4070 Ti", 90), "rtx 5070": ("GeForce RTX 5070", 89),
-    "rtx 3090": ("GeForce RTX 3090", 88), "rtx 3080 ti": ("GeForce RTX 3080 Ti", 86),
-    "rtx 4070 super": ("GeForce RTX 4070 SUPER", 84), "rx 7900 gre": ("Radeon RX 7900 GRE", 82),
-    "rx 6950 xt": ("Radeon RX 6950 XT", 81), "rtx 4070": ("GeForce RTX 4070", 80),
-    "rx 6900 xt": ("Radeon RX 6900 XT", 79), "rtx 3080": ("GeForce RTX 3080", 78),
-    "rx 7800 xt": ("Radeon RX 7800 XT", 78), "rx 6800 xt": ("Radeon RX 6800 XT", 75),
-    "rtx 5060 ti 16": ("GeForce RTX 5060 Ti 16GB", 69), "rtx 5060 ti 8": ("GeForce RTX 5060 Ti 8GB", 69),
-    "rtx 5060 ti": ("GeForce RTX 5060 Ti", 69), "rx 7700 xt": ("Radeon RX 7700 XT", 68),
-    "rx 9060 xt 16": ("Radeon RX 9060 XT 16GB", 66), "rtx 3070 ti": ("GeForce RTX 3070 Ti", 66),
-    "rx 6800": ("Radeon RX 6800", 64), "rx 9060 xt 8": ("Radeon RX 9060 XT 8GB", 62),
-    "rx 9060 xt": ("Radeon RX 9060 XT", 62), "rtx 3070": ("GeForce RTX 3070", 62),
-    "rtx 2080 ti": ("GeForce RTX 2080 Ti", 61), "rtx 4060 ti 16": ("GeForce RTX 4060 Ti 16GB", 61),
-    "rtx 4060 ti 8": ("GeForce RTX 4060 Ti 8GB", 61), "rtx 4060 ti": ("GeForce RTX 4060 Ti", 61),
-    "rtx 5060": ("GeForce RTX 5060", 60), "rx 6750 xt": ("Radeon RX 6750 XT", 58),
-    "rtx 3060 ti": ("GeForce RTX 3060 Ti", 54), "rx 6700 xt": ("Radeon RX 6700 XT", 53),
-    "rtx 2080 super": ("GeForce RTX 2080 SUPER", 49), "rx 7600 xt": ("Radeon RX 7600 XT", 49),
-    "rtx 4060": ("GeForce RTX 4060", 49), "arc b580": ("Arc B580", 49),
-    "rtx 5050": ("GeForce RTX 5050", 47), "rtx 2080": ("GeForce RTX 2080", 47),
-    "rx 6650 xt": ("Radeon RX 6650 XT", 46), "rx 7600": ("Radeon RX 7600", 46),
-    "rtx 2070 super": ("GeForce RTX 2070 SUPER", 44), "gtx 1080 ti": ("GeForce GTX 1080 Ti", 43),
-    "arc a770": ("Arc A770", 43), "rtx 3060 12": ("GeForce RTX 3060 12GB", 42),
-    "rx 6600 xt": ("Radeon RX 6600 XT", 41), "radeon vii": ("Radeon VII", 41),
-    "arc a750": ("Arc A750", 40), "rx 5700 xt": ("Radeon RX 5700 XT", 39),
-    "rtx 2070": ("GeForce RTX 2070", 39), "rx 6600": ("Radeon RX 6600", 37),
-    "arc a580": ("Arc A580", 36), "rtx 2060 super": ("GeForce RTX 2060 SUPER", 36),
-    "rx vega 64": ("Radeon RX Vega 64", 34), "rtx 2060": ("GeForce RTX 2060", 33),
-    "rx 5700": ("Radeon RX 5700", 33), "gtx 1080": ("GeForce GTX 1080", 32),
-    "gtx 1070 ti": ("GeForce GTX 1070 Ti", 32), "rx 5600 xt": ("Radeon RX 5600 XT", 31),
-    "rx vega 56": ("Radeon RX Vega 56", 30), "gtx 1070": ("GeForce GTX 1070", 29),
-    "gtx 1660 super": ("GeForce GTX 1660 SUPER", 27), "gtx 1660 ti": ("GeForce GTX 1660 Ti", 27),
-    "gtx 980 ti": ("GeForce GTX 980 Ti", 26), "rtx 3050 8": ("GeForce RTX 3050 8GB", 26),
-    "rtx 3050": ("GeForce RTX 3050", 26), "r9 fury x": ("Radeon R9 FURY X", 25),
-    "gtx 1660": ("GeForce GTX 1660", 25), "rx 590": ("Radeon RX 590", 24),
-    "r9 fury": ("Radeon R9 FURY", 23), "gtx 980": ("GeForce GTX 980", 23),
-    "gtx 1650 super": ("GeForce GTX 1650 SUPER", 23), "rx 6500 xt": ("Radeon RX 6500 XT", 22),
-    "rx 5500 xt": ("Radeon RX 5500 XT", 22), "rx 580": ("Radeon RX 580", 22),
-    "gtx 1060 6": ("GeForce GTX 1060 6GB", 21), "r9 390x": ("Radeon R9 390X", 21),
-    "gtx 690": ("GeForce GTX 690", 21), "rx 480": ("Radeon RX 480", 21),
-    "hd 7990": ("Radeon HD 7990", 21), "gtx 780 ti": ("GeForce GTX 780 Ti", 20),
-    "gtx 970": ("GeForce GTX 970", 20),
-}
-GPU_MODELS = {k: v for k, v in sorted(_GPU_RAW.items(), key=lambda x: len(x[0]), reverse=True)}
+# GPU model database + match_gpu are imported from gpu_perf (single source of truth).
 
 GPU_KEYWORDS = [
     "κάρτα γραφικών", "καρτα γραφικων",
@@ -148,12 +100,6 @@ GPU_BRAND_KW = [
 
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
-
-def _norm(s: str) -> str:
-    s = str(s or "").lower()
-    return "".join(c for c in unicodedata.normalize("NFD", s)
-                   if unicodedata.category(c) != "Mn")
-
 
 def canonical_fb_url(url: str) -> str:
     """Reduce a Marketplace listing URL to a stable, dedup-safe form.
@@ -222,14 +168,6 @@ def detect_condition(name: str) -> str:
     return ""
 
 
-def match_gpu(name: str) -> tuple[str, int] | None:
-    n = name.lower()
-    for key, (display, score) in GPU_MODELS.items():
-        if key in n:
-            return display, score
-    return None
-
-
 def is_gpu_listing(name: str) -> tuple[str, int] | None:
     n = _norm(name)
     match = match_gpu(name)
@@ -242,16 +180,7 @@ def is_gpu_listing(name: str) -> tuple[str, int] | None:
     return None
 
 
-# Wanted ('ζητώ'/looking-to-buy) and trade-only ('ανταλλαγή') ads aren't real
-# sales — their price is meaningless (often a €1 placeholder). The skoop/insomnia
-# crawlers drop these, so we do too for parity. Same vocabulary as monitor.py.
-WANTED_KW = ["ζητειται", "ζητηση", "ζητουνται", "ζητω ", "wanted", "αγοραζω", "psaxno"]
-TRADE_KW  = ["ανταλλαγ", "ανταλαγ", "ανταλλασσ", "swap", "trade", "exchange"]
-
-
-def is_wanted_or_trade(name: str) -> bool:
-    n = _norm(name)
-    return any(k in n for k in WANTED_KW) or any(k in n for k in TRADE_KW)
+# WANTED_KW / TRADE_KW / is_wanted_or_trade are imported from listing_common.
 
 
 # ── FB URL builder ────────────────────────────────────────────────────────────
