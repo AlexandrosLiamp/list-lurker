@@ -1580,9 +1580,7 @@ def purge_wanted(bpage, ctx) -> None:
 def extract_retail_listings(page) -> list[dict]:
     """Parse product cards from the main skroutz.gr catalog (not skoop)."""
     listings = []
-    cards = page.query_selector_all('li[data-testid="sku-cardd"]')
-    if not cards:
-        cards = page.query_selector_all('li[data-testid="sku-card"]')
+    cards = page.query_selector_all('li[data-testid="sku-card"]')
     if not cards:
         print(f"    [retail] no cards found (title: {page.title()[:60]})", flush=True)
         return []
@@ -1746,12 +1744,19 @@ def detect_retail_drops(log_file: str) -> list[dict]:
     return drops
 
 
-def write_retail_deals(gpu_drops: list[dict], ram_drops: list[dict]) -> None:
-    """Write detected retail price drops to retail_deals.json for the dashboard."""
+def write_retail_deals(gpu_drops=None, ram_drops=None) -> None:
+    """Write detected retail price drops to retail_deals.json for the dashboard.
+    A category passed as None keeps the value already in the file, so a partial
+    update (e.g. RAM scan succeeded, GPU failed) doesn't wipe the other side."""
+    try:
+        with open("retail_deals.json", encoding="utf-8") as f:
+            existing = json.load(f)
+    except (OSError, ValueError):
+        existing = {}
     deals = {
         "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-        "gpu": gpu_drops,
-        "ram": ram_drops,
+        "gpu": gpu_drops if gpu_drops is not None else existing.get("gpu", []),
+        "ram": ram_drops if ram_drops is not None else existing.get("ram", []),
     }
     with open("retail_deals.json", "w", encoding="utf-8") as f:
         json.dump(deals, f, ensure_ascii=False, indent=2)
@@ -2250,7 +2255,10 @@ def watch_loop(bpage, ctx, ram_known: set[str], gpu_known: set[str],
                 save_retail_snapshot(GPU_RETAIL_LOG)
             if RAM_RETAIL_LOG in retail_log_files:
                 save_retail_snapshot(RAM_RETAIL_LOG)
-            w_gpu_drops, w_ram_drops = [], []
+            # None = category wasn't successfully re-scanned; write_retail_deals
+            # will keep whatever's already in retail_deals.json for it, so a failed
+            # scan can't wipe drops the other category legitimately surfaced.
+            w_gpu_drops, w_ram_drops = None, None
             for url, log_file, label, kind in retail_jobs:
                 _heartbeat()   # retail crawls are multi-page; keep the watchdog from false-firing
                 try:
@@ -2260,15 +2268,15 @@ def watch_loop(bpage, ctx, ram_known: set[str], gpu_known: set[str],
                             log_retail_laptops(items, ts, log_file)
                         else:
                             log_retail(items, ts, log_file)
+                    if kind == "gpu":
+                        w_gpu_drops = detect_retail_drops(GPU_RETAIL_LOG)
+                    elif kind == "ram":
+                        w_ram_drops = detect_retail_drops(RAM_RETAIL_LOG)
                 except Exception as e:
                     print(f"  [retail {label}] Scan error: {e}", flush=True)
                     log.exception("retail scan failed for %s", label)
-                if kind == "gpu":
-                    w_gpu_drops = detect_retail_drops(GPU_RETAIL_LOG)
-                elif kind == "ram":
-                    w_ram_drops = detect_retail_drops(RAM_RETAIL_LOG)
             last_retail_scan = time.time()
-            if w_gpu_drops or w_ram_drops:
+            if w_gpu_drops is not None or w_ram_drops is not None:
                 write_retail_deals(w_gpu_drops, w_ram_drops)
                 if w_gpu_drops:
                     print(f"  [deals] {len(w_gpu_drops)} GPU price drops detected")
