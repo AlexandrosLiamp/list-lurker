@@ -2268,10 +2268,14 @@ def watch_loop(bpage, ctx, ram_known: set[str], gpu_known: set[str],
                             log_retail_laptops(items, ts, log_file)
                         else:
                             log_retail(items, ts, log_file)
-                    if kind == "gpu":
-                        w_gpu_drops = detect_retail_drops(GPU_RETAIL_LOG)
-                    elif kind == "ram":
-                        w_ram_drops = detect_retail_drops(RAM_RETAIL_LOG)
+                        # Only diff against the snapshot when the crawl actually
+                        # produced data — an empty result (blocked page, no cards)
+                        # means CSV is unchanged, so detect_retail_drops would
+                        # return [] and wipe the file's other side.
+                        if kind == "gpu":
+                            w_gpu_drops = detect_retail_drops(GPU_RETAIL_LOG)
+                        elif kind == "ram":
+                            w_ram_drops = detect_retail_drops(RAM_RETAIL_LOG)
                 except Exception as e:
                     print(f"  [retail {label}] Scan error: {e}", flush=True)
                     log.exception("retail scan failed for %s", label)
@@ -2476,10 +2480,11 @@ def run_retail_crawl(bpage, parts):
                 log_retail_laptops(items, datetime.now().strftime("%Y-%m-%d %H:%M:%S"), log_file)
             else:
                 log_retail(items, datetime.now().strftime("%Y-%m-%d %H:%M:%S"), log_file)
-        if kind == "gpu":
-            gpu_drops = detect_retail_drops(GPU_RETAIL_LOG)
-        elif kind == "ram":
-            ram_drops = detect_retail_drops(RAM_RETAIL_LOG)
+            # Diff only when the crawl actually produced data (same reason as watch_loop).
+            if kind == "gpu":
+                gpu_drops = detect_retail_drops(GPU_RETAIL_LOG)
+            elif kind == "ram":
+                ram_drops = detect_retail_drops(RAM_RETAIL_LOG)
 
     if gpu_drops is not None or ram_drops is not None:
         write_retail_deals(gpu_drops, ram_drops)
