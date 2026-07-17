@@ -157,6 +157,8 @@ described above runs self-contained.
 - RAM listings are sanity-checked against ground truth derived from
   [pc-part-dataset](https://github.com/docyx/pc-part-dataset) (MIT) — 13.5k real
   memory kits distilled into `ram_kits.json` (see `ram_specs.py`).
+- Crawler fingerprint hardening informed by
+  [Crawl4AI](https://github.com/unclecode/crawl4ai) (Apache-2.0).
 
 ## License
 

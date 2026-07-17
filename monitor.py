@@ -2611,7 +2611,18 @@ def main():
     print("\nPress Ctrl+C to stop.\n")
 
     with Stealth().use_sync(sync_playwright()) as pw:
-        browser = pw.chromium.launch(headless=True)
+        # Quiet-fingerprint launch flags for the CF-challenged sources (Skoop/Insomnia),
+        # borrowed from Crawl4AI's stealth config (github.com/unclecode/crawl4ai,
+        # Apache-2.0). The FB worker deliberately keeps its long-lived fingerprint —
+        # changing it under a saved login session invites a re-verification.
+        browser = pw.chromium.launch(headless=True, args=[
+            "--disable-blink-features=AutomationControlled",
+            "--no-first-run", "--no-default-browser-check", "--disable-infobars",
+            "--force-color-profile=srgb", "--mute-audio",
+            "--disable-background-networking", "--disable-component-update",
+            "--disable-domain-reliability",
+            "--disable-features=OptimizationHints,MediaRouter,DialMediaRouteProvider,TranslateUI",
+        ])
         ctx = browser.new_context(
             user_agent=("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
                         "AppleWebKit/537.36 (KHTML, like Gecko) "
