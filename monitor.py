@@ -11,19 +11,12 @@ GPU deals  : recognised model matched from GPU_MODELS, PPR ≥ GPU_PPR_THRESHOLD
 """
 
 import csv
-import json
 import os
 import re
 import shutil
 import sys
-import threading
-import time
-from datetime import datetime
 
-from listing_common import _norm, WANTED_KW, TRADE_KW  # shared with fb_marketplace
-
-import requests as http_requests
-from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeout
+from playwright.sync_api import sync_playwright
 from playwright_stealth import Stealth
 
 # Shared crawl helpers (page-hang guard, CSV bookkeeping, browser recovery).
@@ -67,7 +60,6 @@ from config import *  # noqa: F401,F403  (re-exported: many external references)
 
 # RAM parsing + sanity heuristics live in ram_specs.py (kit-aware capacities,
 # speeds validated against pc-part-dataset ground truth — one source of truth).
-import ram_specs
 from ram_specs import (SODIMM_KW, OLD_GEN_KW, MIN_SPEED,          # noqa: F401
                        max_capacity_gb, parse_speed_mhz, is_desktop_ddr45)
 
