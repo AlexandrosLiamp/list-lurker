@@ -10,10 +10,6 @@ GPU deals  : recognised model matched from GPU_MODELS, PPR ≥ GPU_PPR_THRESHOLD
              PPR = performance_score / price_euros  (higher = better value).
 """
 
-import csv
-import os
-import re
-import shutil
 import sys
 
 from playwright.sync_api import sync_playwright
@@ -104,125 +100,8 @@ from crawlers.insomnia import (                                          # noqa:
     _card_is_wanted, collect_wanted_insomnia, purge_wanted)
 
 
-def purge_data() -> None:
-    """Interactively delete chosen CSV 'databases' and ALL backup snapshots.
-    Pure file work — no browser needed (dispatched early, like dedup_csvs).
-    Asks which file(s) to wipe, then asks for confirmation before deleting.
-    Per the user's choice, any successful purge also removes every backup_csv_*
-    directory, regardless of which files were selected.
-
-    Login sessions & credentials are NEVER purgeable — not by number, not by "ALL".
-    These must be managed separately:
-      - fb_state.json       → `python fb_marketplace.py --login`
-      - skroutz_state.json  → `python recon_skroutz_offer.py --login`
-      - email_config.json   → copy from email_config.example.json & fill in"""
-    import glob, shutil
-
-    # ── deny-list: files purge must NEVER touch ──────────────────────────
-    _PURGE_NEVER = {"fb_state.json", "skroutz_state.json", "email_config.json"}
-
-    # CSV "databases" are throwaway: a crawl rebuilds them.
-    csv_targets = [GPU_LOG, RAM_LOG, CPU_LOG, MOBO_LOG,
-                   VENDORA_GPU_LOG, FB_GPU_LOG,
-                   VINTED_GPU_LOG, VINTED_CPU_LOG, VINTED_RAM_LOG, VINTED_MOBO_LOG,
-                   GPU_RETAIL_LOG, RAM_RETAIL_LOG, CPU_RETAIL_LOG, MOBO_RETAIL_LOG]
-    SESSION_FILE = "fb_state.json"
-    targets = csv_targets + [SESSION_FILE]   # selectable by number, but not swept up by "ALL"
-
-    print("Which database(s) to purge?\n")
-    for i, f in enumerate(targets, 1):
-        tag = "" if os.path.isfile(f) else "  (missing)"
-        note = ("   ← FB login session, NOT auto-rebuilt (needs `fb_marketplace.py --login`)"
-                if f == SESSION_FILE else "")
-        print(f"  {i:2}) {f}{tag}{note}")
-    print("   a) ALL databases (CSVs only — NOT login sessions or credentials)")
-    sel = input("\n> ").strip().lower()
-
-    if sel in ("a", "all"):
-        chosen = list(csv_targets)           # bulk purge = throwaway CSVs only, never sessions/creds
-    else:
-        chosen = []
-        for tok in re.split(r"[,\s]+", sel):
-            if not tok:
-                continue
-            if tok.isdigit() and 1 <= int(tok) <= len(targets):
-                f = targets[int(tok) - 1]
-                if f not in chosen:
-                    chosen.append(f)
-            else:
-                print(f"Ignoring unrecognised selection '{tok}'.")
-    if not chosen:
-        print("Nothing selected. Aborted.")
-        return
-
-    # ── hard guard: refuse to delete any deny-listed file ──────────────
-    blocked = [f for f in chosen if f in _PURGE_NEVER]
-    if blocked:
-        print(f"\n⚠ REFUSED: these files are login sessions / credentials and will NOT be deleted:")
-        for f in blocked:
-            print(f"    {f}")
-        chosen = [f for f in chosen if f not in _PURGE_NEVER]
-        if not chosen:
-            print("Nothing left to purge. Aborted.")
-            return
-
-    backups = sorted(glob.glob("backup_csv_*"))
-    print("\nThis will PERMANENTLY DELETE:")
-    for f in chosen:
-        print(f"  - {f}" + ("" if os.path.isfile(f) else "  (missing)"))
-    if SESSION_FILE in chosen:
-        print(f"  ⚠ {SESSION_FILE} is your FB login session — deleting it logs the scraper "
-              f"out; restore with `python fb_marketplace.py --login`.")
-    if backups:
-        print(f"  - ALL backup snapshots ({len(backups)} dir): " + ", ".join(backups))
-    confirm = input('\nType "yes" to confirm: ').strip().lower()
-    if confirm != "yes":
-        print("Aborted. Nothing was deleted.")
-        return
-
-    for f in chosen:
-        try:
-            os.remove(f)
-            print(f"  deleted {f}")
-        except FileNotFoundError:
-            print(f"  (already gone) {f}")
-        except OSError as e:
-            print(f"  FAILED {f}: {e}")
-    for d in backups:
-        shutil.rmtree(d, ignore_errors=True)
-        print(f"  removed {d}/")
-    log.info("purge: deleted %s + %d backup dir(s)", ", ".join(chosen), len(backups))
-    print("Purge complete.")
-
-
-def dedup_csvs() -> None:
-    """One-shot cleanup of existing duplicate rows. Keeps one row per (url, price)
-    — collapses identical repeats while preserving genuine price changes. Backs up first."""
-    import shutil
-    from datetime import datetime as _dt
-    bdir = "backup_csv_" + _dt.now().strftime("%Y%m%d_%H%M%S")
-    os.makedirs(bdir, exist_ok=True)
-    before = after = 0
-    for f in (RAM_LOG, GPU_LOG, CPU_LOG, MOBO_LOG):
-        if not os.path.isfile(f):
-            continue
-        with open(f, encoding="utf-8") as fh:
-            rdr = csv.DictReader(fh); fields = rdr.fieldnames; rows = list(rdr)
-        shutil.copy(f, os.path.join(bdir, f))
-        seen, kept = set(), []
-        for r in rows:
-            url = (r.get("url") or "").strip()
-            if not url:
-                kept.append(r); continue
-            key = (url, str(r.get("price") or "").strip())
-            if key in seen:
-                continue
-            seen.add(key); kept.append(r)
-        with open(f, "w", newline="", encoding="utf-8") as fh:
-            w = csv.DictWriter(fh, fieldnames=fields); w.writeheader(); w.writerows(kept)
-        print(f"  {f:18} {len(rows):>5} -> {len(kept):>5}  ({len(rows)-len(kept)} duplicate rows removed)")
-        before += len(rows); after += len(kept)
-    print(f"\nTotal: {before} -> {after} rows ({before-after} removed). Backup: {bdir}")
+# Interactive CSV maintenance (purge_data / dedup_csvs) lives in maintenance.py.
+from maintenance import purge_data, dedup_csvs  # noqa: F401  (re-exported)
 
 
 # Watch loop, source adapters (Vendora/Vinted/Facebook), and run_used_crawl
@@ -233,82 +112,8 @@ from watch import (                                                       # noqa
     EARLY_STOP_KNOWN, WATCH_SEED_PAGES)
 
 
-# ── AI verification (manual / on-demand) ──────────────────────────────────────
-
-def _print_analysis(url: str, a, prefix: str = "") -> None:
-    if a is None:
-        print(f"  {prefix}{url[:70]}\n    → could not verify (page/CLI failed)", flush=True)
-        return
-    flag = "SOLD/CLOSED" if not a.overall_available else ("MULTI-ITEM" if a.is_multi_item else "OK")
-    print(f"  {prefix}{url[:70]}\n    → {flag}", flush=True)
-    for it in a.items:
-        avail = "available" if it.available else "SOLD"
-        price = f"{it.price:.0f}€" if it.price is not None else "?"
-        print(f"        - [{avail}] {price:>6}  {it.name[:55]}", flush=True)
-    if a.notes:
-        print(f"        notes: {a.notes[:120]}", flush=True)
-
-
-def _deal_candidates(log_file: str, deal_fn) -> list[tuple[str, str]]:
-    """Unique (url, name) from a CSV whose rows currently qualify as a deal."""
-    if not os.path.isfile(log_file):
-        return []
-    seen, out = set(), []
-    with open(log_file, encoding="utf-8") as f:
-        for row in csv.DictReader(f):
-            url = (row.get("url") or "").strip()
-            if not url or url in seen:
-                continue
-            item = {"name": row.get("name", ""), "condition": row.get("condition", ""),
-                    "url": url, "price": csv_price(row.get("price"))}
-            if deal_fn(item):
-                seen.add(url)
-                out.append((url, item["name"]))
-    return out
-
-
-def run_ai_verify(bpage, target: str, limit: int = 30) -> None:
-    """Manual AI verification. `target` is a listing URL, or one of ram|gpu|all."""
-    ai_client = ai_verify.get_client()
-    if not ai_client:
-        print("Claude CLI not found on PATH. Install Claude Code and run `claude login`, then retry.")
-        return
-
-    if target.startswith("http"):
-        print(f"\n── AI VERIFY (single listing) ──")
-        a = ai_verify.verify_listing(bpage, target, "(manual)", "unknown", ai_client)
-        _print_analysis(target, a)
-        return
-
-    target = target.lower()
-    jobs = []
-    if target in ("ram", "all"):
-        jobs.append(("ram", RAM_LOG, lambda it: is_ram_deal(it)))
-    if target in ("gpu", "all"):
-        jobs.append(("gpu", GPU_LOG, lambda it: (is_gpu_deal(it) or (None, None))[0]))
-    if not jobs:
-        print(f"aiverify target must be a listing URL or one of: ram, gpu, all  (got {target!r})")
-        return
-
-    for kind, log_file, deal_fn in jobs:
-        cands = _deal_candidates(log_file, deal_fn)
-        capped = cands[:limit]
-        print(f"\n── AI VERIFY {kind.upper()} ── {len(cands)} deal candidate(s)"
-              + (f", checking first {limit}" if len(cands) > limit else ""))
-        sold = set()
-        for i, (url, name) in enumerate(capped, 1):
-            try:
-                a = ai_verify.verify_listing(bpage, url, name, kind, ai_client)
-            except Exception as e:
-                a = None
-                print(f"  [{i}/{len(capped)}] error: {str(e)[:80]}", flush=True)
-            _print_analysis(url, a, prefix=f"[{i}/{len(capped)}] ")
-            if a is not None and not a.overall_available:
-                sold.add(url)
-        if sold:
-            n = prune_urls(log, sold)
-            print(f"  → pruned {n} sold/closed row(s) from {log}")
-    print("\nAI verification complete.")
+# Manual AI verification (aiverify CLI verb) lives in verify.py.
+from verify import _print_analysis, _deal_candidates, run_ai_verify  # noqa: F401  (re-exported)
 
 
 # Skroutz retail (main site, not skoop) scraping + snapshot/drop detection +
