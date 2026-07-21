@@ -28,6 +28,8 @@
 !deals.py
 !alerts.py
 !crawl_utils.py
+!crawlers/__init__.py
+!crawlers/skroutz.py
 !fb_marketplace.py
 !vinted.py
 !vendora_crawler.py
