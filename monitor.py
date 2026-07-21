@@ -124,97 +124,11 @@ DISCORD_WEBHOOK = _load_discord_webhook()
 from prices import parse_price, csv_price  # noqa: E402,F401  (re-export: tests import via monitor)
 
 
-# max_capacity_gb / parse_speed_mhz / is_desktop_ddr45 are imported from ram_specs
-# (see the RAM config section) — kit notation like "2x8GB" now counts as 16 GB.
-
-
-def is_ram_deal(listing: dict) -> str | None:
-    if listing["price"] is None or listing["price"] < 10 or not is_desktop_ddr45(listing["name"]):
-        return None
-    if ram_specs.check_ram(listing["name"], listing["price"],
-                           ram_specs.median_eur_per_gb()):
-        return None   # implausible specs or per-stick-suspect price — bad data, not a deal
-    n = listing["name"].lower()
-    for kw, threshold in RAM_THRESHOLDS:
-        if kw in n and listing["price"] <= threshold:
-            return f"{kw.upper()} ≤ {threshold}€"
-    return None
-
-
-# match_gpu is imported from gpu_perf (single source of truth for GPU scores).
-
-
-# ── Layer 1: reject non-standalone-GPU listings ───────────────────────────────
-# A GPU model name appears inside laptops, prebuilt PCs, mobile/MXM cards and
-# accessories (waterblocks, brackets). Those must never count as a GPU deal. This
-# heuristic is validated (see _classify_test.py) to keep real cards — including
-# "ROG Strix Gaming"/"TUF Gaming" cards and VRAM-as-"GB RAM" listings — while
-# catching the junk. Layer 2 (ai_verify) is the AI backstop for what slips through.
-_L1_LAPTOP_KW = ("laptop", "notebook", "λαπτοπ", "φορητο", "macbook", "ideapad",
-    "thinkpad", "thinkbook", "legion", "nitro 5", "nitro 16", "nitro 17", "victus",
-    "predator helios", "predator triton", "aspire", "inspiron", "vivobook", "zenbook",
-    "katana", "cyborg", "vector gp", "raider", "titan gt", "pulse gl", "alpha 15",
-    "alpha 17", "bravo 15", "stealth 1", "summit e", "prestige 1", "tuf dash",
-    "swift x", "blade 14", "blade 15", "blade 16", "blade 18", "galaxy book", "loq ")
-# ROG laptops are Strix G14-G18 / Zephyrus / Flow — NOT the "ROG Strix Gaming" cards.
-_L1_LAPTOP_RE = re.compile(r"\brog (zephyrus|flow)\b|\brog strix g1[4-8]\b|tuf gaming (a1[4-8]|f1[4-8])")
-_L1_PREBUILT_KW = ("gaming pc", "gaming desktop", "desktop pc", "pc tower", "prebuilt",
-    "pre-built", "pre built", "complete pc", "complete setup", "ολοκληρωμεν", "πληρες pc",
-    "πληρες συστημα", "πληρες gaming", " setup ", "workstation", "gaming rig", "mid-tower",
-    "mid tower", "midi tower", "full tower", "pc parts", "pc gaming", "gaming system",
-    "συστημα υπολογ", "κουτι υπολογιστη", "budget gaming", "high-end gaming pc",
-    "high end gaming pc", "midrange gaming", "υπολογιστης gaming")
-_L1_MOBILE_KW = ("mxm", "mobile", "laptop gpu", "για laptop", "for laptop", "φορητου")
-_L1_ACCESSORY_KW = ("waterblock", "water block", "water-block", "backplate", "back plate",
-    "bracket", "riser", "anti-sag", "antisag", "ek-quantum", "ek quantum", "ek vector",
-    "ekwb", "bykski", "alphacool", "barrow", "shroud", "βαση στηριξ", "box only",
-    "empty box", "σκετο κουτι", "μονο το κουτι")
-_L1_STORAGE_RE = re.compile(r"\b(ssd|hdd|nvme|\d{3,4}\s?gb (ssd|hdd|nvme)|\d\s?tb\b|σκληρο δισκ)")
-_L1_CPU_RE = re.compile(r"\b(i[3579][- ]?\d{4,5}[a-z0-9]*|ryzen\s*[3579]\s*\d{3,4}[a-z0-9]*|threadripper|xeon|pentium|celeron)\b")
-_L1_CPUFAM_RE = re.compile(r"\b(core\s*i[3579]|ryzen\s*[3579])\b")
-_L1_RAM_RE = re.compile(r"\b\d{1,3}\s*gb\s*(ram|ddr[2345])\b|\bram\b")
-_L1_RIG_RE = re.compile(r"\brig\b")
-
-
-def classify_gpu_listing(name: str) -> tuple[str, str]:
-    """Layer-1 heuristic. Returns ("card","") for a standalone desktop GPU, or
-    ("reject", reason) for a laptop / prebuilt / mobile-MXM / accessory / system."""
-    t = _norm(name)
-    if any(k in t for k in _L1_LAPTOP_KW) or _L1_LAPTOP_RE.search(t): return "reject", "laptop"
-    if any(k in t for k in _L1_MOBILE_KW):                            return "reject", "mobile/mxm"
-    if any(k in t for k in _L1_ACCESSORY_KW):                         return "reject", "accessory"
-    if any(k in t for k in _L1_PREBUILT_KW) or _L1_RIG_RE.search(t):  return "reject", "prebuilt/system"
-    if _L1_STORAGE_RE.search(t):                                      return "reject", "has-storage→system"
-    if _L1_CPU_RE.search(t):                                          return "reject", "has-cpu-model→system"
-    if _L1_CPUFAM_RE.search(t) and _L1_RAM_RE.search(t):              return "reject", "cpu+ram→system"
-    return "card", ""
-
-
-def is_real_gpu_card(name: str) -> bool:
-    """True if Layer 1 thinks this is a standalone desktop graphics card."""
-    return classify_gpu_listing(name)[0] == "card"
-
-
-def is_gpu_deal(listing: dict) -> tuple[str, float] | None:
-    """Return (reason_str, ppr) if this GPU listing has PPR ≥ threshold.
-    Layer 1: a deal must be a standalone desktop GPU card (not a laptop/prebuilt/
-    accessory). Anything Layer 1 rejects never becomes a deal/alert."""
-    if not listing["price"] or listing["price"] <= 1 or listing["price"] < 80:
-        return None
-    verdict, _reason = classify_gpu_listing(listing["name"])
-    if verdict != "card":
-        return None
-    match = match_gpu(listing["name"])
-    if not match:
-        return None
-    display, score = match
-    ppr = score / listing["price"]
-    if ppr >= GPU_PPR_THRESHOLD:
-        return f"{display} | score {score}% | PPR {ppr:.3f}", ppr
-    # Mid-tier alert: ~3070 performance band, beats 3070 @ 220€
-    if GPU_MIDTIER_SCORE_MIN <= score <= GPU_MIDTIER_SCORE_MAX and ppr >= GPU_MIDTIER_PPR:
-        return f"{display} | score {score}% | PPR {ppr:.3f} [mid-tier deal]", ppr
-    return None
+# Deal detection (RAM per-capacity thresholds, GPU Layer-1 classifier + PPR
+# check) lives in deals.py. Layer-2 (AI verification) is applied by the watch
+# loop, not by is_gpu_deal, so it stays in monitor.
+from deals import (is_ram_deal, is_gpu_deal,                     # noqa: F401
+                   classify_gpu_listing, is_real_gpu_card)
 
 
 # ── Browser helpers ───────────────────────────────────────────────────────────

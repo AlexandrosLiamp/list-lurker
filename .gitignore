@@ -25,6 +25,7 @@
 !prices.py
 !config.py
 !cleaning.py
+!deals.py
 !fb_marketplace.py
 !vinted.py
 !vendora_crawler.py
