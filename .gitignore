@@ -32,6 +32,7 @@
 !crawlers/skroutz.py
 !crawlers/insomnia.py
 !retail.py
+!watch.py
 !fb_marketplace.py
 !vinted.py
 !vendora_crawler.py
