@@ -22,37 +22,14 @@ from datetime import datetime
 
 from listing_common import _norm, WANTED_KW, TRADE_KW  # shared with fb_marketplace
 
-import ctypes
 import requests as http_requests
 from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeout
 from playwright_stealth import Stealth
 
-class PageTimeoutException(Exception):
-    """Exception raised when a page navigation or extraction operation hangs."""
-    pass
-
-class page_timeout:
-    """Context manager to raise PageTimeoutException in the main thread if it blocks too long."""
-    def __init__(self, seconds: float):
-        self.seconds = seconds
-        self.thread_id = threading.get_ident()
-        self.timer = None
-
-    def __enter__(self):
-        if self.seconds > 0:
-            self.timer = threading.Timer(self.seconds, self._trigger)
-            self.timer.daemon = True
-            self.timer.start()
-        return self
-
-    def __exit__(self, exc_type, exc_val, exc_tb):
-        if self.timer:
-            self.timer.cancel()
-        return False
-
-    def _trigger(self):
-        target_tid = ctypes.c_long(self.thread_id)
-        ctypes.pythonapi.PyThreadState_SetAsyncExc(target_tid, ctypes.py_object(PageTimeoutException))
+# Shared crawl helpers (page-hang guard, CSV bookkeeping, browser recovery).
+from crawl_utils import (PageTimeoutException, page_timeout,           # noqa: F401
+                         load_known_urls, new_unique, _known_streak_checker,
+                         log_listings, prune_urls, recreate_page)
 
 import ai_verify   # AI deal verification (degrades to no-op without anthropic SDK / API key)
 import applog       # centralised logging (file + screen + tracebacks) — see applog.py
@@ -424,60 +401,6 @@ def initial_crawl_insomnia(bpage, already_known: set[str], base_url: str,
     return known
 
 
-# ── Logging ───────────────────────────────────────────────────────────────────
-
-def load_known_urls(log_file: str) -> set[str]:
-    if not os.path.isfile(log_file):
-        return set()
-    known: set[str] = set()
-    with open(log_file, encoding="utf-8") as f:
-        for row in csv.DictReader(f):
-            # `or ""` guards against malformed/short rows where DictReader yields
-            # None for a missing trailing field (otherwise .strip() crashes).
-            url = (row.get("url") or "").strip()
-            if url: known.add(url)
-    print(f"  {log_file}: {len(known)} existing URLs loaded")
-    return known
-
-
-def new_unique(items: list[dict], known: set[str]) -> list[dict]:
-    """Items whose URL is neither already known nor a duplicate within this batch
-    (guards against the same listing appearing twice on overlapping pages)."""
-    out, seen = [], set()
-    for it in items:
-        u = (it.get("url") or "").strip()
-        if u and u not in known and u not in seen:
-            seen.add(u)
-            out.append(it)
-    return out
-
-
-def _known_streak_checker(known: set[str], threshold: int | None):
-    """Build the 'crawl' tier's early-stop checker.
-
-    Returns f(listings) -> bool. Across successive pages it tracks the running
-    count of *consecutive* listings whose URL is already in `known`. The feeds
-    are newest-first, so a long run of known listings means we've reached ground
-    we already have — f() returns True once the streak reaches `threshold`. A
-    brand-new listing resets the streak. Always False when threshold is None
-    (full crawls never early-stop)."""
-    streak = 0
-    def check(listings) -> bool:
-        nonlocal streak
-        if threshold is None:
-            return False
-        for it in listings:
-            u = (it.get("url") or "").strip()
-            if u and u in known:
-                streak += 1
-                if streak >= threshold:
-                    return True
-            else:
-                streak = 0
-        return False
-    return check
-
-
 def purge_data() -> None:
     """Interactively delete chosen CSV 'databases' and ALL backup snapshots.
     Pure file work — no browser needed (dispatched early, like dedup_csvs).
@@ -597,18 +520,6 @@ def dedup_csvs() -> None:
         print(f"  {f:18} {len(rows):>5} -> {len(kept):>5}  ({len(rows)-len(kept)} duplicate rows removed)")
         before += len(rows); after += len(kept)
     print(f"\nTotal: {before} -> {after} rows ({before-after} removed). Backup: {bdir}")
-
-
-def log_listings(listings: list[dict], timestamp: str, log_file: str) -> None:
-    file_exists = os.path.isfile(log_file)
-    with open(log_file, "a", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=["timestamp", "name", "condition", "price", "url"])
-        if not file_exists:
-            writer.writeheader()
-        for item in listings:
-            writer.writerow({"timestamp": timestamp, "name": item["name"],
-                             "condition": item["condition"], "price": item["price"],
-                             "url": item["url"]})
 
 
 # ── Crawl (generic) ───────────────────────────────────────────────────────────
@@ -1108,19 +1019,6 @@ def _deal_candidates(log_file: str, deal_fn) -> list[tuple[str, str]]:
     return out
 
 
-def _prune_urls(log_file: str, urls: set[str]) -> int:
-    if not os.path.isfile(log_file) or not urls:
-        return 0
-    with open(log_file, encoding="utf-8") as f:
-        rdr = csv.DictReader(f); fields = rdr.fieldnames; rows = list(rdr)
-    kept = [r for r in rows if (r.get("url") or "").strip() not in urls]
-    removed = len(rows) - len(kept)
-    if removed:
-        with open(log_file, "w", newline="", encoding="utf-8") as f:
-            w = csv.DictWriter(f, fieldnames=fields); w.writeheader(); w.writerows(kept)
-    return removed
-
-
 def run_ai_verify(bpage, target: str, limit: int = 30) -> None:
     """Manual AI verification. `target` is a listing URL, or one of ram|gpu|all."""
     ai_client = ai_verify.get_client()
@@ -1160,7 +1058,7 @@ def run_ai_verify(bpage, target: str, limit: int = 30) -> None:
             if a is not None and not a.overall_available:
                 sold.add(url)
         if sold:
-            n = _prune_urls(log, sold)
+            n = prune_urls(log, sold)
             print(f"  → pruned {n} sold/closed row(s) from {log}")
     print("\nAI verification complete.")
 
@@ -1240,7 +1138,7 @@ def purge_wanted(bpage, ctx) -> None:
     for log_file in (RAM_LOG, GPU_LOG):
         if os.path.isfile(log_file):
             shutil.copy(log_file, os.path.join(bdir, log_file))
-            removed = _prune_urls(log_file, wanted)
+            removed = prune_urls(log_file, wanted)
             if removed:
                 print(f"  {log_file}: removed {removed} wanted-ad row(s)")
             total += removed
@@ -1474,17 +1372,6 @@ def _block_heavy(route):
     except Exception:
         try: route.continue_()
         except Exception: pass
-
-
-def recreate_page(ctx):
-    """Create a fresh page in the existing browser context."""
-    try:
-        page = ctx.new_page()
-        print("  [recovery] New browser page created.", flush=True)
-        return page
-    except Exception as e:
-        print(f"  [recovery] Failed to create new page: {e}", flush=True)
-        return None
 
 
 def _process_new_listing(item, *, kind, deal_fn, bpage, ai_client,
