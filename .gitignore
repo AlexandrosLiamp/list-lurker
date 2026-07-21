@@ -31,6 +31,7 @@
 !crawlers/__init__.py
 !crawlers/skroutz.py
 !crawlers/insomnia.py
+!retail.py
 !fb_marketplace.py
 !vinted.py
 !vendora_crawler.py
