@@ -100,23 +100,8 @@ from cleaning import is_broken, is_clean, clean_listings  # noqa: F401  (re-expo
 # GPU performance scores live in gpu_perf.py (shared with negotiator.py — one source of truth).
 from gpu_perf import GPU_MODELS, match_gpu, _GPU_RAW  # noqa: E402,F401  (_GPU_RAW kept for back-compat)
 
-# ── Discord webhook ───────────────────────────────────────────────────────────
-# Resolution order: DISCORD_WEBHOOK env var, then "discord_webhook" in config.json
-# (gitignored — copy config.example.json to create it). Empty → alerts disabled;
-# everything else still works.
-def _load_discord_webhook() -> str:
-    hook = os.environ.get("DISCORD_WEBHOOK", "").strip()
-    if hook:
-        return hook
-    import json
-    cfg_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.json")
-    try:
-        with open(cfg_path, encoding="utf-8") as fh:
-            return str(json.load(fh).get("discord_webhook") or "").strip()
-    except (OSError, ValueError):
-        return ""
-
-DISCORD_WEBHOOK = _load_discord_webhook()
+# Discord webhook + send_discord live in alerts.py.
+from alerts import DISCORD_WEBHOOK, send_discord  # noqa: F401  (re-exported)
 
 
 # ── Deal helpers ──────────────────────────────────────────────────────────────
@@ -624,35 +609,6 @@ def log_listings(listings: list[dict], timestamp: str, log_file: str) -> None:
             writer.writerow({"timestamp": timestamp, "name": item["name"],
                              "condition": item["condition"], "price": item["price"],
                              "url": item["url"]})
-
-
-# ── Discord ───────────────────────────────────────────────────────────────────
-
-def send_discord(listing: dict, reason: str, extra_fields: list | None = None) -> None:
-    if not DISCORD_WEBHOOK:
-        return
-    price_str = f"{listing['price']:.2f} €" if listing["price"] else "?"
-    fields = [
-        {"name": "Price",     "value": price_str,                  "inline": True},
-        {"name": "Condition", "value": listing["condition"] or "–", "inline": True},
-        {"name": "Deal",      "value": reason,                     "inline": False},
-    ]
-    if extra_fields:
-        fields.extend(extra_fields)
-    fields.append({"name": "Link", "value": listing["url"] or "–", "inline": False})
-    embed = {
-        "title": "🔥 Deal Found!",
-        "description": listing["name"],
-        "color": 0xFF6B6B,
-        "fields": fields,
-        "footer": {"text": f"Skroutz Skoop Monitor • {datetime.now().strftime('%H:%M:%S')}"},
-    }
-    try:
-        resp = http_requests.post(DISCORD_WEBHOOK, json={"embeds": [embed]}, timeout=10)
-        if resp.status_code not in (200, 204):
-            print(f"  [Discord] {resp.status_code}: {resp.text[:120]}")
-    except Exception as e:
-        print(f"  [Discord] Send error: {e}")
 
 
 # ── Crawl (generic) ───────────────────────────────────────────────────────────
