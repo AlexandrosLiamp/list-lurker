@@ -283,24 +283,7 @@ NAV_TIMEOUT     = 20
 
 # ── Deal helpers ──────────────────────────────────────────────────────────────
 
-def parse_price(text: str) -> float | None:
-    text = text.replace(".", "").replace(",", ".")
-    m = re.search(r"(\d+(?:\.\d+)?)", text)
-    return float(m.group(1)) if m else None
-
-
-def csv_price(raw) -> float | None:
-    """Parse a price that was stored in one of our CSVs. Unlike parse_price — which is
-    for RAW scraped European-formatted strings ("1.234,56 €") and so treats '.' as a
-    thousands separator — CSV prices are already canonical floats ("140.0"), so a plain
-    float() is correct. Falls back to parse_price for any legacy raw-formatted rows."""
-    s = str(raw or "").strip()
-    if not s:
-        return None
-    try:
-        return float(s)
-    except ValueError:
-        return parse_price(s)
+from prices import parse_price, csv_price  # noqa: E402,F401  (re-export: tests import via monitor)
 
 
 # max_capacity_gb / parse_speed_mhz / is_desktop_ddr45 are imported from ram_specs

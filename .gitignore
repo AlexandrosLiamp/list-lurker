@@ -22,6 +22,7 @@
 !requirements.txt
 !config.example.json
 !monitor.py
+!prices.py
 !fb_marketplace.py
 !vinted.py
 !vendora_crawler.py
