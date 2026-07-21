@@ -44,7 +44,6 @@ except ImportError:
 
 PORT = 8080
 ROOT = Path(__file__).resolve().parent
-os.chdir(ROOT)
 URL = f"http://localhost:{PORT}/dashboard.html"
 PYTHON = sys.executable
 
@@ -522,6 +521,7 @@ def _cleanup_tmp_msgs():
 
 
 if __name__ == "__main__":
+    os.chdir(ROOT)
     _cleanup_tmp_msgs()
     print(f"Dashboard + control API: {URL}")
     print("Press Ctrl+C to stop.\n")
