@@ -23,6 +23,7 @@
 !config.example.json
 !monitor.py
 !prices.py
+!config.py
 !fb_marketplace.py
 !vinted.py
 !vendora_crawler.py

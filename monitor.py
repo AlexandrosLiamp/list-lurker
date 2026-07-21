@@ -85,75 +85,19 @@ class _DropRouteTeardownNoise(logging.Filter):
 
 logging.getLogger("asyncio").addFilter(_DropRouteTeardownNoise())
 
-# ── RAM config ────────────────────────────────────────────────────────────────
-RAM_URL      = ("https://www.skroutz.gr/skoop/c/56/mnhmes-pc-ram.html"
-                "?order_by=submitted_at&order_dir=desc")
-RAM_LOG      = "ram_prices.csv"
+# URLs / log paths / thresholds / keyword lists / VINTED_MODE live in config.py.
+from config import *  # noqa: F401,F403  (re-exported: many external references)
 
-RAM_THRESHOLDS = [
-    ("16gb",  80),
-    ("32gb", 130),
-    ("64gb", 220),
-    ("128gb", 380),
-]
 # RAM parsing + sanity heuristics live in ram_specs.py (kit-aware capacities,
 # speeds validated against pc-part-dataset ground truth — one source of truth).
 import ram_specs
 from ram_specs import (SODIMM_KW, OLD_GEN_KW, MIN_SPEED,          # noqa: F401
                        max_capacity_gb, parse_speed_mhz, is_desktop_ddr45)
 
-# ── GPU config ────────────────────────────────────────────────────────────────
-GPU_URL      = ("https://www.skroutz.gr/skoop/c/55/kartes-grafikwn.html"
-                "?order_by=submitted_at&order_dir=desc")
-GPU_LOG      = "gpu_prices.csv"
-
-# ── Motherboard & CPU config (for the PC Builder tool) ────────────────────────
-MOBO_URL = ("https://www.skroutz.gr/skoop/c/31/motherboards-mhtrikes.html"
-            "?order_by=submitted_at&order_dir=desc")
-MOBO_LOG = "mobo_prices.csv"
-CPU_URL  = ("https://www.skroutz.gr/skoop/c/32/cpu-epeksergastes.html"
-            "?order_by=submitted_at&order_dir=desc")
-CPU_LOG  = "cpu_prices.csv"
-
-# ── Retail (main skroutz.gr catalog) URLs for each part ───────────────────────
-RAM_RETAIL_URL  = "https://www.skroutz.gr/c/56/mnhmes-pc-ram.html"
-RAM_RETAIL_LOG  = "ram_retail.csv"
-CPU_RETAIL_URL  = "https://www.skroutz.gr/c/32/cpu-epeksergastes.html"
-CPU_RETAIL_LOG  = "cpu_retail.csv"
-MOBO_RETAIL_URL = "https://www.skroutz.gr/c/31/motherboards-mhtrikes.html"
-MOBO_RETAIL_LOG = "mobo_retail.csv"
-LAPTOP_RETAIL_URL = "https://www.skroutz.gr/c/25/laptop.html"
-LAPTOP_RETAIL_LOG = "laptop_retail.csv"
-
-# Minimum price/performance ratio to trigger a deal alert.
-# PPR = perf_score / price_euros  e.g. score=100, price=280€ → PPR≈0.36
-GPU_PPR_THRESHOLD = 0.370
-
-# Mid-tier alert: ~3070-level cards (score 50–75) beating 3070 @ 220€ (PPR ≈ 0.282)
-GPU_MIDTIER_SCORE_MIN = 50
-GPU_MIDTIER_SCORE_MAX = 75
-GPU_MIDTIER_PPR = round(62 / 220, 3)  # 0.282
-
-# ── Data cleaning ─────────────────────────────────────────────────────────────
-# Classifieds (esp. insomnia.gr) are dirty: wanted ads, trades, multi-item
-# bundles, "browse my stock" placeholders at €1, broken cards. These skew every
-# statistic, so we drop them at scrape time. _norm/WANTED_KW/TRADE_KW live in
-# listing_common (shared with fb_marketplace) — imported at top of this file.
-
-# Broken / parts-only — cheap for a reason.
-BROKEN_KW = [
-    "for parts", "for repair", "spare parts", "faulty", "broken", "not working",
-    "not functional", "as is", "as-is", "dead gpu", "no display", "needs repair",
-    "χαλασμ", "για επισκευη", "ανταλακτ", "ανταλλακτ", "μη λειτουργ",
-    "δεν λειτουργ", "δε λειτουργ", "κατεστραμ", "καμεν", "προβλημα", "βλαβη", "ελαττωματ",
-]
-# Sold/ended and reserved markers (skoop/insomnia-specific — FB doesn't need these).
-SOLD_KW   = ["πωληθηκε", "δοθηκε", "sold", "τελος -", "- τελος", "[τελος]", "(τελος)",
-             "κρατημ", "κρατηθ", "δεσμευ", "reserved", "rezerv"]   # reserved = effectively gone
-
-# Absolute price ceilings per kind — only catch true placeholders/typos, not legit
-# halo products (Threadripper, 192GB kits, RTX 5090, etc.).
-MAX_PRICE = {"gpu": 20000, "cpu": 20000, "ram": 8000, "mobo": 3000, "laptop": 15000}
+# Data cleaning notes: classifieds (esp. insomnia.gr) are dirty — wanted ads,
+# trades, multi-item bundles, "browse my stock" placeholders at €1, broken cards.
+# These skew every statistic, so we drop them at scrape time. _norm/WANTED_KW/
+# TRADE_KW come from listing_common; BROKEN_KW/SOLD_KW/MAX_PRICE from config.
 
 def is_broken(text: str) -> bool:
     return any(kw in _norm(text) for kw in BROKEN_KW)
@@ -201,68 +145,10 @@ def clean_listings(items: list[dict], kind: str) -> list[dict]:
 # GPU performance scores live in gpu_perf.py (shared with negotiator.py — one source of truth).
 from gpu_perf import GPU_MODELS, match_gpu, _GPU_RAW  # noqa: E402,F401  (_GPU_RAW kept for back-compat)
 
-# ── GPU Retail config ─────────────────────────────────────────────────────────
-GPU_RETAIL_URL = ("https://www.skroutz.gr/c/55/kartes-grafikwn/f/"
-                  "694691_845785_845786_1216762/8GB-12GB-toulachiston-16gb-10GB.html")
-GPU_RETAIL_LOG = "gpu_retail.csv"
-RETAIL_SCAN_INTERVAL = 300  # rescan retail every 5 minutes
-RETAIL_DROP_THRESHOLD = 0.10  # flag price drops >= 10%
-RETAIL_DROP_MIN_EUR = 5.0     # minimum absolute drop to flag (exclude tiny drops)
-FB_SCAN_INTERVAL = 600       # rescan Facebook every 10 min (heavier: 15 scrolled queries)
-FB_BLOCK_COOLDOWN = 2700     # after an anti-bot block, wait 45 min before retrying FB
-
-# ── Insomnia.gr config ────────────────────────────────────────────────────────
-INSOMNIA_GPU_URL = "https://www.insomnia.gr/classifieds/category/11-kartes-grafikon/"
-INSOMNIA_RAM_URL = "https://www.insomnia.gr/classifieds/category/47-mnimes/"
-
-# ── Vendora.gr config ──────────────────────────────────────────────────────────
-# Newest-first (sort=recent) + a price floor to skip junk. NOTE: the URL already
-# carries query params, so pages are added with &page=N (see _vendora_page_url).
-VENDORA_GPU_URL = ("https://vendora.gr/browse/qrzg1v/"
-                   "ipologistes-tablets-ektipotes-periferiaka-exartimata-axesouar.html"
-                   "?price_min=30&sort=recent")
-# Vendora wraps back to page 1 once you scroll past page 50, so never crawl deeper.
-VENDORA_MAX_PAGES = 50
-VENDORA_GPU_LOG = "vendora_gpu.csv"
-FB_GPU_LOG      = "fb_gpu.csv"
-
-# ── Vinted.gr config ───────────────────────────────────────────────────────────
-# Used-goods marketplace. Crawled via its JSON API (see vinted.py). One CSV per part.
-#
-# Background (2026-06-16): Vinted fronted the API with a Cloudflare managed challenge
-# that this IP couldn't clear — the challenge solved but every follow-up request was
-# re-challenged (an IP-reputation block), so the API only ever returned 401. Verified
-# unbeatable from here via plain requests, curl_cffi Chrome impersonation, and
-# headless+headful stealth Playwright. Such blocks are temporary; the IP cleared by
-# 2026-06-20. See LIST LURKER/bugs/vinted-cloudflare-ip-block.md.
-#
-# SELF-HEALING GATE: VINTED_ENABLED is now tri-state instead of a hard on/off —
-#   "on"            → force enabled (skip the probe)
-#   "off"           → force disabled (silent)
-#   "auto" / unset  → probe the API once at startup; enable only if this IP can reach
-#                     it (see vinted.probe). This auto-recovers whenever the block
-#                     lifts and mutes itself (one notice, no failure spam) when it's
-#                     back, so no manual flipping is needed across the block's cycles.
-def _parse_vinted_mode(raw: str) -> str:
-    v = (raw or "").strip().lower()
-    if v in ("1", "true", "yes", "on", "enabled"):
-        return "on"
-    if v in ("0", "false", "no", "off", "disabled"):
-        return "off"
-    return "auto"  # unset or "auto"
-
-VINTED_MODE = _parse_vinted_mode(os.environ.get("VINTED_ENABLED", "auto"))
-VINTED_GPU_LOG  = "vinted_gpu.csv"
-VINTED_CPU_LOG  = "vinted_cpu.csv"
-VINTED_RAM_LOG  = "vinted_ram.csv"
-VINTED_MOBO_LOG = "vinted_mobo.csv"
-VINTED_LOGS = {"gpu": VINTED_GPU_LOG, "cpu": VINTED_CPU_LOG,
-               "ram": VINTED_RAM_LOG, "mobo": VINTED_MOBO_LOG}
-
-# ── General ───────────────────────────────────────────────────────────────────
-# Discord webhook for deal alerts. Resolution order: DISCORD_WEBHOOK env var, then
-# "discord_webhook" in config.json (gitignored — copy config.example.json to create it).
-# Empty → alerts are disabled; everything else still works.
+# ── Discord webhook ───────────────────────────────────────────────────────────
+# Resolution order: DISCORD_WEBHOOK env var, then "discord_webhook" in config.json
+# (gitignored — copy config.example.json to create it). Empty → alerts disabled;
+# everything else still works.
 def _load_discord_webhook() -> str:
     hook = os.environ.get("DISCORD_WEBHOOK", "").strip()
     if hook:
@@ -276,9 +162,6 @@ def _load_discord_webhook() -> str:
         return ""
 
 DISCORD_WEBHOOK = _load_discord_webhook()
-SCAN_INTERVAL   = 60
-PAGE_DELAY      = 2.5
-NAV_TIMEOUT     = 20
 
 
 # ── Deal helpers ──────────────────────────────────────────────────────────────
