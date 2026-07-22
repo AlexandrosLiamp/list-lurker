@@ -11,13 +11,10 @@ import csv
 import os
 
 import ai_verify
-import applog
 from config import RAM_LOG, GPU_LOG
 from crawl_utils import prune_urls
 from deals import is_gpu_deal, is_ram_deal
 from prices import csv_price
-
-log = applog.get_logger()
 
 
 def _print_analysis(url: str, a, prefix: str = "") -> None:
@@ -91,6 +88,6 @@ def run_ai_verify(bpage, target: str, limit: int = 30) -> None:
             if a is not None and not a.overall_available:
                 sold.add(url)
         if sold:
-            n = prune_urls(log, sold)
-            print(f"  → pruned {n} sold/closed row(s) from {log}")
+            n = prune_urls(log_file, sold)
+            print(f"  → pruned {n} sold/closed row(s) from {log_file}")
     print("\nAI verification complete.")
