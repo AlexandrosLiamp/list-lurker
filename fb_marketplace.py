@@ -39,8 +39,10 @@ import sys
 import time
 from datetime import datetime
 
+from crawl_utils import price_changed
 from gpu_perf import match_gpu
 from listing_common import _norm, WANTED_KW, TRADE_KW, is_wanted_or_trade  # noqa: F401 (re-exported)
+from prices import csv_price
 
 sys.stdout.reconfigure(encoding="utf-8")
 
@@ -304,14 +306,18 @@ def extract_fb_listings(page) -> list[dict]:
 
 # ── Logging ───────────────────────────────────────────────────────────────────
 
-def load_existing_urls(log_file: str) -> set[str]:
+def load_existing_prices(log_file: str) -> dict[str, float | None]:
+    """{canonical_fb_url: latest_logged_price} — later rows overwrite earlier
+    ones so the newest price wins. Mirrors crawl_utils.load_known_prices for
+    the fb_gpu.csv 7-column schema (which has its own file/callsite here)."""
     if not os.path.isfile(log_file):
-        return set()
-    known: set[str] = set()
+        return {}
+    known: dict[str, float | None] = {}
     with open(log_file, encoding="utf-8") as f:
         for row in csv.DictReader(f):
             url = (row.get("url") or "").strip()   # guard against short/None rows
-            if url: known.add(canonical_fb_url(url))
+            if url:
+                known[canonical_fb_url(url)] = csv_price(row.get("price"))
     print(f"  {log_file}: {len(known)} existing GPU listings")
     return known
 
@@ -353,7 +359,7 @@ def _is_blocked(page) -> bool:
             or "login.php" in u)
 
 
-def _collect_with_scroll(page, known: set[str], mode: str, *,
+def _collect_with_scroll(page, known: dict[str, float | None], mode: str, *,
                          scroll_pause: float, max_scrolls: int,
                          barren_limit: int) -> list[dict]:
     """Scroll a loaded search page, collecting cards as Facebook lazy-loads them.
@@ -391,9 +397,13 @@ def _collect_with_scroll(page, known: set[str], mode: str, *,
             idle = 0
 
         # Watch early-stop: did this freshly-loaded batch hold any new GPU?
+        # "New" = unseen URL OR a known URL whose price changed — otherwise a
+        # price-dropped-but-known listing would stop the scroll early and never
+        # get re-logged (FB has no _known_streak_checker to inherit this from).
         if mode == "watch" and fresh:
             batch_has_new_gpu = any(
-                c["url"] not in known
+                (c["url"] not in known
+                 or price_changed(known.get(c["url"]), c.get("price")))
                 and is_gpu_listing(c["name"])
                 and not is_wanted_or_trade(c["name"])
                 for c in fresh
@@ -513,7 +523,7 @@ def login(headful: bool = True) -> bool:
 
 # ── Main ──────────────────────────────────────────────────────────────────────
 
-def crawl_facebook_gpu(page, known: set[str] | None = None, ts: str | None = None,
+def crawl_facebook_gpu(page, known: dict[str, float | None] | None = None, ts: str | None = None,
                        mode: str = "full", max_items: int = MAX_GPU_ITEMS,
                        settle: float = SETTLE, scroll_pause: float = SCROLL_PAUSE,
                        nav_timeout: int = NAV_TIMEOUT, verbose: bool = True,
@@ -534,13 +544,13 @@ def crawl_facebook_gpu(page, known: set[str] | None = None, ts: str | None = Non
 
     Shared by the standalone crawler below and by monitor.py's pipeline, so the
     extraction logic lives in exactly one place."""
-    known = set() if known is None else known
+    known = {} if known is None else known
     # Normalize any caller-supplied known URLs (e.g. monitor.py loads raw URLs that
     # may still carry old tracking params) so they match the canonical extracted ones.
-    dirty = {u for u in known if u != canonical_fb_url(u)}
-    if dirty:
-        known.difference_update(dirty)
-        known.update(canonical_fb_url(u) for u in dirty)
+    # Re-key each dirty URL to its canonical form, preserving its recorded price.
+    dirty = [u for u in known if u != canonical_fb_url(u)]
+    for u in dirty:
+        known[canonical_fb_url(u)] = known.pop(u)
     ts = ts or datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     new_items: list[dict] = []
     seen_this_run: set[str] = set()
@@ -589,10 +599,14 @@ def crawl_facebook_gpu(page, known: set[str] | None = None, ts: str | None = Non
             seen_this_run.add(u)
 
             match = is_gpu_listing(n)
-            if not match or is_wanted_or_trade(n) or u in known:
+            if not match or is_wanted_or_trade(n):
+                continue
+            # New OR price-changed → re-log so a lowered price surfaces.
+            new_price = item.get("price")
+            if u in known and not price_changed(known.get(u), new_price):
                 continue
 
-            known.add(u)
+            known[u] = new_price
             model_name, score = match
             new_items.append({
                 "timestamp": ts,
@@ -647,7 +661,7 @@ def crawl_facebook(max_items: int = MAX_GPU_ITEMS, dry_run: bool = False,
         print("⚠ No saved login session — Facebook will likely throttle/limit results.")
         print("  Run once:  python fb_marketplace.py --login\n")
 
-    known = set() if dry_run else load_existing_urls(LOG_FILE)
+    known = {} if dry_run else load_existing_prices(LOG_FILE)
     from playwright.sync_api import sync_playwright
     from playwright_stealth import Stealth
 

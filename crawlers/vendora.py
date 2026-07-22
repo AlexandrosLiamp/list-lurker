@@ -5,7 +5,7 @@ from datetime import datetime
 
 from cleaning import clean_listings
 from config import PAGE_DELAY, VENDORA_GPU_LOG, VENDORA_GPU_URL, VENDORA_MAX_PAGES
-from crawl_utils import (_known_streak_checker, load_known_urls, log_listings,
+from crawl_utils import (_known_streak_checker, load_known_prices, log_listings,
                          new_unique)
 from deals import is_real_gpu_card, match_gpu
 from prices import parse_price
@@ -65,7 +65,7 @@ def scan_page1_vendora_gpu(_bpage, url: str) -> list[dict]:
 
 
 def _initial_crawl_vendora_gpu(label: str, max_pages: int | None = None,
-                               early_stop_after: int | None = None) -> set[str]:
+                               early_stop_after: int | None = None) -> dict[str, float | None]:
     """One-shot: crawl Vendora GPU listings and save to CSV. Returns the known
     URL set for the watch loop. early_stop_after stops after that many consecutive
     already-known GPU listings (see initial_crawl).
@@ -83,8 +83,11 @@ def _initial_crawl_vendora_gpu(label: str, max_pages: int | None = None,
     # Cap pages at VENDORA_MAX_PAGES regardless of the tier's max_pages.
     page_cap = VENDORA_MAX_PAGES if max_pages is None else min(max_pages, VENDORA_MAX_PAGES)
 
-    vendora_known = load_known_urls(VENDORA_GPU_LOG)
-    hit_old = _known_streak_checker(set(vendora_known), early_stop_after)
+    vendora_known = load_known_prices(VENDORA_GPU_LOG)
+    # Frozen snapshot: vendora_known keeps growing in the page loop below, but
+    # the early-stop checker must judge against the pre-run state — dict(x) copies
+    # the mapping so later writes don't retroactively count as "already known".
+    hit_old = _known_streak_checker(dict(vendora_known), early_stop_after)
     seen_all: set[str] = set()   # every listing URL seen this run (any part) for the guard
     page_num = 1
     consecutive_empty = 0
@@ -135,7 +138,7 @@ def _initial_crawl_vendora_gpu(label: str, max_pages: int | None = None,
         if gpu_only:
             log_listings(gpu_only, ts, VENDORA_GPU_LOG)
             for it in gpu_only:
-                vendora_known.add(it["url"])
+                vendora_known[it["url"]] = it.get("price")
 
         print(f"  Page {page_num:2}: {len(listings)} listings, "
               f"{len(gpu_only)} GPU new", flush=True)

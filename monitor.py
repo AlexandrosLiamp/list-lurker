@@ -17,7 +17,7 @@ from playwright_stealth import Stealth
 
 # Shared crawl helpers (page-hang guard, CSV bookkeeping, browser recovery).
 from crawl_utils import (PageTimeoutException, page_timeout,           # noqa: F401
-                         load_known_urls, new_unique, _known_streak_checker,
+                         load_known_prices, new_unique, _known_streak_checker,
                          log_listings, prune_urls, recreate_page)
 
 import ai_verify   # AI deal verification (degrades to no-op without anthropic SDK / API key)
@@ -353,7 +353,7 @@ def main():
         # and seeded by its own background thread so it doesn't block startup; its known
         # set is loaded straight from the CSV.
         known = run_used_crawl(bpage, ctx, parts, "watch", skip_facebook=True)
-        facebook_known = load_known_urls(FB_GPU_LOG) if "gpu" in parts else set()
+        facebook_known = load_known_prices(FB_GPU_LOG) if "gpu" in parts else {}
         watch_loop(bpage, ctx, known["ram"], known["gpu"],
                    cpu_known=known["cpu"], mobo_known=known["mobo"],
                    do_ram=("ram" in parts), do_gpu=("gpu" in parts),

@@ -42,21 +42,23 @@ def live_count(path: str = LIVE_CSV) -> int:
 
 
 def fold_into_archive(live_path: str = LIVE_CSV, archive_path: str = ARCHIVE_CSV) -> int:
-    """Append live rows whose URL is not already archived. Returns rows added. No clearing."""
+    """Append live rows whose URL is not already archived. Returns rows added. No clearing.
+
+    Live CSVs can now have multiple rows per URL (one per observed price change,
+    see crawl_utils.load_known_prices). Keep the LAST row for each URL — the
+    freshest price — so a purge preserves the most accurate price history."""
     live = _read_rows(live_path)
     if not live:
         return 0
     have = _archive_urls(archive_path)
-    new_rows = []
-    seen_now: set[str] = set()
+    latest: dict[str, dict] = {}
     for r in live:
         url = (r.get("url") or "").strip()
-        if not url or url in have or url in seen_now:
-            continue
-        seen_now.add(url)
-        new_rows.append({k: r.get(k, "") for k in FIELDS})
-    if not new_rows:
+        if url and url not in have:
+            latest[url] = {k: r.get(k, "") for k in FIELDS}   # later rows overwrite earlier
+    if not latest:
         return 0
+    new_rows = list(latest.values())
     exists = os.path.isfile(archive_path)
     with open(archive_path, "a", newline="", encoding="utf-8") as fh:
         w = csv.DictWriter(fh, fieldnames=FIELDS)

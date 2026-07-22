@@ -38,7 +38,7 @@ from config import (
     SCAN_INTERVAL, RETAIL_SCAN_INTERVAL)
 from cleaning import clean_listings
 from deals import match_gpu, is_real_gpu_card, is_gpu_deal
-from crawl_utils import load_known_urls, new_unique, log_listings, recreate_page
+from crawl_utils import load_known_prices, new_unique, log_listings, recreate_page
 from crawlers.skroutz import initial_crawl, scan_page1_skroutz
 from crawlers.insomnia import initial_crawl_insomnia, scan_page1_insomnia
 from crawlers.vendora import (                                      # noqa: F401
@@ -156,15 +156,15 @@ def _stall_watchdog(stall_limit: int = 180, check_every: int = 20) -> None:
 
 # ── Watch loop ────────────────────────────────────────────────────────────────
 
-def watch_loop(bpage, ctx, ram_known: set[str], gpu_known: set[str],
-               cpu_known: set[str] | None = None, mobo_known: set[str] | None = None,
+def watch_loop(bpage, ctx, ram_known: dict, gpu_known: dict,
+               cpu_known: dict | None = None, mobo_known: dict | None = None,
                do_ram: bool = True, do_gpu: bool = True,
                do_cpu: bool = False, do_mobo: bool = False,
                do_laptop: bool = False,
                do_vendora_gpu: bool = False,
-               vendora_gpu_known: set[str] | None = None,
+               vendora_gpu_known: dict | None = None,
                do_facebook: bool = False,
-               facebook_known: set[str] | None = None,
+               facebook_known: dict | None = None,
                do_vinted: bool = False,
                vinted_known: dict | None = None,
                do_retail: bool = False,
@@ -172,12 +172,12 @@ def watch_loop(bpage, ctx, ram_known: set[str], gpu_known: set[str],
     notified: set[str] = set()
     verified: set[str] = set()          # URLs already AI-verified (avoid re-paying)
     consecutive_crashes = 0
-    cpu_known  = cpu_known  if cpu_known  is not None else set()
-    mobo_known = mobo_known if mobo_known is not None else set()
-    vendora_gpu_known = vendora_gpu_known if vendora_gpu_known is not None else set()
-    facebook_known = facebook_known if facebook_known is not None else set()
+    cpu_known  = cpu_known  if cpu_known  is not None else {}
+    mobo_known = mobo_known if mobo_known is not None else {}
+    vendora_gpu_known = vendora_gpu_known if vendora_gpu_known is not None else {}
+    facebook_known = facebook_known if facebook_known is not None else {}
     vinted_known = vinted_known if vinted_known is not None else {}
-    _vk = lambda p: vinted_known.setdefault(p, set())  # per-part known set
+    _vk = lambda p: vinted_known.setdefault(p, {})  # per-part known {url: price}
     if do_vinted and not vinted_enabled():
         # vinted_enabled() prints its own notice (auto probe outcome / forced off).
         do_vinted = False
@@ -421,7 +421,7 @@ def watch_loop(bpage, ctx, ram_known: set[str], gpu_known: set[str],
 
             log_listings(new, ts, cat["log_file"])
             for item in new:
-                cat["known"].add(item["url"])
+                cat["known"][item["url"]] = item.get("price")
 
             print(f"{len(listings)} listings, {len(new)} NEW:", flush=True)
             for item in new:
@@ -446,7 +446,7 @@ def run_used_crawl(bpage, ctx, parts, depth, sources=None, skip_facebook=False):
     ('full' | 'crawl' | 'watch'). `sources` optionally restricts which sources
     run, e.g. {'facebook'}. `skip_facebook` omits the (slow) synchronous Facebook
     seed — the watch path uses this because Facebook is seeded in its own background
-    thread instead (see _facebook_watch_worker). Returns the known-URL sets used to
+    thread instead (see _facebook_watch_worker). Returns {url: last_price} dicts used to
     seed the watch loop: {'ram','gpu','cpu','mobo','vendora_gpu','facebook','vinted_<part>'}."""
     max_pages, early = _DEPTH_PARAMS[depth]
     # Facebook scrolls fully on the `full` tier; on the early-stop `crawl` tier (and
@@ -461,13 +461,13 @@ def run_used_crawl(bpage, ctx, parts, depth, sources=None, skip_facebook=False):
         if src == "vinted" and not vinted_enabled():
             return False
         return True
-    known = {"ram": set(), "gpu": set(), "cpu": set(), "mobo": set(),
-             "vendora_gpu": set(), "facebook": set(),
-             "vinted_gpu": set(), "vinted_cpu": set(),
-             "vinted_ram": set(), "vinted_mobo": set()}
+    known = {"ram": {}, "gpu": {}, "cpu": {}, "mobo": {},
+             "vendora_gpu": {}, "facebook": {},
+             "vinted_gpu": {}, "vinted_cpu": {},
+             "vinted_ram": {}, "vinted_mobo": {}}
 
     if "ram" in parts:
-        k = load_known_urls(RAM_LOG)
+        k = load_known_prices(RAM_LOG)
         if want("skoop"):
             k = initial_crawl(bpage, k, RAM_URL, RAM_LOG, "Skroutz RAM", kind="ram",
                               max_pages=max_pages, early_stop_after=early)
@@ -481,7 +481,7 @@ def run_used_crawl(bpage, ctx, parts, depth, sources=None, skip_facebook=False):
                 "ram", VINTED_RAM_LOG, max_pages=max_pages, early_stop_after=early)
 
     if "gpu" in parts:
-        k = load_known_urls(GPU_LOG)
+        k = load_known_prices(GPU_LOG)
         if want("skoop"):
             k = initial_crawl(bpage, k, GPU_URL, GPU_LOG, "Skroutz GPU", kind="gpu",
                               log_filter=_gpu_logf, max_pages=max_pages, early_stop_after=early)
@@ -501,7 +501,7 @@ def run_used_crawl(bpage, ctx, parts, depth, sources=None, skip_facebook=False):
 
     if "cpu" in parts:
         if want("skoop"):
-            k = load_known_urls(CPU_LOG)
+            k = load_known_prices(CPU_LOG)
             known["cpu"] = initial_crawl(bpage, k, CPU_URL, CPU_LOG, "Skroutz CPU", kind="cpu",
                                          max_pages=max_pages, early_stop_after=early)
         if want("vinted"):
@@ -510,7 +510,7 @@ def run_used_crawl(bpage, ctx, parts, depth, sources=None, skip_facebook=False):
 
     if "mobo" in parts:
         if want("skoop"):
-            k = load_known_urls(MOBO_LOG)
+            k = load_known_prices(MOBO_LOG)
             known["mobo"] = initial_crawl(bpage, k, MOBO_URL, MOBO_LOG, "Skroutz Motherboard",
                                           kind="mobo", max_pages=max_pages, early_stop_after=early)
         if want("vinted"):

@@ -147,11 +147,11 @@ def scan_page1_insomnia(bpage, url: str) -> list[dict]:
     return extract_insomnia_listings(bpage)
 
 
-def initial_crawl_insomnia(bpage, already_known: set[str], base_url: str,
+def initial_crawl_insomnia(bpage, already_known: dict[str, float | None], base_url: str,
                            log_file: str, label: str,
                            log_filter=None, ctx=None, kind: str | None = None,
                            max_pages: int | None = None,
-                           early_stop_after: int | None = None) -> set[str]:
+                           early_stop_after: int | None = None) -> dict[str, float | None]:
     """Crawl pages of an insomnia.gr category using direct URL navigation.
     max_pages caps the page count; early_stop_after stops after that many
     consecutive already-known listings (see initial_crawl). Automatically
@@ -243,7 +243,7 @@ def initial_crawl_insomnia(bpage, already_known: set[str], base_url: str,
     if new_listings:
         log_listings(new_listings, ts, log_file)
 
-    known = already_known | {item["url"] for item in to_log if item["url"]}
+    known = {**already_known, **{item["url"]: item.get("price") for item in to_log if item["url"]}}
     skipped = len(to_log) - len(new_listings)
     filtered_out = len(all_listings) - len(to_log)
     print(f"\n  Done in {elapsed:.0f}s: {len(all_listings)} seen"

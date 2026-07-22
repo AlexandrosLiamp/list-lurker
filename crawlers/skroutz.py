@@ -112,11 +112,11 @@ def scan_page1_skroutz(bpage, url: str) -> list[dict]:
     return extract_listings(bpage)
 
 
-def initial_crawl(bpage, already_known: set[str], base_url: str,
+def initial_crawl(bpage, already_known: dict[str, float | None], base_url: str,
                   log_file: str, label: str,
                   log_filter=None, kind: str | None = None,
                   max_pages: int | None = None,
-                  early_stop_after: int | None = None) -> set[str]:
+                  early_stop_after: int | None = None) -> dict[str, float | None]:
     """
     Crawl pages of base_url, logging listings not already in already_known.
       max_pages        — hard cap on pages crawled (None = until the last page).
@@ -173,7 +173,7 @@ def initial_crawl(bpage, already_known: set[str], base_url: str,
     if new_listings:
         log_listings(new_listings, ts, log_file)
 
-    known = already_known | {item["url"] for item in to_log if item["url"]}
+    known = {**already_known, **{item["url"]: item.get("price") for item in to_log if item["url"]}}
     skipped = len(to_log) - len(new_listings)
     filtered_out = len(all_listings) - len(to_log)
 

@@ -11,7 +11,7 @@ from datetime import datetime
 
 from cleaning import clean_listings
 from config import PAGE_DELAY, VINTED_MODE
-from crawl_utils import (_known_streak_checker, load_known_urls, log_listings,
+from crawl_utils import (_known_streak_checker, load_known_prices, log_listings,
                          new_unique)
 from deals import is_real_gpu_card, match_gpu
 
@@ -75,7 +75,7 @@ def scan_page1_vinted(_bpage, url: str) -> list[dict]:
 
 
 def _initial_crawl_vinted(part: str, log_file: str, max_pages: int | None = None,
-                          early_stop_after: int | None = None) -> set[str]:
+                          early_stop_after: int | None = None) -> dict[str, float | None]:
     """One-shot: crawl a Vinted catalog (gpu/cpu/ram/mobo) and save to CSV. Returns
     the known URL set for the watch loop. max_pages caps pages; early_stop_after
     stops after that many consecutive already-known listings (feed is newest-first).
@@ -86,8 +86,10 @@ def _initial_crawl_vinted(part: str, log_file: str, max_pages: int | None = None
     print(f"\n[{ts}] ── VINTED {part.upper()}: initial crawl ────────────────")
     t0 = time.time()
 
-    known = load_known_urls(log_file)
-    hit_old = _known_streak_checker(set(known), early_stop_after)
+    known = load_known_prices(log_file)
+    # Frozen snapshot (same reason as vendora): early-stop must judge against the
+    # pre-run state while `known` keeps growing in the page loop below.
+    hit_old = _known_streak_checker(dict(known), early_stop_after)
     session = _get_vinted_session()
     cid = vinted.CATALOG_IDS[part]
     is_gpu = (part == "gpu")
@@ -120,7 +122,7 @@ def _initial_crawl_vinted(part: str, log_file: str, max_pages: int | None = None
         if clean:
             log_listings(clean, ts, log_file)
             for it in clean:
-                known.add(it["url"])
+                known[it["url"]] = it.get("price")
 
         print(f"  Page {page_num:2}: {len(listings)} listings, "
               f"{len(clean)} new {part}", flush=True)

@@ -10,6 +10,8 @@ import ctypes
 import os
 import threading
 
+from prices import csv_price
+
 
 # ── Cross-thread page-hang guard ──────────────────────────────────────────────
 # Playwright's sync page.evaluate() has no timeout; a wedged page blocks the
@@ -47,33 +49,47 @@ class page_timeout:
 
 # ── CSV / URL bookkeeping ─────────────────────────────────────────────────────
 
-def load_known_urls(log_file: str) -> set[str]:
+def load_known_prices(log_file: str) -> dict[str, float | None]:
+    """Return {url: latest_logged_price} — later CSV rows overwrite earlier ones,
+    so a URL that appears multiple times (once we start recording price changes)
+    resolves to its most recent price. Uses csv_price to avoid the parse_price
+    10x-inflation trap on canonical-float rows (see bugs/parse-price-csv-inflation)."""
     if not os.path.isfile(log_file):
-        return set()
-    known: set[str] = set()
+        return {}
+    known: dict[str, float | None] = {}
     with open(log_file, encoding="utf-8") as f:
         for row in csv.DictReader(f):
             # `or ""` guards against malformed/short rows where DictReader yields
             # None for a missing trailing field (otherwise .strip() crashes).
             url = (row.get("url") or "").strip()
-            if url: known.add(url)
+            if url:
+                known[url] = csv_price(row.get("price"))
     print(f"  {log_file}: {len(known)} existing URLs loaded")
     return known
 
 
-def new_unique(items: list[dict], known: set[str]) -> list[dict]:
-    """Items whose URL is neither already known nor a duplicate within this batch
-    (guards against the same listing appearing twice on overlapping pages)."""
+def price_changed(old: float | None, new: float | None) -> bool:
+    """True iff both prices are known and differ (rounded to cents). A blank/
+    unparseable price on either side is never a change — avoids re-logging on
+    transient scrape flakiness."""
+    return old is not None and new is not None and round(old, 2) != round(new, 2)
+
+
+def new_unique(items: list[dict], known: dict[str, float | None]) -> list[dict]:
+    """Items that are either not-yet-known, or known-but-with-a-changed-price.
+    Also drops within-batch duplicates (same listing on overlapping pages)."""
     out, seen = [], set()
     for it in items:
         u = (it.get("url") or "").strip()
-        if u and u not in known and u not in seen:
+        if not u or u in seen:
+            continue
+        if u not in known or price_changed(known.get(u), it.get("price")):
             seen.add(u)
             out.append(it)
     return out
 
 
-def _known_streak_checker(known: set[str], threshold: int | None):
+def _known_streak_checker(known: dict[str, float | None], threshold: int | None):
     """Build the 'crawl' tier's early-stop checker.
 
     Returns f(listings) -> bool. Across successive pages it tracks the running

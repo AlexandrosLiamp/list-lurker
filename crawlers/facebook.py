@@ -16,14 +16,14 @@ from datetime import datetime
 import ai_verify
 import applog
 from config import FB_BLOCK_COOLDOWN, FB_GPU_LOG, FB_SCAN_INTERVAL
-from crawl_utils import load_known_urls
+from crawl_utils import load_known_prices
 from deals import is_gpu_deal
 from pipeline import _process_new_listing
 
 log = applog.get_logger()
 
 
-def _initial_crawl_facebook_gpu(ctx, mode: str = "full") -> set[str]:
+def _initial_crawl_facebook_gpu(ctx, mode: str = "full") -> dict[str, float | None]:
     """Multi-query Facebook Marketplace GPU crawl. mode='full' scrolls each query to
     the bottom (the `crawl full` tier); mode='watch' stops once it reaches already-
     known listings, like the watch loop (the early-stop `crawl` tier). Runs in a
@@ -40,7 +40,7 @@ def _initial_crawl_facebook_gpu(ctx, mode: str = "full") -> set[str]:
     import time as _time
     t0 = _time.time()
 
-    fb_known = load_known_urls(FB_GPU_LOG)
+    fb_known = load_known_prices(FB_GPU_LOG)
     fb_ctx = fb_marketplace.make_fb_context(ctx.browser)
     fb_page = fb_ctx.new_page()
     fb_stats = {}
@@ -60,7 +60,7 @@ def _initial_crawl_facebook_gpu(ctx, mode: str = "full") -> set[str]:
     return fb_known
 
 
-def _facebook_watch_worker(facebook_known: set[str], stop_event: threading.Event,
+def _facebook_watch_worker(facebook_known: dict[str, float | None], stop_event: threading.Event,
                            ai_client=None, verbose: bool = True) -> None:
     """Daemon-thread body for Facebook watching. Owns its OWN Playwright + browser
     (the sync API is per-thread, so a separate instance here is the safe way to run
