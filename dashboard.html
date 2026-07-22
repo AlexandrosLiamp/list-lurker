@@ -193,6 +193,12 @@
     color: #ef4444;
     border: 1px solid rgba(239, 68, 68, 0.2);
   }
+  .badge-drop {
+    background: rgba(34, 197, 94, 0.1);
+    color: #22c55e;
+    border: 1px solid rgba(34, 197, 94, 0.2);
+    margin-left: 4px;
+  }
 
   /* PPR Color Grading */
   .great { color: #00f0ff !important; font-weight: 600; }
@@ -2701,6 +2707,40 @@ function dealBadge(deal, pgb) {
   return `–`;
 }
 
+// ═══ Price-drop annotations ════════════════════════════════════════════════════
+// The rescan gate now re-logs a URL when its price changes (see
+// bugs/stale-price-on-rescan.md), so a URL can hold multiple rows over time.
+// annotatePriceDrops groups this chunk's rows by URL, walks each group in
+// timestamp order, and if the latest price is strictly lower than the row
+// immediately before it, tags the LATEST row with `_priceDrop`. Mutating in
+// place means the annotation survives every downstream .filter/.concat.
+// Called per fetch (URLs never span two source CSVs), so we don't rescan the
+// full ever-growing array on every load.
+function annotatePriceDrops(rows) {
+  const byUrl = new Map();
+  for (const r of rows) {
+    const u = r.url;
+    if (!u) continue;
+    (byUrl.get(u) || byUrl.set(u, []).get(u)).push(r);
+  }
+  for (const group of byUrl.values()) {
+    if (group.length < 2) continue;
+    group.sort((a, b) => (a.timestamp || '').localeCompare(b.timestamp || ''));
+    const latest = group[group.length - 1];
+    const prev = group[group.length - 2];
+    const o = prev.price, n = latest.price;
+    if (o != null && n != null && Math.round(n * 100) < Math.round(o * 100)) {
+      latest._priceDrop = { oldPrice: o, newPrice: n, dropEur: o - n };
+    }
+  }
+  return rows;
+}
+
+function priceDropBadge(pd) {
+  if (!pd) return '';
+  return `<span class="badge badge-drop" title="was €${pd.oldPrice.toFixed(2)}">▼ €${pd.dropEur.toFixed(2)}</span>`;
+}
+
 function isSodimm(n) { return SODIMM_KW.some(k => n.includes(k)); }
 // Robust RAM capacity (GB). Case-insensitive (callers pass raw OR lowercased names), and
 // tolerant of the common formats: "16GB"/"16 GB"/"16GiB", kit notation "2x8"/"2x16GB", and
@@ -3129,6 +3169,7 @@ function loadRam(rows){ addToRam(rows); const el = document.getElementById('stat
 function loadRamRetail(rows){ addToRam(rows); const el = document.getElementById('status-ram'); if (el) el.className = 'w-2 h-2 rounded-full bg-[#00f0ff]'; }
 function addToRam(rows){
   const tagged = tagSrc(rows.filter(r=>!isDirtyJS(r.name,r.price,'ram') && !isBlacklisted(r)));
+  annotatePriceDrops(tagged);
   ramAll = ramAll.concat(tagged);
   renderRam();
   renderRramTab();
@@ -3159,6 +3200,7 @@ function addToGpu(rows){
             gpu_score: m ? m.score : null,
             ppr: m && validPrice ? calcPpr(m.score, r.price) : null};
   }).filter(r => r.gpu_model);
+  annotatePriceDrops(enriched);
   gpuAll = gpuAll.concat(enriched);
   renderGpu();
 }
@@ -3309,7 +3351,7 @@ function renderRamTable() {
       <td class="muted">${esc(genSpeed)}</td>
       <td class="muted">${esc(capacity)}</td>
       <td>${srcBadge(r._src)}</td>
-      <td class="price${deal?' deal':''}">${ps}</td>
+      <td class="price${deal?' deal':''}">${ps}${priceDropBadge(r._priceDrop)}</td>
       <td class="pgb ${pgbCls}">${pgbStr}
         <div class="ppr-bar-wrap"><div class="ppr-bar" style="width:${barW}%"></div></div>
       </td>
@@ -3544,7 +3586,7 @@ function renderGpuTable(){
       <td class="muted" style="white-space:nowrap">${esc(r.gpu_model||'–')}</td>
       <td class="muted" style="text-align:center">${r.gpu_score||'–'}</td>
       <td>${srcBadge(r._src)}</td>
-      <td class="price${isDeal?' gpu-deal':''}">${ps}</td>
+      <td class="price${isDeal?' gpu-deal':''}">${ps}${priceDropBadge(r._priceDrop)}</td>
       <td class="ppr ${pprCls}">${pprStr}
         <div class="ppr-bar-wrap"><div class="ppr-bar" style="width:${barW}%"></div></div>
       </td>
