@@ -30,7 +30,9 @@ import re
 def extract_retail_listings(page) -> list[dict]:
     """Parse product cards from the main skroutz.gr catalog (not skoop)."""
     listings = []
-    cards = page.query_selector_all('li[data-testid="sku-card"]')
+    # Match sku-card AND sku-cardd (Skroutz shipped the typo mid-July 2026 and
+    # every retail crawl went to 0 products until we broadened this).
+    cards = page.query_selector_all('li[data-testid^="sku-card"]')
     if not cards:
         print(f"    [retail] no cards found (title: {page.title()[:60]})", flush=True)
         return []
