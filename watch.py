@@ -389,7 +389,7 @@ def watch_loop(bpage, ctx, ram_known: dict, gpu_known: dict,
             _heartbeat()   # if scan_fn below hangs, the heartbeat stops → watchdog recovers
             print(f"[{ts}] Scanning {cat['label']} page 1…", end=" ", flush=True)
             try:
-                listings = cat["scan_fn"](bpage, cat["url"])
+                listings = cat["scan_fn"](bpage, cat["url"], log_file=cat["log_file"])
                 consecutive_crashes = 0
             except Exception as e:
                 err = str(e)

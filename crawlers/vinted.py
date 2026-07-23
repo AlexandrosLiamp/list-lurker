@@ -61,7 +61,7 @@ def vinted_enabled(*, reprobe: bool = False) -> bool:
     return ok
 
 
-def scan_page1_vinted(_bpage, url: str) -> list[dict]:
+def scan_page1_vinted(_bpage, url: str, **_kw) -> list[dict]:
     """Scan page 1 of a Vinted catalog (part inferred from the URL's catalog id).
     _bpage is ignored — Vinted uses the JSON API, not the browser."""
     import vinted

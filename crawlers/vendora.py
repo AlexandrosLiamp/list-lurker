@@ -55,7 +55,7 @@ def _vendora_page_url(page: int) -> str:
     return f"{VENDORA_GPU_URL}{sep}page={page}"
 
 
-def scan_page1_vendora_gpu(_bpage, url: str) -> list[dict]:
+def scan_page1_vendora_gpu(_bpage, url: str, **_kw) -> list[dict]:
     """Scan page 1 of Vendora GPU listings. _bpage is ignored (no browser needed)."""
     html = _vendora_fetch_page(url)
     if not html:

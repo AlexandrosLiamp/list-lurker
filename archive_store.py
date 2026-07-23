@@ -15,11 +15,13 @@ from __future__ import annotations
 
 import csv
 import os
+import re
 from datetime import datetime
 
 LIVE_CSV = "gpu_prices.csv"
 ARCHIVE_CSV = "gpu_archive.csv"
 FIELDS = ["timestamp", "name", "condition", "price", "url"]
+SOLD_FIELDS = ["timestamp", "name", "condition", "price", "url", "detected_via"]
 
 
 def _read_rows(path: str) -> list[dict]:
@@ -88,6 +90,60 @@ def archive_and_purge(live_path: str = LIVE_CSV, archive_path: str = ARCHIVE_CSV
         "archive_total": archive_count(archive_path),
         "at": datetime.now().isoformat(timespec="seconds"),
     }
+
+
+def sold_path_for(log_file: str) -> str:
+    """gpu_prices.csv → gpu_sold.csv. Any *.csv → *_sold.csv. Idempotent."""
+    if log_file.endswith("_sold.csv"):
+        return log_file
+    return re.sub(r"(_prices)?\.csv$", "_sold.csv", log_file)
+
+
+def record_sold_tagged(rows: list[dict], log_file: str, detected_via: str) -> int:
+    """Tag rows with `detected_via` and archive to log_file's sold sidecar. Swallows
+    exceptions — a failing sold-archive must not break the calling crawl/verify pass.
+    Returns rows written (0 on error, empty input, or missing log_file)."""
+    if not rows or not log_file:
+        return 0
+    try:
+        tagged = [{**r, "detected_via": detected_via} for r in rows]
+        return record_sold(tagged, sold_path_for(log_file))
+    except Exception as e:
+        print(f"  [sold-archive] skipped: {str(e)[:80]}", flush=True)
+        return 0
+
+
+def record_sold(rows: list[dict], sold_path: str) -> int:
+    """Append sold rows to the per-part sold archive, deduped by URL. Header if new file.
+    Caller supplies `detected_via` on each row; timestamp is filled in from now() if missing.
+    Within a batch, later rows overwrite earlier for the same URL (matches
+    `fold_into_archive`'s last-wins semantics, so a sold URL's latest price is what lands
+    even when the live CSV holds a price-history trail for it). Rows whose URL is already
+    in the sold archive are skipped (first-sale-observation wins across calls).
+    Returns rows actually written."""
+    if not rows:
+        return 0
+    have = _archive_urls(sold_path)
+    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    fresh: dict[str, dict] = {}
+    for r in rows:
+        url = (r.get("url") or "").strip()
+        if not url or url in have:
+            continue
+        row = {}
+        for k in SOLD_FIELDS:
+            v = r.get(k)
+            row[k] = v if v not in (None, "") else (now if k == "timestamp" else "")
+        fresh[url] = row   # later rows overwrite earlier — freshest price wins
+    if not fresh:
+        return 0
+    exists = os.path.isfile(sold_path)
+    with open(sold_path, "a", newline="", encoding="utf-8") as fh:
+        w = csv.DictWriter(fh, fieldnames=SOLD_FIELDS)
+        if not exists:
+            w.writeheader()
+        w.writerows(fresh.values())
+    return len(fresh)
 
 
 def read_for_stats(live_path: str = LIVE_CSV, archive_path: str = ARCHIVE_CSV) -> list[dict]:

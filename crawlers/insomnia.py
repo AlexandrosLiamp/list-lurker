@@ -140,7 +140,7 @@ def _insomnia_goto(bpage, url: str, timeout: int = 60000) -> bool:
     return True
 
 
-def scan_page1_insomnia(bpage, url: str) -> list[dict]:
+def scan_page1_insomnia(bpage, url: str, **_kw) -> list[dict]:
     if not _insomnia_goto(bpage, url, timeout=30000):
         print("  [scan] insomnia timeout — skipping", flush=True)
         return []

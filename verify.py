@@ -11,6 +11,7 @@ import csv
 import os
 
 import ai_verify
+import archive_store
 from config import RAM_LOG, GPU_LOG
 from crawl_utils import prune_urls
 from deals import is_gpu_deal, is_ram_deal
@@ -47,6 +48,21 @@ def _deal_candidates(log_file: str, deal_fn) -> list[tuple[str, str]]:
                 seen.add(url)
                 out.append((url, item["name"]))
     return out
+
+
+def _archive_ai_verify_sold(log_file: str, sold: set[str]) -> None:
+    """ai_verify only holds URLs, not rows — re-read the live CSV to recover the price
+    and timestamp for the sold URLs, then hand off to the shared record_sold_tagged.
+    A failed read must not abort run_ai_verify (the prune_urls step still needs to run)."""
+    if not os.path.isfile(log_file):
+        return
+    try:
+        with open(log_file, encoding="utf-8") as f:
+            rows = [r for r in csv.DictReader(f) if (r.get("url") or "").strip() in sold]
+    except Exception as e:
+        print(f"  [sold-archive] read failed: {str(e)[:80]}", flush=True)
+        return
+    archive_store.record_sold_tagged(rows, log_file, "ai_verify")
 
 
 def run_ai_verify(bpage, target: str, limit: int = 30) -> None:
@@ -88,6 +104,7 @@ def run_ai_verify(bpage, target: str, limit: int = 30) -> None:
             if a is not None and not a.overall_available:
                 sold.add(url)
         if sold:
+            _archive_ai_verify_sold(log_file, sold)
             n = prune_urls(log_file, sold)
             print(f"  → pruned {n} sold/closed row(s) from {log_file}")
     print("\nAI verification complete.")

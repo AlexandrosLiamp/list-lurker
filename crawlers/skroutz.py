@@ -18,6 +18,7 @@ from config import NAV_TIMEOUT, PAGE_DELAY
 from prices import parse_price
 from cleaning import is_broken, clean_listings
 from crawl_utils import new_unique, _known_streak_checker, log_listings
+from archive_store import record_sold_tagged
 
 
 def wait_for_cards(page, timeout: int = 15000) -> None:
@@ -68,8 +69,10 @@ def js_navigate_next(page, prev_hrefs: set[str]) -> bool:
     return False
 
 
-def extract_listings(page) -> list[dict]:
-    listings = []
+def extract_listings(page) -> tuple[list[dict], list[dict]]:
+    """Returns (live_listings, sold_listings). Sold cards are captured for archival
+    rather than dropped — see `sold-price-archive-plan` decision."""
+    listings, sold_listings = [], []
     for card in page.query_selector_all("li.sku-card"):
         try:
             name_el  = card.query_selector("h2.sku-card-title")
@@ -84,32 +87,38 @@ def extract_listings(page) -> list[dict]:
             cond_el   = card.query_selector("span.condition")
             condition = cond_el.inner_text().strip() if cond_el else ""
 
-            # Skip sold cards — check badge/overlay and the full card text (accent-safe)
-            try:
-                if "πωληθηκε" in _norm(card.inner_text()):
-                    continue
-            except Exception:
-                pass
-
             link_el = card.query_selector("a.link")
             href    = (link_el.get_attribute("href") or "") if link_el else ""
             url     = ("https://www.skroutz.gr" + href) if href.startswith("/") else href
 
-            listings.append({"name": name, "condition": condition,
-                              "price": price, "price_raw": price_raw, "url": url})
+            item = {"name": name, "condition": condition,
+                    "price": price, "price_raw": price_raw, "url": url}
+
+            # Sold cards go to the sold sink, not live listings — check badge/overlay and
+            # the full card text (accent-safe).
+            try:
+                if "πωληθηκε" in _norm(card.inner_text()):
+                    sold_listings.append(item)
+                    continue
+            except Exception:
+                pass
+
+            listings.append(item)
         except Exception:
             continue
-    return listings
+    return listings, sold_listings
 
 
-def scan_page1_skroutz(bpage, url: str) -> list[dict]:
+def scan_page1_skroutz(bpage, url: str, log_file: str | None = None, **_kw) -> list[dict]:
     try:
         bpage.goto(url, wait_until="domcontentloaded", timeout=30000)
     except PlaywrightTimeout:
         print("  [scan] Reload timed out — skipping", flush=True)
         return []
     wait_for_cards(bpage, timeout=10000)
-    return extract_listings(bpage)
+    listings, sold = extract_listings(bpage)
+    record_sold_tagged(sold, log_file, "badge_feed")
+    return listings
 
 
 def initial_crawl(bpage, already_known: dict[str, float | None], base_url: str,
@@ -135,8 +144,10 @@ def initial_crawl(bpage, already_known: dict[str, float | None], base_url: str,
     total_pages = get_total_pages(bpage)
 
     all_listings: list[dict] = []
-    page1 = extract_listings(bpage)
+    all_sold: list[dict] = []
+    page1, sold1 = extract_listings(bpage)
     all_listings.extend(page1)
+    all_sold.extend(sold1)
     print(f"  Page  1/{total_pages}: {len(page1)} listings", flush=True)
     prev_hrefs = get_card_hrefs(bpage)
     stop_early = hit_old(page1)
@@ -152,14 +163,17 @@ def initial_crawl(bpage, already_known: dict[str, float | None], base_url: str,
         if not js_navigate_next(bpage, prev_hrefs):
             print(f"  Page {n:2}/{total_pages}: nav failed — stopping", flush=True)
             break
-        listings = extract_listings(bpage)
-        if not listings:
+        listings, sold = extract_listings(bpage)
+        if not listings and not sold:
             print(f"  Page {n:2}/{total_pages}: empty — stopping", flush=True)
             break
         all_listings.extend(listings)
+        all_sold.extend(sold)
         print(f"  Page {n:2}/{total_pages}: {len(listings)} listings", flush=True)
         prev_hrefs = get_card_hrefs(bpage)
         stop_early = hit_old(listings)
+
+    record_sold_tagged(all_sold, log_file, "badge_feed")
 
     elapsed = time.time() - t0
 
@@ -232,9 +246,11 @@ def verify_sold(bpage, log_files: list[str]) -> None:
 
     total_removed = 0
     for lf, rows in rows_by_file.items():
+        removed_rows = [r for r in rows if (r.get("url") or "").strip() in sold]
         kept = [r for r in rows if (r.get("url") or "").strip() not in sold]
         removed = len(rows) - len(kept)
         if removed:
+            record_sold_tagged(removed_rows, lf, "badge_page")
             with open(lf, "w", newline="", encoding="utf-8") as f:
                 w = csv.DictWriter(f, fieldnames=["timestamp", "name", "condition", "price", "url"])
                 w.writeheader()
