@@ -3365,24 +3365,26 @@ function updateRamStats() {
   const d5=snap.filter(r=>(r.name||'').toLowerCase().includes('ddr5'));
   const d4=snap.filter(r=>(r.name||'').toLowerCase().includes('ddr4'));
   const d5p=d5.filter(r=>r.price), d4p=d4.filter(r=>r.price);
-  document.getElementById('r-stat-total').textContent=snap.length.toLocaleString();
-  document.getElementById('r-stat-snaps').textContent=`${ramSnaps.length} snapshot(s)`;
-  document.getElementById('r-stat-min').textContent=minR.price!=null?minR.price.toFixed(2)+' €':'–';
-  document.getElementById('r-stat-min-name').textContent=minR.name?(minR.name.substring(0,28)+'…'):'';
-  document.getElementById('r-stat-avg').textContent=avg?avg.toFixed(2)+' €':'–';
-  document.getElementById('r-stat-deals').textContent=deals.length;
-  document.getElementById('r-stat-ddr5').textContent=d5.length;
-  document.getElementById('r-stat-ddr5-avg').textContent=d5p.length?'avg '+(d5p.reduce((s,r)=>s+r.price,0)/d5p.length).toFixed(0)+' €':'';
-  document.getElementById('r-stat-ddr4').textContent=d4.length;
-  document.getElementById('r-stat-ddr4-avg').textContent=d4p.length?'avg '+(d4p.reduce((s,r)=>s+r.price,0)/d4p.length).toFixed(0)+' €':'';
+  const set=(id,v)=>{const el=document.getElementById(id); if(el) el.textContent=v;};
+  set('r-stat-total',snap.length.toLocaleString());
+  set('r-stat-snaps',`${ramSnaps.length} snapshot(s)`);
+  set('r-stat-min',minR.price!=null?minR.price.toFixed(2)+' €':'–');
+  set('r-stat-min-name',minR.name?(minR.name.substring(0,28)+'…'):'');
+  set('r-stat-avg',avg?avg.toFixed(2)+' €':'–');
+  set('r-stat-deals',deals.length);
+  set('r-stat-ddr5',d5.length);
+  set('r-stat-ddr5-avg',d5p.length?'avg '+(d5p.reduce((s,r)=>s+r.price,0)/d5p.length).toFixed(0)+' €':'');
+  set('r-stat-ddr4',d4.length);
+  set('r-stat-ddr4-avg',d4p.length?'avg '+(d4p.reduce((s,r)=>s+r.price,0)/d4p.length).toFixed(0)+' €':'');
   // Best €/GB (desktop DDR4/5 ≥16GB only)
   const pgbRows=snap.filter(r=>r.price&&isDesktopDdr45(r.name)&&pricePerGb(r.name,r.price));
   const bestPgb=pgbRows.sort((a,b)=>pricePerGb(a.name,a.price)-pricePerGb(b.name,b.price))[0];
-  document.getElementById('r-stat-best-pgb').textContent=bestPgb?pricePerGb(bestPgb.name,bestPgb.price).toFixed(2)+' €/GB':'–';
-  document.getElementById('r-stat-best-pgb-name').textContent=bestPgb?(bestPgb.name.substring(0,28)+'…'):'';
+  set('r-stat-best-pgb',bestPgb?pricePerGb(bestPgb.name,bestPgb.price).toFixed(2)+' €/GB':'–');
+  set('r-stat-best-pgb-name',bestPgb?(bestPgb.name.substring(0,28)+'…'):'');
   const dc=snap.filter(r=>isRamDeal(r.name,r.price)).length;
-  document.getElementById('pill-deals').textContent=`${dc} deal(s)`;
-  document.getElementById('pill-deals').style.display=dc?'':'none';
+  set('pill-deals',`${dc} deal(s)`);
+  const pillDeals=document.getElementById('pill-deals');
+  if(pillDeals) pillDeals.style.display=dc?'':'none';
 }
 
 const CHART_OPTS={responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#94a3b8',font:{size:11}}}}};
@@ -3791,13 +3793,14 @@ function updateRetailStats() {
   const avg=pr.length?pr.reduce((s,r)=>s+r.price,0)/pr.length:0;
   const bestPpr=retailRows.filter(r=>r.ppr).sort((a,b)=>b.ppr-a.ppr)[0];
   const updated=retailRows[0]?retailRows[0].timestamp:'–';
-  document.getElementById('rt-stat-total').textContent=retailRows.length.toLocaleString();
-  document.getElementById('rt-stat-updated').textContent='Updated: '+(updated||'–');
-  document.getElementById('rt-stat-min').textContent=minR.price!=null?minR.price.toFixed(2)+' €':'–';
-  document.getElementById('rt-stat-min-name').textContent=minR.name?(minR.name.substring(0,28)+'…'):'';
-  document.getElementById('rt-stat-avg').textContent=avg?avg.toFixed(2)+' €':'–';
-  document.getElementById('rt-stat-best-ppr').textContent=bestPpr?bestPpr.ppr.toFixed(3):'–';
-  document.getElementById('rt-stat-best-ppr-name').textContent=bestPpr?(bestPpr.gpu_model||'').substring(0,22):'';
+  const set=(id,v)=>{const el=document.getElementById(id); if(el) el.textContent=v;};
+  set('rt-stat-total',retailRows.length.toLocaleString());
+  set('rt-stat-updated','Updated: '+(updated||'–'));
+  set('rt-stat-min',minR.price!=null?minR.price.toFixed(2)+' €':'–');
+  set('rt-stat-min-name',minR.name?(minR.name.substring(0,28)+'…'):'');
+  set('rt-stat-avg',avg?avg.toFixed(2)+' €':'–');
+  set('rt-stat-best-ppr',bestPpr?bestPpr.ppr.toFixed(3):'–');
+  set('rt-stat-best-ppr-name',bestPpr?(bestPpr.gpu_model||'').substring(0,22):'');
 }
 
 function renderRetailDeals(){
@@ -3991,13 +3994,14 @@ function updateLaptopStats() {
   const bestVal = lpFiltered.filter(r => r.value_rating).sort((a, b) => b.value_rating - a.value_rating)[0];
   const updated = laptopRows[0] ? laptopRows[0].timestamp : '–';
   
-  document.getElementById('lp-stat-total').textContent = laptopRows.length.toLocaleString();
-  document.getElementById('lp-stat-updated').textContent = 'Updated: ' + (updated || '–');
-  document.getElementById('lp-stat-min').textContent = minL.price != null ? minL.price.toFixed(2) + ' €' : '–';
-  document.getElementById('lp-stat-min-name').textContent = minL.name ? (minL.name.substring(0, 28) + '…') : '';
-  document.getElementById('lp-stat-avg').textContent = avg ? avg.toFixed(2) + ' €' : '–';
-  document.getElementById('lp-stat-best-value').textContent = bestVal ? bestVal.value_rating.toFixed(1) : '–';
-  document.getElementById('lp-stat-best-value-name').textContent = bestVal ? bestVal.name.substring(0, 22) + '…' : '';
+  const set = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
+  set('lp-stat-total', laptopRows.length.toLocaleString());
+  set('lp-stat-updated', 'Updated: ' + (updated || '–'));
+  set('lp-stat-min', minL.price != null ? minL.price.toFixed(2) + ' €' : '–');
+  set('lp-stat-min-name', minL.name ? (minL.name.substring(0, 28) + '…') : '');
+  set('lp-stat-avg', avg ? avg.toFixed(2) + ' €' : '–');
+  set('lp-stat-best-value', bestVal ? bestVal.value_rating.toFixed(1) : '–');
+  set('lp-stat-best-value-name', bestVal ? bestVal.name.substring(0, 22) + '…' : '');
 }
 
 function renderLaptopChart() {
