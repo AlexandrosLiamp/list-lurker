@@ -197,7 +197,11 @@
     background: rgba(34, 197, 94, 0.1);
     color: #22c55e;
     border: 1px solid rgba(34, 197, 94, 0.2);
-    margin-left: 4px;
+    float: right;
+    min-width: 5.5em;
+    text-align: center;
+    box-sizing: border-box;
+    margin-right: 20px;
   }
 
   /* PPR Color Grading */
@@ -258,6 +262,8 @@
     border-radius: 1rem;
     padding: 1.25rem;
     transition: all 0.2s ease;
+    overflow-wrap: anywhere;
+    min-width: 0;
   }
   .deal-card:hover {
     border-color: rgba(168, 85, 247, 0.3);
@@ -571,28 +577,6 @@
   <main class="flex-1 flex flex-col min-w-0 pb-20 md:pb-0">
     <!-- Yahoo Finance Ticker Quote Header -->
     <header class="p-6 border-b border-[#2e3035] bg-[#16181e] flex flex-wrap justify-between items-start gap-6">
-      <div class="flex-1 min-w-[300px]">
-        <!-- Ticker Info Row -->
-        <div class="flex items-center gap-2.5">
-          <span class="bg-[#2e3035] text-white text-[11px] font-bold px-2 py-0.5 rounded font-mono tracking-wider">LURK</span>
-          <h1 class="text-xl font-bold text-white tracking-tight">List Lurker Hardware Market Index</h1>
-          <span class="text-[10px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-1.5 py-0.5 rounded font-mono font-bold tracking-wide uppercase">Real-Time Data</span>
-        </div>
-        
-        <!-- Live Quote Row -->
-        <div class="flex items-baseline gap-4 mt-2">
-          <span class="text-3xl font-extrabold text-white font-mono tracking-tight" id="ticker-price">€--</span>
-          <span class="text-base font-bold font-mono text-gray-400" id="ticker-change">€0.00 (+0.00%)</span>
-          <span class="text-xs text-gray-500 font-medium" id="ticker-time">As of --:--:--</span>
-        </div>
-        
-        <!-- After Hours Row (Watch / Crawl status) -->
-        <div class="text-xs text-gray-400 mt-1 flex items-center gap-2">
-          <span id="ticker-status-dot" class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
-          <span id="ticker-status-text" class="font-medium text-gray-400">System watching skoop, insomnia, vendora, facebook</span>
-        </div>
-      </div>
-      
       <!-- Ticker Key Statistics (High Density Summary) -->
       <div class="flex flex-wrap gap-x-6 gap-y-2 max-w-xl text-xs font-mono border-l border-[#2e3035] pl-6">
         <div class="flex justify-between w-40 border-b border-[#2e3035]/50 pb-1">
@@ -955,13 +939,6 @@
 
         <!-- ═══ GPU TAB ═══════════════════════════════════════════════════════════ -->
         <div class="tab-content hidden" id="tab-gpu">
-          <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-            <div class="glass-card p-4 rounded-xl hover:border-[#fb923c]/40 transition-all"><div class="text-[9px] font-bold text-gray-400 uppercase tracking-widest font-mono mb-1">GPU Listings</div><div class="text-xl font-extrabold text-[#fb923c] font-mono" id="g-stat-total">–</div><div class="text-[10px] text-gray-500 mt-1" id="g-stat-snaps">–</div></div>
-            <div class="glass-card p-4 rounded-xl hover:border-[#00f0ff]/40 transition-all"><div class="text-[9px] font-bold text-gray-400 uppercase tracking-widest font-mono mb-1">Best PPR</div><div class="text-xl font-extrabold text-[#00f0ff] font-mono" id="g-stat-best-ppr">–</div><div class="text-[10px] text-gray-500 truncate mt-1" id="g-stat-best-name">–</div></div>
-            <div class="glass-card p-4 rounded-xl hover:border-yellow-400/40 transition-all"><div class="text-[9px] font-bold text-gray-400 uppercase tracking-widest font-mono mb-1">Avg Price</div><div class="text-xl font-extrabold text-yellow-400 font-mono" id="g-stat-avg">–</div><div class="text-[10px] text-gray-500 mt-1">all GPUs</div></div>
-            <div class="glass-card p-4 rounded-xl hover:border-red-400/40 transition-all"><div class="text-[9px] font-bold text-gray-400 uppercase tracking-widest font-mono mb-1">Deals (PPR ≥ 0.35)</div><div class="text-xl font-extrabold text-red-400 font-mono" id="g-stat-deals">–</div><div class="text-[10px] text-gray-500 mt-1" id="g-stat-ppr-thresh">PPR ≥ 0.35</div></div>
-          </div>
-          
           <div class="glass-card p-5 rounded-2xl mb-6">
             <h3 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4 font-mono">🎮 GPU Deals (Best Price/Performance)</h3>
             <div class="deals-grid gap-4" id="g-deals-grid"><div class="no-data text-gray-500 py-4 text-center">Load gpu_prices.csv to see deals</div></div>
@@ -1722,22 +1699,28 @@ async function autoLoad() {
          vintedGpuResult, vintedCpuResult, vintedRamResult, vintedMoboResult,
          laptopRetailResult] = results;
   let loaded = 0;
+  // A throw in any one loader must not stop the rest from running (each fetch is independent).
+  const safeLoad = (result, fn) => {
+    if (result.status !== 'fulfilled') return;
+    try { fn(parseCSV(result.value)); loaded++; }
+    catch (e) { console.error('[autoLoad] loader failed:', e); }
+  };
 
-  if (ramResult.status === 'fulfilled') { loadRam(parseCSV(ramResult.value)); loaded++; }
-  if (gpuResult.status === 'fulfilled') { loadGpu(parseCSV(gpuResult.value)); loaded++; }
-  if (retailResult.status === 'fulfilled') { loadRetail(parseCSV(retailResult.value)); loaded++; }
-  if (cpuResult.status === 'fulfilled') { loadCpu(parseCSV(cpuResult.value)); loaded++; }
-  if (moboResult.status === 'fulfilled') { loadMobo(parseCSV(moboResult.value)); loaded++; }
-  if (ramRetailResult.status === 'fulfilled') { loadRamRetail(parseCSV(ramRetailResult.value)); loaded++; }
-  if (cpuRetailResult.status === 'fulfilled') { loadCpuRetail(parseCSV(cpuRetailResult.value)); loaded++; }
-  if (moboRetailResult.status === 'fulfilled') { loadMoboRetail(parseCSV(moboRetailResult.value)); loaded++; }
-  if (vendoraGpuResult.status === 'fulfilled') { loadGpu(parseCSV(vendoraGpuResult.value)); loaded++; }
-  if (fbGpuResult.status === 'fulfilled') { loadGpu(parseCSV(fbGpuResult.value)); loaded++; }
-  if (vintedGpuResult.status === 'fulfilled') { loadGpu(parseCSV(vintedGpuResult.value)); loaded++; }
-  if (vintedCpuResult.status === 'fulfilled') { loadCpu(parseCSV(vintedCpuResult.value)); loaded++; }
-  if (vintedRamResult.status === 'fulfilled') { loadRam(parseCSV(vintedRamResult.value)); loaded++; }
-  if (vintedMoboResult.status === 'fulfilled') { loadMobo(parseCSV(vintedMoboResult.value)); loaded++; }
-  if (laptopRetailResult.status === 'fulfilled') { loadLaptops(parseCSV(laptopRetailResult.value)); loaded++; }
+  safeLoad(ramResult, loadRam);
+  safeLoad(gpuResult, loadGpu);
+  safeLoad(retailResult, loadRetail);
+  safeLoad(cpuResult, loadCpu);
+  safeLoad(moboResult, loadMobo);
+  safeLoad(ramRetailResult, loadRamRetail);
+  safeLoad(cpuRetailResult, loadCpuRetail);
+  safeLoad(moboRetailResult, loadMoboRetail);
+  safeLoad(vendoraGpuResult, loadGpu);
+  safeLoad(fbGpuResult, loadGpu);
+  safeLoad(vintedGpuResult, loadGpu);
+  safeLoad(vintedCpuResult, loadCpu);
+  safeLoad(vintedRamResult, loadRam);
+  safeLoad(vintedMoboResult, loadMobo);
+  safeLoad(laptopRetailResult, loadLaptops);
 
   if (loaded === 0) {
     // Neither file found — show manual load UI
@@ -2738,7 +2721,14 @@ function annotatePriceDrops(rows) {
 
 function priceDropBadge(pd) {
   if (!pd) return '';
-  return `<span class="badge badge-drop" title="was €${pd.oldPrice.toFixed(2)}">▼ €${pd.dropEur.toFixed(2)}</span>`;
+  const d = pd.dropEur;
+  if (d >= 10000) return `<span class="badge badge-drop">▼ error</span>`;
+  const s = d < 1 ? d.toFixed(2) : Math.round(d).toString();
+  return `<span class="badge badge-drop">▼ €${s}</span>`;
+}
+function priceDropTitle(pd) {
+  if (!pd) return '';
+  return ` title="was €${pd.oldPrice.toFixed(2)} → €${pd.newPrice.toFixed(2)} (▼ €${pd.dropEur.toFixed(2)})"`;
 }
 
 function isSodimm(n) { return SODIMM_KW.some(k => n.includes(k)); }
@@ -3351,7 +3341,7 @@ function renderRamTable() {
       <td class="muted">${esc(genSpeed)}</td>
       <td class="muted">${esc(capacity)}</td>
       <td>${srcBadge(r._src)}</td>
-      <td class="price${deal?' deal':''}">${ps}${priceDropBadge(r._priceDrop)}</td>
+      <td class="price${deal?' deal':''}"${priceDropTitle(r._priceDrop)}>${ps}${priceDropBadge(r._priceDrop)}</td>
       <td class="pgb ${pgbCls}">${pgbStr}
         <div class="ppr-bar-wrap"><div class="ppr-bar" style="width:${barW}%"></div></div>
       </td>
@@ -3586,7 +3576,7 @@ function renderGpuTable(){
       <td class="muted" style="white-space:nowrap">${esc(r.gpu_model||'–')}</td>
       <td class="muted" style="text-align:center">${r.gpu_score||'–'}</td>
       <td>${srcBadge(r._src)}</td>
-      <td class="price${isDeal?' gpu-deal':''}">${ps}${priceDropBadge(r._priceDrop)}</td>
+      <td class="price${isDeal?' gpu-deal':''}"${priceDropTitle(r._priceDrop)}>${ps}${priceDropBadge(r._priceDrop)}</td>
       <td class="ppr ${pprCls}">${pprStr}
         <div class="ppr-bar-wrap"><div class="ppr-bar" style="width:${barW}%"></div></div>
       </td>
@@ -3607,12 +3597,13 @@ function updateGpuStats(){
   const validSnap=snap.filter(r=>r.price&&r.price>1);
   const deals=validSnap.filter(r=>r.ppr&&r.ppr>=GPU_PPR_THRESHOLD);
   const bestPpr=validSnap.filter(r=>r.ppr).sort((a,b)=>b.ppr-a.ppr)[0];
-  document.getElementById('g-stat-total').textContent=snap.length.toLocaleString();
-  document.getElementById('g-stat-snaps').textContent=`${gpuSnaps.length} snapshot(s)`;
-  document.getElementById('g-stat-avg').textContent=avg?avg.toFixed(2)+' €':'–';
-  document.getElementById('g-stat-deals').textContent=deals.length;
-  document.getElementById('g-stat-best-ppr').textContent=bestPpr?bestPpr.ppr.toFixed(3):'–';
-  document.getElementById('g-stat-best-name').textContent=bestPpr?(bestPpr.gpu_model||'').substring(0,22):'';
+  const set=(id,v)=>{const el=document.getElementById(id); if(el) el.textContent=v;};
+  set('g-stat-total',snap.length.toLocaleString());
+  set('g-stat-snaps',`${gpuSnaps.length} snapshot(s)`);
+  set('g-stat-avg',avg?avg.toFixed(2)+' €':'–');
+  set('g-stat-deals',deals.length);
+  set('g-stat-best-ppr',bestPpr?bestPpr.ppr.toFixed(3):'–');
+  set('g-stat-best-name',bestPpr?(bestPpr.gpu_model||'').substring(0,22):'');
 }
 
 // ═══ GPU Deals ═════════════════════════════════════════════════════════════════
