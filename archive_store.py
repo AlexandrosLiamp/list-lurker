@@ -16,6 +16,7 @@ from __future__ import annotations
 import csv
 import os
 import re
+import statistics
 from datetime import datetime
 
 LIVE_CSV = "gpu_prices.csv"
@@ -146,6 +147,27 @@ def record_sold(rows: list[dict], sold_path: str) -> int:
     return len(fresh)
 
 
+def sold_stats(sold_path: str) -> dict:
+    """count / median / min / max of prices in a sold archive. All-None when empty.
+    Prices in the sold archive are canonical floats (written by DictWriter from
+    parse_price output or live-CSV rows), so plain float() is safe here — the
+    parse_price 10× trap fires only on raw scraped strings, never on our own writes."""
+    prices: list[float] = []
+    for r in _read_rows(sold_path):
+        try:
+            prices.append(float(r.get("price") or ""))
+        except ValueError:
+            pass
+    if not prices:
+        return {"count": 0, "median": None, "min": None, "max": None}
+    return {
+        "count":  len(prices),
+        "median": statistics.median(prices),
+        "min":    min(prices),
+        "max":    max(prices),
+    }
+
+
 def read_for_stats(live_path: str = LIVE_CSV, archive_path: str = ARCHIVE_CSV) -> list[dict]:
     """Live + archive, deduped by URL (live row wins). For median/price-history only."""
     out: dict[str, dict] = {}
@@ -170,3 +192,8 @@ if __name__ == "__main__":
     print(f"live={live_count()} archive={archive_count()}")
     if len(sys.argv) > 1 and sys.argv[1] == "purge":
         print(json.dumps(archive_and_purge(), indent=2))
+    elif len(sys.argv) > 2 and sys.argv[1] == "sold":
+        part = sys.argv[2].lower()
+        path = sold_path_for(f"{part}_prices.csv")
+        print(f"── sold stats: {path}")
+        print(json.dumps(sold_stats(path), indent=2, default=str))

@@ -171,6 +171,51 @@ def test_record_sold_tagged_overrides_existing_detected_via(tmp_path):
     assert got["detected_via"] == "badge_page"
 
 
+# ── sold_stats ────────────────────────────────────────────────────────────────
+
+
+def test_sold_stats_missing_file_is_empty(tmp_path):
+    got = archive_store.sold_stats(str(tmp_path / "nope_sold.csv"))
+    assert got == {"count": 0, "median": None, "min": None, "max": None}
+
+
+def test_sold_stats_single_row(tmp_path):
+    sold_path = tmp_path / "gpu_sold.csv"
+    archive_store.record_sold([_sold_row("https://x/a", price=100.0)], str(sold_path))
+    got = archive_store.sold_stats(str(sold_path))
+    assert got == {"count": 1, "median": 100.0, "min": 100.0, "max": 100.0}
+
+
+def test_sold_stats_median_min_max(tmp_path):
+    sold_path = tmp_path / "gpu_sold.csv"
+    archive_store.record_sold(
+        [_sold_row(f"https://x/{i}", price=p) for i, p in enumerate([50.0, 100.0, 300.0])],
+        str(sold_path),
+    )
+    got = archive_store.sold_stats(str(sold_path))
+    assert got["count"] == 3
+    assert got["median"] == 100.0
+    assert got["min"] == 50.0
+    assert got["max"] == 300.0
+
+
+def test_sold_stats_skips_blank_and_garbage_prices(tmp_path):
+    """Only rows with numeric prices count; blank/garbage rows are silently dropped."""
+    sold_path = tmp_path / "gpu_sold.csv"
+    with open(sold_path, "w", newline="", encoding="utf-8") as fh:
+        w = csv.DictWriter(fh, fieldnames=archive_store.SOLD_FIELDS)
+        w.writeheader()
+        w.writerow({"timestamp": "t", "name": "x", "condition": "", "price": "100.0",
+                    "url": "https://x/a", "detected_via": "badge_feed"})
+        w.writerow({"timestamp": "t", "name": "x", "condition": "", "price": "",
+                    "url": "https://x/b", "detected_via": "badge_feed"})
+        w.writerow({"timestamp": "t", "name": "x", "condition": "", "price": "gibberish",
+                    "url": "https://x/c", "detected_via": "badge_feed"})
+    got = archive_store.sold_stats(str(sold_path))
+    assert got["count"] == 1
+    assert got["median"] == 100.0
+
+
 # ── Capture point A — extract_listings-shaped payload → badge_feed ────────────
 
 
