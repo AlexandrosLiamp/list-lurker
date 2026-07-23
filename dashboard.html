@@ -3631,7 +3631,7 @@ function buildGpuDeals(){
   grid.innerHTML=vis.length?vis.map(d=>`
     <div class="deal-card gpu-card">
       <button class="deal-dismiss gpu-dismiss" data-key="${esc(d.key)}" title="Dismiss">✕</button>
-      <div class="deal-price">${d.price!=null?d.price.toFixed(2)+' €':'?'}</div>
+      <div class="deal-price"${priceDropTitle(d._priceDrop)}>${d.price!=null?d.price.toFixed(2)+' €':'?'}${priceDropBadge(d._priceDrop)}</div>
       <div class="deal-name">${esc(d.name)}</div>
       <div class="deal-cond">${esc(d.condition||'')}</div>
       <div class="deal-meta">
@@ -4580,7 +4580,7 @@ function gdealsData(){
     const disc=(md-r.price)/md;
     if(disc<minDisc) continue;
     if(q && !(r.gpu_model||'').toLowerCase().includes(q) && !(r.name||'').toLowerCase().includes(q)) continue;
-    rows.push({disc,price:r.price,med:md,model:r.gpu_model,ppr:r.gpu_score?r.gpu_score/r.price:null,n:cnt[r.gpu_model],src:r._src,url:r.url,name:r.name});
+    rows.push({disc,price:r.price,med:md,model:r.gpu_model,ppr:r.gpu_score?r.gpu_score/r.price:null,n:cnt[r.gpu_model],src:r._src,url:r.url,name:r.name,_priceDrop:r._priceDrop});
   }
   return rows;
 }
@@ -4591,7 +4591,7 @@ function renderGdealsTab(){
   document.getElementById('gd-tbody').innerHTML = rows.length?rows.slice((gdPage-1)*PAGE_SIZE,gdPage*PAGE_SIZE).map(r=>`<tr>
     <td class="disc ${gdDiscClass(r.disc)}">${(r.disc*100).toFixed(0)}%</td>
     <td class="name" title="${esc(r.name)}">${esc(r.model)}</td>
-    <td class="price deal">${r.price.toFixed(0)} €</td>
+    <td class="price deal"${priceDropTitle(r._priceDrop)}>${r.price.toFixed(0)} €${priceDropBadge(r._priceDrop)}</td>
     <td class="muted">${r.med.toFixed(0)} €</td>
     <td class="ppr ${r.ppr?pprClass(r.ppr):'bad'}">${r.ppr?r.ppr.toFixed(3):'–'}</td>
     <td class="muted" style="text-align:center">${r.n}</td>
